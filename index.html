@@ -1,76 +1,210 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/papaparse/5.3.2/papaparse.min.js"></script>
-<script>
-    // Se añade un listener para asegurar que todo el HTML está cargado antes de ejecutar el script
-    document.addEventListener('DOMContentLoaded', () => {
-        // Obtenemos las referencias a los elementos del DOM
-        const tableBody = document.getElementById('table-body');
-        const loadingMessage = document.getElementById('loading-message');
-        const emptyMessage = document.getElementById('empty-message');
-        
-        // --- CORRECCIÓN IMPORTANTE ---
-        // Esta es la URL "raw" (cruda) correcta de tu archivo CSV en GitHub.
-        const csvFileUrl = 'https://raw.githubusercontent.com/davidyaryur/trello/main/sraYSNS4%20-%20proyectos-inversiones-yar-yur-2025.csv';
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos de Inversión Yar-Yur 2025</title>
+    <!-- Tailwind CSS para un diseño moderno y adaptable -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Color de fondo gris claro */
+        }
+        /* Estilo para la barra de búsqueda */
+        #searchInput:focus {
+            box-shadow: 0 0 0 2px #3b82f6; /* Sombra azul al enfocar */
+            border-color: #3b82f6;
+        }
+        /* Animación suave para las filas de la tabla */
+        .table-row-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
 
-        tableBody.innerHTML = ''; // Limpiamos la tabla antes de cargar nuevos datos
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">Visor de Fichas de Proyectos</h1>
+            <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">Proyectos de Inversiones Yar-Yur 2025</p>
+        </header>
 
-        // Usamos PapaParse para procesar el archivo CSV desde la URL
-        Papa.parse(csvFileUrl, {
-            download: true, // Esencial para que PapaParse descargue el archivo de la URL
-            header: true, // La primera fila del CSV es el encabezado
-            skipEmptyLines: true, // Omitimos las líneas vacías
-            complete: function(results) {
-                loadingMessage.classList.add('hidden'); // Ocultamos el mensaje de carga
-                const data = results.data;
+        <main>
+            <!-- Contenedor principal con sombra y bordes redondeados -->
+            <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+                <div class="p-6 border-b border-gray-200">
+                    <!-- Barra de búsqueda -->
+                    <div class="relative">
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Buscar por nombre de ficha..."
+                            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow"
+                        >
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
 
-                if (data.length === 0) {
-                    emptyMessage.classList.remove('hidden'); // Mostramos mensaje si no hay datos
-                    return;
-                }
+                <!-- Mensaje de carga -->
+                <div id="loadingMessage" class="text-center p-10">
+                    <p class="text-gray-500">Cargando proyectos...</p>
+                </div>
 
-                // Iteramos sobre cada fila de datos extraída del CSV
-                data.forEach(row => {
-                    const cardName = row['Card Name'];
-                    const cardUrl = row['Card URL'];
+                <!-- Mensaje de error -->
+                <div id="errorMessage" class="hidden text-center p-10 bg-red-50 text-red-700">
+                    <p><strong>Error:</strong> No se pudo cargar el archivo de datos. Asegúrate de que el archivo <code>proyectos-inversiones-yar-yur-2025.json</code> se encuentre en la misma carpeta.</p>
+                </div>
 
-                    // Verificamos que tengamos un nombre de tarjeta para procesar
-                    if (cardName && cardUrl) {
-                        // Dividimos el nombre para obtener número y nombre del proyecto
-                        // Asumimos el formato "NUMERO - NOMBRE"
-                        const parts = cardName.split(' - ');
-                        const projectNumber = parts.length > 1 ? parts[0].trim() : 'N/A';
-                        const projectName = parts.length > 1 ? parts.slice(1).join(' - ').trim() : cardName.trim();
+                <!-- Tabla de datos -->
+                <div class="overflow-x-auto">
+                    <table id="projectsTable" class="min-w-full divide-y divide-gray-200 hidden">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Nombre de la Ficha
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Enlace
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody" class="bg-white divide-y divide-gray-200">
+                            <!-- Las filas se insertarán aquí dinámicamente -->
+                        </tbody>
+                    </table>
+                     <div id="noResultsMessage" class="hidden text-center p-10">
+                        <p class="text-gray-500">No se encontraron fichas que coincidan con la búsqueda.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Event listener que se ejecuta cuando el contenido del DOM ha sido cargado.
+        document.addEventListener('DOMContentLoaded', () => {
+            const tableBody = document.getElementById('tableBody');
+            const projectsTable = document.getElementById('projectsTable');
+            const loadingMessage = document.getElementById('loadingMessage');
+            const errorMessage = document.getElementById('errorMessage');
+            const searchInput = document.getElementById('searchInput');
+            const noResultsMessage = document.getElementById('noResultsMessage');
+
+            // URL del archivo JSON. Debe estar en la misma carpeta que este archivo HTML.
+            const jsonUrl = './sraYSNS4 - proyectos-inversiones-yar-yur-2025.json';
+
+            // Función para extraer el primer enlace de la descripción de una ficha.
+            function extractLinkFromDesc(description) {
+                if (!description) return null;
+                // Expresión regular para encontrar URLs dentro de markdown `()` o URLs directas.
+                const urlRegex = /\((https?:\/\/[^\s)]+)\)|(https?:\/\/[^\s]+)/;
+                const match = description.match(urlRegex);
+                return match ? (match[1] || match[2]) : null;
+            }
+
+            // Usamos fetch para obtener los datos del archivo JSON.
+            fetch(jsonUrl)
+                .then(response => {
+                    // Si la respuesta no es OK (ej. 404), lanzamos un error.
+                    if (!response.ok) {
+                        throw new Error(`Error en la red: ${response.statusText}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Ocultamos el mensaje de carga y mostramos la tabla.
+                    loadingMessage.style.display = 'none';
+                    projectsTable.style.display = 'table';
+
+                    // Verificamos si existen las fichas (cards) en los datos.
+                    const cards = data.cards;
+                    if (!cards || !Array.isArray(cards)) {
+                         throw new Error("El formato del JSON no es el esperado. No se encontró la propiedad 'cards'.");
+                    }
+
+                    // Iteramos sobre cada ficha y creamos una fila en la tabla.
+                    cards.forEach((card, index) => {
+                        const row = document.createElement('tr');
+                        row.classList.add('hover:bg-gray-50', 'transition-colors', 'duration-200', 'table-row-fade-in');
+                        row.style.animationDelay = `${index * 0.02}s`;
+
+                        const nameCell = document.createElement('td');
+                        nameCell.className = 'px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900';
+                        nameCell.textContent = card.name;
+
+                        const linkCell = document.createElement('td');
+                        linkCell.className = 'px-6 py-4 whitespace-nowrap text-sm';
                         
-                        // Creamos una nueva fila para la tabla
-                        const tr = document.createElement('tr');
-                        tr.classList.add('hover:bg-gray-50', 'transition-colors', 'duration-150');
+                        // Extraemos el enlace de la descripción, si no existe, usamos el shortUrl.
+                        const projectLink = extractLinkFromDesc(card.desc) || card.shortUrl;
+                        
+                        const link = document.createElement('a');
+                        link.href = projectLink;
+                        link.textContent = 'Ver Ficha';
+                        link.target = '_blank'; // Abrir en una nueva pestaña.
+                        link.rel = 'noopener noreferrer';
+                        link.className = 'inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-3 rounded-md transition-transform transform hover:scale-105';
+                        
+                        linkCell.appendChild(link);
+                        
+                        row.appendChild(nameCell);
+                        row.appendChild(linkCell);
+                        
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => {
+                    // Si ocurre un error, lo mostramos en la consola y en la página.
+                    console.error('Error al cargar o procesar el archivo JSON:', error);
+                    loadingMessage.style.display = 'none';
+                    errorMessage.style.display = 'block';
+                });
 
-                        // Rellenamos la fila con los datos
-                        tr.innerHTML = `
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${projectNumber}</td>
-                            <td class="px-6 py-4 whitespace-normal text-sm text-gray-600">${projectName}</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">
-                                <a href="${cardUrl}" target="_blank" rel="noopener noreferrer" class="hover:underline">
-                                    Ver en Trello
-                                </a>
-                            </td>
-                        `;
-
-                        // Añadimos la fila completa a la tabla
-                        tableBody.appendChild(tr);
+            // Funcionalidad de filtro para la barra de búsqueda.
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const rows = tableBody.getElementsByTagName('tr');
+                let visibleRows = 0;
+                
+                Array.from(rows).forEach(row => {
+                    const nameCell = row.getElementsByTagName('td')[0];
+                    if (nameCell) {
+                        const nameText = nameCell.textContent || nameCell.innerText;
+                        if (nameText.toLowerCase().includes(searchTerm)) {
+                            row.style.display = '';
+                            visibleRows++;
+                        } else {
+                            row.style.display = 'none';
+                        }
                     }
                 });
 
-                // Si después de iterar no se añadió ninguna fila, mostramos el mensaje de vacío
-                if (tableBody.children.length === 0) {
-                    emptyMessage.classList.remove('hidden');
-                }
-            },
-            error: function(error) {
-                // En caso de error, lo mostramos en la consola y en la página
-                loadingMessage.classList.add('hidden');
-                emptyMessage.classList.remove('hidden');
-                console.error("Error al cargar o procesar el archivo CSV:", error);
-            }
+                // Mostrar u ocultar el mensaje de "no hay resultados".
+                noResultsMessage.style.display = visibleRows === 0 ? 'block' : 'none';
+            });
         });
-    });
-</script>
+    </script>
+
+</body>
+</html>
