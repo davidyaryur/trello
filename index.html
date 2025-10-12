@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Proyectos Trello</title>
+    <!-- Incluyendo Tailwind CSS para un diseño limpio y moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- El script de PapaParse se ha movido al final del body para asegurar su carga -->
+    <style>
+        /* Estilo para un scroll suave en la tabla en pantallas grandes */
+        .table-container {
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+            
+            <!-- Encabezado y Descripción -->
+            <div class="text-center mb-8">
+                <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">Visor de Proyectos desde CSV</h1>
+                <p class="text-gray-600 mt-2">Los datos se cargan automáticamente desde el archivo <code class="bg-gray-200 text-sm p-1 rounded">.csv</code> del repositorio de GitHub.</p>
+            </div>
+
+            <!-- Contenedor de la Tabla -->
+            <div id="table-container" class="table-container">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Lista de Proyectos</h2>
+                <div class="overflow-x-auto rounded-lg border border-gray-200">
+                    <table class="min-w-full divide-y divide-gray-200 bg-white">
+                        <thead class="bg-gray-50 sticky top-0">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    N° de Proyecto
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Nombre del Proyecto
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Enlace a Trello
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body" class="divide-y divide-gray-200">
+                            <!-- Las filas de la tabla se insertarán aquí con JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                 <div id="loading-message" class="text-center p-8 text-gray-500">
+                    <p>Cargando datos desde GitHub...</p>
+                </div>
+                <div id="empty-message" class="text-center p-8 text-gray-500 hidden">
+                    <p>No se encontraron datos de proyectos en el archivo o no se pudo cargar el archivo.</p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- Se mueve el script de PapaParse aquí para asegurar que se cargue antes que el código que lo utiliza -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/papaparse/5.3.2/papaparse.min.js"></script>
+    <script>
+        // Se añade un listener para asegurar que todo el HTML está cargado antes de ejecutar el script
+        document.addEventListener('DOMContentLoaded', () => {
+            // Obtenemos las referencias a los elementos del DOM
+            const tableContainer = document.getElementById('table-container');
+            const tableBody = document.getElementById('table-body');
+            const loadingMessage = document.getElementById('loading-message');
+            const emptyMessage = document.getElementById('empty-message');
+            
+            // --- IMPORTANTE ---
+            // Reemplaza la siguiente URL con la URL "raw" (cruda) de tu archivo CSV en GitHub.
+            // Para obtenerla: ve a tu archivo en GitHub, haz clic en el botón "Raw". Copia la URL de esa página.
+            const csvFileUrl = 'https://raw.githubusercontent.com/davidyaryur/trello/refs/heads/main/sraYSNS4%20-%20proyectos-inversiones-yar-yur-2025.csv';
+
+            tableBody.innerHTML = ''; // Limpiamos la tabla
+
+            // Usamos PapaParse para procesar el archivo CSV desde la URL
+            Papa.parse(csvFileUrl, {
+                download: true, // Esencial para que PapaParse descargue el archivo de la URL
+                header: true, // La primera fila del CSV es el encabezado
+                skipEmptyLines: true, // Omitimos las líneas vacías
+                complete: function(results) {
+                    loadingMessage.classList.add('hidden'); // Ocultamos el mensaje de carga
+                    const data = results.data;
+
+                    if (data.length === 0) {
+                        emptyMessage.classList.remove('hidden');
+                        return;
+                    }
+
+                    // Iteramos sobre cada fila de datos extraída del CSV
+                    data.forEach(row => {
+                        const cardName = row['Card Name'];
+                        const cardUrl = row['Card URL'];
+
+                        // Verificamos que tengamos un nombre de tarjeta para procesar
+                        if (cardName) {
+                            // Dividimos el nombre para obtener número y nombre del proyecto
+                            // Asumimos el formato "NUMERO - NOMBRE"
+                            const parts = cardName.split(' - ');
+                            const projectNumber = parts.length > 1 ? parts[0].trim() : 'N/A';
+                            const projectName = parts.length > 1 ? parts.slice(1).join(' - ').trim() : cardName.trim();
+                            
+                            // Creamos una nueva fila para la tabla
+                            const tr = document.createElement('tr');
+                            tr.classList.add('hover:bg-gray-50', 'transition-colors', 'duration-150');
+
+                            // Rellenamos la fila con los datos
+                            tr.innerHTML = `
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${projectNumber}</td>
+                                <td class="px-6 py-4 whitespace-normal text-sm text-gray-600">${projectName}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">
+                                    <a href="${cardUrl}" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                                        Ver en Trello
+                                    </a>
+                                </td>
+                            `;
+
+                            // Añadimos la fila completa a la tabla
+                            tableBody.appendChild(tr);
+                        }
+                    });
+
+                    if (tableBody.children.length === 0) {
+                        emptyMessage.classList.remove('hidden');
+                    }
+                },
+                error: function(error) {
+                    // En caso de error, lo mostramos en la consola y en la página
+                    loadingMessage.classList.add('hidden');
+                    emptyMessage.classList.remove('hidden');
+                    console.error("Error al cargar o procesar el archivo CSV desde GitHub:", error);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
