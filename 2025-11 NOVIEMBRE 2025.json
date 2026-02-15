@@ -1,0 +1,402 @@
+[
+  {
+    "tableId": 61,
+    "mes": "NOVIEMBRE",
+    "num": 61,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "04/11/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDORES CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Le envié a Milka el rendimiento de los preciarios de acrílico transparente de Caledonia",
+        "drive": "https://drive.google.com/drive/folders/19yvtu0Nn-oS_sxOLtY-okcJ73S8PYf8O?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "13/11/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "977/25",
+        "cliente": "HOLLY MASS",
+        "tituloProyecto": "EXHIBIDOR DE PISO GRANDE",
+        "trello": "qTaUCgIw",
+        "descripcion": "Calculé el rendimiento del mueble de Verónica",
+        "drive": "https://drive.google.com/drive/folders/1De0L1YYo-cgoqqZB-8vtYVCwe2eE8SlB?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 62,
+    "mes": "NOVIEMBRE",
+    "num": 62,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "24/11/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "761/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "FERIA DE PROVEEDORES",
+        "trello": "iKI8or8k",
+        "descripcion": "Terminé las experiencias de realidad aumentada del mueble Colgate para la feria",
+        "drive": "https://drive.google.com/drive/folders/1fkb-86ZpxS5DAYsHtH-v13GUZ5MglfXP?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 64,
+    "mes": "NOVIEMBRE",
+    "num": 64,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "06/11/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "938/25",
+        "cliente": "CELIVECA",
+        "tituloProyecto": "PARED GLORIFICADORA Y BARRIL LA CASA DE LA CAÑA",
+        "trello": "1I6oIiUl",
+        "descripcion": "Saqué la muestra de color del barril de Celiveca",
+        "drive": "https://drive.google.com/drive/folders/1Zf_kM6dQyM_vFJaNoPRlJYrOkezQdnvg?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "07/11/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "207/25",
+        "cliente": "NESTLÉ",
+        "tituloProyecto": "EXHIBIDORES PRO PLAN",
+        "trello": "YXqQqixf",
+        "descripcion": "Entregué la orden de producción del mueble Dog Chow de Purina",
+        "drive": "https://drive.google.com/drive/folders/1PM3Ia7HxmFzP42PUv2CkdhlmUt41jV8X?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "12/11/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "207/25",
+        "cliente": "NESTLÉ",
+        "tituloProyecto": "EXHIBIDORES PRO PLAN",
+        "trello": "YXqQqixf",
+        "descripcion": "Mandé el pisa coleto de Purina",
+        "drive": "https://drive.google.com/drive/folders/1PM3Ia7HxmFzP42PUv2CkdhlmUt41jV8X?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "12/11/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "897/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "REVESTIMIENTO SLEDO",
+        "trello": "vQ6wuu69",
+        "descripcion": "Mandé la muestra de color de Buchanan’s",
+        "drive": "https://drive.google.com/drive/folders/1j67ceV6dtUjwM6k_f38Z7QSsUxCVCoJ6?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "14/11/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "977/25",
+        "cliente": "HOLLY MASS",
+        "tituloProyecto": "EXHIBIDOR DE PISO GRANDE",
+        "trello": "qTaUCgIw",
+        "descripcion": "Saqué la muestra de color del exhibidor HollyMass",
+        "drive": "https://drive.google.com/drive/folders/1wBXS_eIGYO38Nn_mjCE6iEndkAznEaOa?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 65,
+    "mes": "NOVIEMBRE",
+    "num": 65,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "04/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "809/25",
+        "cliente": "PEPSI",
+        "tituloProyecto": "ÁRBOLES DE NAVIDAD",
+        "trello": "H037TrST",
+        "descripcion": "Entregué a Pablo y Andrés David lo que faltaba de la orden del Pino Pepsi 2025",
+        "drive": "https://drive.google.com/drive/folders/1dcJNpumc90_Lx6yFCKtvMPz1A5fbcA8z?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "04/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "232/25",
+        "cliente": "SANTA TERESA",
+        "tituloProyecto": "MANTENIMIENTO TROLLY BAR",
+        "trello": "uSPRWuHm",
+        "descripcion": "Monté la orden de producción de los viniles para completar el Trolley Bar",
+        "drive": "https://drive.google.com/drive/folders/1CGSaJQFT3kw1pKpXqMt_bBUo9bOuhFzu?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "05/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDORES CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Saqué el PAI de 1mm para completar MEGA Caledonia y Le entregué la orden a Pablo para completar el vinil de Caledonia",
+        "drive": "https://drive.google.com/drive/folders/146WWw86TzKVDprPnSH_PG6GDRESIADKV?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "05/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "938/25",
+        "cliente": "CELIVECA",
+        "tituloProyecto": "PARED GLORIFICADORA",
+        "trello": "1I6oIiUl",
+        "descripcion": "Entregué la Orden de producción del glorificador de Celiveca",
+        "drive": "https://drive.google.com/drive/folders/1Ijw2YiZc5RJkMIc93Phn-8tHvldh7G8m?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "06/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "938/25",
+        "cliente": "CELIVECA",
+        "tituloProyecto": "PARED GLORIFICADORA Y BARRIL LA CASA DE LA CAÑA",
+        "trello": "1I6oIiUl",
+        "descripcion": "Imprimí la orden del barril de Celiveca, queda a espera de aprobación color",
+        "drive": "https://drive.google.com/drive/folders/1Ijw2YiZc5RJkMIc93Phn-8tHvldh7G8m?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "07/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "837/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE NATUCHIPS CM SANTA MARTA",
+        "trello": "znEYj9oP",
+        "descripcion": "Entregué la orden de producción de las piezas faltantes de NatuChips para Yannis",
+        "drive": "https://drive.google.com/drive/folders/1OW8-ZkH88Ax4XIDCVuUwOhaSUlA0XGTC?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(07)",
+        "fecha": "10/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "966/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "CHECKOUT NATUCHIPS RÍO GUARENAS",
+        "trello": "u9I2QvUy",
+        "descripcion": "Saqué la orden de producción del CheckOut de NatuChips Río Guarenas",
+        "drive": "https://drive.google.com/drive/folders/1PstsdqixHwV0naukgLQf2EhervBGcCct?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(08)",
+        "fecha": "11/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "761/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "FERIA DE PROVEEDORES",
+        "trello": "Y2LiASpR",
+        "descripcion": "Entregué la orden de producción de corte del exhibidor de pentágono de Colgate",
+        "drive": "https://drive.google.com/drive/folders/1A-BnCye30IfGfA9TSpLuzm6sRguF4yZn?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(09)",
+        "fecha": "13/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "761/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "FERIA DE PROVEEDORES",
+        "trello": "Y2LiASpR",
+        "descripcion": "Entregué a Andrés David la orden de corte de los espejos",
+        "drive": "https://drive.google.com/drive/folders/1A-BnCye30IfGfA9TSpLuzm6sRguF4yZn?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(10)",
+        "fecha": "13/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDORES CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Saqué la plantilla para el exhibidor MEGA",
+        "drive": "https://drive.google.com/drive/folders/146WWw86TzKVDprPnSH_PG6GDRESIADKV?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(11)",
+        "fecha": "14/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "761/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "FERIA DE PROVEEDORES",
+        "trello": "Y2LiASpR",
+        "descripcion": "Saqué los Stickers de las letras PROTEX del exhibidor de pentágono de Colgate",
+        "drive": "https://drive.google.com/drive/folders/1A-BnCye30IfGfA9TSpLuzm6sRguF4yZn?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(12)",
+        "fecha": "17/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "761/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "FERIA DE PROVEEDORES",
+        "trello": "Y2LiASpR",
+        "descripcion": "Saqué la orden de producción del acrílico tipo espejo pequeño del glorificador de Colgate",
+        "drive": "https://drive.google.com/drive/folders/1A-BnCye30IfGfA9TSpLuzm6sRguF4yZn?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(13)",
+        "fecha": "18/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "756/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "REVESTIMIENTO BODEGÓN 2 DOCE",
+        "trello": "4Pnytu03",
+        "descripcion": "Entregué la orden completa del mueble Old Parr de Diageo",
+        "drive": "https://drive.google.com/drive/folders/1SuvMu9ylxffdQy7hH240rPmmFydLrlmf?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(14)",
+        "fecha": "19/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "761/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "FERIA DE PROVEEDORES",
+        "trello": "iKI8or8k",
+        "descripcion": "Le entregué la orden del vinil de los stickers que faltan para el mueble de pentágono",
+        "drive": "https://drive.google.com/drive/folders/1A-BnCye30IfGfA9TSpLuzm6sRguF4yZn?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(15)",
+        "fecha": "19/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "938/25",
+        "cliente": "CELIVECA",
+        "tituloProyecto": "PARED GLORIFICADORA Y BARRIL LA CASA DE LA CAÑA",
+        "trello": "1I6oIiUl",
+        "descripcion": "Entregué la orden de producción de la plantilla de Celiveca",
+        "drive": "https://drive.google.com/drive/folders/1Ijw2YiZc5RJkMIc93Phn-8tHvldh7G8m?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(16)",
+        "fecha": "20/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "756/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "REVESTIMIENTO BODEGÓN 2 DOCE",
+        "trello": "4Pnytu03",
+        "descripcion": "Monté la orden de pintura del mueble Old Parr y se la entregué a Ricardo",
+        "drive": "https://drive.google.com/drive/folders/1SuvMu9ylxffdQy7hH240rPmmFydLrlmf?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(17)",
+        "fecha": "21/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "897/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "REVESTIMIENTO SLEDO",
+        "trello": "vQ6wuu69",
+        "descripcion": "Se entregó la orden de producción del mueble de Buchanans",
+        "drive": "https://drive.google.com/drive/folders/1b1fEU6URmGOsZ6YxwI2h2GMZR8wohaaz?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(18)",
+        "fecha": "25/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "773/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "CAJA DE LUZ MEGALICOR LOS PALOS GRANDES",
+        "trello": "6zithg0E",
+        "descripcion": "Entregué a Andrés David y a Pablo la orden de producción de la pared Old Parr",
+        "drive": "https://drive.google.com/drive/folders/1Pst1p5WufdmrNxtr6Yx-qheyuwFe8iaH?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(19)",
+        "fecha": "25/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "958/25",
+        "cliente": "LA ESTRELLA DE ORO",
+        "tituloProyecto": "REVESTIMIENTO PUNTERAS",
+        "trello": "9mGVR4vu",
+        "descripcion": "Entregué la orden de producción de corte de los totems de luz de Estrella de Oro",
+        "drive": "https://drive.google.com/drive/folders/1gvl05UKhS_gc1KOGpNMlKmosge5hhZd_?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(20)",
+        "fecha": "26/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "761/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "FERIA DE PROVEEDORES",
+        "trello": "DaCc4uVh",
+        "descripcion": "Le entregué el vinil del exhibidor de cartón de de Colgate a Pablo",
+        "drive": "https://drive.google.com/drive/folders/1A-BnCye30IfGfA9TSpLuzm6sRguF4yZn?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(21)",
+        "fecha": "26/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "761/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "FERIA DE PROVEEDORES",
+        "trello": "DaCc4uVh",
+        "descripcion": "Entregué la orden del anti coleto a Andrés David",
+        "drive": "https://drive.google.com/drive/folders/1A-BnCye30IfGfA9TSpLuzm6sRguF4yZn?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(22)",
+        "fecha": "26/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "958/25",
+        "cliente": "LA ESTRELLA DE ORO",
+        "tituloProyecto": "REVESTIMIENTO PUNTERAS",
+        "trello": "9mGVR4vu",
+        "descripcion": "Terminé la orden de producción de Estrella de Oro",
+        "drive": "https://drive.google.com/drive/folders/1gvl05UKhS_gc1KOGpNMlKmosge5hhZd_?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(23)",
+        "fecha": "28/11/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "897/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "REVESTIMIENTO SLEDO",
+        "trello": "vQ6wuu69",
+        "descripcion": "Realicé la orden de pintura para el señor Ricardo de Buchanans",
+        "drive": "https://drive.google.com/drive/folders/1b1fEU6URmGOsZ6YxwI2h2GMZR8wohaaz?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  }
+]

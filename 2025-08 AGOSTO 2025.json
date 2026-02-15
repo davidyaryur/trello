@@ -1,0 +1,632 @@
+[
+  {
+    "tableId": 43,
+    "mes": "AGOSTO",
+    "num": 43,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "01/08/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "TENTATIVO 51/25",
+        "cliente": "SANTA TERESA",
+        "tituloProyecto": "BANDEJA PARA BOTELLA 1796",
+        "trello": "9DgTMwbw",
+        "descripcion": "Le envié a Enmary el rendimiento estimado de las bandejas para 1796",
+        "drive": "https://drive.google.com/drive/folders/1hvbzaVfBBIe-f-UlN71ttKWp7SrstKIH?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "04/08/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDOR CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Le envié a Milka el rendimiento para las muestras físicas de los exhibidores de Caledonia",
+        "drive": "https://drive.google.com/drive/folders/1vPG8dummNlZreVHPDOSLsYTb8HsDx_Ai?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "06/08/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "645/25",
+        "cliente": "ASK",
+        "tituloProyecto": "EXHIBIDOR EN CARTÓN PARA LÁPICES",
+        "trello": "KQEKsgnU",
+        "descripcion": "Calculé el rendimiento del exhibidor para lápiz de ASK, se lo envié por correo a Jose y a Milka",
+        "drive": "https://drive.google.com/drive/folders/1NK2Dkida5jKWrNPcWVo_bZPSqHokMfvN?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "07/08/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "648/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDOR REGRESO A CLASES CALEDONIA",
+        "trello": "JStgNu8R",
+        "descripcion": "Envié el rendimiento del exhibidor de cartón para Caledonia Regreso a Clases",
+        "drive": "https://drive.google.com/drive/folders/1y0B9MVJsnqvDmFbKs5lbnwtefLFwdpEm?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "11/08/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "439/25",
+        "cliente": "CAFÉ SAN DOMINGO",
+        "tituloProyecto": "EXHIBIDORES - MATERIAL POP",
+        "trello": "XWEcC8WU",
+        "descripcion": "Calculé con Enmary el rendimiento de las ristras para San Domingo",
+        "drive": "https://drive.google.com/drive/folders/1btbckTYod3M1EMVy3IcrjCVNm8_Ajkmf?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "11/08/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "TENTATIVO 42/25",
+        "cliente": "NESTLÉ",
+        "tituloProyecto": "CORPÓREO PURINA",
+        "trello": "NnLeRx8D",
+        "descripcion": "Le envié a Milka el rendimiento actualizado del corpóreo Purina",
+        "drive": "https://drive.google.com/drive/folders/1d2TYOTxof4g1-jS9di163ejaUka-rUbJ?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(07)",
+        "fecha": "15/08/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "601/25",
+        "cliente": "DELONGHI",
+        "tituloProyecto": "EXHIBIDORES",
+        "trello": "zWSZXG7o",
+        "descripcion": "Le envié a Lorena el rendimiento de la Isla De’Longhi",
+        "drive": "https://drive.google.com/drive/folders/1sZ0mQbPAm56lODvYEq7niZ7Sy2-KVf7m?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(08)",
+        "fecha": "20/08/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "568/25",
+        "cliente": "SCJ",
+        "tituloProyecto": "FIXTURIZACION MUEBLES",
+        "trello": "jjWDt16i",
+        "descripcion": "Le envié a Enmary el rendimiento de los muebles de SCJ",
+        "drive": "https://drive.google.com/drive/folders/1q8VuWROuFPIFN5jAPA7zDE48Abnuos__?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(09)",
+        "fecha": "21/08/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "681/25",
+        "cliente": "NESTLE",
+        "tituloProyecto": "ANTIMERMA SAVOY",
+        "trello": "Sxi5UhcO",
+        "descripcion": "Envié a Milka el Rendimiento del counter de Savoy tanto en cartón 1.5mm como MDF 3mm",
+        "drive": "https://drive.google.com/drive/folders/16dLFktSeyqzLltYZOTllh4DvyvRpfK7I?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(10)",
+        "fecha": "22/08/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "568/25",
+        "cliente": "SCJ",
+        "tituloProyecto": "FIXTURIZACION MUEBLES",
+        "trello": "jjWDt16i",
+        "descripcion": "Le envié a Enmary el rendimiento de los muebles de SCJ",
+        "drive": "https://drive.google.com/drive/folders/1q8VuWROuFPIFN5jAPA7zDE48Abnuos__?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 44,
+    "mes": "AGOSTO",
+    "num": 44,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "05/08/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "601/25",
+        "cliente": "DELONGHI",
+        "tituloProyecto": "EXHIBIDORES",
+        "trello": "zWSZXG7o",
+        "descripcion": "Le envié el video de De’Longhi a Lorena",
+        "drive": "https://drive.google.com/drive/folders/1GvmJmietfcdfONLcWxXX_4f-iOUIKyjs?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "11/08/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "568/25",
+        "cliente": "SCJ",
+        "tituloProyecto": "FIXTURIZACION MUEBLES - VISUAL",
+        "trello": "jjWDt16i",
+        "descripcion": "Envié el video de SCJ a Enmary",
+        "drive": "https://drive.google.com/drive/folders/1KYtXAjSbeyHfGj307-pmm1YShI9jJ52Y?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "11/08/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "650/25",
+        "cliente": "TIGO",
+        "tituloProyecto": "MUEBLES CON PANTALLA",
+        "trello": "7zDLcds4",
+        "descripcion": "Enviar el video de Tigo a Lorena",
+        "drive": "https://drive.google.com/drive/folders/11AdAW6qVPmjNqs7CbqnYqMgjirFDtqdv?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "18/08/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "653/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "EXHIBIDOR 360 NATUCHIPS",
+        "trello": "kxULVaYX",
+        "descripcion": "Envié el visual de la Isla NatuChips a produccionyaryuryaryur",
+        "drive": "https://drive.google.com/drive/folders/1IURLVY_oXhd1ijPsXvgC4vxW-Th2SAxH?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "20/08/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDOR CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Envié a produccionyaryuryaryur el visual del exhibidor de Caledonia",
+        "drive": "https://drive.google.com/drive/folders/1WMpse_ibT7AkB5yhCjNYK2TQCXwvS7le?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "26/08/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "568/25",
+        "cliente": "SCJ",
+        "tituloProyecto": "FIXTURIZACION MUEBLES - VISUAL",
+        "trello": "jjWDt16i",
+        "descripcion": "Le envié a Enmary el visual de los muebles Fixturización de SCJ",
+        "drive": "https://drive.google.com/drive/folders/1KYtXAjSbeyHfGj307-pmm1YShI9jJ52Y?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 45,
+    "mes": "AGOSTO",
+    "num": 45,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "29/08/2025",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "196/25",
+        "cliente": "ALFONZO RIVAS",
+        "tituloProyecto": "EXHIBIDORES DE CARTÓN PARA MAIZORITOS",
+        "trello": "myFhDdNi",
+        "descripcion": "Realicé el plano mecánico en inglés del mueble de Maizoritos",
+        "drive": "https://drive.google.com/drive/folders/17zpmBzVktdUqw-Qav-oFTM7AvXCfNSLf?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 46,
+    "mes": "AGOSTO",
+    "num": 46,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "05/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDOR CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Entregué la orden de muestra física de Caledonia",
+        "drive": "https://drive.google.com/drive/folders/1BtG9xOvrQ-FEnRVTNLBhy-3SdPg6wad1?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "06/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDOR CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Entregué la orden de muestra de color del exhibidor de Caledonia a Pablo",
+        "drive": "https://drive.google.com/drive/folders/1BtG9xOvrQ-FEnRVTNLBhy-3SdPg6wad1?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "07/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDOR CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Monté la orden de muestra de color 2 para el exhibidor de Caledonia",
+        "drive": "https://drive.google.com/drive/folders/1BtG9xOvrQ-FEnRVTNLBhy-3SdPg6wad1?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "11/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDOR CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Saqué letras en acrílico Blanco para Caldonia y monté corte de las tres bandejas del Classic",
+        "drive": "https://drive.google.com/drive/folders/1BtG9xOvrQ-FEnRVTNLBhy-3SdPg6wad1?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "12/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "977/25",
+        "cliente": "HOLLY MASS",
+        "tituloProyecto": "EXHIBIDOR DE PISO GRANDE",
+        "trello": "qTaUCgIw",
+        "descripcion": "Saqué la muestra de color del exhibidor HollyMass",
+        "drive": "https://drive.google.com/drive/folders/1wBXS_eIGYO38Nn_mjCE6iEndkAznEaOa?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "14/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDOR CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Entregué la orden de producción de las piezas adicionales del Clásico de Caldonia",
+        "drive": "https://drive.google.com/drive/folders/1BtG9xOvrQ-FEnRVTNLBhy-3SdPg6wad1?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(07)",
+        "fecha": "20/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDOR CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Le entregué a Pablo la orden de muestra del vinil de Caledonia con el color aprobado y el corte en Summa Cut del vinil LASER",
+        "drive": "https://drive.google.com/drive/folders/1BtG9xOvrQ-FEnRVTNLBhy-3SdPg6wad1?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(08)",
+        "fecha": "22/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDOR CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Monté las plantillas y de nuevo la mica para el mueble de Caledonia",
+        "drive": "https://drive.google.com/drive/folders/1BtG9xOvrQ-FEnRVTNLBhy-3SdPg6wad1?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(09)",
+        "fecha": "25/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDOR CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Terminar de montar las modificaciones que mandó el cliente mueble Clásico de Caledonia",
+        "drive": "https://drive.google.com/drive/folders/1BtG9xOvrQ-FEnRVTNLBhy-3SdPg6wad1?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(10)",
+        "fecha": "26/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "681/25",
+        "cliente": "NESTLE",
+        "tituloProyecto": "ANTIMERMA SAVOY",
+        "trello": "Sxi5UhcO",
+        "descripcion": "Entregué la orden de corte del cartón y la mica del exhibidor antimerma de Savoy",
+        "drive": "https://drive.google.com/drive/folders/1pG1TPBBS4IAEbpZNePui27WYDSzHspIz?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(11)",
+        "fecha": "27/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "681/25",
+        "cliente": "NESTLE",
+        "tituloProyecto": "ANTIMERMA SAVOY",
+        "trello": "Sxi5UhcO",
+        "descripcion": "Le entregué a Pablo el vinil de la muestra del exhibidor Antimerma de Savoy",
+        "drive": "https://drive.google.com/drive/folders/1pG1TPBBS4IAEbpZNePui27WYDSzHspIz?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(12)",
+        "fecha": "29/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "681/25",
+        "cliente": "NESTLE",
+        "tituloProyecto": "ANTIMERMA SAVOY",
+        "trello": "Sxi5UhcO",
+        "descripcion": "Entregué la orden de Cartón y Celtec de 3mm del exhibidor antimerma de Savoy",
+        "drive": "https://drive.google.com/drive/folders/1pG1TPBBS4IAEbpZNePui27WYDSzHspIz?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 47,
+    "mes": "AGOSTO",
+    "num": 47,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "07/08/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "196/25",
+        "cliente": "ALFONZO RIVAS",
+        "tituloProyecto": "EXHIBIDORES DE CARTÓN PARA MAIZORITOS",
+        "trello": "myFhDdNi",
+        "descripcion": "Monté la orden de producción de los 50 muebles de Maizoritos, la entregué y subí al Drive",
+        "drive": "https://drive.google.com/drive/folders/1H9WGHc3cj0fju7AmI-5LB4YxQk7Lp2GA?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "12/08/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "652/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "CHECKOUT NATUCHIPS LOMAS DEL SOL",
+        "trello": "9ZCYkQm2",
+        "descripcion": "Entregué la orden de producción del mueble CheckOut indicando que son 2",
+        "drive": "https://drive.google.com/drive/folders/1uhtk1WumDduz98TPsQxMA6PAvnMRQi8q?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "12/08/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "627/25",
+        "cliente": "KRON",
+        "tituloProyecto": "EXHIBIDORES DE MESA TRONKOLATE REPETICIÓN",
+        "trello": "39GcVUe2",
+        "descripcion": "Le entregué a Diego la orden de producción de KRON con la ruta actualizada 2025",
+        "drive": "https://drive.google.com/drive/folders/10FY9HUN4hqOQa6Ntvo6287zK5YwM2TS6?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "13/08/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "560/25",
+        "cliente": "CELIVECA",
+        "tituloProyecto": "GLORIFICADOR BARRICA CASA RES",
+        "trello": "e6QfboUU",
+        "descripcion": "Le entregué a Andrés David la orden de corte de la melamina de Barrica",
+        "drive": "https://drive.google.com/drive/folders/19aiZ8ArFI1uGtpyUYK8k1zZ__Zq00sjJ?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "14/08/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "653/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "EXHIBIDOR 360 NATUCHIPS",
+        "trello": "kxULVaYX",
+        "descripcion": "Entregué la orden de producción del MDF de la Isla de NatuChips",
+        "drive": "https://drive.google.com/drive/folders/1lDthPH75sE-3HMer4DpdO3kqicB-sYov?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "15/08/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "652/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "CHECKOUT NATUCHIPS LOMAS DEL SOL",
+        "trello": "9ZCYkQm2",
+        "descripcion": "Entregué la orden de producción de los tubos parachoques, vinil y acrílico transparente de NatuChips",
+        "drive": "https://drive.google.com/drive/folders/1uhtk1WumDduz98TPsQxMA6PAvnMRQi8q?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(07)",
+        "fecha": "19/08/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "653/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "EXHIBIDOR 360 NATUCHIPS",
+        "trello": "kxULVaYX",
+        "descripcion": "Entregué a Pablo el vinil de la Isla de NatuChips",
+        "drive": "https://drive.google.com/drive/folders/1lDthPH75sE-3HMer4DpdO3kqicB-sYov?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(08)",
+        "fecha": "27/08/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "652/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "CHECKOUT NATUCHIPS",
+        "trello": "9ZCYkQm2",
+        "descripcion": "Monté la orden de producción de los preciarios de Pepsico",
+        "drive": "https://drive.google.com/drive/folders/1uhtk1WumDduz98TPsQxMA6PAvnMRQi8q?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 48,
+    "mes": "AGOSTO",
+    "num": 48,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "04/08/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "568/25",
+        "cliente": "SCJ",
+        "tituloProyecto": "FIXTURIZACION MUEBLES - VISUAL",
+        "trello": "jjWDt16i",
+        "descripcion": "Enmary me entregó la autorización de Visual 2 para SCJ (66)",
+        "drive": "https://drive.google.com/drive/folders/1KYtXAjSbeyHfGj307-pmm1YShI9jJ52Y?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(02)",
+        "fecha": "07/08/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "602/25",
+        "cliente": "GRUPO LETI",
+        "tituloProyecto": "MATERIAL NUEVO LANZAMIENTO NAFALEX CONFIDENCIAL",
+        "trello": "asTHEJXg",
+        "descripcion": "Recibí de Virley la Autorización de Visual de 602/25 Nuevo lanzamiento Grupo Leti (67)",
+        "drive": "https://drive.google.com/drive/folders/1zk7HewfoSrHlK7FO2IALxDuYldux2nMj?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "08/08/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "644/25",
+        "cliente": "MONACA",
+        "tituloProyecto": "REVESTIMIENTOS DE ANAQUEL MULTIMARCA",
+        "trello": "nKeS8GDt",
+        "descripcion": "Recibí de parte de Virley la autorización número (68)",
+        "drive": "https://drive.google.com/drive/folders/1tYhAjucUetPr61TEgPvQ44CPDfqyVwoo?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(04)",
+        "fecha": "12/08/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "650/25",
+        "cliente": "TIGO",
+        "tituloProyecto": "MUEBLES CON PANTALLA",
+        "trello": "7zDLcds4",
+        "descripcion": "Verónica me entregó la autorización de visual de TIGO (69)",
+        "drive": "https://drive.google.com/drive/folders/11AdAW6qVPmjNqs7CbqnYqMgjirFDtqdv?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "12/08/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "460/25",
+        "cliente": "GRUPO LETI",
+        "tituloProyecto": "MATERIAL MAGNESIO",
+        "trello": "jYKVwWb8",
+        "descripcion": "Recibí de parte de Eider la autorización de Visual de 460/25 Grupo Leti Magnesio (70)",
+        "drive": "https://drive.google.com/drive/folders/122VsrGGALfjABt5LqfftXl6HEY5zAzEQ?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "13/08/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "665/25",
+        "cliente": "PONCHE CREMA",
+        "tituloProyecto": "STAND MODULARES",
+        "trello": "4iggHmn4",
+        "descripcion": "Recibí de parte de Enmary la autorización de visual del proyecto 665/25 Ponche Crema (71)",
+        "drive": "https://drive.google.com/drive/folders/1ejLG1vgn-u4vO-5clT1uqu-mImUBGFp5?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(07)",
+        "fecha": "13/08/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "663/25",
+        "cliente": "SANTA TERESA",
+        "tituloProyecto": "MINI TROLLY 1796",
+        "trello": "nqA2UmMn",
+        "descripcion": "Recibí de parte de Enmary la autorización de visual del proyecto 663/25 Santa Teresa (72)",
+        "drive": "https://drive.google.com/drive/folders/1AcULfqqD2aCv1k2UdeMDwuGwGjlBeGnz?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(08)",
+        "fecha": "25/08/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "568/25",
+        "cliente": "SCJ",
+        "tituloProyecto": "FIXTURIZACION MUEBLES - VISUAL",
+        "trello": "jjWDt16i",
+        "descripcion": "Recibí de parte de Vanessa la autorización de Visual de SCJ (73)",
+        "drive": "https://drive.google.com/drive/folders/1KYtXAjSbeyHfGj307-pmm1YShI9jJ52Y?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(09)",
+        "fecha": "26/08/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "326/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "CABEZALES EQUITY",
+        "trello": "6lYLg42s",
+        "descripcion": "Recibí de parte de Vanessa la autorización de visual 326/25 Colgate Cabezal Equity (74)",
+        "drive": "https://drive.google.com/drive/folders/1NGGizD66adWH-jak7mNL8zaAjkSWkMfI?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(10)",
+        "fecha": "26/08/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "569/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "REVESTIMIENTO DE CABEZALES TOTAL A LW MISS VENEZUELA",
+        "trello": "edwcE5dG",
+        "descripcion": "Recibí de parte de Vanessa la autorización de visual 569/25 Colgate Revestimiento (75)",
+        "drive": "https://drive.google.com/drive/folders/1qnoqJ6mHcch2kPexSGGX0P_j_TXnPXNo?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(11)",
+        "fecha": "28/08/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "708/25",
+        "cliente": "CRUSTISSIMO",
+        "tituloProyecto": "PIEZAS DE NAVIDAD PANETTONE Y PANDORO",
+        "trello": "3YbYWti0",
+        "descripcion": "Recibí de parte de Enmary la autorización de Visual Crustissimo de Navidad para Andrea (76)",
+        "drive": "https://drive.google.com/drive/folders/1Fb879kCKZHknnPHJnRJeyhbO-5rnp0tA?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(12)",
+        "fecha": "29/08/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "666/25",
+        "cliente": "CERVECERIA POLAR",
+        "tituloProyecto": "PUNTERA GAMA SANTA EDUVIGIS",
+        "trello": "NGDQqdTt",
+        "descripcion": "Recibí de parte de Zaida la autorización de visual Cervecería Polar Gama (77)",
+        "drive": "https://drive.google.com/drive/folders/1NxA92iS4FuCc5oSl_oYpTp3CET99WBT0?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  }
+]

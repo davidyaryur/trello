@@ -1,0 +1,241 @@
+[
+  {
+    "tableId": 67,
+    "mes": "DICIEMBRE",
+    "num": 67,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "08/12/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "1043/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "PIEZAS TROPICAL",
+        "trello": "z1eigaKJ",
+        "descripcion": "Envié el rendimiento de las piezas tropical de Diageo a Lorena",
+        "drive": "https://drive.google.com/drive/folders/1wXTV_jW_TZUMBRgnzPsnbt8XhHJwTGjU?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(02)",
+        "fecha": "11/12/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "1048/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "PROMOCIÓN FÚTBOL",
+        "trello": "UcmZkMen",
+        "descripcion": "Le envié a Lorena el rendimiento del mueble 360° Diageo FIFA 26",
+        "drive": "https://drive.google.com/drive/folders/18Xjgbkgc2d6HJxtgCoKjsE2BxSrAYwuo?usp=drive_link",
+        "check": "FALTA"
+      }
+    ]
+  },
+  {
+    "tableId": 68,
+    "mes": "DICIEMBRE",
+    "num": 68,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "08/12/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "1014/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "SENSORES DE MOVIMIENTOS",
+        "trello": "3moUC9q5",
+        "descripcion": "Realicé el video explicativo del altvoz con sensor de movimiento, se lo envié a Milka",
+        "drive": "https://drive.google.com/drive/folders/1mRf-CNUTdmMEgLB_jSsrVEaUegMeM9GG?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(02)",
+        "fecha": "09/12/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "462/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL",
+        "trello": "KTrjOpTQ",
+        "descripcion": "Le envié a Lorena el visual modificado de NatuChips 7Up",
+        "drive": "https://drive.google.com/drive/folders/1Cieojek1a3RWc25Z5D-4jZmeRQ2fyfDn?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "10/12/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "813/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "CABEZALES 2DO LOTE - CANAL MODERNO Y TRADICIONAL - REGIÓN ORIENTE",
+        "trello": "6eOyfBE6",
+        "descripcion": "Le envié a Milka y a José Gabriel el video de la linea de tiempo de Alimentos Mary",
+        "drive": "https://drive.google.com/drive/folders/1YFn31TxUSW7SGQkpaSH2WbtVO6K8rbZ8?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(04)",
+        "fecha": "11/12/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "1048/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "PROMOCIÓN FÚTBOL",
+        "trello": "UcmZkMen",
+        "descripcion": "Le envié a Lorena el visual del mueble 360° Diageo FIFA 26",
+        "drive": "https://drive.google.com/drive/folders/1Y8dc-_UrFu3W1JGsFF-ulFrCjjEFWvri?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(05)",
+        "fecha": "12/12/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "462/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL",
+        "trello": "KTrjOpTQ",
+        "descripcion": "Le envié a Lorena el visual modificado de NatuChips 7Up",
+        "drive": "https://drive.google.com/drive/folders/1Cieojek1a3RWc25Z5D-4jZmeRQ2fyfDn?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "15/12/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "1051/25",
+        "cliente": "GRUPO LETI",
+        "tituloProyecto": "EXH/GLORIFICADOR FIBERFIT PLUS",
+        "trello": "1eiwrEEF",
+        "descripcion": "Visual del Glorificador de Grupo Leti Fiber Fit Plus",
+        "drive": "https://drive.google.com/drive/folders/1Ck8zKcperz-Jrcak_FiqWokARW2uZyO_?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(07)",
+        "fecha": "15/12/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "1048/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "PROMOCIÓN FÚTBOL",
+        "trello": "UcmZkMen",
+        "descripcion": "Visual del exhibidor de piso de arco de Buchanans FIFA 26",
+        "drive": "https://drive.google.com/drive/folders/1Y8dc-_UrFu3W1JGsFF-ulFrCjjEFWvri?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(08)",
+        "fecha": "18/12/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "1048/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "PROMOCIÓN FÚTBOL",
+        "trello": "UcmZkMen",
+        "descripcion": "Le envié a Lorena el visual de la primera y segunda propuesta de los muebles para FIFA Diageo con sus dimensiones",
+        "drive": "https://drive.google.com/drive/folders/1Y8dc-_UrFu3W1JGsFF-ulFrCjjEFWvri?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 69,
+    "mes": "DICIEMBRE",
+    "num": 69,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "12/12/2025",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "1048/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "PROMOCIÓN FÚTBOL",
+        "trello": "UcmZkMen",
+        "descripcion": "Le envié a Lorena el plano mecánico del cabezal del mueble 360 Diageo FIFA 26",
+        "drive": "https://drive.google.com/drive/folders/1NMoFNLDbxcWDbgHo6m4Bz0qHJebCGufZ?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(02)",
+        "fecha": "12/12/2025",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDORES CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Le envié a Milka el plano mecánico de dimensiones del mueble MEGA Caledonia",
+        "drive": "https://drive.google.com/drive/folders/1-qWwKH8gHaxgbPAmJwqChhOsaVu_qbNC?usp=drive_link",
+        "check": "FALTA"
+      }
+    ]
+  },
+  {
+    "tableId": 71,
+    "mes": "DICIEMBRE",
+    "num": 71,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "01/12/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "1005/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERA DINAMITA PÁRAMO PALO VERDE",
+        "trello": "afnQnWy3",
+        "descripcion": "Orden de producción de 1005/25 Dinamita",
+        "drive": "https://drive.google.com/drive/folders/19sHiE0DBM7uviB449cwRTDczpgD2rKUC?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "02/12/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "1004/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERA CHEESE TRIS PÁRAMO PETARE",
+        "trello": "dcNaTeaK",
+        "descripcion": "Orden de producción de 1004/25 Cheese Tris",
+        "drive": "https://drive.google.com/drive/folders/1hMrH4ev1WtYP3HfxOsb3lHGF8Exr8FuV?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "03/12/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "1006/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERA DORITOS REDVITAL LA URBINA",
+        "trello": "DVM3tXZJ",
+        "descripcion": "Orden de producción de 1006/25 Cheese Tris",
+        "drive": "https://drive.google.com/drive/folders/1HLCHeduSaW7mQRKPuHhiVdz8oVJKvtO3?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "04/12/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "1006/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERA DORITOS REDVITAL LA URBINA",
+        "trello": "DVM3tXZJ",
+        "descripcion": "Orden de producción de 1006/25 Doritos",
+        "drive": "https://drive.google.com/drive/folders/1HLCHeduSaW7mQRKPuHhiVdz8oVJKvtO3?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 72,
+    "mes": "DICIEMBRE",
+    "num": 72,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "09/12/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "1048/25",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "PROMOCIÓN FÚTBOL",
+        "trello": "UcmZkMen",
+        "descripcion": "Recibí de parte de Verónica la autorización de visual del mueble Diageo FIFA 26",
+        "drive": "https://drive.google.com/drive/folders/1Y8dc-_UrFu3W1JGsFF-ulFrCjjEFWvri?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  }
+]
