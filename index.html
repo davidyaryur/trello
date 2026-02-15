@@ -3,208 +3,1078 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos de Inversión Yar-Yur 2025</title>
-    <!-- Tailwind CSS para un diseño moderno y adaptable -->
+    <title>Proyectos Yar-Yur</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
-        /* Estilos personalizados */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* Color de fondo gris claro */
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Animaciones */
+        .fade-in-up { animation: fadeInUp 0.5s ease-out forwards; }
+        .fade-in { animation: fadeIn 0.3s ease-out forwards; }
+        .slide-in-right { animation: slideInRight 0.3s ease-out forwards; }
+        
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideInRight { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+        
+        /* Scrollbars */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 10px; }
+        
+        /* Colores Categorías (Puntos Brillantes) */
+        .dot-rendimiento { background-color: #2563eb; color: white; box-shadow: 0 0 8px rgba(37, 99, 235, 0.4); }
+        .dot-visual { background-color: #16a34a; color: white; box-shadow: 0 0 8px rgba(22, 163, 74, 0.4); }
+        .dot-plano { background-color: #9333ea; color: white; box-shadow: 0 0 8px rgba(147, 51, 234, 0.4); }
+        .dot-muestra { background-color: #ea580c; color: white; box-shadow: 0 0 8px rgba(234, 88, 12, 0.4); }
+        .dot-produccion { background-color: #be123c; color: white; box-shadow: 0 0 8px rgba(190, 18, 60, 0.4); }
+        
+        /* Estado "Apagado" para el efecto de foco */
+        .dot-dimmed { background-color: #e2e8f0 !important; color: #94a3b8 !important; box-shadow: none !important; transform: scale(0.9); transition: all 0.3s ease; }
+        /* Estado "Encendido" */
+        .dot-active { transform: scale(1.3); z-index: 20; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+        /* Loader */
+        .loader {
+            border: 3px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 3px solid #3b82f6;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
         }
-        /* Estilo para la barra de búsqueda */
-        #searchInput:focus {
-            box-shadow: 0 0 0 2px #3b82f6; /* Sombra azul al enfocar */
-            border-color: #3b82f6;
-        }
-        /* Animación suave para las filas de la tabla */
-        .table-row-fade-in {
-            animation: fadeIn 0.5s ease-out forwards;
-            opacity: 0;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        /* Resaltado */
+        .highlight-text {
+            background-color: #fef08a;
+            color: #1e293b;
+            padding: 0 2px;
+            border-radius: 2px;
+            font-weight: 600;
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="bg-white text-slate-800 h-screen w-screen overflow-hidden flex flex-col relative">
 
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <header class="text-center mb-10">
-            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">Visor de Fichas de Proyectos</h1>
-            <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">Proyectos de Inversiones Yar-Yur 2025</p>
+    <div id="loading-indicator" class="fixed top-4 right-4 bg-white shadow-md rounded-full px-4 py-2 flex items-center gap-3 z-50 text-sm font-medium text-slate-500 transition-opacity opacity-0 pointer-events-none">
+        <div class="loader"></div>
+        <span id="loading-text">Indexando archivos...</span>
+    </div>
+
+    <div id="search-view" class="absolute inset-0 z-30 flex flex-col items-center justify-center p-6 transition-all duration-500 ease-in-out bg-white">
+        <div class="w-full max-w-2xl text-center fade-in-up">
+            <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-8 tracking-tight">Proyectos <span class="text-amber-500">Yar-Yur</span></h1>
+            <div class="relative group">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <svg class="h-6 w-6 text-slate-400 group-focus-within:text-amber-500 transition-colors" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <input type="text" id="main-search-input" disabled
+                    class="block w-full pl-12 pr-4 py-4 text-lg bg-slate-50 border-2 border-slate-200 rounded-2xl focus:outline-none focus:border-amber-500 focus:bg-white focus:ring-4 focus:ring-amber-500/10 transition-all shadow-sm placeholder-slate-400 disabled:opacity-50 disabled:cursor-not-allowed" 
+                    placeholder="Buscar..." autocomplete="off">
+            </div>
+            </div>
+    </div>
+
+    <div id="results-view" class="absolute inset-0 z-20 bg-slate-50 flex flex-col translate-y-full transition-transform duration-500 ease-in-out">
+        <header class="bg-white border-b border-slate-200 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 shrink-0 shadow-sm relative">
+            <div class="flex items-center gap-4 flex-1">
+                <button onclick="closeResults()" class="p-2 -ml-2 text-slate-500 hover:text-slate-800 hover:bg-slate-100 rounded-full transition-colors group" title="Ir al inicio">
+                    <svg class="w-6 h-6 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                </button>
+                <div>
+                    <h2 class="text-xl font-bold text-slate-800" id="results-title">Resultados</h2>
+                    <p class="text-xs text-slate-500" id="results-subtitle">Selecciona un cliente</p>
+                </div>
+            </div>
+            
+            <div id="client-filter-container" class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 hidden md:block"></div>
+            
+            <div class="flex items-center gap-3 w-full md:w-auto">
+                <div class="w-full md:w-64 relative">
+                     <svg class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <input type="text" id="header-search-input" 
+                        class="w-full pl-9 pr-4 py-2 bg-slate-100 border-none rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all"
+                        placeholder="Nueva búsqueda...">
+                </div>
+            </div>
+             <div id="client-filter-container-mobile" class="md:hidden w-full flex justify-center"></div>
         </header>
+        <main class="flex-1 overflow-y-auto p-4 md:p-8 custom-scrollbar">
+            <div id="results-container" class="max-w-4xl mx-auto fade-in"></div>
+        </main>
+    </div>
 
-        <main>
-            <!-- Contenedor principal con sombra y bordes redondeados -->
-            <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
-                <div class="p-6 border-b border-gray-200">
-                    <!-- Barra de búsqueda -->
-                    <div class="relative">
-                        <input
-                            type="text"
-                            id="searchInput"
-                            placeholder="Buscar por nombre de ficha..."
-                            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow"
-                        >
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                            </svg>
-                        </div>
+    <div id="project-list-view" class="absolute inset-0 z-30 bg-slate-50 flex flex-col translate-x-full transition-transform duration-300 ease-in-out">
+        <header class="bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between shrink-0 shadow-sm relative">
+            <div class="flex items-center gap-4">
+                <button onclick="closeProjectListView()" class="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-slate-200 hover:border-blue-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Atrás
+                </button>
+                <div class="border-l border-slate-200 pl-4 h-8 flex items-center">
+                    <h2 class="text-xl font-bold text-slate-800" id="project-list-title">Proyectos</h2>
+                </div>
+            </div>
+            <div id="project-filter-container" class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 hidden md:block"></div>
+            <div class="w-20"></div>
+        </header>
+        <div id="project-filter-container-mobile" class="md:hidden w-full flex justify-center bg-white pb-2 border-b border-slate-100"></div>
+
+        <main class="flex-1 overflow-y-auto p-4 md:p-8 custom-scrollbar">
+            <div id="project-list-container" class="max-w-4xl mx-auto space-y-3 fade-in"></div>
+        </main>
+    </div>
+
+    <div id="final-view" class="absolute inset-0 z-40 bg-slate-50 flex flex-col translate-x-full transition-transform duration-300 ease-in-out">
+        <header class="bg-white border-b border-slate-200 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 shrink-0 shadow-sm z-50 relative">
+            <div class="flex items-center gap-4 flex-1">
+                <button onclick="closeFinalView()" class="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-slate-200 hover:border-blue-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Atrás
+                </button>
+                
+                <div class="border-l border-slate-200 pl-4 flex flex-col justify-center">
+                    <h2 class="text-lg font-bold text-slate-800 leading-tight" id="final-view-title">Proyecto</h2>
+                    <div class="flex items-center gap-3 mt-1">
+                        <div id="final-view-links" class="flex items-center gap-2"></div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Mensaje de carga -->
-                <div id="loadingMessage" class="text-center p-10">
-                    <p class="text-gray-500">Cargando proyectos...</p>
-                </div>
-
-                <!-- Mensaje de error -->
-                <div id="errorMessage" class="hidden text-center p-10 bg-red-50 text-red-700">
-                    <p><strong>Error:</strong> No se pudo cargar el archivo de datos. Asegúrate de que el archivo <code>proyectos-inversiones-yar-yur-2025.json</code> se encuentre en la misma carpeta.</p>
-                </div>
-
-                <!-- Tabla de datos -->
-                <div class="overflow-x-auto">
-                    <table id="projectsTable" class="min-w-full divide-y divide-gray-200 hidden">
-                        <thead class="bg-gray-50">
-                            <tr>
-                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Nombre de la Ficha
-                                </th>
-                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Enlace
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody id="tableBody" class="bg-white divide-y divide-gray-200">
-                            <!-- Las filas se insertarán aquí dinámicamente -->
-                        </tbody>
-                    </table>
-                     <div id="noResultsMessage" class="hidden text-center p-10">
-                        <p class="text-gray-500">No se encontraron fichas que coincidan con la búsqueda.</p>
+            <div id="active-search-filter-container" class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 hidden md:block"></div>
+            
+            <div id="category-filters" class="flex flex-wrap gap-2 text-xs font-bold transition-all duration-300"></div>
+        </header>
+        
+        <main class="flex-1 overflow-hidden">
+            <div class="h-full max-w-7xl mx-auto p-4 md:p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-2 flex flex-col h-full bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden slide-in-right">
+                    <div class="p-4 border-b border-slate-100 bg-slate-50 flex justify-between items-center">
+                        <span class="font-bold text-slate-700 text-sm uppercase tracking-wide">Historia del Proyecto</span>
+                        <span id="entries-count-badge" class="text-xs bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full"></span>
                     </div>
+                    <div id="final-entries-container" class="flex-1 overflow-y-auto custom-scrollbar p-4 space-y-4"></div>
+                </div>
+                <div class="flex flex-col h-full bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden slide-in-right" style="animation-delay: 0.1s;">
+                    <div class="p-4 border-b border-slate-100 bg-slate-50 flex justify-between items-center">
+                        <span class="font-bold text-slate-700 text-sm uppercase tracking-wide">Calendario</span>
+                    </div>
+                    <div id="final-calendar-container" class="flex-1 overflow-y-auto custom-scrollbar p-6 flex flex-col items-center gap-8 scroll-smooth relative"></div>
                 </div>
             </div>
         </main>
     </div>
 
     <script>
-        // Event listener que se ejecuta cuando el contenido del DOM ha sido cargado.
-        document.addEventListener('DOMContentLoaded', () => {
-            const tableBody = document.getElementById('tableBody');
-            const projectsTable = document.getElementById('projectsTable');
-            const loadingMessage = document.getElementById('loadingMessage');
-            const errorMessage = document.getElementById('errorMessage');
-            const searchInput = document.getElementById('searchInput');
-            const noResultsMessage = document.getElementById('noResultsMessage');
+        // --- CONFIGURACIÓN DE ARCHIVOS ---
+        const PERSONAL_FILES = [
+            '2025-01 ENERO 2025.json', 
+            '2025-02 FEBRERO 2025.json',
+            '2025-03 MARZO 2025.json',
+            '2025-04 ABRIL 2025.json',
+            '2025-05 MAYO 2025.json',
+            '2025-06 JUNIO 2025.json',
+            '2025-07 JULIO 2025.json',
+            '2025-08 AGOSTO 2025.json',
+            '2025-09 SEPTIEMBRE 2025.json',
+            '2025-10 OCTUBRE 2025.json',
+            '2025-11 NOVIEMBRE 2025.json',
+            '2025-12 DICIEMBRE 2025.json',
+            '2026-01 ENERO 2026.json', 
+            '2026-02 FEBRERO 2026.json',
+            '2026-03 MARZO 2026.json',
+            '2026-04 ABRIL 2026.json',
+            '2026-05 MAYO 2026.json',
+            '2026-06 JUNIO 2026.json',
+            '2026-07 JULIO 2026.json',
+            '2026-08 AGOSTO 2026.json',
+            '2026-09 SEPTIEMBRE 2026.json',
+            '2026-10 OCTUBRE 2026.json',
+            '2026-11 NOVIEMBRE 2026.json',
+            '2026-12 DICIEMBRE 2026.json'
+        ];
+        const COMPANY_FILES = [
+            'proyectos-inversiones-yar-yur-2022.json', 
+            'proyectos-inversiones-yar-yur-2023.json',
+            'proyectos-inversiones-yar-yur-2024.json',
+            'proyectos-inversiones-yar-yur-2025.json',
+            'proyectos-inversiones-yar-yur-2026.json'
+        ];
 
-            // URL del archivo JSON. Debe estar en la misma carpeta que este archivo HTML.
-            const jsonUrl = './sraYSNS4 - proyectos-inversiones-yar-yur-2025.json';
+        // --- COLORES ---
+        const GRAY_STYLE = 'bg-slate-100 text-slate-600 border-slate-200';
+        const TRELLO_COLORS = {
+            'lime': GRAY_STYLE, 'yellow': GRAY_STYLE, 'orange': GRAY_STYLE, 'red': GRAY_STYLE,
+            'purple': GRAY_STYLE, 'blue': GRAY_STYLE, 'sky': GRAY_STYLE, 'pink': GRAY_STYLE,
+            'green': GRAY_STYLE, 'black': 'bg-slate-800 text-white border-slate-900', 'default': GRAY_STYLE
+        };
 
-            // Función para extraer el primer enlace de la descripción de una ficha.
-            function extractLinkFromDesc(description) {
-                if (!description) return null;
-                // Expresión regular para encontrar URLs dentro de markdown `()` o URLs directas.
-                const urlRegex = /\((https?:\/\/[^\s)]+)\)|(https?:\/\/[^\s]+)/;
-                const match = description.match(urlRegex);
-                return match ? (match[1] || match[2]) : null;
+        const CAT_STYLES = {
+            'RENDIMIENTO': { 
+                card: 'bg-blue-100 border-blue-200 hover:border-blue-500 hover:ring-1 hover:ring-blue-500 hover:shadow-md', 
+                badge: 'bg-white text-blue-700 border-blue-200', 
+                dotClass: 'dot-rendimiento', 
+                btnColor: 'bg-blue-600 hover:bg-blue-700' 
+            },
+            'VISUAL': { 
+                card: 'bg-green-100 border-green-200 hover:border-green-500 hover:ring-1 hover:ring-green-500 hover:shadow-md', 
+                badge: 'bg-white text-green-700 border-green-200', 
+                dotClass: 'dot-visual', 
+                btnColor: 'bg-green-600 hover:bg-green-700' 
+            },
+            'PLANO MECÁNICO': { 
+                card: 'bg-purple-100 border-purple-200 hover:border-purple-500 hover:ring-1 hover:ring-purple-500 hover:shadow-md', 
+                badge: 'bg-white text-purple-700 border-purple-200', 
+                dotClass: 'dot-plano', 
+                btnColor: 'bg-purple-600 hover:bg-purple-700' 
+            },
+            'MUESTRA': { 
+                card: 'bg-orange-100 border-orange-200 hover:border-orange-500 hover:ring-1 hover:ring-orange-500 hover:shadow-md', 
+                badge: 'bg-white text-orange-700 border-orange-200', 
+                dotClass: 'dot-muestra', 
+                btnColor: 'bg-orange-500 hover:bg-orange-600' 
+            },
+            'PRODUCCIÓN': { 
+                card: 'bg-rose-100 border-rose-200 hover:border-rose-500 hover:ring-1 hover:ring-rose-500 hover:shadow-md', 
+                badge: 'bg-white text-rose-800 border-rose-200', 
+                dotClass: 'dot-produccion', 
+                btnColor: 'bg-rose-800 hover:bg-rose-900' 
+            },
+            'OTRO': { 
+                card: 'bg-slate-100 border-slate-200 hover:border-slate-500 hover:ring-1 hover:ring-slate-500 hover:shadow-md', 
+                badge: 'bg-white text-slate-600 border-slate-200', 
+                dotClass: 'bg-slate-400 text-white', 
+                btnColor: 'bg-slate-500 hover:bg-slate-600' 
+            }
+        };
+
+        const MONTH_NAMES = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"];
+
+        // --- ESTADO GLOBAL ---
+        let mergedData = []; 
+        let activeSearchQuery = '';
+        let currentClientName = '';
+        let projectGroupsCache = {}; 
+        let activeCategoryFilter = null;
+        
+        let isClientListFiltered = true; 
+        let isProjectListFiltered = true;
+        let isFinalViewFiltered = true;
+        
+        let viewMode = 'CLIENT'; // 'CLIENT' o 'YEAR'
+        let activeYearFilter = '';
+
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const mainInput = document.getElementById('main-search-input');
+        const headerInput = document.getElementById('header-search-input');
+        const resultsView = document.getElementById('results-view');
+        const searchView = document.getElementById('search-view');
+        const projectListView = document.getElementById('project-list-view');
+        const finalView = document.getElementById('final-view');
+        const resultsContainer = document.getElementById('results-container');
+        const projectListContainer = document.getElementById('project-list-container');
+        const finalCalendarContainer = document.getElementById('final-calendar-container');
+        
+        // --- UTILS BÚSQUEDA ---
+        function normalizeStr(str) {
+            return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+        }
+
+        window.onload = loadAllData;
+
+        // --- FUNCIÓN DE CARGA ---
+        async function loadAllData() {
+            loadingIndicator.style.opacity = '1';
+            try {
+                // 1. Preparar promesas para Archivos Personales
+                const personalPromises = PERSONAL_FILES.map(file => 
+                    fetch(file)
+                        .then(r => {
+                            if (!r.ok) throw new Error(`HTTP error ${r.status}`);
+                            return r.json();
+                        })
+                        .catch(err => {
+                            console.error(`Error cargando archivo personal: ${file}`, err);
+                            return null;
+                        })
+                );
+
+                // 2. Preparar promesas para Archivos de Empresa
+                const companyPromises = COMPANY_FILES.map(file => 
+                    fetch(file)
+                        .then(r => {
+                            if (!r.ok) throw new Error(`HTTP error ${r.status}`);
+                            return r.json();
+                        })
+                        .catch(err => {
+                            console.error(`Error cargando archivo empresa: ${file}`, err);
+                            return null;
+                        })
+                );
+                
+                // 3. Esperar a que TODO termine
+                const [personalResults, companyResults] = await Promise.all([
+                    Promise.all(personalPromises),
+                    Promise.all(companyPromises)
+                ]);
+                
+                // 4. Filtrar nulos y procesar
+                const validPersonal = personalResults.filter(d => d !== null);
+                const validCompany = companyResults.filter(d => d !== null);
+
+                processAndMergeData(validPersonal, validCompany);
+                
+                mainInput.disabled = false;
+                mainInput.focus();
+            } catch (e) {
+                console.error("Error fatal iniciando la app:", e);
+                mainInput.placeholder = "Error al conectar con archivos locales.";
+            } finally {
+                loadingIndicator.style.opacity = '0';
+            }
+        }
+
+        function processAndMergeData(personalRawList, companyRawList) {
+            let flatPersonal = [];
+            
+            // --- CORRECCIÓN AQUÍ PARA LEER EL ARRAY DE TABLAS ---
+            if (Array.isArray(personalRawList)) {
+                // Iteramos sobre cada archivo (que es una lista de tablas)
+                personalRawList.forEach(fileContent => {
+                    // Verificamos si el contenido del archivo es un Array
+                    if (Array.isArray(fileContent)) {
+                        // Iteramos sobre las TABLAS dentro de ese archivo
+                        fileContent.forEach(table => {
+                            if (table && table.proyectos && Array.isArray(table.proyectos)) {
+                                table.proyectos.forEach(p => {
+                                    if (!p.trabajoDiseno) return;
+                                    if (p.trabajoDiseno.toUpperCase().includes('AUTORIZA')) return;
+                                    
+                                    const searchText = `${p.cliente || ''} ${p.tituloProyecto || ''} ${p.numeroProyecto || ''} ${p.descripcion || ''} ${p.check || ''}`;
+                                    // Pasamos el mes si existe en la tabla
+                                    flatPersonal.push({ ...p, mesGrupo: table.mes, searchIndex: searchText });
+                                });
+                            }
+                        });
+                    }
+                });
             }
 
-            // Usamos fetch para obtener los datos del archivo JSON.
-            fetch(jsonUrl)
-                .then(response => {
-                    // Si la respuesta no es OK (ej. 404), lanzamos un error.
-                    if (!response.ok) {
-                        throw new Error(`Error en la red: ${response.statusText}`);
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    // Ocultamos el mensaje de carga y mostramos la tabla.
-                    loadingMessage.style.display = 'none';
-                    projectsTable.style.display = 'table';
+            let companyProjectsMap = {}; 
+            
+            companyRawList.forEach((compData, idx) => {
+                if (!compData) return;
 
-                    // Verificamos si existen las fichas (cards) en los datos.
-                    const cards = data.cards;
-                    if (!cards || !Array.isArray(cards)) {
-                         throw new Error("El formato del JSON no es el esperado. No se encontró la propiedad 'cards'.");
-                    }
+                const fileName = COMPANY_FILES[idx] || "";
+                const yearMatch = fileName.match(/202[0-9]/);
+                const sourceYear = yearMatch ? yearMatch[0] : "EXT"; 
 
-                    // Iteramos sobre cada ficha y creamos una fila en la tabla.
-                    cards.forEach((card, index) => {
-                        const row = document.createElement('tr');
-                        row.classList.add('hover:bg-gray-50', 'transition-colors', 'duration-200', 'table-row-fade-in');
-                        row.style.animationDelay = `${index * 0.02}s`;
-
-                        const nameCell = document.createElement('td');
-                        nameCell.className = 'px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900';
-                        nameCell.textContent = card.name;
-
-                        const linkCell = document.createElement('td');
-                        linkCell.className = 'px-6 py-4 whitespace-nowrap text-sm';
-                        
-                        // Extraemos el enlace de la descripción, si no existe, usamos el shortUrl.
-                        const projectLink = extractLinkFromDesc(card.desc) || card.shortUrl;
-                        
-                        const link = document.createElement('a');
-                        link.href = projectLink;
-                        link.textContent = 'Ver Ficha';
-                        link.target = '_blank'; // Abrir en una nueva pestaña.
-                        link.rel = 'noopener noreferrer';
-                        link.className = 'inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-3 rounded-md transition-transform transform hover:scale-105';
-                        
-                        linkCell.appendChild(link);
-                        
-                        row.appendChild(nameCell);
-                        row.appendChild(linkCell);
-                        
-                        tableBody.appendChild(row);
-                    });
-                })
-                .catch(error => {
-                    // Si ocurre un error, lo mostramos en la consola y en la página.
-                    console.error('Error al cargar o procesar el archivo JSON:', error);
-                    loadingMessage.style.display = 'none';
-                    errorMessage.style.display = 'block';
-                });
-
-            // Funcionalidad de filtro para la barra de búsqueda.
-            searchInput.addEventListener('input', (e) => {
-                const searchTerm = e.target.value.toLowerCase();
-                const rows = tableBody.getElementsByTagName('tr');
-                let visibleRows = 0;
-                
-                Array.from(rows).forEach(row => {
-                    const nameCell = row.getElementsByTagName('td')[0];
-                    if (nameCell) {
-                        const nameText = nameCell.textContent || nameCell.innerText;
-                        if (nameText.toLowerCase().includes(searchTerm)) {
-                            row.style.display = '';
-                            visibleRows++;
-                        } else {
-                            row.style.display = 'none';
-                        }
+                const lists = compData.lists || [];
+                const restrictedListIds = new Set();
+                lists.forEach(l => {
+                    if (l.name && l.name.toUpperCase().trim() === 'COMPRAS') {
+                        restrictedListIds.add(l.id);
                     }
                 });
 
-                // Mostrar u ocultar el mensaje de "no hay resultados".
-                noResultsMessage.style.display = visibleRows === 0 ? 'block' : 'none';
+                let cardsList = compData.cards || (Array.isArray(compData) ? compData : []);
+                if (!Array.isArray(cardsList)) return;
+
+                const labelsMap = {};
+                if(compData.labels) compData.labels.forEach(l => labelsMap[l.id] = l);
+
+                cardsList.forEach(card => {
+                    if(card.closed) return;
+                    if (card.idList && restrictedListIds.has(card.idList)) return;
+
+                    let num = null;
+                    const match = card.name.match(/^(\d{3,4}\/\d{2})/);
+                    if(match) num = match[1];
+                    else num = "EXT-" + card.id; 
+                        
+                    let cleanName = match ? card.name.substring(num.length).replace(/^[\s\-\.]+/, '') : card.name;
+                    let parts = cleanName.split(/[-–—]/); 
+                    let client = parts[0] ? parts[0].trim() : "SIN CLIENTE";
+                    let title = parts.slice(1).join(' ').trim() || client;
+                    if (!match && parts.length === 1) { title = card.name; client = "VARIOS"; }
+
+                    const tags = (card.idLabels || []).map(id => labelsMap[id]).filter(t => t);
+                    const tagNames = tags.map(t => t.name).join(' ');
+                    const companySearchIndex = `${card.name} ${client} ${title} ${num} ${tagNames} ${card.desc || ''}`;
+                    
+                    let trelloDate = "";
+                    if (card.due) {
+                        const d = new Date(card.due);
+                        trelloDate = `${d.getDate()}/${d.getMonth()+1}/${d.getFullYear()}`;
+                    } else if (card.dateLastActivity) {
+                        const d = new Date(card.dateLastActivity);
+                        trelloDate = `${d.getDate()}/${d.getMonth()+1}/${d.getFullYear()}`;
+                    }
+
+                    companyProjectsMap[num] = {
+                        numeroProyecto: match ? num : '',
+                        rawId: num,
+                        cliente: client,
+                        tituloProyecto: title,
+                        trelloUrl: card.url || `https://trello.com/c/${card.shortLink}`,
+                        tags: tags,
+                        fecha: trelloDate,
+                        isExternal: true,
+                        sourceYear: sourceYear, 
+                        searchIndex: companySearchIndex
+                    };
+                });
             });
-        });
-    </script>
 
+            flatPersonal.forEach(p => {
+                const num = p.numeroProyecto ? p.numeroProyecto.trim() : null;
+                if(num && companyProjectsMap[num]) {
+                    const comp = companyProjectsMap[num];
+                    p.trelloTags = comp.tags;
+                    p.trelloUrl = comp.trelloUrl;
+                    p.sourceYear = comp.sourceYear; 
+                    p.searchIndex += " " + comp.searchIndex; 
+                    comp.merged = true;
+                }
+            });
+
+            Object.values(companyProjectsMap).forEach(comp => {
+                if(!comp.merged) {
+                    flatPersonal.push({
+                        cliente: comp.cliente,
+                        tituloProyecto: comp.tituloProyecto,
+                        numeroProyecto: comp.numeroProyecto,
+                        descripcion: "Registro externo en Trello.",
+                        fecha: comp.fecha,
+                        trabajoDiseno: "PRODUCCIÓN", 
+                        isExternal: true,
+                        trelloTags: comp.tags,
+                        trelloUrl: comp.trelloUrl,
+                        sourceYear: comp.sourceYear, 
+                        entries: [],
+                        searchIndex: comp.searchIndex
+                    });
+                }
+            });
+
+            mergedData = flatPersonal;
+            console.log(`✅ Datos procesados: ${mergedData.length}`);
+        }
+
+        // --- LÓGICA DE BÚSQUEDA ---
+        mainInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') performSearch(mainInput.value); });
+        headerInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') performSearch(headerInput.value); });
+
+        function performSearch(query) {
+            const cleanQuery = query.trim();
+            if (!cleanQuery) return;
+            
+            const lowerQuery = cleanQuery.toLowerCase();
+
+            // CASO 1: CLIENTES
+            if (lowerQuery === 'clientes') {
+                viewMode = 'CLIENT';
+                activeSearchQuery = ''; 
+                isClientListFiltered = false; 
+                renderClientSelectionList();
+                openResultsView();
+                document.getElementById('results-title').innerText = "Listado General de Clientes";
+                headerInput.value = "";
+                return;
+            }
+
+            // CASO 2: AÑOS
+            const yearMatch = cleanQuery.match(/^202[2-6]$/);
+            if (yearMatch) {
+                viewMode = 'YEAR';
+                activeYearFilter = cleanQuery;
+                activeSearchQuery = cleanQuery;
+                
+                resultsView.classList.add('translate-y-full'); 
+                searchView.classList.add('-translate-y-full', 'opacity-0');
+                
+                renderProjectListContent(); 
+                projectListView.classList.remove('translate-x-full');
+                return;
+            }
+
+            // CASO 3: BÚSQUEDA NORMAL
+            viewMode = 'CLIENT';
+            activeSearchQuery = cleanQuery;
+            isClientListFiltered = true;
+            renderClientSelectionList();
+            
+            if (!projectListView.classList.contains('translate-x-full')) closeProjectListView();
+            openResultsView();
+            headerInput.value = activeSearchQuery;
+        }
+
+        function itemMatchesQuery(item, query) {
+            if (!query) return true;
+            const q = query.toLowerCase();
+            
+            if (q === 'falta') return item.check && String(item.check).toUpperCase() === 'FALTA';
+
+            const normQuery = normalizeStr(query);
+            const normText = normalizeStr(item.searchIndex || '');
+            const tokens = normQuery.split(/\s+/).filter(t => t.length > 0);
+            return tokens.every(token => normText.includes(token));
+        }
+
+        function highlightMatch(text, query) {
+            if (!text || !query) return text;
+            if (query.toLowerCase() === 'falta' || query.match(/^202[2-6]$/)) return text;
+
+            const normText = normalizeStr(text);
+            const tokens = normalizeStr(query).split(/\s+/).filter(t => t.length > 0);
+            if (tokens.length === 0) return text;
+
+            const shouldHighlight = new Array(text.length).fill(false);
+            tokens.forEach(token => {
+                let startIndex = 0;
+                while (true) {
+                    const idx = normText.indexOf(token, startIndex);
+                    if (idx === -1) break;
+                    for (let i = 0; i < token.length; i++) {
+                        if (idx + i < text.length) shouldHighlight[idx + i] = true;
+                    }
+                    startIndex = idx + 1;
+                }
+            });
+
+            let result = '';
+            let isHighlighting = false;
+            for (let i = 0; i < text.length; i++) {
+                if (shouldHighlight[i] && !isHighlighting) {
+                    result += '<span class="highlight-text">';
+                    isHighlighting = true;
+                } else if (!shouldHighlight[i] && isHighlighting) {
+                    result += '</span>';
+                    isHighlighting = false;
+                }
+                result += text[i];
+            }
+            if (isHighlighting) result += '</span>';
+            return result;
+        }
+
+        function renderFilterButton(containerId, query, onClickFn) {
+            const container = document.getElementById(containerId);
+            const mobileContainer = document.getElementById(containerId + '-mobile');
+            let html = '';
+            if (viewMode === 'YEAR' && activeYearFilter) {
+                 html = `<div class="flex items-center gap-2 bg-blue-100 text-blue-800 border border-blue-200 px-4 py-1.5 rounded-full text-xs font-bold shadow-sm"><span>Año: ${activeYearFilter}</span></div>`;
+            } 
+            else if (query && query !== 'falta' && query !== 'clientes') {
+                html = `<button onclick="${onClickFn}" class="group flex items-center gap-2 bg-yellow-100 text-yellow-800 hover:bg-red-100 hover:text-red-700 border border-yellow-200 hover:border-red-200 px-4 py-1.5 rounded-full text-xs font-bold transition-all shadow-sm animate-pulse"><span>"${query}"</span><svg class="w-3 h-3 opacity-60 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>`;
+            }
+            if (container) container.innerHTML = html;
+            if (mobileContainer) mobileContainer.innerHTML = html;
+        }
+
+        function getProjectSortValue(p) {
+            if (!p.number) return 999999;
+            const match = p.number.match(/(\d+)\/(\d+)/);
+            if (!match) return 999999;
+            const num = parseInt(match[1], 10);
+            const year = parseInt(match[2], 10);
+            return (year * 10000) + num;
+        }
+
+        // --- LÓGICA DE AÑO ---
+        function checkItemYear(item, yearStr) {
+            const shortYear = yearStr.substring(2); 
+
+            // 1. Prioridad número
+            const numberMatch = item.numeroProyecto ? item.numeroProyecto.match(/\/(\d{2})$/) : null;
+
+            if (numberMatch) {
+                return numberMatch[1] === shortYear;
+            }
+
+            // 2. Si no tiene número, miramos fecha
+            if (item.fecha && item.fecha.includes(yearStr)) {
+                return true;
+            }
+
+            return false;
+        }
+
+        function smoothScrollTo(element, target, duration) {
+            const start = element.scrollTop;
+            const change = target - start;
+            let startTime = 0;
+            function animateScroll(currentTime) {
+                if (!startTime) startTime = currentTime;
+                const timeElapsed = currentTime - startTime;
+                let val = timeElapsed / (duration / 2);
+                let scrollAmount;
+                if (val < 1) scrollAmount = change / 2 * val * val + start;
+                else { val--; scrollAmount = -change / 2 * (val * (val - 2) - 1) + start; }
+                element.scrollTop = scrollAmount;
+                if (timeElapsed < duration) requestAnimationFrame(animateScroll);
+                else element.scrollTop = target;
+            }
+            requestAnimationFrame(animateScroll);
+        }
+
+        function focusCalendarDate(dateStr, targetColorClass) {
+            if(!dateStr) return;
+            const [d, m, y] = dateStr.split('/');
+            if(!d || !m || !y) return;
+            const monthKey = `${parseInt(y)}-${parseInt(m)}`;
+            const dayVal = parseInt(d);
+
+            const monthEl = document.getElementById(`cal-month-${monthKey}`);
+            if (monthEl) {
+                const containerRect = finalCalendarContainer.getBoundingClientRect();
+                const elRect = monthEl.getBoundingClientRect();
+                const currentRelTop = elRect.top - containerRect.top + finalCalendarContainer.scrollTop;
+                const targetOffset = currentRelTop - (containerRect.height / 2) + (elRect.height / 2);
+                smoothScrollTo(finalCalendarContainer, Math.max(0, targetOffset), 800);
+            }
+
+            const allDots = document.querySelectorAll('.calendar-dot');
+            const targetId = `${monthKey}-${dayVal}`;
+
+            allDots.forEach(dot => {
+                if (!dot.dataset.originalClasses) dot.dataset.originalClasses = dot.className;
+                if (dot.dataset.date === targetId) {
+                    dot.classList.remove('dot-rendimiento', 'dot-visual', 'dot-plano', 'dot-muestra', 'dot-produccion', 'bg-slate-400');
+                    if(targetColorClass) dot.classList.add(targetColorClass);
+                    dot.classList.add('dot-active');
+                    dot.classList.remove('dot-dimmed');
+                } else {
+                    dot.classList.add('dot-dimmed');
+                    dot.classList.remove('dot-active');
+                }
+            });
+        }
+
+        function resetCalendarFocus() {
+            const allDots = document.querySelectorAll('.calendar-dot');
+            allDots.forEach(dot => {
+                if (dot.dataset.originalClasses) dot.className = dot.dataset.originalClasses;
+                dot.classList.remove('dot-dimmed', 'dot-active');
+            });
+        }
+
+        // --- VISTA CLIENTES ---
+        function renderClientSelectionList() {
+            const query = isClientListFiltered ? activeSearchQuery : '';
+            renderFilterButton('client-filter-container', query, 'unfilterClients()');
+
+            const clientGroups = {};
+            mergedData.forEach(item => {
+                if (itemMatchesQuery(item, query)) {
+                    if (!clientGroups[item.cliente]) clientGroups[item.cliente] = [];
+                    clientGroups[item.cliente].push(item);
+                }
+            });
+
+            const sortedClients = Object.keys(clientGroups).map(clientName => {
+                const items = clientGroups[clientName];
+                const uniqueIds = new Set(items.map(i => i.numeroProyecto || i.tituloProyecto));
+                return { name: clientName, items, count: uniqueIds.size };
+            }).sort((a, b) => b.count - a.count);
+
+            document.getElementById('results-title').innerText = query ? `Búsqueda: "${query}"` : "Todos los Clientes";
+            document.getElementById('results-subtitle').innerText = `${sortedClients.length} clientes encontrados`;
+
+            if (sortedClients.length === 0) {
+                resultsContainer.innerHTML = `<div class="text-center py-20 text-slate-400">No hay resultados.</div>`;
+                return;
+            }
+
+            const maxCount = sortedClients[0].count;
+            let html = '<div class="flex flex-col gap-3">';
+            sortedClients.forEach((c, idx) => {
+                const percentage = Math.round((c.count / maxCount) * 100);
+                const bgStyle = `background: linear-gradient(90deg, #fcd34d ${percentage}%, white ${percentage}%);`;
+                const hlName = highlightMatch(c.name, query);
+                const safeClientName = c.name.replace(/"/g, '&quot;');
+                
+                html += `<div onclick="openProjectListView(this.dataset.client)" data-client="${safeClientName}" style="${bgStyle}" class="p-5 rounded-xl border border-slate-200 hover:shadow-md transition-all cursor-pointer group relative overflow-hidden"><div class="flex items-center relative z-10 gap-4"><span class="text-2xl font-black text-slate-600 font-mono w-8 text-right shrink-0">${idx + 1}</span><div class="flex-1"><h3 class="font-bold text-lg text-slate-800 group-hover:text-amber-600 transition-colors">${hlName}</h3><p class="text-sm text-slate-500 font-medium">${c.count} proyectos</p></div><div class="h-10 w-10 bg-white/50 backdrop-blur-sm rounded-full flex items-center justify-center text-slate-400 group-hover:text-amber-600 shadow-sm"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div></div></div>`;
+            });
+            html += '</div>';
+            resultsContainer.innerHTML = html;
+        }
+
+        function unfilterClients() { isClientListFiltered = false; renderClientSelectionList(); }
+
+        // --- VISTA PROYECTOS (CON LOGICA DE AÑO Y SCROLL) ---
+        function renderProjectListContent() {
+            let filteredItems = [];
+            let listTitle = "";
+            let query = "";
+
+            if (viewMode === 'YEAR') {
+                query = ''; 
+                listTitle = `Proyectos ${activeYearFilter}`;
+                filteredItems = mergedData.filter(i => checkItemYear(i, activeYearFilter));
+                renderFilterButton('project-filter-container', '', ''); 
+            } else {
+                query = isProjectListFiltered ? activeSearchQuery : '';
+                renderFilterButton('project-filter-container', query, 'unfilterProjects()');
+                listTitle = currentClientName;
+                filteredItems = mergedData.filter(i => i.cliente === currentClientName && itemMatchesQuery(i, query));
+            }
+
+            document.getElementById('project-list-title').innerText = listTitle;
+
+            projectGroupsCache = {};
+            const grouped = {};
+            
+            filteredItems.forEach(item => {
+                const key = (item.numeroProyecto && item.numeroProyecto.trim().length > 2) ? item.numeroProyecto : item.tituloProyecto;
+                
+                if (!grouped[key]) {
+                    grouped[key] = {
+                        key: key,
+                        number: item.numeroProyecto,
+                        title: item.tituloProyecto,
+                        items: [],
+                        isExternal: !!item.isExternal,
+                        trelloTags: item.trelloTags || [],
+                        clientName: item.cliente,
+                        sourceYear: item.sourceYear // <--- Agrupamos el año
+                    };
+                }
+                grouped[key].items.push(item);
+                if(!item.isExternal) grouped[key].isExternal = false; 
+
+                if(item.trelloTags) {
+                     const existing = new Set((grouped[key].trelloTags || []).map(t => t.name));
+                     if(!grouped[key].trelloTags) grouped[key].trelloTags = [];
+                     item.trelloTags.forEach(t => { if(!existing.has(t.name)) grouped[key].trelloTags.push(t); });
+                }
+            });
+
+            let projectsArray = Object.values(grouped);
+            
+            projectsArray.sort((a, b) => {
+                const isTentativeA = (a.number + a.title).toUpperCase().includes('TENTATIVO');
+                const isTentativeB = (b.number + b.title).toUpperCase().includes('TENTATIVO');
+                if (isTentativeA !== isTentativeB) return isTentativeA ? 1 : -1;
+
+                if (viewMode === 'YEAR') {
+                    return getProjectSortValue(a) - getProjectSortValue(b);
+                } else {
+                    if (a.isExternal !== b.isExternal) return a.isExternal ? 1 : -1;
+                    if (!a.isExternal) return b.items.length - a.items.length;
+                    return getProjectSortValue(b) - getProjectSortValue(a);
+                }
+            });
+
+            if (projectsArray.length === 0) {
+                projectListContainer.innerHTML = `<div class="text-center py-20 text-slate-400">No se encontraron proyectos.</div>`;
+                return;
+            }
+
+            const maxEntries = projectsArray.length > 0 ? (projectsArray.find(p => !p.isExternal)?.items.length || 1) : 1;
+            let html = '';
+            
+            projectsArray.forEach((p, idx) => {
+                const groupId = `group_${idx}`;
+                projectGroupsCache[groupId] = p;
+
+                const count = p.items.length;
+                let barColor = p.isExternal ? '#cbd5e1' : '#dcfce7'; 
+                
+                let topRightContent = '';
+                const trelloUrl = p.items[0]?.trelloUrl;
+                
+                let onClickAttr = `onclick="openFinalView(this.dataset.group)" data-group="${groupId}"`;
+                let cursorClass = 'cursor-pointer hover:shadow-md hover:ring-1 hover:ring-green-200';
+                let titleHoverClass = 'group-hover:text-green-700';
+                let iconSvg = `<svg class="w-5 h-5 text-slate-300 group-hover:text-green-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>`;
+
+                if (p.isExternal) {
+                    onClickAttr = ''; 
+                    cursorClass = 'cursor-default'; 
+                    titleHoverClass = 'text-slate-700';
+                    iconSvg = ''; 
+
+                    // --- MODIFICACIÓN: AÑO MÁS GRANDE Y CENTRADO ---
+                    const yearLabel = p.sourceYear ? `<span class="text-xs font-black text-slate-400 mt-1">${p.sourceYear}</span>` : '';
+
+                    if (trelloUrl) {
+                        const safeUrl = trelloUrl.replace(/"/g, '&quot;');
+                        topRightContent = `
+                            <div class="flex flex-col items-center justify-center">
+                                <a href="${safeUrl}" target="_blank" class="flex items-center gap-1 text-xs font-bold text-blue-600 bg-blue-50 hover:bg-blue-600 hover:text-white px-2 py-1 rounded transition-all border border-blue-200 hover:border-blue-600 z-20 relative shadow-sm">
+                                    <span>Trello</span>
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
+                                ${yearLabel}
+                            </div>`;
+                    } else {
+                        topRightContent = `<div class="flex flex-col items-center justify-center"><span class="text-xs text-slate-400 font-medium">Trello (Sin Link)</span>${yearLabel}</div>`;
+                    }
+                } else {
+                    topRightContent = `<span class="text-xs text-slate-400 font-medium">${count} entradas</span>`;
+                }
+
+                const percentage = (viewMode === 'YEAR' || p.isExternal) ? 100 : Math.round((count / maxEntries) * 100);
+                const bgStyle = `background: linear-gradient(90deg, ${barColor} ${percentage}%, white ${percentage}%);`;
+
+                let tagsHtml = '';
+                if(p.trelloTags && p.trelloTags.length > 0) {
+                    tagsHtml = `<div class="flex flex-wrap gap-1 mt-1">` + 
+                        p.trelloTags.map(t => `<span class="text-[9px] px-1.5 py-0.5 rounded border ${TRELLO_COLORS[t.color] || TRELLO_COLORS['default']} font-bold uppercase opacity-80">${t.name}</span>`).join('') + `</div>`;
+                }
+
+                let clientLabelHtml = '';
+                if (viewMode === 'YEAR') {
+                    clientLabelHtml = `<div class="text-[10px] font-bold text-amber-600 uppercase tracking-wider mb-0.5">${p.clientName}</div>`;
+                }
+
+                const hlTitle = highlightMatch(p.title, query);
+                const hlNum = highlightMatch(p.number || '', query);
+                
+                html += `<div ${onClickAttr} style="${bgStyle}" class="p-4 rounded-xl border border-slate-200 shadow-sm transition-all ${cursorClass} group relative">
+                            <div class="flex items-start gap-3 relative z-10">
+                                <span class="text-lg font-black text-slate-600 font-mono w-6 text-right pt-1">${idx + 1}</span>
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-start">
+                                        <div class="flex items-center gap-2 mb-1">
+                                            ${p.number ? `<span class="text-xs font-mono font-bold text-slate-500 bg-white/80 backdrop-blur-sm px-2 py-0.5 rounded border border-slate-200">${hlNum}</span>` : ''}
+                                        </div>
+                                        ${topRightContent}
+                                    </div>
+                                    ${clientLabelHtml}
+                                    <h3 class="font-bold text-base leading-tight text-slate-800 ${titleHoverClass} transition-colors">${hlTitle}</h3>
+                                    ${tagsHtml}
+                                </div>
+                                <div class="self-center">
+                                    ${iconSvg}
+                                </div>
+                            </div>
+                        </div>`;
+            });
+            projectListContainer.innerHTML = html;
+        }
+
+        function unfilterProjects() { isProjectListFiltered = false; renderProjectListContent(); }
+
+        // --- VISTA FINAL ---
+        function openFinalView(groupId) {
+            const groupData = projectGroupsCache[groupId];
+            if (!groupData) return;
+
+            const targetClient = viewMode === 'YEAR' ? groupData.clientName : currentClientName;
+
+            const fullProjectItems = mergedData.filter(item => {
+                const key = (item.numeroProyecto && item.numeroProyecto.trim().length > 2) ? item.numeroProyecto : item.tituloProyecto;
+                return key === groupData.key && item.cliente === targetClient; 
+            });
+            
+            window.currentViewItems = fullProjectItems; 
+            window.currentViewExternal = groupData.isExternal;
+            
+            document.getElementById('final-view-title').innerText = `${groupData.number || ''} ${groupData.title}`;
+            
+            const itemWithUrl = fullProjectItems.find(i => i.trelloUrl) || mergedData.find(i => (i.numeroProyecto === groupData.number || i.tituloProyecto === groupData.title) && i.trelloUrl);
+            document.getElementById('final-view-links').innerHTML = (itemWithUrl && itemWithUrl.trelloUrl) ? `<a href="${itemWithUrl.trelloUrl}" target="_blank" class="flex items-center gap-1.5 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded transition-colors shadow-sm"><svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 15H7V7h5v10zm5-4h-3V7h3v6z"/></svg>Trello</a>` : '';
+
+            activeCategoryFilter = null;
+            isFinalViewFiltered = true; 
+            updateFinalViewContent();
+            resetScroll('final-view'); // <-- RESET SCROLL AL ABRIR
+            finalView.classList.remove('translate-x-full');
+        }
+
+        function updateFinalViewContent() {
+            const query = isFinalViewFiltered ? activeSearchQuery : '';
+            renderFilterButton('active-search-filter-container', query, 'unfilterFinalView()');
+
+            let itemsToShow = window.currentViewItems;
+            if (query && viewMode !== 'YEAR') itemsToShow = itemsToShow.filter(item => itemMatchesQuery(item, query));
+            if (activeCategoryFilter) itemsToShow = itemsToShow.filter(item => item.trabajoDiseno && item.trabajoDiseno.toUpperCase() === activeCategoryFilter);
+
+            const cats = [...new Set(window.currentViewItems.map(i => i.trabajoDiseno ? i.trabajoDiseno.toUpperCase() : 'PRODUCCIÓN'))];
+            document.getElementById('category-filters').innerHTML = cats.map(c => {
+                 const style = CAT_STYLES[c] || { btnColor: 'bg-slate-500' };
+                 const opacity = (activeCategoryFilter && activeCategoryFilter !== c) ? 'opacity-30' : 'opacity-100';
+                 return `<button onclick="toggleCategory('${c}')" class="${style.btnColor} text-white px-3 py-1 rounded-full ${opacity} hover:opacity-100">${toTitleCase(c)}</button>`;
+            }).join('');
+
+            renderEntriesList(itemsToShow);
+            renderFinalCalendar(itemsToShow); 
+        }
+
+        function toggleCategory(c) { activeCategoryFilter = activeCategoryFilter === c ? null : c; updateFinalViewContent(); }
+        function unfilterFinalView() { isFinalViewFiltered = false; updateFinalViewContent(); }
+
+        function renderEntriesList(items) {
+            const container = document.getElementById('final-entries-container');
+            document.getElementById('entries-count-badge').innerText = items.length;
+
+            if (items.length === 0) {
+                container.innerHTML = `<div class="text-center py-10 text-slate-400">Sin entradas visibles.</div>`;
+                return;
+            }
+
+            items.sort((a, b) => parseDate(a.fecha) - parseDate(b.fecha));
+
+            let html = '';
+            items.forEach((item, idx) => {
+                const cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase() : 'OTRO';
+                const style = CAT_STYLES[cat] || CAT_STYLES['OTRO']; 
+                const isFalta = item.check === 'FALTA';
+                let cardClass = style.card;
+                if (isFalta) {
+                    cardClass = cardClass.replace(/border-\w+-\d+/g, ''); 
+                    cardClass += ' border-4 border-red-600 shadow-[0_0_15px_rgba(220,38,38,0.25)]';
+                }
+                cardClass += ' transition-all duration-200';
+                
+                const showHighlight = (viewMode !== 'YEAR' && isFinalViewFiltered);
+                const hlDesc = highlightMatch(item.descripcion, showHighlight ? activeSearchQuery : '');
+                
+                const clickAction = item.drive ? `onclick="window.open('${item.drive}', '_blank')"` : '';
+                const cursorStyle = item.drive ? 'cursor-pointer' : 'cursor-default';
+                const titleHover = item.drive ? 'group-hover:text-blue-800' : '';
+                const mouseEvents = `onmouseenter="focusCalendarDate('${item.fecha}', '${style.dotClass}')" onmouseleave="resetCalendarFocus()"`;
+
+                html += `
+                    <div ${clickAction} ${mouseEvents} class="group flex gap-4 p-4 rounded-lg border text-sm ${cardClass} ${cursorStyle}">
+                         <div class="flex flex-col items-center min-w-[30px]">
+                            <span class="text-slate-600 font-bold font-mono group-hover:text-slate-800 transition-colors">${idx + 1}</span>
+                         </div>
+                         <div class="flex-1">
+                            <div class="flex justify-between mb-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-bold ${style.badge}">${cat}</span>
+                                <span class="text-slate-500 text-xs font-medium group-hover:text-slate-700">${item.fecha || 'Sin fecha'}</span>
+                            </div>
+                            <p class="text-slate-700 leading-relaxed ${titleHover} transition-colors">${hlDesc}</p>
+                         </div>
+                         ${item.drive ? `<div class="self-center opacity-0 group-hover:opacity-100 transition-opacity"><svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></div>` : ''}
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        function renderFinalCalendar(items) {
+            const eventsByDate = {};
+            items.forEach(item => {
+                if(!item.fecha) return;
+                const [d, m, y] = item.fecha.split('/');
+                if(!d || !m || !y) return;
+                const key = `${parseInt(y)}-${parseInt(m)}`;
+                const day = parseInt(d);
+                if (!eventsByDate[key]) eventsByDate[key] = {};
+                if (!eventsByDate[key][day]) eventsByDate[key][day] = [];
+                const cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase() : 'OTRO';
+                const dotColor = (CAT_STYLES[cat] || { dotClass: 'bg-gray-400' }).dotClass;
+                eventsByDate[key][day].push(dotColor);
+            });
+
+            if (Object.keys(eventsByDate).length === 0) {
+                finalCalendarContainer.innerHTML = '<div class="text-center text-slate-300 mt-10">Sin fechas registradas</div>';
+                 return;
+            }
+
+            const sortedMonths = Object.keys(eventsByDate).sort((a, b) => {
+                const [y1, m1] = a.split('-').map(Number);
+                const [y2, m2] = b.split('-').map(Number);
+                return (y1 * 12 + m1) - (y2 * 12 + m2);
+            });
+            
+            finalCalendarContainer.innerHTML = sortedMonths.map(key => {
+                const [y, m] = key.split('-').map(Number);
+                return generateCalendarHTML(m, y, eventsByDate[key], key);
+            }).join('');
+        }
+
+        function generateCalendarHTML(month, year, eventsMap, monthKey) {
+            const monthIdx = month - 1;
+            const daysInMonth = new Date(year, monthIdx + 1, 0).getDate();
+            const firstDay = new Date(year, monthIdx, 1).getDay();
+            let h = `<div id="cal-month-${monthKey}" class="w-full max-w-[260px] mb-6 transition-all duration-500"><div class="text-center font-bold text-slate-700 mb-2 border-b border-slate-100 pb-1">${MONTH_NAMES[monthIdx]} ${year}</div><div class="grid grid-cols-7 text-center text-xs text-slate-300 mb-1"><div>D</div><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div></div><div class="grid grid-cols-7 gap-1 text-sm">`;
+            for(let i=0; i<firstDay; i++) h+=`<div></div>`;
+            for(let d=1; d<=daysInMonth; d++) {
+                if(eventsMap[d]) {
+                     h += `<div class="calendar-dot aspect-square rounded-md flex items-center justify-center font-bold text-white shadow-sm ${eventsMap[d][0]} transition-all duration-300" data-date="${monthKey}-${d}">${d}</div>`;
+                } else {
+                     h += `<div class="aspect-square flex items-center justify-center text-slate-300 text-xs">${d}</div>`;
+                }
+            }
+            h += `</div></div>`;
+            return h;
+        }
+
+        function parseDate(dStr) { 
+            if(!dStr) return 0; 
+            const parts = dStr.split('/');
+            if(parts.length !== 3) return 0;
+            return new Date(parts[2], parts[1]-1, parts[0]).getTime(); 
+        }
+
+        function toTitleCase(s) { return s.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()); }
+        
+        // --- FUNCIÓN AUXILIAR PARA RESETEAR SCROLL ---
+        function resetScroll(containerId) {
+            const view = document.getElementById(containerId);
+            if (view) {
+                const main = view.querySelector('main');
+                if (main) main.scrollTop = 0;
+            }
+            if (containerId === 'final-view') {
+                if (document.getElementById('final-entries-container')) document.getElementById('final-entries-container').scrollTop = 0;
+                if (document.getElementById('final-calendar-container')) document.getElementById('final-calendar-container').scrollTop = 0;
+            }
+        }
+
+        // --- FUNCIONES DE NAVEGACIÓN MODIFICADAS ---
+        function openResultsView() { 
+            resetScroll('results-view'); // <-- RESET
+            searchView.classList.add('-translate-y-full', 'opacity-0'); 
+            resultsView.classList.remove('translate-y-full'); 
+        }
+
+        function openProjectListView(clientName) {
+            if(!clientName) return;
+            viewMode = 'CLIENT'; 
+            currentClientName = clientName;
+            isProjectListFiltered = true;
+            renderProjectListContent();
+            resetScroll('project-list-view'); // <-- RESET
+            projectListView.classList.remove('translate-x-full');
+        }
+        
+        function closeResults() { 
+            activeSearchQuery=''; 
+            viewMode = 'CLIENT'; 
+            activeYearFilter = '';
+            mainInput.value=''; 
+            headerInput.value=''; 
+            resultsView.classList.add('translate-y-full'); 
+            searchView.classList.remove('-translate-y-full', 'opacity-0'); 
+            projectListView.classList.add('translate-x-full'); 
+            finalView.classList.add('translate-x-full'); 
+            setTimeout(()=>mainInput.focus(),500); 
+        }
+        
+        function closeProjectListView() { 
+            resetScroll('results-view'); // <-- AL VOLVER, RESET PADRE
+            projectListView.classList.add('translate-x-full'); 
+            if(viewMode === 'YEAR') {
+               closeResults(); 
+            }
+        }
+        
+        function closeFinalView() { 
+            resetScroll('project-list-view'); // <-- AL VOLVER, RESET PADRE
+            finalView.classList.add('translate-x-full'); 
+        }
+    </script>
 </body>
 </html>
