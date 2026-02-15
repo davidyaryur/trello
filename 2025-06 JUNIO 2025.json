@@ -122,7 +122,7 @@
         "trello": "s8UfGu7d",
         "descripcion": "Le envié a Milka, con copia a Richard, Mario y Jose el nuevo rendimiento del servilletero",
         "drive": "https://drive.google.com/drive/folders/1MiVbxLEjgRzsRGNJrew5ybvH_LBNJ-WV?usp=drive_link",
-        "check": "LISTO"
+        "check": "FALTA"
       },
       {
         "id": "(11)",
@@ -134,7 +134,7 @@
         "trello": "cmeFkPkA",
         "descripcion": "Le envié a Lorena el rendimiento de las cajas para holograma",
         "drive": "https://drive.google.com/drive/folders/1cq0-NnlZmgOTSk0ZAuZUo30mXWwVnlaR?usp=drive_link",
-        "check": "LISTO"
+        "check": "FALTA"
       },
       {
         "id": "(12)",
@@ -146,7 +146,7 @@
         "trello": "HItfP1qy",
         "descripcion": "Realice el rendimiento de Caledonia y se lo envié a Milka",
         "drive": "https://drive.google.com/drive/folders/19yvtu0Nn-oS_sxOLtY-okcJ73S8PYf8O?usp=drive_link",
-        "check": "LISTO"
+        "check": "FALTA"
       },
       {
         "id": "(13)",
@@ -170,7 +170,7 @@
         "trello": "qsqFeyWy",
         "descripcion": "Calculé el rendimiento de Luz Neón del corpóreo de la Estrella de Oro",
         "drive": "https://drive.google.com/drive/folders/1IDrzg7EloaDm-pFv4DKIVwJatLsYZklv",
-        "check": "LISTO"
+        "check": "FALTA"
       }
     ]
   },
@@ -277,6 +277,18 @@
       },
       {
         "id": "(09)",
+        "fecha": "19/06/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "269/25",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "EXHIBIDOR CALEDONIA",
+        "trello": "HItfP1qy",
+        "descripcion": "Le expliqué a Alexander cómo va el modular y le envié la foto del visual",
+        "drive": "https://drive.google.com/drive/folders/1WMpse_ibT7AkB5yhCjNYK2TQCXwvS7le?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(10)",
         "fecha": "20/06/2025",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "507/25",
@@ -285,10 +297,10 @@
         "trello": "fYlEIJEK",
         "descripcion": "Realicé el fotomontaje de Celiveca y se lo envié a Lorena",
         "drive": "https://drive.google.com/drive/folders/1nuu2jXkzuCO_FN4Czx12zkWsRNI-Tm43?usp=drive_link",
-        "check": "LISTO"
+        "check": "FALTA"
       },
       {
-        "id": "(10)",
+        "id": "(11)",
         "fecha": "25/06/2025",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "292/25",
@@ -300,7 +312,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(11)",
+        "id": "(12)",
         "fecha": "26/06/2025",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "292/25",
@@ -533,28 +545,16 @@
         "id": "(11)",
         "fecha": "19/06/2025",
         "trabajoDiseno": "MUESTRA",
-        "numeroProyecto": "269/25",
-        "cliente": "ALIMENTOS MARY",
-        "tituloProyecto": "EXHIBIDOR CALEDONIA",
-        "trello": "HItfP1qy",
-        "descripcion": "Le expliqué a Alexander cómo va el modular y le envié la foto del visual",
-        "drive": "https://drive.google.com/drive/folders/1WMpse_ibT7AkB5yhCjNYK2TQCXwvS7le?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
-        "id": "(12)",
-        "fecha": "19/06/2025",
-        "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "481/25",
         "cliente": "NESTLÉ",
         "tituloProyecto": "CORPOREO PURINA",
         "trello": "cLVMkpWa",
         "descripcion": "Recibí de parte de Pablo la muestra de color de Purina",
         "drive": "https://drive.google.com/drive/folders/12PhqzhyV-CIjeES3OuYBTboVG6tPXSti?usp=drive_link",
-        "check": "LISTO"
+        "check": "FALTA"
       },
       {
-        "id": "(13)",
+        "id": "(12)",
         "fecha": "19/06/2025",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "473/25",
@@ -563,10 +563,10 @@
         "trello": "nlESFdpQ",
         "descripcion": "Pablo me entregó la muestra de color de Downy",
         "drive": "https://drive.google.com/drive/folders/1U9eC_bgoACCrzyolwoOnJCAxL-zcOqGB?usp=drive_link",
-        "check": "LISTO"
+        "check": "FALTA"
       },
       {
-        "id": "(14)",
+        "id": "(13)",
         "fecha": "23/06/2025",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "449/25",
@@ -578,7 +578,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(15)",
+        "id": "(14)",
         "fecha": "25/06/2025",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "449/25",
@@ -590,7 +590,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(16)",
+        "id": "(15)",
         "fecha": "27/06/2025",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "449/25",
