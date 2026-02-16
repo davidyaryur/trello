@@ -292,39 +292,14 @@
         async function loadAllData() {
             loadingIndicator.style.opacity = '1';
             try {
-                // 1. Preparar promesas para Archivos Personales
-                const personalPromises = PERSONAL_FILES.map(file => 
-                    fetch(file)
-                        .then(r => {
-                            if (!r.ok) throw new Error(`HTTP error ${r.status}`);
-                            return r.json();
-                        })
-                        .catch(err => {
-                            console.error(`Error cargando archivo personal: ${file}`, err);
-                            return null;
-                        })
-                );
-
-                // 2. Preparar promesas para Archivos de Empresa
-                const companyPromises = COMPANY_FILES.map(file => 
-                    fetch(file)
-                        .then(r => {
-                            if (!r.ok) throw new Error(`HTTP error ${r.status}`);
-                            return r.json();
-                        })
-                        .catch(err => {
-                            console.error(`Error cargando archivo empresa: ${file}`, err);
-                            return null;
-                        })
-                );
+                const personalPromises = PERSONAL_FILES.map(file => fetch(file).then(r => r.ok ? r.json() : null).catch(e => null));
+                const companyPromises = COMPANY_FILES.map(file => fetch(file).then(r => r.ok ? r.json() : null).catch(e => null));
                 
-                // 3. Esperar a que TODO termine
                 const [personalResults, companyResults] = await Promise.all([
                     Promise.all(personalPromises),
                     Promise.all(companyPromises)
                 ]);
                 
-                // 4. Filtrar nulos y procesar
                 const validPersonal = personalResults.filter(d => d !== null);
                 const validCompany = companyResults.filter(d => d !== null);
 
@@ -343,21 +318,54 @@
         function processAndMergeData(personalRawList, companyRawList) {
             let flatPersonal = [];
             
-            // --- CORRECCIÓN AQUÍ PARA LEER EL ARRAY DE TABLAS ---
+            // --- FASE 1: PRE-ESCANEO (RESCATE) ---
+            // Recorremos todo EXCEPTO 2022 para identificar nombres de clientes válidos.
+            const realClientsSet = new Set();
+
+            companyRawList.forEach((compData, idx) => {
+                if (!compData) return;
+                const fileName = COMPANY_FILES[idx] || "";
+                
+                // Saltamos 2022 en esta fase de aprendizaje
+                if (fileName.includes('2022')) return;
+
+                const cardsList = compData.cards || (Array.isArray(compData) ? compData : []);
+                if (!Array.isArray(cardsList)) return;
+
+                cardsList.forEach(card => {
+                    if (card.closed) return;
+                    
+                    // Usamos la misma lógica de Regex que usaremos después
+                    let num = null;
+                    const match = card.name.match(/^((?:TENTATIVO\s+)?\d{2,4}\/\d{2})/i);
+                    if (match) num = match[1];
+                    else num = "EXT-" + card.id;
+
+                    let cleanName = match ? card.name.substring(num.length).replace(/^[\s\-\.]+/, '') : card.name;
+                    let parts = cleanName.split(/[-–—]/);
+                    let potentialClient = parts[0] ? parts[0].trim() : "SIN CLIENTE";
+                    
+                    if (potentialClient.toUpperCase().includes("TENTATIVO") && parts[1]) {
+                        potentialClient = parts[1].trim();
+                    }
+                    
+                    // Guardamos el cliente en mayúsculas para comparar fácil
+                    if (potentialClient && potentialClient.length > 2) {
+                        realClientsSet.add(potentialClient.toUpperCase());
+                    }
+                });
+            });
+            // -------------------------------------
+
             if (Array.isArray(personalRawList)) {
-                // Iteramos sobre cada archivo (que es una lista de tablas)
                 personalRawList.forEach(fileContent => {
-                    // Verificamos si el contenido del archivo es un Array
                     if (Array.isArray(fileContent)) {
-                        // Iteramos sobre las TABLAS dentro de ese archivo
                         fileContent.forEach(table => {
                             if (table && table.proyectos && Array.isArray(table.proyectos)) {
                                 table.proyectos.forEach(p => {
                                     if (!p.trabajoDiseno) return;
                                     if (p.trabajoDiseno.toUpperCase().includes('AUTORIZA')) return;
-                                    
                                     const searchText = `${p.cliente || ''} ${p.tituloProyecto || ''} ${p.numeroProyecto || ''} ${p.descripcion || ''} ${p.check || ''}`;
-                                    // Pasamos el mes si existe en la tabla
                                     flatPersonal.push({ ...p, mesGrupo: table.mes, searchIndex: searchText });
                                 });
                             }
@@ -394,15 +402,39 @@
                     if (card.idList && restrictedListIds.has(card.idList)) return;
 
                     let num = null;
-                    const match = card.name.match(/^(\d{3,4}\/\d{2})/);
-                    if(match) num = match[1];
-                    else num = "EXT-" + card.id; 
+                    const match = card.name.match(/^((?:TENTATIVO\s+)?\d{2,4}\/\d{2})/i); 
+                    
+                    if(match) {
+                        num = match[1].toUpperCase();
+                    } else {
+                        num = "EXT-" + card.id; 
+                    }
                         
                     let cleanName = match ? card.name.substring(num.length).replace(/^[\s\-\.]+/, '') : card.name;
                     let parts = cleanName.split(/[-–—]/); 
                     let client = parts[0] ? parts[0].trim() : "SIN CLIENTE";
+                    
+                    if (client.toUpperCase().includes("TENTATIVO")) {
+                         if (parts[1]) client = parts[1].trim();
+                    }
+
                     let title = parts.slice(1).join(' ').trim() || client;
-                    if (!match && parts.length === 1) { title = card.name; client = "VARIOS"; }
+
+                    // --- MODIFICACIÓN 2022 CON RESCATE DE CLIENTES ---
+                    if (sourceYear === '2022') {
+                        // Preguntamos: ¿Este cliente existe en el futuro (2023+)?
+                        if (realClientsSet.has(client.toUpperCase())) {
+                            // SÍ EXISTE: Lo tratamos como un cliente normal (se queda con su nombre)
+                            // Solo arreglamos el título si estaba vacío
+                        } else {
+                            // NO EXISTE: Asumimos que es data vieja/sucia y lo mandamos al grupo 2022
+                            client = "2022";
+                            title = match ? cleanName : card.name;
+                        }
+                    }
+                    // -------------------------------------------------------------
+
+                    if (!match && parts.length === 1 && sourceYear !== '2022') { title = card.name; client = "VARIOS"; }
 
                     const tags = (card.idLabels || []).map(id => labelsMap[id]).filter(t => t);
                     const tagNames = tags.map(t => t.name).join(' ');
@@ -436,6 +468,8 @@
                 const num = p.numeroProyecto ? p.numeroProyecto.trim() : null;
                 if(num && companyProjectsMap[num]) {
                     const comp = companyProjectsMap[num];
+                    p.cliente = comp.cliente;
+                    p.tituloProyecto = comp.tituloProyecto;
                     p.trelloTags = comp.tags;
                     p.trelloUrl = comp.trelloUrl;
                     p.sourceYear = comp.sourceYear; 
@@ -518,9 +552,7 @@
         function itemMatchesQuery(item, query) {
             if (!query) return true;
             const q = query.toLowerCase();
-            
             if (q === 'falta') return item.check && String(item.check).toUpperCase() === 'FALTA';
-
             const normQuery = normalizeStr(query);
             const normText = normalizeStr(item.searchIndex || '');
             const tokens = normQuery.split(/\s+/).filter(t => t.length > 0);
@@ -530,11 +562,9 @@
         function highlightMatch(text, query) {
             if (!text || !query) return text;
             if (query.toLowerCase() === 'falta' || query.match(/^202[2-6]$/)) return text;
-
             const normText = normalizeStr(text);
             const tokens = normalizeStr(query).split(/\s+/).filter(t => t.length > 0);
             if (tokens.length === 0) return text;
-
             const shouldHighlight = new Array(text.length).fill(false);
             tokens.forEach(token => {
                 let startIndex = 0;
@@ -547,7 +577,6 @@
                     startIndex = idx + 1;
                 }
             });
-
             let result = '';
             let isHighlighting = false;
             for (let i = 0; i < text.length; i++) {
@@ -590,19 +619,9 @@
         // --- LÓGICA DE AÑO ---
         function checkItemYear(item, yearStr) {
             const shortYear = yearStr.substring(2); 
-
-            // 1. Prioridad número
             const numberMatch = item.numeroProyecto ? item.numeroProyecto.match(/\/(\d{2})$/) : null;
-
-            if (numberMatch) {
-                return numberMatch[1] === shortYear;
-            }
-
-            // 2. Si no tiene número, miramos fecha
-            if (item.fecha && item.fecha.includes(yearStr)) {
-                return true;
-            }
-
+            if (numberMatch) return numberMatch[1] === shortYear;
+            if (item.fecha && item.fecha.includes(yearStr)) return true;
             return false;
         }
 
@@ -886,7 +905,7 @@
             activeCategoryFilter = null;
             isFinalViewFiltered = true; 
             updateFinalViewContent();
-            resetScroll('final-view'); // <-- RESET SCROLL AL ABRIR
+            resetScroll('final-view'); 
             finalView.classList.remove('translate-x-full');
         }
 
@@ -1020,7 +1039,6 @@
 
         function toTitleCase(s) { return s.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()); }
         
-        // --- FUNCIÓN AUXILIAR PARA RESETEAR SCROLL ---
         function resetScroll(containerId) {
             const view = document.getElementById(containerId);
             if (view) {
@@ -1033,9 +1051,8 @@
             }
         }
 
-        // --- FUNCIONES DE NAVEGACIÓN MODIFICADAS ---
         function openResultsView() { 
-            resetScroll('results-view'); // <-- RESET
+            resetScroll('results-view'); 
             searchView.classList.add('-translate-y-full', 'opacity-0'); 
             resultsView.classList.remove('translate-y-full'); 
         }
@@ -1046,7 +1063,7 @@
             currentClientName = clientName;
             isProjectListFiltered = true;
             renderProjectListContent();
-            resetScroll('project-list-view'); // <-- RESET
+            resetScroll('project-list-view'); 
             projectListView.classList.remove('translate-x-full');
         }
         
@@ -1064,7 +1081,7 @@
         }
         
         function closeProjectListView() { 
-            resetScroll('results-view'); // <-- AL VOLVER, RESET PADRE
+            resetScroll('results-view'); 
             projectListView.classList.add('translate-x-full'); 
             if(viewMode === 'YEAR') {
                closeResults(); 
@@ -1072,7 +1089,7 @@
         }
         
         function closeFinalView() { 
-            resetScroll('project-list-view'); // <-- AL VOLVER, RESET PADRE
+            resetScroll('project-list-view'); 
             finalView.classList.add('translate-x-full'); 
         }
     </script>
