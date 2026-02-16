@@ -12,7 +12,7 @@
         "cliente": "DIMASSI",
         "tituloProyecto": "EXHIBIDOR KOTEX FUCSIA 4 CARAS PARA FARMATODO",
         "trello": "EJA56mDC",
-        "descripcion": "Calculé con Branyesca el rendimiento de las ventanas acrílicas del mueble de Kotex para poder hacer la compra del acrílico",
+        "descripcion": "Calculé con Branyesca el rendimiento de las ventanas acrílicas del mueble de Kotex para poder hacer la compra del acrílico, lo subí al Drive",
         "drive": "https://drive.google.com/drive/folders/14lOmdJJpJVedRfd0P13bqUapm_Ro12cp?usp=drive_link",
         "check": "LISTO"
       },
@@ -336,7 +336,7 @@
         "trabajoDiseno": "PLANO MECÁNICO",
         "numeroProyecto": "1212/24",
         "cliente": "CERVECERÍA REGIONAL",
-        "tituloProyecto": "PIEZAS MALTA MORENA Y CERVEZA MORENA",
+        "tituloProyecto": "PIEZAS MALTA MORENA Y CERVEZA MORENA,",
         "trello": "lx98JBgn",
         "descripcion": "realicé el plano mecánico del carrito de Regional, se lo envié a Lorena y lo subí al Drive",
         "drive": "https://drive.google.com/drive/folders/1VDkvxmSHpfKs3o4nxN7AKuPHqHqtIex5",
@@ -487,7 +487,7 @@
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "1264/24",
         "cliente": "ALIMENTOS MARY",
-        "tituloProyecto": "MUEBLE LA MURALLA",
+        "tituloProyecto": "MUEBLE LA MURALLA -",
         "trello": "dGxF6Co3",
         "descripcion": "Pablo me entregó la muestra de color de Alimentos Mary",
         "drive": "https://drive.google.com/drive/folders/1SyYDBnnhLqEqXgC8u2ykqTNPDEDvKDIH?usp=drive_link",
@@ -559,9 +559,9 @@
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "140/25",
         "cliente": "NESTLÉ",
-        "tituloProyecto": "BANDEJAS PARA NESTEA",
+        "tituloProyecto": "BANDEJAS PARA NESTEA 5.",
         "trello": "kEN6uePO",
-        "descripcion": "5. Sustituí la orden de muestra que entregó Aleska",
+        "descripcion": "Sustituí la orden de muestra que entregó Aleska",
         "drive": "https://drive.google.com/drive/folders/1PYAyhMMrIqnpxE8rvnd90I_c80je51Wz?usp=drive_link",
         "check": "LISTO"
       },
@@ -651,7 +651,7 @@
         "numeroProyecto": "929/24",
         "cliente": "NESTLÉ",
         "tituloProyecto": "EXHIBIDORES NESCAFÉ DOLCE GUSTO",
-        "trello": "f7Q CofZ",
+        "trello": "f7Q",
         "descripcion": "Monté la orden de producción de los PAI para completar Dolce Gusto, entregué la orden y la subí al Drive",
         "drive": "https://drive.google.com/drive/folders/1GYmRIe7GJUE4-iIN0oaY3GYt7SmQnEyk?usp=drive_link",
         "check": "LISTO"
@@ -935,7 +935,7 @@
         "cliente": "PEPSICO",
         "tituloProyecto": "MUEBLES BETTER TOGETHER",
         "trello": "PIolTktx",
-        "descripcion": "Recibí de parte de Verónica la hoja de autorización visual 2 1155/24 de los muebles Better Together, la subí al Drive (12)",
+        "descripcion": "Recibí de parte de Verónica la hoja de  autorización visual 2 1155/24 de los muebles Better Together, la subí al Drive (12)",
         "drive": "https://drive.google.com/drive/folders/1_tJaXsgqlXUTpF22596kRboxI5ib3m8v",
         "check": "LISTO"
       },
@@ -1033,6 +1033,18 @@
         "trello": "aYeuRV0o",
         "descripcion": "María Gabriela le entregó a Guillermo la autorización de visual (20)",
         "drive": "https://drive.google.com/drive/folders/1iqOFUy2D0B838YEm_LDSWvPlxwJaqVjn?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(14)",
+        "fecha": "27/02/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "1264/24",
+        "cliente": "ALIMENTOS MARY",
+        "tituloProyecto": "MUEBLE LA MURALLA",
+        "trello": "dGxF6Co3",
+        "descripcion": "Recibí de parte de Milka la autorización de Visual del mueble de la Muralla (21)",
+        "drive": "https://drive.google.com/drive/folders/1zkeC8CnM2jKhcoIAQS79So62qHMpEuKu?usp=drive_link",
         "check": "LISTO"
       }
     ]

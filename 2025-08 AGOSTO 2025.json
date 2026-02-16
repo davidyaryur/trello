@@ -54,30 +54,18 @@
       },
       {
         "id": "(05)",
-        "fecha": "11/08/2025",
+        "fecha": "12/08/2025",
         "trabajoDiseno": "RENDIMIENTO",
-        "numeroProyecto": "439/25",
-        "cliente": "CAFÉ SAN DOMINGO",
-        "tituloProyecto": "EXHIBIDORES - MATERIAL POP",
-        "trello": "XWEcC8WU",
-        "descripcion": "Calculé con Enmary el rendimiento de las ristras para San Domingo",
-        "drive": "https://drive.google.com/drive/folders/1btbckTYod3M1EMVy3IcrjCVNm8_Ajkmf?usp=drive_link",
+        "numeroProyecto": "TENTATIVO 52/25",
+        "cliente": "VOLTEX",
+        "tituloProyecto": "EXHIBIDOR DE MESA",
+        "trello": "m8QSGjTJ",
+        "descripcion": "Realicé el rendimiento del counter para aceites de Veronica Tentativo 52",
+        "drive": "https://drive.google.com/drive/folders/15xtkmjEpBMDWwBQZ9U-S10ZqphbZo3vd?usp=drive_link",
         "check": "LISTO"
       },
       {
         "id": "(06)",
-        "fecha": "11/08/2025",
-        "trabajoDiseno": "RENDIMIENTO",
-        "numeroProyecto": "TENTATIVO 42/25",
-        "cliente": "NESTLÉ",
-        "tituloProyecto": "CORPÓREO PURINA",
-        "trello": "NnLeRx8D",
-        "descripcion": "Le envié a Milka el rendimiento actualizado del corpóreo Purina",
-        "drive": "https://drive.google.com/drive/folders/1d2TYOTxof4g1-jS9di163ejaUka-rUbJ?usp=drive_link",
-        "check": "FALTA"
-      },
-      {
-        "id": "(07)",
         "fecha": "15/08/2025",
         "trabajoDiseno": "RENDIMIENTO",
         "numeroProyecto": "601/25",
@@ -89,19 +77,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(08)",
-        "fecha": "20/08/2025",
-        "trabajoDiseno": "RENDIMIENTO",
-        "numeroProyecto": "568/25",
-        "cliente": "SCJ",
-        "tituloProyecto": "FIXTURIZACION MUEBLES",
-        "trello": "jjWDt16i",
-        "descripcion": "Le envié a Enmary el rendimiento de los muebles de SCJ",
-        "drive": "https://drive.google.com/drive/folders/1q8VuWROuFPIFN5jAPA7zDE48Abnuos__?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
-        "id": "(09)",
+        "id": "(07)",
         "fecha": "21/08/2025",
         "trabajoDiseno": "RENDIMIENTO",
         "numeroProyecto": "681/25",
@@ -113,7 +89,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(10)",
+        "id": "(08)",
         "fecha": "22/08/2025",
         "trabajoDiseno": "RENDIMIENTO",
         "numeroProyecto": "568/25",
@@ -122,6 +98,30 @@
         "trello": "jjWDt16i",
         "descripcion": "Le envié a Enmary el rendimiento de los muebles de SCJ",
         "drive": "https://drive.google.com/drive/folders/1q8VuWROuFPIFN5jAPA7zDE48Abnuos__?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(09)",
+        "fecha": "26/08/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "568/25",
+        "cliente": "SCJ",
+        "tituloProyecto": "FIXTURIZACION MUEBLES - VISUAL",
+        "trello": "jjWDt16i",
+        "descripcion": "Le envié a Enmary la actualización de Rendimiento de SCJ",
+        "drive": "https://drive.google.com/drive/folders/1q8VuWROuFPIFN5jAPA7zDE48Abnuos__?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(10)",
+        "fecha": "28/08/2025",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "207/25",
+        "cliente": "NESTLÉ",
+        "tituloProyecto": "EXHIBIDORES PRO PLAN",
+        "trello": "YXqQqixf",
+        "descripcion": "Realicé el rendimiento del exhibidor de Purina",
+        "drive": "https://drive.google.com/drive/folders/1S0VxpzSdhfcnTKqMckQjNNInzCq6BZeR?usp=drive_link",
         "check": "LISTO"
       }
     ]
@@ -212,14 +212,14 @@
     "proyectos": [
       {
         "id": "(01)",
-        "fecha": "29/08/2025",
+        "fecha": "27/08/2025",
         "trabajoDiseno": "PLANO MECÁNICO",
-        "numeroProyecto": "196/25",
-        "cliente": "ALFONZO RIVAS",
-        "tituloProyecto": "EXHIBIDORES DE CARTÓN PARA MAIZORITOS",
-        "trello": "myFhDdNi",
-        "descripcion": "Realicé el plano mecánico en inglés del mueble de Maizoritos",
-        "drive": "https://drive.google.com/drive/folders/17zpmBzVktdUqw-Qav-oFTM7AvXCfNSLf?usp=drive_link",
+        "numeroProyecto": "TENTATIVO 57/25",
+        "cliente": "NESTLÉ",
+        "tituloProyecto": "EMPAQUE SUSY COCOSETTE",
+        "trello": "AyJzv7Xm",
+        "descripcion": "Le envié a Milka el plano mecánico del empaque para Susy y Cocosette",
+        "drive": "https://drive.google.com/drive/folders/17flhlxpTKD0t35cLYFVJ8bIwJ0chdBvv?usp=drive_link",
         "check": "LISTO"
       }
     ]
@@ -230,7 +230,7 @@
     "num": 46,
     "proyectos": [
       {
-        "id": "(01)",
+        "id": "(03)",
         "fecha": "05/08/2025",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "269/25",
@@ -279,18 +279,6 @@
       },
       {
         "id": "(05)",
-        "fecha": "12/08/2025",
-        "trabajoDiseno": "MUESTRA",
-        "numeroProyecto": "977/25",
-        "cliente": "HOLLY MASS",
-        "tituloProyecto": "EXHIBIDOR DE PISO GRANDE",
-        "trello": "qTaUCgIw",
-        "descripcion": "Saqué la muestra de color del exhibidor HollyMass",
-        "drive": "https://drive.google.com/drive/folders/1wBXS_eIGYO38Nn_mjCE6iEndkAznEaOa?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
-        "id": "(06)",
         "fecha": "14/08/2025",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "269/25",
@@ -302,19 +290,19 @@
         "check": "LISTO"
       },
       {
-        "id": "(07)",
+        "id": "(06)",
         "fecha": "20/08/2025",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "269/25",
         "cliente": "ALIMENTOS MARY",
         "tituloProyecto": "EXHIBIDOR CALEDONIA",
-        "trello": "HItfP1qy",
+        "trello": "TRELLO",
         "descripcion": "Le entregué a Pablo la orden de muestra del vinil de Caledonia con el color aprobado y el corte en Summa Cut del vinil LASER",
         "drive": "https://drive.google.com/drive/folders/1BtG9xOvrQ-FEnRVTNLBhy-3SdPg6wad1?usp=drive_link",
         "check": "LISTO"
       },
       {
-        "id": "(08)",
+        "id": "(07)",
         "fecha": "22/08/2025",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "269/25",
@@ -326,7 +314,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(09)",
+        "id": "(08)",
         "fecha": "25/08/2025",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "269/25",
@@ -338,7 +326,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(10)",
+        "id": "(09)",
         "fecha": "26/08/2025",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "681/25",
@@ -350,7 +338,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(11)",
+        "id": "(10)",
         "fecha": "27/08/2025",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "681/25",
@@ -359,6 +347,18 @@
         "trello": "Sxi5UhcO",
         "descripcion": "Le entregué a Pablo el vinil de la muestra del exhibidor Antimerma de Savoy",
         "drive": "https://drive.google.com/drive/folders/1pG1TPBBS4IAEbpZNePui27WYDSzHspIz?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(11)",
+        "fecha": "28/08/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "444/25",
+        "cliente": "INV. MAR MAR",
+        "tituloProyecto": "CAJA CON HOLOGRAMA PARA MODULAR",
+        "trello": "cmeFkPkA",
+        "descripcion": "Monté la orden de producción del anillo para el espejo y el holograma",
+        "drive": "https://drive.google.com/drive/folders/1MQtoc-ACC03eYqvnWpaIVO-vqEv7l4EY?usp=drive_link",
         "check": "LISTO"
       },
       {

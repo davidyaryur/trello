@@ -156,30 +156,6 @@
         "check": "LISTO"
       },
       {
-        "id": "(03)",
-        "fecha": "07/07/2025",
-        "trabajoDiseno": "VISUAL",
-        "numeroProyecto": "465/25",
-        "cliente": "YOLO",
-        "tituloProyecto": "PUNTERA PÁRAMO MANZANARES",
-        "trello": "OFonxFww",
-        "descripcion": "Realicé el video de Yolo para la pantalla cenefa",
-        "drive": "https://drive.google.com/drive/folders/17o5LP4B0E8Xgt8I4-Ynym3IbBU5Lel3i?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
-        "id": "(04)",
-        "fecha": "07/07/2025",
-        "trabajoDiseno": "VISUAL",
-        "numeroProyecto": "513/25",
-        "cliente": "NESTLÉ",
-        "tituloProyecto": "BOTADERO TORONTO",
-        "trello": "1g4HmHmm",
-        "descripcion": "Modifiqué el color de la tapa del botadero de Savoy y le envié el nuevo visual a Milka",
-        "drive": "https://drive.google.com/drive/folders/1MHSxOfBytd1vu6IRfqSgtjcZkdmufvc2?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
         "id": "(05)",
         "fecha": "09/07/2025",
         "trabajoDiseno": "VISUAL",
@@ -261,18 +237,6 @@
         "trello": "KTrjOpTQ",
         "descripcion": "Le envié a Lorena el video de Better Together Natuchips & 7Up",
         "drive": "https://drive.google.com/drive/folders/1Cieojek1a3RWc25Z5D-4jZmeRQ2fyfDn?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
-        "id": "(12)",
-        "fecha": "21/07/2025",
-        "trabajoDiseno": "VISUAL",
-        "numeroProyecto": "196/25",
-        "cliente": "ALFONZO RIVAS",
-        "tituloProyecto": "EXHIBIDORES DE CARTÓN PARA MAIZORITOS",
-        "trello": "myFhDdNi",
-        "descripcion": "Enmary me pidió que se viera el cabezal redondeado, lo modifiqué y se lo volví a enviar",
-        "drive": "https://drive.google.com/drive/folders/1bnhpZPIvCfaafRe39meYTmLN8fFJKVWs?usp=drive_link",
         "check": "LISTO"
       },
       {
@@ -434,18 +398,6 @@
         "check": "LISTO"
       },
       {
-        "id": "(03)",
-        "fecha": "21/07/2025",
-        "trabajoDiseno": "MUESTRA",
-        "numeroProyecto": "384/25",
-        "cliente": "NESTLÉ",
-        "tituloProyecto": "FLANYERS MAGGI",
-        "trello": "MC5CFgq3",
-        "descripcion": "Monté la orden de muestra física 2 del Flanger Maggi, la entregué y subí al Drive",
-        "drive": "https://drive.google.com/drive/folders/1omjNVpXifIoncbmRoFwlJNywE3WzjOX8?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
         "id": "(04)",
         "fecha": "22/07/2025",
         "trabajoDiseno": "MUESTRA",
@@ -558,18 +510,6 @@
         "trello": "G3pLHTk8",
         "descripcion": "Lorena me dijo que ya está aprobado VECIIINO, entregué la orden de producción",
         "drive": "https://drive.google.com/drive/folders/1-NtMuEyBxiBycv6SMWWG3DQgfXkghaeZ?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
-        "id": "(06)",
-        "fecha": "07/07/2025",
-        "trabajoDiseno": "PRODUCCIÓN",
-        "numeroProyecto": "444/25",
-        "cliente": "INV. MAR MAR",
-        "tituloProyecto": "CAJA CON HOLOGRAMA PARA MODULAR",
-        "trello": "cmeFkPkA",
-        "descripcion": "Entregué la orden de producción de las tres cajas para holograma",
-        "drive": "https://drive.google.com/drive/folders/1MQtoc-ACC03eYqvnWpaIVO-vqEv7l4EY?usp=drive_link",
         "check": "LISTO"
       },
       {
@@ -737,15 +677,15 @@
     "proyectos": [
       {
         "id": "(01)",
-        "fecha": "04/07/2025",
+        "fecha": "09/07/2025",
         "trabajoDiseno": "AUTORIZACIÓN",
-        "numeroProyecto": "568/25",
-        "cliente": "SCJ",
-        "tituloProyecto": "FIXTURIZACION MUEBLES - VISUAL",
-        "trello": "jjWDt16i",
-        "descripcion": "Enmary me entregó la autorización de Visual 2 para SCJ (66)",
-        "drive": "https://drive.google.com/drive/folders/1KYtXAjSbeyHfGj307-pmm1YShI9jJ52Y?usp=drive_link",
-        "check": "FALTA"
+        "numeroProyecto": "557/25",
+        "cliente": "LA SANTÉ",
+        "tituloProyecto": "CENEFAS VARIAS/PARABAN PARA FARMACIA",
+        "trello": "9Ehdb06W",
+        "descripcion": "Recibí de parte de Guillermo la autorización de Visual del proyecto 557/25 Ristra La Santé (58)",
+        "drive": "https://drive.google.com/drive/folders/1S7uEluoRLMhBWKzjOAPl1XnJ_q9PjS8s?usp=drive_link",
+        "check": "LISTO"
       },
       {
         "id": "(02)",

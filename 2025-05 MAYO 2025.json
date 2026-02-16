@@ -185,7 +185,7 @@
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "423/25",
         "cliente": "NESTLÉ",
-        "tituloProyecto": "ZONA BRIEF",
+        "tituloProyecto": "ZONA BREAK",
         "trello": "hB3Ac869",
         "descripcion": "Envié los tres fotomontajes a Milka de los corpóreos de Nestlé",
         "drive": "https://drive.google.com/drive/folders/1txCQGska-ItD9pRm2D6l0lsSs8fhiovL?usp=drive_link",
@@ -374,18 +374,6 @@
         "check": "LISTO"
       },
       {
-        "id": "(12)",
-        "fecha": "12/05/2025",
-        "trabajoDiseno": "MUESTRA",
-        "numeroProyecto": "283/25",
-        "cliente": "NESTLÉ",
-        "tituloProyecto": "RECOMPRA PORTAVASO NESCAFÉ",
-        "trello": "VjkG7jL0",
-        "descripcion": "Montar orden de muestra física 4 de Nescafé",
-        "drive": "https://drive.google.com/drive/folders/1QDJVuUGQs7v91MO997neOe1UCcQrNIH8?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
         "id": "(13)",
         "fecha": "14/05/2025",
         "trabajoDiseno": "MUESTRA",
@@ -463,7 +451,7 @@
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "384/25",
         "cliente": "NESTLÉ",
-        "tituloProyecto": "FLANYERS MAGGY",
+        "tituloProyecto": "FLANYERS MAGGI",
         "trello": "MC5CFgq3",
         "descripcion": "Hacer el fotolito del Troquel de Maggi y dejar preparada la orden de muestra física 2",
         "drive": "https://drive.google.com/drive/folders/1omjNVpXifIoncbmRoFwlJNywE3WzjOX8?usp=drive_link",
@@ -690,18 +678,6 @@
         "trello": "3KN3Dd78",
         "descripcion": "Entregué la orden de producción de la láminas de corte de MDF 18mm del cubre paletas",
         "drive": "https://drive.google.com/drive/folders/1m9PousjJtWwgPGSDTk2jTXvM-7p28o2Y?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
-        "id": "(14)",
-        "fecha": "23/05/2025",
-        "trabajoDiseno": "PRODUCCIÓN",
-        "numeroProyecto": "423/25",
-        "cliente": "NESTLÉ",
-        "tituloProyecto": "ZONA BRIEF",
-        "trello": "hB3Ac869",
-        "descripcion": "Entregar la orden de producción del MDF de la zona Brief de Nestlé",
-        "drive": "https://drive.google.com/drive/folders/1zAMFmUhMQqQCxpGUJ95Coj3nEi2OyAbJ?usp=drive_link",
         "check": "LISTO"
       },
       {

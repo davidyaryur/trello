@@ -1,8 +1,8 @@
 [
   {
-    "tableId": 1,
+    "tableId": 70,
     "mes": "ENERO",
-    "num": 8,
+    "num": 70,
     "proyectos": [
       {
         "id": "(1)",
@@ -11,7 +11,7 @@
         "numeroProyecto": "026/26",
         "cliente": "SCJ",
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
-        "trello": "IXghwijL",
+        "trello": "https",
         "descripcion": "Confirmé con Enmary el rendimiento de los muebles Fixturización y actualizamos",
         "drive": "https://drive.google.com/drive/folders/17xs4VeKwih-pcT6QX_Kp5M61d-E4zbf-?usp=drive_link",
         "check": "LISTO"
@@ -22,8 +22,8 @@
         "trabajoDiseno": "RENDIMIENTO",
         "numeroProyecto": "773/25",
         "cliente": "DIAGEO",
-        "tituloProyecto": "CAJA DE LUZ MEGALICOR LOS PALOS GRANDES",
-        "trello": "6zithg0E",
+        "tituloProyecto": "CAJA DE LUZ MEGALICOR  LOS PALOS GRANDES",
+        "trello": "https",
         "descripcion": "Le dije a Lorena que el tamaño del vinil es 135x170cm",
         "drive": "https://drive.google.com/drive/folders/1ZAO4684kyMSmQEFR0Psr4t_6OHCyR9BR?usp=drive_link",
         "check": "LISTO"
@@ -35,7 +35,7 @@
         "numeroProyecto": "500/25",
         "cliente": "NESTLÉ",
         "tituloProyecto": "RECOMPRA 3 EN 1",
-        "trello": "s8UfGu7d",
+        "trello": "https",
         "descripcion": "Imprimí la orden de producción del servilletero para entregarla a Milka como rendimiento",
         "drive": "https://drive.google.com/drive/folders/1g9djvjX3OU4vXFzgo7GipHpLi95viF7S?usp=drive_link",
         "check": "LISTO"
@@ -47,7 +47,7 @@
         "numeroProyecto": "TENTATIVO 001/26",
         "cliente": "NESTLÉ",
         "tituloProyecto": "DISPENSADOR DE VASOS NESCAFÉ",
-        "trello": "jf1FOfNj",
+        "trello": "https",
         "descripcion": "Calculé con Milka el rendimiento de los dispensadores de vasos Nescafé",
         "drive": "https://drive.google.com/drive/folders/117uf1p58VgjF9hO_dG-a1QxhaasZpvzK?usp=drive_link",
         "check": "LISTO"
@@ -59,7 +59,7 @@
         "numeroProyecto": "TENTATIVO 002/26",
         "cliente": "NESTLÉ",
         "tituloProyecto": "SERVILLETERO NESCAFÉ",
-        "trello": "uj1ID4s8",
+        "trello": "https",
         "descripcion": "Calculé con Milka el rendimiento de los servilleteros de Nescafé",
         "drive": "https://drive.google.com/drive/folders/1oA6t6MTfdTFIDuNKhduU7BgTr4KxwuZV?usp=drive_link",
         "check": "LISTO"
@@ -71,7 +71,7 @@
         "numeroProyecto": "049/26",
         "cliente": "ALFONZO RIVAS",
         "tituloProyecto": "EXHIBIDORES DE CARTÓN MAIZORITOS",
-        "trello": "QmdNSllv",
+        "trello": "https",
         "descripcion": "Le pasé a Enmary el rendimiento de los 100 exhibidores de cartón de Maizoritos",
         "drive": "https://drive.google.com/drive/folders/18mwWRZAUHAhlIXMUKmCgK0dpkoGgtTrV?usp=drive_link",
         "check": "LISTO"
@@ -83,7 +83,7 @@
         "numeroProyecto": "TENTATIVO 003/26",
         "cliente": "CREDELIO",
         "tituloProyecto": "EXHIBIDOR DE MESA",
-        "trello": "e2qaNroP",
+        "trello": "https",
         "descripcion": "Calculé el rendimiento del exhibidor de mesa que pidió Enmary de Credelio",
         "drive": "https://drive.google.com/drive/folders/1-wKxiKpWu5yr70BccEKwrv7Db4AKV78p?usp=drive_link",
         "check": "LISTO"
@@ -95,7 +95,7 @@
         "numeroProyecto": "TENTATIVO 004/26",
         "cliente": "YARYUR",
         "tituloProyecto": "EXHIBIDOR COUNTER",
-        "trello": "bHstuGXm",
+        "trello": "https",
         "descripcion": "Ayudé a Verónica a calcular el rendimiento de exhibidores de mesa",
         "drive": "https://drive.google.com/drive/folders/1u_0LODpk2cSD9eeI6U7WsfTNv9w-z3BD?usp=drive_link",
         "check": "LISTO"
@@ -103,9 +103,9 @@
     ]
   },
   {
-    "tableId": 2,
+    "tableId": 71,
     "mes": "ENERO",
-    "num": 17,
+    "num": 71,
     "proyectos": [
       {
         "id": "(1)",
@@ -114,7 +114,7 @@
         "numeroProyecto": "1006/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "PUNTERA DORITOS CHEESE TRIS REDVITAL LA URBINA",
-        "trello": "DVM3tXZJ",
+        "trello": "https",
         "descripcion": "Me llamó Samuel para que le explique cómo van rotulados los muebles Doritos Cheese Tris",
         "drive": "https://drive.google.com/drive/folders/1fM0Z6TmIy7tPRtDwv8FMgPV1gwwkRV2X?usp=drive_link",
         "check": "LISTO"
@@ -126,7 +126,7 @@
         "numeroProyecto": "1006/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "PUNTERA DORITOS CHEESE TRIS REDVITAL LA URBINA",
-        "trello": "DVM3tXZJ",
+        "trello": "https",
         "descripcion": "Me llamó Samuel para que le indique cómo van los muebles de Doritos Chees Tris",
         "drive": "https://drive.google.com/drive/folders/1fM0Z6TmIy7tPRtDwv8FMgPV1gwwkRV2X?usp=drive_link",
         "check": "LISTO"
@@ -138,21 +138,9 @@
         "numeroProyecto": "462/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL/ RETIRAR MUEBLES",
-        "trello": "KTrjOpTQ",
+        "trello": "https",
         "descripcion": "Realicé el visual de NatuChips 7Up, se lo envié a Lorena por correo",
         "drive": "https://drive.google.com/drive/folders/1Cieojek1a3RWc25Z5D-4jZmeRQ2fyfDn?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
-        "id": "(4)",
-        "fecha": "15/01/2026",
-        "trabajoDiseno": "VISUAL",
-        "numeroProyecto": "026/26",
-        "cliente": "SCJ",
-        "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
-        "trello": "IXghwijL",
-        "descripcion": "Me reuní con Enmary para definir el proyecto de Fixturización de SCJ",
-        "drive": "https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link",
         "check": "LISTO"
       },
       {
@@ -162,7 +150,7 @@
         "numeroProyecto": "026/26",
         "cliente": "SCJ",
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
-        "trello": "IXghwijL",
+        "trello": "https",
         "descripcion": "Me puse con el visual de SCJ Insecticidas",
         "drive": "https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link",
         "check": "LISTO"
@@ -174,7 +162,7 @@
         "numeroProyecto": "026/26",
         "cliente": "SCJ",
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
-        "trello": "IXghwijL",
+        "trello": "https",
         "descripcion": "Terminé el visual de Insecticidas de SCJ",
         "drive": "https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link",
         "check": "LISTO"
@@ -186,7 +174,7 @@
         "numeroProyecto": "026/26",
         "cliente": "SCJ",
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
-        "trello": "IXghwijL",
+        "trello": "https",
         "descripcion": "Comencé el visual de repelentes de SCJ",
         "drive": "https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link",
         "check": "LISTO"
@@ -198,7 +186,7 @@
         "numeroProyecto": "026/26",
         "cliente": "SCJ",
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
-        "trello": "IXghwijL",
+        "trello": "https",
         "descripcion": "Terminé el visual de Repelentes de SCJ",
         "drive": "https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link",
         "check": "LISTO"
@@ -210,7 +198,7 @@
         "numeroProyecto": "026/26",
         "cliente": "SCJ",
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
-        "trello": "IXghwijL",
+        "trello": "https",
         "descripcion": "Le envié a Enmary los visuales de Insecticidas, repelentes y las capturas de pantalla de Glade",
         "drive": "https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link",
         "check": "LISTO"
@@ -219,11 +207,11 @@
         "id": "(10)",
         "fecha": "22/01/2026",
         "trabajoDiseno": "VISUAL",
-        "numeroProyecto": "032/26",
-        "cliente": "COLGATE",
-        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
-        "trello": "b9rLxy4Z",
-        "descripcion": "Andrea Istúriz me explicó que el exhibidor de Colgate va a ser de Protex y Palmolive",
+        "numeroProyecto": "S/N",
+        "cliente": "DESCONOCIDO",
+        "tituloProyecto": "032/26 - COLGATE- EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Andrea Istúriz me explicó que el exhibidor de Colgate va a ser de Protex y Palmolive",
+        "trello": "https",
+        "descripcion": "",
         "drive": "https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link",
         "check": "LISTO"
       },
@@ -234,7 +222,7 @@
         "numeroProyecto": "026/26",
         "cliente": "SCJ",
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
-        "trello": "IXghwijL",
+        "trello": "https",
         "descripcion": "Adelanté Ambientadores de SCJ, tomé captura de pantalla y se la envié a Enmary",
         "drive": "https://drive.google.com/drive/folders/1kFMPww44N8BfomqQU2ahlQl5udtbpgYq?usp=drive_link",
         "check": "LISTO"
@@ -246,7 +234,7 @@
         "numeroProyecto": "026/26",
         "cliente": "SCJ",
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
-        "trello": "IXghwijL",
+        "trello": "https",
         "descripcion": "Enmary me dijo los cambios en los muebles de SCJ",
         "drive": "https://drive.google.com/drive/folders/1kFMPww44N8BfomqQU2ahlQl5udtbpgYq?usp=drive_link",
         "check": "LISTO"
@@ -258,7 +246,7 @@
         "numeroProyecto": "026/26",
         "cliente": "SCJ",
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
-        "trello": "IXghwijL",
+        "trello": "https",
         "descripcion": "Le mostré a Enmary el visual de SCJ, le prometí la animación para mañana",
         "drive": "https://drive.google.com/drive/folders/1kFMPww44N8BfomqQU2ahlQl5udtbpgYq?usp=drive_link",
         "check": "LISTO"
@@ -270,7 +258,7 @@
         "numeroProyecto": "026/26",
         "cliente": "SCJ",
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
-        "trello": "IXghwijL",
+        "trello": "https",
         "descripcion": "Le envié a Enmary los visuales y la animación de Fisturización de SCJ",
         "drive": "https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link",
         "check": "LISTO"
@@ -282,7 +270,7 @@
         "numeroProyecto": "053/26",
         "cliente": "PEPSICO",
         "tituloProyecto": "MUEBLE MURALLA NATUCHIPS",
-        "trello": "jnKUhXD8",
+        "trello": "https",
         "descripcion": "Terminé el mueble de NatuChips de la Muralla y se lo envié a Lorena",
         "drive": "https://drive.google.com/drive/folders/1ADWsjAQZI_d-3PoSrpuvaktxsOaGbVze?usp=drive_link",
         "check": "LISTO"
@@ -291,11 +279,11 @@
         "id": "(16)",
         "fecha": "29/01/2026",
         "trabajoDiseno": "VISUAL",
-        "numeroProyecto": "032/26",
-        "cliente": "COLGATE",
-        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
-        "trello": "b9rLxy4Z",
-        "descripcion": "Puse a renderizar el mueble de Cuidado Personal de Colgate",
+        "numeroProyecto": "S/N",
+        "cliente": "DESCONOCIDO",
+        "tituloProyecto": "032/26 - COLGATE- EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Puse a renderizar el mueble de Cuidado Personal de Colgate",
+        "trello": "https",
+        "descripcion": "",
         "drive": "https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link",
         "check": "LISTO"
       },
@@ -303,20 +291,20 @@
         "id": "(17)",
         "fecha": "30/01/2026",
         "trabajoDiseno": "VISUAL",
-        "numeroProyecto": "032/26",
-        "cliente": "COLGATE",
-        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
-        "trello": "b9rLxy4Z",
-        "descripcion": "Envié a Andrea el visual del exhibidor Cuidado Personal de Colgate",
+        "numeroProyecto": "S/N",
+        "cliente": "DESCONOCIDO",
+        "tituloProyecto": "032/26 - COLGATE- EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Envié a Andrea el visual del exhibidor Cuidado Personal de Colgate",
+        "trello": "https",
+        "descripcion": "",
         "drive": "https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link",
         "check": "LISTO"
       }
     ]
   },
   {
-    "tableId": 3,
+    "tableId": 72,
     "mes": "ENERO",
-    "num": 4,
+    "num": 72,
     "proyectos": [
       {
         "id": "(1)",
@@ -325,9 +313,9 @@
         "numeroProyecto": "026/26",
         "cliente": "SCJ",
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
-        "trello": "IXghwijL",
-        "descripcion": "Descargué los planos mecánicos de Fixturización de SCJ",
-        "drive": "https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link",
+        "trello": "https",
+        "descripcion": "Descargué los planos mecánicos de Fixturización de SCJ 3. VISUAL: (4): 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Me reuní con Enmary para definir el proyecto de Fixturización de SCJ",
+        "drive": "https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link",
         "check": "LISTO"
       },
       {
@@ -337,7 +325,7 @@
         "numeroProyecto": "871/25",
         "cliente": "YARYUR",
         "tituloProyecto": "PUNTERA FERIA DORITOS / RETIRAR FACTURA Y LLEVAR SELLO DE YARYUR",
-        "trello": "L7qalFXM",
+        "trello": "https",
         "descripcion": "Le envié a Lorena el plano mecánico de las medidas globales del mueble Doritos de la Feria",
         "drive": "https://drive.google.com/drive/folders/1-_cGC7wa0dMro9eoCplWNX0R-sWjIlDn?usp=drive_link",
         "check": "LISTO"
@@ -349,7 +337,7 @@
         "numeroProyecto": "871/25",
         "cliente": "YARYUR",
         "tituloProyecto": "PUNTERA FERIA DORITOS / RETIRAR FACTURA Y LLEVAR SELLO DE YARYUR",
-        "trello": "L7qalFXM",
+        "trello": "https",
         "descripcion": "Lorena me pidió actualizar el plano mecánico, para separar la altura del cabezal",
         "drive": "https://drive.google.com/drive/folders/1-_cGC7wa0dMro9eoCplWNX0R-sWjIlDn?usp=drive_link",
         "check": "LISTO"
@@ -361,7 +349,7 @@
         "numeroProyecto": "207/25",
         "cliente": "NESTLÉ",
         "tituloProyecto": "EXHIBIDORES PRO PLAN",
-        "trello": "YXqQqixf",
+        "trello": "https",
         "descripcion": "Le asigné a Karely el plano mecánico del exhibidor de Purina",
         "drive": "https://drive.google.com/drive/folders/1x7YRwQoslnUMdnIHVj9xWJZdHD1l4QtH?usp=drive_link",
         "check": "LISTO"
@@ -369,9 +357,9 @@
     ]
   },
   {
-    "tableId": 4,
+    "tableId": 73,
     "mes": "ENERO",
-    "num": 11,
+    "num": 73,
     "proyectos": [
       {
         "id": "(1)",
@@ -380,7 +368,7 @@
         "numeroProyecto": "009/26",
         "cliente": "DIAGEO",
         "tituloProyecto": "PIEZAS TROPICAL (ANTIGUO 1043/25)",
-        "trello": "bSM3isvj",
+        "trello": "https",
         "descripcion": "Monté la muestra de color de Piezas Tropical Diageo y le entregué la orden a Pablo",
         "drive": "https://drive.google.com/drive/folders/1OZo75F5oEA0DFKiZRcf17f2d1oLiPF5H?usp=drive_link",
         "check": "LISTO"
@@ -392,7 +380,7 @@
         "numeroProyecto": "049/26",
         "cliente": "ALFONZO RIVAS",
         "tituloProyecto": "EXHIBIDORES DE CARTÓN MAIZORITOS",
-        "trello": "QmdNSllv",
+        "trello": "https",
         "descripcion": "Monté la orden de muestra del exhibidor de Maizoritos",
         "drive": "https://drive.google.com/drive/folders/1ryCX6adu7OpPN-T_1xgtN1K7w1LoIQFX?usp=drive_link",
         "check": "LISTO"
@@ -404,7 +392,7 @@
         "numeroProyecto": "030/26",
         "cliente": "COLGATE",
         "tituloProyecto": "EXHIBIDOR PLEGABLE DE CARTÓN (CHINO)",
-        "trello": "VlNxGWPp",
+        "trello": "https",
         "descripcion": "Me puse a desarrollar los exhibidores de cartón para Colgate",
         "drive": "https://drive.google.com/drive/folders/1Gueht9E0OY7g4eUsvwIBT3wI2XRhHa9Z?usp=drive_link",
         "check": "LISTO"
@@ -416,7 +404,7 @@
         "numeroProyecto": "030/26",
         "cliente": "COLGATE",
         "tituloProyecto": "EXHIBIDOR PLEGABLE DE CARTON (CHINO)",
-        "trello": "VlNxGWPp",
+        "trello": "https",
         "descripcion": "Entregué la muestra física de los exhibidores de Cartón",
         "drive": "https://drive.google.com/drive/folders/1Gueht9E0OY7g4eUsvwIBT3wI2XRhHa9Z?usp=drive_link",
         "check": "LISTO"
@@ -428,7 +416,7 @@
         "numeroProyecto": "009/26",
         "cliente": "DIAGEO",
         "tituloProyecto": "PIEZAS TROPICAL (ANTIGUO 1043/25)",
-        "trello": "bSM3isvj",
+        "trello": "https",
         "descripcion": "Realicé los cambios de la muestra de color de Diageo",
         "drive": "https://drive.google.com/drive/folders/1OZo75F5oEA0DFKiZRcf17f2d1oLiPF5H?usp=drive_link",
         "check": "LISTO"
@@ -440,7 +428,7 @@
         "numeroProyecto": "049/26",
         "cliente": "ALFONZO RIVAS",
         "tituloProyecto": "EXHIBIDORES DE CARTÓN MAIZORITOS",
-        "trello": "QmdNSllv",
+        "trello": "https",
         "descripcion": "Armé el exhibidor de Maizoritos y Enmary lo firmó",
         "drive": "https://drive.google.com/drive/folders/1ryCX6adu7OpPN-T_1xgtN1K7w1LoIQFX?usp=drive_link",
         "check": "LISTO"
@@ -452,7 +440,7 @@
         "numeroProyecto": "030/26",
         "cliente": "COLGATE",
         "tituloProyecto": "EXHIBIDOR PLEGABLE DE CARTÓN (CHINO)",
-        "trello": "VlNxGWPp",
+        "trello": "https",
         "descripcion": "Armamos los exhibidores de Colgate",
         "drive": "https://drive.google.com/drive/folders/1Gueht9E0OY7g4eUsvwIBT3wI2XRhHa9Z?usp=drive_link",
         "check": "LISTO"
@@ -464,7 +452,7 @@
         "numeroProyecto": "030/26",
         "cliente": "COLGATE",
         "tituloProyecto": "EXHIBIDOR PLEGABLE DE CARTÓN (CHINO)",
-        "trello": "VlNxGWPp",
+        "trello": "https",
         "descripcion": "Armamos el mueble delgado de Colgate en la oficina de diseño",
         "drive": "https://drive.google.com/drive/folders/1Gueht9E0OY7g4eUsvwIBT3wI2XRhHa9Z?usp=drive_link",
         "check": "LISTO"
@@ -476,7 +464,7 @@
         "numeroProyecto": "009/26",
         "cliente": "DIAGEO",
         "tituloProyecto": "PIEZAS TROPICAL (ANTIGUO 1043/25)",
-        "trello": "bSM3isvj",
+        "trello": "https",
         "descripcion": "Saqué la muestra 3 de Diageo con los degradados de las piezas Tropical",
         "drive": "https://drive.google.com/drive/folders/1OZo75F5oEA0DFKiZRcf17f2d1oLiPF5H?usp=drive_link",
         "check": "LISTO"
@@ -488,7 +476,7 @@
         "numeroProyecto": "009/26",
         "cliente": "DIAGEO",
         "tituloProyecto": "PIEZAS TROPICAL (ANTIGUO 1043/25)",
-        "trello": "bSM3isvj",
+        "trello": "https",
         "descripcion": "Mandé la tercera muestra de color de Diageo tropical",
         "drive": "https://drive.google.com/drive/folders/1OZo75F5oEA0DFKiZRcf17f2d1oLiPF5H?usp=drive_link",
         "check": "LISTO"
@@ -500,7 +488,7 @@
         "numeroProyecto": "009/26",
         "cliente": "DIAGEO",
         "tituloProyecto": "PIEZAS TROPICAL (ANTIGUO 1043/25)",
-        "trello": "bSM3isvj",
+        "trello": "https",
         "descripcion": "Monté la orden de muestra del Plinko",
         "drive": "https://drive.google.com/drive/folders/1OZo75F5oEA0DFKiZRcf17f2d1oLiPF5H?usp=drive_link",
         "check": "LISTO"
@@ -508,9 +496,9 @@
     ]
   },
   {
-    "tableId": 5,
+    "tableId": 74,
     "mes": "ENERO",
-    "num": 19,
+    "num": 74,
     "proyectos": [
       {
         "id": "(1)",
@@ -519,7 +507,7 @@
         "numeroProyecto": "761/25",
         "cliente": "COLGATE",
         "tituloProyecto": "FERIA DE PROVEEDORES",
-        "trello": "iKI8or8k",
+        "trello": "https",
         "descripcion": "Adapté los artes de Colgate a las nuevas dimensiones de los exhibidores de Cartón",
         "drive": "https://drive.google.com/drive/folders/1559Uk7QdMyNNqBGUW3qv1vziuVkFzVXe?usp=drive_link",
         "check": "LISTO"
@@ -531,7 +519,7 @@
         "numeroProyecto": "1004/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "PUNTERA CHEESE TRIS PÁRAMO PETARE",
-        "trello": "dcNaTeaK",
+        "trello": "https",
         "descripcion": "Realicé la orden de los parachoques de las punteras de Pepsico que quedaron para 2026",
         "drive": "https://drive.google.com/drive/folders/1hMrH4ev1WtYP3HfxOsb3lHGF8Exr8FuV?usp=drive_link",
         "check": "LISTO"
@@ -543,7 +531,7 @@
         "numeroProyecto": "1005/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "PUNTERA DINAMITA PÁRAMO PALO VERDE",
-        "trello": "afnQnWy3",
+        "trello": "https",
         "descripcion": "Realicé la orden de los parachoques de las punteras de Pepsico que quedaron para 2026",
         "drive": "https://drive.google.com/drive/folders/19sHiE0DBM7uviB449cwRTDczpgD2rKUC?usp=drive_link",
         "check": "LISTO"
@@ -555,7 +543,7 @@
         "numeroProyecto": "1006/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "PUNTERA DORITOS CHEESE TRIS REDVITAL LA URBINA",
-        "trello": "DVM3tXZJ",
+        "trello": "https",
         "descripcion": "Realicé la orden de los parachoques de las punteras de Pepsico que quedaron para 2026",
         "drive": "https://drive.google.com/drive/folders/1HLCHeduSaW7mQRKPuHhiVdz8oVJKvtO3?usp=drive_link",
         "check": "LISTO"
@@ -567,7 +555,7 @@
         "numeroProyecto": "1005/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "PUNTERA DINAMITA PÁRAMO PALO VERDE",
-        "trello": "afnQnWy3",
+        "trello": "https",
         "descripcion": "Realicé la orden de pintura de la puntera de Dinamita de color morado",
         "drive": "https://drive.google.com/drive/folders/19sHiE0DBM7uviB449cwRTDczpgD2rKUC?usp=drive_link",
         "check": "LISTO"
@@ -579,7 +567,7 @@
         "numeroProyecto": "958/25",
         "cliente": "LA ESTRELLA DE ORO",
         "tituloProyecto": "REVESTIMIENTO PUNTERAS",
-        "trello": "9mGVR4vu",
+        "trello": "https",
         "descripcion": "Alexander me llamó para preguntarme cómo va armado la Estrella de Oro",
         "drive": "https://drive.google.com/drive/folders/1lDCuRBrJ57cfksa0L10Sx4b3ib4pjgtn?usp=drive_link",
         "check": "LISTO"
@@ -591,33 +579,9 @@
         "numeroProyecto": "1006/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "PUNTERA DORITOS CHEESE TRIS REDVITAL LA URBINA",
-        "trello": "DVM3tXZJ",
+        "trello": "https",
         "descripcion": "Me di cuenta que el vinil de Doritos no tiene contraste, hablamos con Pablo para que lo repita",
         "drive": "https://drive.google.com/drive/folders/1HLCHeduSaW7mQRKPuHhiVdz8oVJKvtO3?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
-        "id": "(8)",
-        "fecha": "13/01/2026",
-        "trabajoDiseno": "PRODUCCIÓN",
-        "numeroProyecto": "761/25",
-        "cliente": "COLGATE",
-        "tituloProyecto": "FERIA DE PROVEEDORES",
-        "trello": "iKI8or8k",
-        "descripcion": "Le envié por el nuevo correo las artes del exhibidor de cartón de Colgate",
-        "drive": "https://drive.google.com/drive/folders/1559Uk7QdMyNNqBGUW3qv1vziuVkFzVXe?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
-        "id": "(9)",
-        "fecha": "13/01/2026",
-        "trabajoDiseno": "PRODUCCIÓN",
-        "numeroProyecto": "1005/25",
-        "cliente": "PEPSICO",
-        "tituloProyecto": "PUNTERA DINAMITA PÁRAMO PALO VERDE",
-        "trello": "afnQnWy3",
-        "descripcion": "Le entregué al señor Ricardo la orden de pintura del mueble Dinamita",
-        "drive": "https://drive.google.com/drive/folders/19sHiE0DBM7uviB449cwRTDczpgD2rKUC?usp=drive_link",
         "check": "LISTO"
       },
       {
@@ -627,7 +591,7 @@
         "numeroProyecto": "1005/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "PUNTERA DINAMITA PÁRAMO PALO VERDE",
-        "trello": "afnQnWy3",
+        "trello": "https",
         "descripcion": "Oliver me llamó para que le indique cómo va armado el mueble de Dinamita",
         "drive": "https://drive.google.com/drive/folders/19sHiE0DBM7uviB449cwRTDczpgD2rKUC?usp=drive_link",
         "check": "LISTO"
@@ -639,9 +603,33 @@
         "numeroProyecto": "871/25",
         "cliente": "YARYUR",
         "tituloProyecto": "PUNTERA FERIA DORITOS / RETIRAR FACTURA Y LLEVAR SELLO DE YARYUR",
-        "trello": "L7qalFXM",
+        "trello": "https",
         "descripcion": "Le envié a Lorena video que grabé del mueble Feria de Doritos",
         "drive": "https://drive.google.com/drive/folders/1NDUodEThDwKW9oTmMzrdt80S9osuHSMI?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(8)",
+        "fecha": "13/01/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "761/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "FERIA DE PROVEEDORES",
+        "trello": "https",
+        "descripcion": "Le envié por el nuevo correo las artes del exhibidor de cartón de Colgate",
+        "drive": "https://drive.google.com/drive/folders/1559Uk7QdMyNNqBGUW3qv1vziuVkFzVXe?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(9)",
+        "fecha": "13/01/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "1005/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERA DINAMITA PÁRAMO PALO VERDE",
+        "trello": "https",
+        "descripcion": "Le entregué al señor Ricardo la orden de pintura del mueble Dinamita",
+        "drive": "https://drive.google.com/drive/folders/19sHiE0DBM7uviB449cwRTDczpgD2rKUC?usp=drive_link",
         "check": "LISTO"
       },
       {
@@ -651,7 +639,7 @@
         "numeroProyecto": "1006/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "PUNTERA DORITOS CHEESE TRIS RED VITAL LA URBINA",
-        "trello": "DVM3tXZJ",
+        "trello": "https",
         "descripcion": "Me llamó Wilmer para que le explique cómo van los parachoques de Doritos y Cheese Tris",
         "drive": "https://drive.google.com/drive/folders/1HLCHeduSaW7mQRKPuHhiVdz8oVJKvtO3?usp=drive_link",
         "check": "LISTO"
@@ -663,7 +651,7 @@
         "numeroProyecto": "958/25",
         "cliente": "LA ESTRELLA DE ORO",
         "tituloProyecto": "REVESTIMIENTO PUNTERAS",
-        "trello": "9mGVR4vu",
+        "trello": "https",
         "descripcion": "Fui con Alexander a explicarle cómo van armadas las cajas de luz de estrella de oro",
         "drive": "https://drive.google.com/drive/folders/1lDCuRBrJ57cfksa0L10Sx4b3ib4pjgtn?usp=drive_link",
         "check": "LISTO"
@@ -675,7 +663,7 @@
         "numeroProyecto": "1005/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "PUNTERA DINAMITA PÁRAMO PALO VERDE",
-        "trello": "afnQnWy3",
+        "trello": "https",
         "descripcion": "Saqué la orden de producción del techo del mueble de Dinamita",
         "drive": "https://drive.google.com/drive/folders/19sHiE0DBM7uviB449cwRTDczpgD2rKUC?usp=drive_link",
         "check": "LISTO"
@@ -687,7 +675,7 @@
         "numeroProyecto": "022/26",
         "cliente": "RICHARD YARJOUR",
         "tituloProyecto": "BODA MARÍA ANTONIETA",
-        "trello": "EAkqqutY",
+        "trello": "https",
         "descripcion": "Monté la orden de producción de las cajas de la boda de María Antonieta",
         "drive": "https://drive.google.com/drive/folders/10GRiFBW9YyOC81AP_vjc_KMN8wSj-AeW?usp=drive_link",
         "check": "LISTO"
@@ -699,7 +687,7 @@
         "numeroProyecto": "049/26",
         "cliente": "ALFONZO RIVAS",
         "tituloProyecto": "EXHIBIDORES DE CARTÓN MAIZORITOS",
-        "trello": "QmdNSllv",
+        "trello": "https",
         "descripcion": "Dejé montada la orden de producción de del exhibidor de Maizoritos",
         "drive": "https://drive.google.com/drive/folders/1c7VotsFg1hhD2w_0BzZHbdRERAqhGB0Z?usp=drive_link",
         "check": "LISTO"
@@ -711,7 +699,7 @@
         "numeroProyecto": "049/26",
         "cliente": "ALFONZO RIVAS",
         "tituloProyecto": "EXHIBIDORES DE CARTÓN MAIZORITOS",
-        "trello": "QmdNSllv",
+        "trello": "https",
         "descripcion": "Entregué la orden de producción de los 100 exhibidores de Maizoritos",
         "drive": "https://drive.google.com/drive/folders/1c7VotsFg1hhD2w_0BzZHbdRERAqhGB0Z?usp=drive_link",
         "check": "LISTO"
@@ -723,7 +711,7 @@
         "numeroProyecto": "049/26",
         "cliente": "ALFONZO RIVAS",
         "tituloProyecto": "EXHIBIDORES DE CARTÓN MAIZORITOS",
-        "trello": "QmdNSllv",
+        "trello": "https",
         "descripcion": "Completé la producción de los exhibidores de Alfonzo Rivas, pieza que recomendó Argenis",
         "drive": "https://drive.google.com/drive/folders/1c7VotsFg1hhD2w_0BzZHbdRERAqhGB0Z?usp=drive_link",
         "check": "LISTO"
@@ -735,7 +723,7 @@
         "numeroProyecto": "009/26",
         "cliente": "DIAGEO",
         "tituloProyecto": "PIEZAS TROPICAL (ANTIGUO 1043/25)",
-        "trello": "bSM3isvj",
+        "trello": "https",
         "descripcion": "Entregué la orden de producción del Plinko de Diageo",
         "drive": "https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=drive_link",
         "check": "LISTO"

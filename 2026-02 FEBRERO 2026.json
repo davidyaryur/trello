@@ -1,18 +1,18 @@
 [
   {
-    "tableId": 6,
+    "tableId": 75,
     "mes": "FEBRERO",
-    "num": 3,
+    "num": 75,
     "proyectos": [
       {
         "id": "(1)",
         "fecha": "03/02/2026",
         "trabajoDiseno": "RENDIMIENTO",
-        "numeroProyecto": "032/26",
-        "cliente": "COLGATE",
-        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
-        "trello": "b9rLxy4Z",
-        "descripcion": "Calculé el rendimiento del exhibidor de Cuidado Personal de Colgate.",
+        "numeroProyecto": "S/N",
+        "cliente": "DESCONOCIDO",
+        "tituloProyecto": "032/26 - COLGATE- EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Calculé el rendimiento del exhibidor de Cuidado Personal de Colgate.",
+        "trello": "https",
+        "descripcion": "",
         "drive": "https://drive.google.com/drive/folders/18oQX3OQhVcY_F794qkiSX5Ngnrj6-kEi?usp=drive_link",
         "check": "LISTO"
       },
@@ -21,9 +21,9 @@
         "fecha": "05/02/2026",
         "trabajoDiseno": "RENDIMIENTO",
         "numeroProyecto": "084/26",
-        "cliente": "DISTRIBUIDORA INMARKET C.A.",
+        "cliente": "DISTRIBUIDORA INMARKET",
         "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
-        "trello": "pgXgDNDD",
+        "trello": "https",
         "descripcion": "Le envié a Verónica el rendimiento del dispensador de chocolates Milka",
         "drive": "https://drive.google.com/drive/folders/1ISx_kmwvkJf4MqUbpByK7MiHFGvPFX6t?usp=drive_link",
         "check": "LISTO"
@@ -32,29 +32,29 @@
         "id": "(3)",
         "fecha": "12/02/2026",
         "trabajoDiseno": "RENDIMIENTO",
-        "numeroProyecto": "032/26",
-        "cliente": "COLGATE",
-        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
-        "trello": "b9rLxy4Z",
-        "descripcion": "Le envié a Andrea la cantidad de vinil que hace falta para rotular el mueble de Colgate",
+        "numeroProyecto": "S/N",
+        "cliente": "DESCONOCIDO",
+        "tituloProyecto": "032/26 - COLGATE- EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Le envié a Andrea la cantidad de vinil que hace falta para rotular el mueble de Colgate",
+        "trello": "https",
+        "descripcion": "",
         "drive": "https://drive.google.com/drive/folders/18oQX3OQhVcY_F794qkiSX5Ngnrj6-kEi?usp=drive_link",
         "check": "LISTO"
       }
     ]
   },
   {
-    "tableId": 7,
+    "tableId": 76,
     "mes": "FEBRERO",
-    "num": 16,
+    "num": 76,
     "proyectos": [
       {
         "id": "(1)",
         "fecha": "02/02/2026",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "084/26",
-        "cliente": "DISTRIBUIDORA INMARKET C.A.",
+        "cliente": "DISTRIBUIDORA INMARKET",
         "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
-        "trello": "pgXgDNDD",
+        "trello": "https",
         "descripcion": "Hice un video con el avance del dispensador de chocolate Milka y se lo mandé a Verónica",
         "drive": "https://drive.google.com/drive/folders/1kx1Y-MPv1k7_2LKg2HTVGWsUbtAIoGaI?usp=drive_link",
         "check": "LISTO"
@@ -63,11 +63,11 @@
         "id": "(2)",
         "fecha": "04/02/2026",
         "trabajoDiseno": "VISUAL",
-        "numeroProyecto": "032/26",
-        "cliente": "COLGATE",
-        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
-        "trello": "b9rLxy4Z",
-        "descripcion": "Realicé la presentación del exhibidor de Personal Care de Colgate y se la envié a Andrea",
+        "numeroProyecto": "S/N",
+        "cliente": "DESCONOCIDO",
+        "tituloProyecto": "032/26 - COLGATE- EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM  Realicé la presentación del exhibidor de Personal Care de Colgate y se la envié a Andrea",
+        "trello": "https",
+        "descripcion": "",
         "drive": "https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link",
         "check": "LISTO"
       },
@@ -78,7 +78,7 @@
         "numeroProyecto": "053/26",
         "cliente": "PEPSICO",
         "tituloProyecto": "MUEBLE MURALLA NATUCHIPS",
-        "trello": "jnKUhXD8",
+        "trello": "https",
         "descripcion": "Acomodé el visual de NatuChips de la Muralla y lo dejé listo para renderizar",
         "drive": "https://drive.google.com/drive/folders/1ADWsjAQZI_d-3PoSrpuvaktxsOaGbVze?usp=drive_link",
         "check": "LISTO"
@@ -90,7 +90,7 @@
         "numeroProyecto": "053/26",
         "cliente": "PEPSICO",
         "tituloProyecto": "MUEBLE MURALLA NATUCHIPS",
-        "trello": "jnKUhXD8",
+        "trello": "https",
         "descripcion": "Acomodé el visual de NatuChips de la Muralla y se lo mandé a Lorena",
         "drive": "https://drive.google.com/drive/folders/1ADWsjAQZI_d-3PoSrpuvaktxsOaGbVze?usp=drive_link",
         "check": "LISTO"
@@ -102,7 +102,7 @@
         "numeroProyecto": "030/26",
         "cliente": "COLGATE",
         "tituloProyecto": "EXHIBIDOR PLEGABLE DE CARTÓN (CHINO)",
-        "trello": "VlNxGWPp",
+        "trello": "https",
         "descripcion": "Convertí el archivo 3DSMax en OBJ para cambiarle las texturas",
         "drive": "https://drive.google.com/drive/folders/1Q8MmzfPO7TQrPk-C422RU_Sxdp7wTXgh?usp=drive_link",
         "check": "LISTO"
@@ -114,7 +114,7 @@
         "numeroProyecto": "076/26",
         "cliente": "LA SANTE",
         "tituloProyecto": "RISTRAS PARA AIREX",
-        "trello": "hNu0E4ZO",
+        "trello": "https",
         "descripcion": "Realicé el visual de la ristra de La Santé y se lo envié a Milka",
         "drive": "https://drive.google.com/drive/folders/1LYNrAOufMtUAkHEW_k77S4vnmyzXBUjN?usp=drive_link",
         "check": "LISTO"
@@ -126,7 +126,7 @@
         "numeroProyecto": "076/26",
         "cliente": "LA SANTE",
         "tituloProyecto": "RISTRAS PARA AIREX",
-        "trello": "hNu0E4ZO",
+        "trello": "https",
         "descripcion": "Volver a renderizar la Ristra de Airex con la sugerencia que hizo Milka",
         "drive": "https://drive.google.com/drive/folders/1LYNrAOufMtUAkHEW_k77S4vnmyzXBUjN?usp=drive_link",
         "check": "LISTO"
@@ -138,7 +138,7 @@
         "numeroProyecto": "053/26",
         "cliente": "PEPSICO",
         "tituloProyecto": "MUEBLE MURALLA NATUCHIPS",
-        "trello": "jnKUhXD8",
+        "trello": "https",
         "descripcion": "Modifiqué el visual de la Muralla, le envié las nuevas propuestas a Lorena",
         "drive": "https://drive.google.com/drive/folders/1wZz6RLIvTMdaufm3WJypJyTsQ5YrAjQm?usp=drive_link",
         "check": "LISTO"
@@ -150,7 +150,7 @@
         "numeroProyecto": "073/26",
         "cliente": "ALIMENTOS POLAR",
         "tituloProyecto": "PROPUESTA DE PIEZAS",
-        "trello": "ULa3tJyX",
+        "trello": "https",
         "descripcion": "Le envié a Zaida los visuales que realicé para Alimentos Polar",
         "drive": "https://drive.google.com/drive/folders/1Y0x10VNLKUVS4fIiEl1qXnxaETW-z6XG?usp=drive_link",
         "check": "LISTO"
@@ -162,7 +162,7 @@
         "numeroProyecto": "462/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL",
-        "trello": "KTrjOpTQ",
+        "trello": "https",
         "descripcion": "Corregí el visual y lo dejé listo para renderizar",
         "drive": "https://drive.google.com/drive/folders/1Cieojek1a3RWc25Z5D-4jZmeRQ2fyfDn?usp=drive_link",
         "check": "LISTO"
@@ -174,7 +174,7 @@
         "numeroProyecto": "462/25",
         "cliente": "PEPSICO",
         "tituloProyecto": "MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL",
-        "trello": "KTrjOpTQ",
+        "trello": "https",
         "descripcion": "Envié el visual de BT NatuChips 7Up sin Nevera a Lorena",
         "drive": "https://drive.google.com/drive/folders/1Cieojek1a3RWc25Z5D-4jZmeRQ2fyfDn?usp=drive_link",
         "check": "LISTO"
@@ -183,11 +183,11 @@
         "id": "(12)",
         "fecha": "11/02/2026",
         "trabajoDiseno": "VISUAL",
-        "numeroProyecto": "032/26",
-        "cliente": "COLGATE",
-        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
-        "trello": "b9rLxy4Z",
-        "descripcion": "Terminé el visual de Colgate mueble cuidado personal y se lo envié a Andrea",
+        "numeroProyecto": "S/N",
+        "cliente": "DESCONOCIDO",
+        "tituloProyecto": "032/26 - COLGATE- EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Terminé el visual de Colgate mueble cuidado personal y se lo envié a Andrea",
+        "trello": "https",
+        "descripcion": "",
         "drive": "https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link",
         "check": "LISTO"
       },
@@ -198,7 +198,7 @@
         "numeroProyecto": "053/26",
         "cliente": "PEPSICO",
         "tituloProyecto": "MUEBLE MURALLA NATUCHIPS",
-        "trello": "jnKUhXD8",
+        "trello": "https",
         "descripcion": "Envié a Lorena el visual con las modificaciones del mueble para la Muralla de NatuChips",
         "drive": "https://drive.google.com/drive/folders/1mjvddw_g7Q_SPMa1VMfWnEJUfbIMcNfM?usp=drive_link",
         "check": "LISTO"
@@ -210,7 +210,7 @@
         "numeroProyecto": "053/26",
         "cliente": "PEPSICO",
         "tituloProyecto": "MUEBLE MURALLA NATUCHIPS",
-        "trello": "jnKUhXD8",
+        "trello": "https",
         "descripcion": "Le envié a Lorena las actualizaciones del visual de NatuChips La Muralla",
         "drive": "https://drive.google.com/drive/folders/1mjvddw_g7Q_SPMa1VMfWnEJUfbIMcNfM?usp=drive_link",
         "check": "LISTO"
@@ -222,7 +222,7 @@
         "numeroProyecto": "053/26",
         "cliente": "PEPSICO",
         "tituloProyecto": "MUEBLE MURALLA NATUCHIPS",
-        "trello": "jnKUhXD8",
+        "trello": "https",
         "descripcion": "Actualicé el visual del Mueble NatuChips de la Muralla y se lo envié a Lorena",
         "drive": "https://drive.google.com/drive/folders/1mjvddw_g7Q_SPMa1VMfWnEJUfbIMcNfM?usp=drive_link",
         "check": "LISTO"
@@ -234,7 +234,7 @@
         "numeroProyecto": "073/26",
         "cliente": "ALIMENTOS POLAR",
         "tituloProyecto": "PROPUESTA DE PIEZAS",
-        "trello": "ULa3tJyX",
+        "trello": "https",
         "descripcion": "Le envié a Andrea Torres para que completara la presentación la puntera nueva de harina Pan",
         "drive": "https://drive.google.com/drive/folders/1Y0x10VNLKUVS4fIiEl1qXnxaETW-z6XG?usp=drive_link",
         "check": "LISTO"
@@ -242,18 +242,18 @@
     ]
   },
   {
-    "tableId": 8,
+    "tableId": 77,
     "mes": "FEBRERO",
-    "num": 2,
+    "num": 77,
     "proyectos": [
       {
         "id": "(1)",
         "fecha": "03/02/2026",
         "trabajoDiseno": "PLANO MECÁNICO",
         "numeroProyecto": "084/26",
-        "cliente": "DISTRIBUIDORA INMARKET C.A.",
+        "cliente": "DISTRIBUIDORA INMARKET",
         "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
-        "trello": "pgXgDNDD",
+        "trello": "https",
         "descripcion": "Realicé el plano con las dimensiones generales del dispensador de chocolates Milka",
         "drive": "https://drive.google.com/drive/folders/1Yr_pR5b65C0kSsgZsC4fljyxyLkW8uJE?usp=drive_link",
         "check": "LISTO"
@@ -263,9 +263,9 @@
         "fecha": "03/02/2026",
         "trabajoDiseno": "PLANO MECÁNICO",
         "numeroProyecto": "084/26",
-        "cliente": "DISTRIBUIDORA INMARKET C.A.",
+        "cliente": "DISTRIBUIDORA INMARKET",
         "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
-        "trello": "pgXgDNDD",
+        "trello": "https",
         "descripcion": "Realicé las modificaciones al plano del dispensador de Milka que pidió Verónica",
         "drive": "https://drive.google.com/drive/folders/1Yr_pR5b65C0kSsgZsC4fljyxyLkW8uJE?usp=drive_link",
         "check": "LISTO"
@@ -273,18 +273,18 @@
     ]
   },
   {
-    "tableId": 9,
+    "tableId": 78,
     "mes": "FEBRERO",
-    "num": 7,
+    "num": 78,
     "proyectos": [
       {
         "id": "(1)",
         "fecha": "06/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
-        "cliente": "DISTRIBUIDORA INMARKET C.A.",
+        "cliente": "DISTRIBUIDORA INMARKET",
         "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
-        "trello": "pgXgDNDD",
+        "trello": "https",
         "descripcion": "Sacar la muestra física del dispensador de chocolates Milka",
         "drive": "https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link",
         "check": "LISTO"
@@ -294,9 +294,9 @@
         "fecha": "09/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
-        "cliente": "DISTRIBUIDORA INMARKET C.A.",
+        "cliente": "DISTRIBUIDORA INMARKET",
         "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
-        "trello": "pgXgDNDD",
+        "trello": "https",
         "descripcion": "Entregué la orden de muestra física del dispensador de chocolates Milka",
         "drive": "https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link",
         "check": "LISTO"
@@ -306,9 +306,9 @@
         "fecha": "10/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
-        "cliente": "DISTRIBUIDORA INMARKET C.A.",
+        "cliente": "DISTRIBUIDORA INMARKET",
         "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
-        "trello": "pgXgDNDD",
+        "trello": "https",
         "descripcion": "Entregué la orden de muestra física del dispensador de chocolates Milka de cartón",
         "drive": "https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link",
         "check": "LISTO"
@@ -318,9 +318,9 @@
         "fecha": "11/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
-        "cliente": "DISTRIBUIDORA INMARKET C.A.",
+        "cliente": "DISTRIBUIDORA INMARKET",
         "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
-        "trello": "pgXgDNDD",
+        "trello": "https",
         "descripcion": "Me puse a desarrollar Vinil para cortar la muestra de chocolates Milka",
         "drive": "https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link",
         "check": "LISTO"
@@ -330,9 +330,9 @@
         "fecha": "12/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
-        "cliente": "DISTRIBUIDORA INMARKET C.A.",
+        "cliente": "DISTRIBUIDORA INMARKET",
         "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
-        "trello": "pgXgDNDD",
+        "trello": "https",
         "descripcion": "Entregué a Pablo el vinil Tiro Retiro para Chocolates Milka para hacer la muestra a mano",
         "drive": "https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link",
         "check": "LISTO"
@@ -342,9 +342,9 @@
         "fecha": "13/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
-        "cliente": "DISTRIBUIDORA INMARKET C.A.",
+        "cliente": "DISTRIBUIDORA INMARKET",
         "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
-        "trello": "pgXgDNDD",
+        "trello": "https",
         "descripcion": "Armé con Verónica el exhibidor de cartón de chocolates Milka",
         "drive": "https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link",
         "check": "LISTO"
@@ -354,9 +354,9 @@
         "fecha": "13/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
-        "cliente": "DISTRIBUIDORA INMARKET C.A.",
+        "cliente": "DISTRIBUIDORA INMARKET",
         "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
-        "trello": "pgXgDNDD",
+        "trello": "https",
         "descripcion": "Le entregué a Andrés David la orden de muestra del dispensador de chocolates Milka en PAI",
         "drive": "https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link",
         "check": "LISTO"
@@ -364,9 +364,9 @@
     ]
   },
   {
-    "tableId": 10,
+    "tableId": 79,
     "mes": "FEBRERO",
-    "num": 8,
+    "num": 79,
     "proyectos": [
       {
         "id": "(1)",
@@ -375,7 +375,7 @@
         "numeroProyecto": "074/26",
         "cliente": "DIAGEO",
         "tituloProyecto": "ARREGLO PARED MEGALICOR",
-        "trello": "JQGqK26J",
+        "trello": "https",
         "descripcion": "Monté la Orden de Producción del vinil de la pared de Diageo",
         "drive": "https://drive.google.com/drive/folders/1FSSc4GQRSqAbIR09T3bBvVJ1Y2smSeZ4?usp=drive_link",
         "check": "LISTO"
@@ -387,7 +387,7 @@
         "numeroProyecto": "009/26",
         "cliente": "DIAGEO",
         "tituloProyecto": "PIEZAS TROPICAL (ANTIGUO 1043/25)",
-        "trello": "bSM3isvj",
+        "trello": "https",
         "descripcion": "Me llamaron de producción para armar el juego Plinko de Diageo Tropical",
         "drive": "https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=drive_link",
         "check": "LISTO"
@@ -399,7 +399,7 @@
         "numeroProyecto": "009/26",
         "cliente": "DIAGEO",
         "tituloProyecto": "PIEZAS TROPICAL (ANTIGUO 1043/25)",
-        "trello": "bSM3isvj",
+        "trello": "https",
         "descripcion": "Saqué la orden de producción de Diageo Tropical el vinil del Plinko",
         "drive": "https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=drive_link",
         "check": "LISTO"
@@ -411,7 +411,7 @@
         "numeroProyecto": "009/26",
         "cliente": "DIAGEO",
         "tituloProyecto": "PIEZAS TROPICAL (ANTIGUO 1043/25)",
-        "trello": "bSM3isvj",
+        "trello": "https",
         "descripcion": "Bajé junto a Lorena y Yarelly a Pintura para ver el mueble de Plinko",
         "drive": "https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=drive_link",
         "check": "LISTO"
@@ -423,7 +423,7 @@
         "numeroProyecto": "009/26",
         "cliente": "DIAGEO",
         "tituloProyecto": "PIEZAS TROPICAL (ANTIGUO 1043/25)",
-        "trello": "bSM3isvj",
+        "trello": "https",
         "descripcion": "Sacar el plástico mica para el juego Plinko de Piezas Tropical de Diageo",
         "drive": "https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=drive_link",
         "check": "LISTO"
@@ -435,7 +435,7 @@
         "numeroProyecto": "009/26",
         "cliente": "DIAGEO",
         "tituloProyecto": "PIEZAS TROPICAL (ANTIGUO 1043/25)",
-        "trello": "bSM3isvj",
+        "trello": "https",
         "descripcion": "Realicé la orden de producción de pintura del Plinko y la entregué al señor Ricardo",
         "drive": "https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=drive_link",
         "check": "LISTO"
@@ -447,7 +447,7 @@
         "numeroProyecto": "115/26",
         "cliente": "DIMASSI",
         "tituloProyecto": "REPARACIÓN 7 EXHIBIDORES KOTEX",
-        "trello": "mPfmb0z2",
+        "trello": "https",
         "descripcion": "Monté la orden de producción de los muebles KOTEX",
         "drive": "https://drive.google.com/drive/folders/1BCrp1jhpXRLoqprakSSH3sl6wdeiQ8_L?usp=drive_link",
         "check": "LISTO"
@@ -459,7 +459,7 @@
         "numeroProyecto": "081/26",
         "cliente": "ALFONZO RIVAS",
         "tituloProyecto": "EXHIBIDOR FLIPS REPARACIÒN. FARMATODO MELANIE",
-        "trello": "rNphk7MP",
+        "trello": "https",
         "descripcion": "Monté la orden de producción del espejo de la reparación del mueble de Flips",
         "drive": "https://drive.google.com/drive/folders/1t9aKter7DsGbPR9cphj2Ws3uIbOQx8Zq?usp=drive_link",
         "check": "LISTO"

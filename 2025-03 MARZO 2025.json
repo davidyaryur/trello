@@ -178,9 +178,9 @@
         "trabajoDiseno": "RENDIMIENTO",
         "numeroProyecto": "273/25",
         "cliente": "GAMA",
-        "tituloProyecto": "PROPUESTA VISUAL Y RENDIMIENTO DE Set Temático",
+        "tituloProyecto": "PROPUESTA VISUAL Y RENDIMIENTO DE",
         "trello": "GKoNOqsA",
-        "descripcion": "Enviar a Zaida los rendimientos de los Sets Temáticos de Gama",
+        "descripcion": "Set Temático Enviar a Zaida los rendimientos de los Sets Temáticos de Gama",
         "drive": "https://drive.google.com/drive/folders/1IWUbItKtmMJPYvZ7tP3JUUVEp8HD9rHZ?usp=drive_link",
         "check": "LISTO"
       }
@@ -193,14 +193,14 @@
     "proyectos": [
       {
         "id": "(01)",
-        "fecha": "02/03/2025",
+        "fecha": "07/03/2025",
         "trabajoDiseno": "VISUAL",
-        "numeroProyecto": "139/25",
-        "cliente": "NESTLÉ",
-        "tituloProyecto": "BOTADERO CUBITOS MAGGI",
-        "trello": "x7xtetR1",
-        "descripcion": "Le envié a Milka el editable del botadero de Maggi",
-        "drive": "https://drive.google.com/drive/folders/10dZ-bUQjgWL1RblZgK9E0bCEY9IOi0Jx?usp=drive_link",
+        "numeroProyecto": "165/25",
+        "cliente": "DIMASSI",
+        "tituloProyecto": "EXHIBIDOR 360° 5 CARAS",
+        "trello": "QfKPiLjT",
+        "descripcion": "Realicé el visual para enviar a produccionyaryuryaryur@gmail.com",
+        "drive": "https://drive.google.com/drive/folders/1Esv-TsITlE_kx44dT2FlsQ6XWmJ5MwOK?usp=drive_link",
         "check": "LISTO"
       },
       {
@@ -317,9 +317,9 @@
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "273/25",
         "cliente": "GAMA",
-        "tituloProyecto": "PROPUESTA VISUAL Y RENDIMIENTO DE Set Temático",
+        "tituloProyecto": "PROPUESTA VISUAL Y RENDIMIENTO DE",
         "trello": "GKoNOqsA",
-        "descripcion": "Enviar visual de 56 aniversario de Gama a Zaida",
+        "descripcion": "Set Temático Enviar visual de 56 aniversario de Gama a Zaida",
         "drive": "https://drive.google.com/drive/folders/1-rz9KX8aUM4Ma3tT_ZG4ZAvf31WDefs4?usp=drive_link",
         "check": "LISTO"
       }
@@ -360,7 +360,7 @@
         "trabajoDiseno": "PLANO MECÁNICO",
         "numeroProyecto": "TUBOS PARACHOQUES",
         "cliente": "PEPSICO",
-        "tituloProyecto": "TUBOS PARACHOQUES",
+        "tituloProyecto": "",
         "trello": "kdiJoYMv",
         "descripcion": "Tomé las medidas y fotos de cada uno de los tubos parachoques para hacer un inventario",
         "drive": "https://drive.google.com/drive/folders/1oJZTDBtCA-Qu6eTgvhgsPxzOoagbieSp?usp=drive_link",
@@ -953,26 +953,26 @@
       },
       {
         "id": "(07)",
-        "fecha": "17/02/2025",
+        "fecha": "13/03/2025",
         "trabajoDiseno": "AUTORIZACIÓN",
-        "numeroProyecto": "102/25",
-        "cliente": "YOLO",
-        "tituloProyecto": "PROPUESTA PUNTERA CINECITTA",
-        "trello": "hZpsvGup",
-        "descripcion": "Leinys le entregó a Ángel la autorización de Visual de la propuesta Yolo Cine Citta (14)",
-        "drive": "https://drive.google.com/drive/folders/15ezh0wWSMyFDrUhm8NAAMLIPqBnFxD6g?usp=drive_link",
+        "numeroProyecto": "203/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "EXHIBIDOR COUNTER MAYORISTAS",
+        "trello": "YooryQgJ",
+        "descripcion": "(visual) Recibí de parte de Leinis la autorización de visual del counter de Colgate (28)",
+        "drive": "https://drive.google.com/drive/folders/1MSdOsqtJMzweaYsEJCzdX_US6dtHdrwP?usp=drive_link",
         "check": "LISTO"
       },
       {
         "id": "(08)",
-        "fecha": "17/02/2025",
+        "fecha": "13/03/2025",
         "trabajoDiseno": "AUTORIZACIÓN",
-        "numeroProyecto": "117/25",
-        "cliente": "YOLO",
-        "tituloProyecto": "CINE PROPUESTA NEVERA PEQUEÑA (619/24)",
-        "trello": "y4EgxD8a",
-        "descripcion": "Leinys le entregó a Ángel la autorización de Visual de la propuesta Yolo Cine nevera pequeña (15)",
-        "drive": "https://drive.google.com/drive/folders/1IGPeMA2RMDBYm9w0ZJ9fjx1jmqt6eIAI?usp=drive_link",
+        "numeroProyecto": "227/25",
+        "cliente": "LA SANTÉ",
+        "tituloProyecto": "DUMMIE BROXOL REAL Y ESCRITORIO",
+        "trello": "75yqYHPa",
+        "descripcion": "Recibí de parte de Virley la autorización del visual de la impresión 3D de Broxol (29)",
+        "drive": "https://drive.google.com/drive/folders/1BlZcTorm2HLTs0PFYIlCsG73maKcewRV?usp=drive_link",
         "check": "LISTO"
       },
       {
@@ -1024,6 +1024,18 @@
         "check": "FALTA"
       },
       {
+        "id": "(28)",
+        "fecha": "20/03/2025",
+        "trabajoDiseno": "AUTORIZACIÓN",
+        "numeroProyecto": "203/25",
+        "cliente": "COLGATE",
+        "tituloProyecto": "EXHIBIDOR COUNTER MAYORISTAS",
+        "trello": "YooryQgJ",
+        "descripcion": "(visual) Le entregué a Lorena la hoja de autorización de Visual de 203/25 para cambiar el nombre de Virley por el de Ángel.",
+        "drive": "https://drive.google.com/drive/folders/1MSdOsqtJMzweaYsEJCzdX_US6dtHdrwP?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
         "id": "(13)",
         "fecha": "21/03/2025",
         "trabajoDiseno": "AUTORIZACIÓN",
@@ -1065,9 +1077,9 @@
         "trabajoDiseno": "AUTORIZACIÓN",
         "numeroProyecto": "273/25",
         "cliente": "GAMA",
-        "tituloProyecto": "PROPUESTA VISUAL Y RENDIMIENTO DE Set Temático",
+        "tituloProyecto": "PROPUESTA VISUAL Y RENDIMIENTO DE",
         "trello": "GKoNOqsA",
-        "descripcion": "Recibí de parte de Vanessa la autorización del visual 237-25 del Set Temático Gama (38)",
+        "descripcion": "Set Temático Recibí de parte de Vanessa la autorización del visual 237-25 del Set Temático Gama (38)",
         "drive": "https://drive.google.com/drive/folders/1-rz9KX8aUM4Ma3tT_ZG4ZAvf31WDefs4?usp=drive_link",
         "check": "LISTO"
       },
@@ -1105,18 +1117,6 @@
         "trello": "qAAa22bI",
         "descripcion": "Recibí de parte de Guillermo la autorización de visual 2 del proyecto 099-25 Semana 9 Cashea (41)",
         "drive": "https://drive.google.com/drive/folders/1eJv_EZHpODGCPkfTWG01lB1GiEVM9CSN?usp=drive_link",
-        "check": "LISTO"
-      },
-      {
-        "id": "(28)",
-        "fecha": "20/03/2025",
-        "trabajoDiseno": "AUTORIZACIÓN",
-        "numeroProyecto": "203/25",
-        "cliente": "COLGATE",
-        "tituloProyecto": "EXHIBIDOR COUNTER MAYORISTAS (visual)",
-        "trello": "YooryQgJ",
-        "descripcion": "Le entregué a Lorena la hoja de autorización de Visual de 203/25 para cambiar el nombre de Virley por el de Ángel.",
-        "drive": "https://drive.google.com/drive/folders/1MSdOsqtJMzweaYsEJCzdX_US6dtHdrwP?usp=drive_link",
         "check": "LISTO"
       }
     ]

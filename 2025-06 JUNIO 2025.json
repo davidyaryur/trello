@@ -122,7 +122,7 @@
         "trello": "s8UfGu7d",
         "descripcion": "Le envié a Milka, con copia a Richard, Mario y Jose el nuevo rendimiento del servilletero",
         "drive": "https://drive.google.com/drive/folders/1MiVbxLEjgRzsRGNJrew5ybvH_LBNJ-WV?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
       },
       {
         "id": "(11)",
@@ -134,7 +134,7 @@
         "trello": "cmeFkPkA",
         "descripcion": "Le envié a Lorena el rendimiento de las cajas para holograma",
         "drive": "https://drive.google.com/drive/folders/1cq0-NnlZmgOTSk0ZAuZUo30mXWwVnlaR?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
       },
       {
         "id": "(12)",
@@ -146,7 +146,7 @@
         "trello": "HItfP1qy",
         "descripcion": "Realice el rendimiento de Caledonia y se lo envié a Milka",
         "drive": "https://drive.google.com/drive/folders/19yvtu0Nn-oS_sxOLtY-okcJ73S8PYf8O?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
       },
       {
         "id": "(13)",
@@ -170,7 +170,7 @@
         "trello": "qsqFeyWy",
         "descripcion": "Calculé el rendimiento de Luz Neón del corpóreo de la Estrella de Oro",
         "drive": "https://drive.google.com/drive/folders/1IDrzg7EloaDm-pFv4DKIVwJatLsYZklv",
-        "check": "FALTA"
+        "check": "LISTO"
       }
     ]
   },
@@ -189,6 +189,30 @@
         "trello": "k9GtPTMl",
         "descripcion": "Envié a José Gabriel, Pablo y Enmary el video de las Colección Aniversario 1796 Santa Teresa",
         "drive": "https://drive.google.com/drive/folders/1Au24oHN9M9jJj-TXvcLwef_6kZECxlX2?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "07/06/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "465/25",
+        "cliente": "YOLO",
+        "tituloProyecto": "PUNTERA PÁRAMO MANZANARES",
+        "trello": "OFonxFww",
+        "descripcion": "Realicé el video de Yolo para la pantalla cenefa",
+        "drive": "https://drive.google.com/drive/folders/17o5LP4B0E8Xgt8I4-Ynym3IbBU5Lel3i?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "07/06/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "513/25",
+        "cliente": "NESTLÉ",
+        "tituloProyecto": "BOTADERO TORONTO",
+        "trello": "1g4HmHmm",
+        "descripcion": "Modifiqué el color de la tapa del botadero de Savoy y le envié el nuevo visual a Milka",
+        "drive": "https://drive.google.com/drive/folders/1MHSxOfBytd1vu6IRfqSgtjcZkdmufvc2?usp=drive_link",
         "check": "LISTO"
       },
       {
@@ -297,7 +321,19 @@
         "trello": "fYlEIJEK",
         "descripcion": "Realicé el fotomontaje de Celiveca y se lo envié a Lorena",
         "drive": "https://drive.google.com/drive/folders/1nuu2jXkzuCO_FN4Czx12zkWsRNI-Tm43?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
+      },
+      {
+        "id": "(12)",
+        "fecha": "21/06/2025",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "196/25",
+        "cliente": "ALFONZO RIVAS",
+        "tituloProyecto": "EXHIBIDORES DE CARTÓN PARA MAIZORITOS",
+        "trello": "myFhDdNi",
+        "descripcion": "Enmary me pidió que se viera el cabezal redondeado, lo modifiqué y se lo volví a enviar",
+        "drive": "https://drive.google.com/drive/folders/1bnhpZPIvCfaafRe39meYTmLN8fFJKVWs?usp=drive_link",
+        "check": "LISTO"
       },
       {
         "id": "(11)",
@@ -551,7 +587,7 @@
         "trello": "cLVMkpWa",
         "descripcion": "Recibí de parte de Pablo la muestra de color de Purina",
         "drive": "https://drive.google.com/drive/folders/12PhqzhyV-CIjeES3OuYBTboVG6tPXSti?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
       },
       {
         "id": "(12)",
@@ -563,7 +599,19 @@
         "trello": "nlESFdpQ",
         "descripcion": "Pablo me entregó la muestra de color de Downy",
         "drive": "https://drive.google.com/drive/folders/1U9eC_bgoACCrzyolwoOnJCAxL-zcOqGB?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "21/06/2025",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "384/25",
+        "cliente": "NESTLÉ",
+        "tituloProyecto": "FLANYERS MAGGI",
+        "trello": "MC5CFgq3",
+        "descripcion": "Monté la orden de muestra física 2 del Flanger Maggi, la entregué y subí al Drive",
+        "drive": "https://drive.google.com/drive/folders/1omjNVpXifIoncbmRoFwlJNywE3WzjOX8?usp=drive_link",
+        "check": "LISTO"
       },
       {
         "id": "(13)",
@@ -640,7 +688,7 @@
         "cliente": "PEPSICO",
         "tituloProyecto": "REVESTIMIENTO ANAQUEL VECIIINO CATIA",
         "trello": "G3pLHTk8",
-        "descripcion": "Terminé y entregué la orden de producción de Veciiino Catia Pepsico",
+        "descripcion": "",
         "drive": "https://drive.google.com/drive/folders/1-NtMuEyBxiBycv6SMWWG3DQgfXkghaeZ?usp=drive_link",
         "check": "LISTO"
       },
@@ -651,8 +699,8 @@
         "numeroProyecto": "232/25",
         "cliente": "SANTA TERESA",
         "tituloProyecto": "MANTENIMIENTO TROLLY BAR",
-        "trello": "uSPRWuHm",
-        "descripcion": "Saqué la orden de producción del vinil blanco para probar",
+        "trello": "",
+        "descripcion": "Saqué la orden de producción del vinil blanco para probar TROLLEY: uSPRWuHm",
         "drive": "https://drive.google.com/drive/folders/1CGSaJQFT3kw1pKpXqMt_bBUo9bOuhFzu?usp=drive_link",
         "check": "LISTO"
       },
@@ -666,6 +714,18 @@
         "trello": "uSPRWuHm",
         "descripcion": "Entregué la orden de producción del Trolley Bar Santa Teresa",
         "drive": "https://drive.google.com/drive/folders/1CGSaJQFT3kw1pKpXqMt_bBUo9bOuhFzu?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "07/06/2025",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "444/25",
+        "cliente": "INV. MAR MAR",
+        "tituloProyecto": "CAJA CON HOLOGRAMA PARA MODULAR",
+        "trello": "cmeFkPkA",
+        "descripcion": "Entregué la orden de producción de las tres cajas para holograma",
+        "drive": "https://drive.google.com/drive/folders/1MQtoc-ACC03eYqvnWpaIVO-vqEv7l4EY?usp=drive_link",
         "check": "LISTO"
       },
       {
