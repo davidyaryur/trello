@@ -5,19 +5,19 @@
     "num": 75,
     "proyectos": [
       {
-        "id": "(1)",
+        "id": "(01)",
         "fecha": "03/02/2026",
         "trabajoDiseno": "RENDIMIENTO",
-        "numeroProyecto": "S/N",
-        "cliente": "DESCONOCIDO",
-        "tituloProyecto": "032/26 - COLGATE- EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Calculé el rendimiento del exhibidor de Cuidado Personal de Colgate.",
+        "numeroProyecto": "032/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
         "trello": "https",
-        "descripcion": "",
+        "descripcion": "Calculé el rendimiento del exhibidor de Cuidado Personal de Colgate.",
         "drive": "https://drive.google.com/drive/folders/18oQX3OQhVcY_F794qkiSX5Ngnrj6-kEi?usp=drive_link",
         "check": "LISTO"
       },
       {
-        "id": "(2)",
+        "id": "(02)",
         "fecha": "05/02/2026",
         "trabajoDiseno": "RENDIMIENTO",
         "numeroProyecto": "084/26",
@@ -29,15 +29,27 @@
         "check": "LISTO"
       },
       {
-        "id": "(3)",
+        "id": "(03)",
         "fecha": "12/02/2026",
         "trabajoDiseno": "RENDIMIENTO",
-        "numeroProyecto": "S/N",
-        "cliente": "DESCONOCIDO",
-        "tituloProyecto": "032/26 - COLGATE- EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Le envié a Andrea la cantidad de vinil que hace falta para rotular el mueble de Colgate",
+        "numeroProyecto": "032/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
         "trello": "https",
-        "descripcion": "",
+        "descripcion": "Le envié a Andrea la cantidad de vinil que hace falta para rotular el mueble de Colgate",
         "drive": "https://drive.google.com/drive/folders/18oQX3OQhVcY_F794qkiSX5Ngnrj6-kEi?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "27/02/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "148/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "PORTAVASOS Y TRES EN UNO",
+        "trello": "https",
+        "descripcion": "Calculé con Milka el nuevo rendimiento de Nescafé",
+        "drive": "https://drive.google.com/drive/folders/1nbUrLRKJjNae5YL0jp2DRQtv-vJ1iomU?usp=drive_link",
         "check": "LISTO"
       }
     ]
@@ -48,7 +60,7 @@
     "num": 76,
     "proyectos": [
       {
-        "id": "(1)",
+        "id": "(01)",
         "fecha": "02/02/2026",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "084/26",
@@ -60,19 +72,19 @@
         "check": "LISTO"
       },
       {
-        "id": "(2)",
+        "id": "(02)",
         "fecha": "04/02/2026",
         "trabajoDiseno": "VISUAL",
-        "numeroProyecto": "S/N",
-        "cliente": "DESCONOCIDO",
-        "tituloProyecto": "032/26 - COLGATE- EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM  Realicé la presentación del exhibidor de Personal Care de Colgate y se la envié a Andrea",
+        "numeroProyecto": "032/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
         "trello": "https",
-        "descripcion": "",
+        "descripcion": "Realicé la presentación del exhibidor de Personal Care de Colgate y se la envié a Andrea",
         "drive": "https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link",
         "check": "LISTO"
       },
       {
-        "id": "(3)",
+        "id": "(03)",
         "fecha": "04/02/2026",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "053/26",
@@ -84,7 +96,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(4)",
+        "id": "(04)",
         "fecha": "05/02/2026",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "053/26",
@@ -96,7 +108,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(5)",
+        "id": "(05)",
         "fecha": "05/02/2026",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "030/26",
@@ -108,7 +120,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(6)",
+        "id": "(06)",
         "fecha": "05/02/2026",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "076/26",
@@ -120,7 +132,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(7)",
+        "id": "(07)",
         "fecha": "06/02/2026",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "076/26",
@@ -132,7 +144,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(8)",
+        "id": "(08)",
         "fecha": "06/02/2026",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "053/26",
@@ -144,7 +156,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(9)",
+        "id": "(09)",
         "fecha": "09/02/2026",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "073/26",
@@ -183,11 +195,11 @@
         "id": "(12)",
         "fecha": "11/02/2026",
         "trabajoDiseno": "VISUAL",
-        "numeroProyecto": "S/N",
-        "cliente": "DESCONOCIDO",
-        "tituloProyecto": "032/26 - COLGATE- EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Terminé el visual de Colgate mueble cuidado personal y se lo envié a Andrea",
+        "numeroProyecto": "032/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
         "trello": "https",
-        "descripcion": "",
+        "descripcion": "Terminé el visual de Colgate mueble cuidado personal y se lo envié a Andrea",
         "drive": "https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link",
         "check": "LISTO"
       },
@@ -238,6 +250,66 @@
         "descripcion": "Le envié a Andrea Torres para que completara la presentación la puntera nueva de harina Pan",
         "drive": "https://drive.google.com/drive/folders/1Y0x10VNLKUVS4fIiEl1qXnxaETW-z6XG?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(17)",
+        "fecha": "18/02/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "032/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
+        "trello": "https",
+        "descripcion": "Le envié a Andrea la actualización del visual de Cuidado Personal de Colgate",
+        "drive": "https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(18)",
+        "fecha": "19/02/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "462/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL/ RETIRAR MUEBLES",
+        "trello": "https",
+        "descripcion": "Le envié a Lorena el visual de BT 7Up NatuChips",
+        "drive": "https://drive.google.com/drive/folders/1v_K0oOdH3wiJUT54WFfS1hPOUS8Cimlw?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(19)",
+        "fecha": "20/02/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "053/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE MURALLA NATUCHIPS",
+        "trello": "https",
+        "descripcion": "Le envié a Lorena el visual del mueble NatuChips de la Muralla",
+        "drive": "https://drive.google.com/drive/folders/1_IvzbDTBOJGSiNXwDVylDj4bTe15Kwap?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(20)",
+        "fecha": "25/02/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "084/26",
+        "cliente": "DISTRIBUIDORA INMARKET",
+        "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
+        "trello": "https",
+        "descripcion": "Envié el visual del dispensador de Chocolates Milka",
+        "drive": "https://drive.google.com/drive/folders/1kx1Y-MPv1k7_2LKg2HTVGWsUbtAIoGaI?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(21)",
+        "fecha": "27/02/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "032/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM",
+        "trello": "https",
+        "descripcion": "Actualizar el visual de Colgate Cuidado Personal y enviarlo a Andrea Isturiz",
+        "drive": "https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link",
+        "check": "LISTO"
       }
     ]
   },
@@ -247,7 +319,7 @@
     "num": 77,
     "proyectos": [
       {
-        "id": "(1)",
+        "id": "(01)",
         "fecha": "03/02/2026",
         "trabajoDiseno": "PLANO MECÁNICO",
         "numeroProyecto": "084/26",
@@ -259,7 +331,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(2)",
+        "id": "(02)",
         "fecha": "03/02/2026",
         "trabajoDiseno": "PLANO MECÁNICO",
         "numeroProyecto": "084/26",
@@ -268,6 +340,30 @@
         "trello": "https",
         "descripcion": "Realicé las modificaciones al plano del dispensador de Milka que pidió Verónica",
         "drive": "https://drive.google.com/drive/folders/1Yr_pR5b65C0kSsgZsC4fljyxyLkW8uJE?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "25/02/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "167/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "EXHIBIDOR PLEGABLE CHINO PARA PROTEX Y PALMOLIVE",
+        "trello": "https",
+        "descripcion": "Envié el plano mecánico del exhibidor de cartón para Palmolive y Protex (chino)",
+        "drive": "https://drive.google.com/drive/folders/1boKFDCaSG7ljUcvH6ygGo1WBPSHYRgPq?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "26/02/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "026/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
+        "trello": "https",
+        "descripcion": "Envié las medidas de los muebles Fixturización a Enmary",
+        "drive": "https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link",
         "check": "LISTO"
       }
     ]
@@ -278,7 +374,7 @@
     "num": 78,
     "proyectos": [
       {
-        "id": "(1)",
+        "id": "(01)",
         "fecha": "06/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
@@ -290,7 +386,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(2)",
+        "id": "(02)",
         "fecha": "09/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
@@ -302,7 +398,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(3)",
+        "id": "(03)",
         "fecha": "10/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
@@ -314,7 +410,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(4)",
+        "id": "(04)",
         "fecha": "11/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
@@ -326,7 +422,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(5)",
+        "id": "(05)",
         "fecha": "12/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
@@ -338,7 +434,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(6)",
+        "id": "(06)",
         "fecha": "13/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
@@ -350,7 +446,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(7)",
+        "id": "(07)",
         "fecha": "13/02/2026",
         "trabajoDiseno": "MUESTRA",
         "numeroProyecto": "084/26",
@@ -359,6 +455,66 @@
         "trello": "https",
         "descripcion": "Le entregué a Andrés David la orden de muestra del dispensador de chocolates Milka en PAI",
         "drive": "https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(08)",
+        "fecha": "23/02/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "084/26",
+        "cliente": "DISTRIBUIDORA INMARKET",
+        "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
+        "trello": "https",
+        "descripcion": "Pegué con cloruro el exhibidor de Chocolates Milka",
+        "drive": "https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(09)",
+        "fecha": "23/02/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "148/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "PORTAVASOS Y TRES EN UNO",
+        "trello": "https",
+        "descripcion": "Entregué la orden de muestra física del servilletero y dispensador de Nescafé",
+        "drive": "https://drive.google.com/drive/folders/1q1XEtwgwl-dOJwx4LVIIuir0GmEsyumY?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(10)",
+        "fecha": "24/02/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "084/26",
+        "cliente": "DISTRIBUIDORA INMARKET",
+        "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
+        "trello": "https",
+        "descripcion": "Desarrollé el dispensador de chocolates Milka con las modificaciones que solicitó el cliente",
+        "drive": "https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(11)",
+        "fecha": "26/02/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "148/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "PORTAVASOS Y TRES EN UNO",
+        "trello": "https",
+        "descripcion": "Volver a sacar los círculos de Nescafé para que funcione el dispensador, y pieza extraviada",
+        "drive": "https://drive.google.com/drive/folders/1q1XEtwgwl-dOJwx4LVIIuir0GmEsyumY?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(12)",
+        "fecha": "27/02/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "148/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "PORTAVASOS Y TRES EN UNO",
+        "trello": "https",
+        "descripcion": "Monté la orden de muestra del vinil del exhibidor de Nescafé y se la entregué a Pablo",
+        "drive": "https://drive.google.com/drive/folders/1q1XEtwgwl-dOJwx4LVIIuir0GmEsyumY?usp=drive_link",
         "check": "LISTO"
       }
     ]
@@ -369,7 +525,7 @@
     "num": 79,
     "proyectos": [
       {
-        "id": "(1)",
+        "id": "(01)",
         "fecha": "03/02/2026",
         "trabajoDiseno": "PRODUCCIÓN",
         "numeroProyecto": "074/26",
@@ -381,7 +537,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(2)",
+        "id": "(02)",
         "fecha": "04/02/2026",
         "trabajoDiseno": "PRODUCCIÓN",
         "numeroProyecto": "009/26",
@@ -393,7 +549,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(3)",
+        "id": "(03)",
         "fecha": "05/02/2026",
         "trabajoDiseno": "PRODUCCIÓN",
         "numeroProyecto": "009/26",
@@ -405,7 +561,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(4)",
+        "id": "(04)",
         "fecha": "05/02/2026",
         "trabajoDiseno": "PRODUCCIÓN",
         "numeroProyecto": "009/26",
@@ -417,7 +573,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(5)",
+        "id": "(05)",
         "fecha": "06/02/2026",
         "trabajoDiseno": "PRODUCCIÓN",
         "numeroProyecto": "009/26",
@@ -429,7 +585,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(6)",
+        "id": "(06)",
         "fecha": "09/02/2026",
         "trabajoDiseno": "PRODUCCIÓN",
         "numeroProyecto": "009/26",
@@ -441,7 +597,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(7)",
+        "id": "(07)",
         "fecha": "10/02/2026",
         "trabajoDiseno": "PRODUCCIÓN",
         "numeroProyecto": "115/26",
@@ -453,7 +609,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(8)",
+        "id": "(08)",
         "fecha": "13/02/2026",
         "trabajoDiseno": "PRODUCCIÓN",
         "numeroProyecto": "081/26",
@@ -462,6 +618,18 @@
         "trello": "https",
         "descripcion": "Monté la orden de producción del espejo de la reparación del mueble de Flips",
         "drive": "https://drive.google.com/drive/folders/1t9aKter7DsGbPR9cphj2Ws3uIbOQx8Zq?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(09)",
+        "fecha": "24/02/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "030/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "EXHIBIDOR PLEGABLE DE CARTÓN (CHINO)",
+        "trello": "https",
+        "descripcion": "Al llegar a la oficina sacar producción del vinil de Colgate del exhibidor Chino",
+        "drive": "https://drive.google.com/drive/folders/1_j4hBCUFQXR6dZhr24uRLZ0-yMutzi_m?usp=drive_link",
         "check": "LISTO"
       }
     ]
