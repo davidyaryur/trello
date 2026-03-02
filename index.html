@@ -206,6 +206,88 @@
             'proyectos-inversiones-yar-yur-2025.json',
             'proyectos-inversiones-yar-yur-2026.json'
         ];
+        
+        // --- NUEVA CONFIGURACIÓN: CLIENTES FORZADOS PARA 2022 ---
+        // Estos clientes se tratarán como clientes independientes aunque solo aparezcan en 2022
+        const FORCED_CLIENTS = [
+            'CHARCUTERIA TOVAR', 
+            'ISOLA FOODS', 
+            'TIA SU',
+            'INVERSIONES VI&CO 10',
+            'INVERSIONES ZOAH',
+            'LUBRICANTES BLITZ 2000',
+            'TODO CONSTRUCCION',
+            'CERVEZA CHUMACEIRO',
+            'GRUPO CASHEW',
+            'LA VIENESA',
+            'BIG WADE',
+            'VESPEX',
+            'CONFECCIONES TREVI',
+            'CAFE CITY',
+	    'REMIGTON CENTER',
+	    'CORPORACION RETAIL',
+	    'BRANYESKA',
+	    'RONALD',
+	    'PRINGLES',
+	    'GRUPO KAIZEN',
+	    'LUIS MARQUEZ',
+	    'SAMSUNG',
+	    'SAJYS DELICIOUS CAKE',
+	    'PIZZERIA MAMARRACHOS',
+	    'RUANSA',
+	    'MARIO SACRIPANTI',
+	    'HOLY MARY',
+	    'PAYALL',
+	    'CHEF TONY',
+	    'CORPORACION RETAIL',
+	    'VILLA BRAIDA',
+	    'LEDDY',
+	    'NEW ARRIVAL',
+	    'ARIZONA',
+	    'NUDELI',
+	    'TUCHELA2',
+	    'DISTRIBUIDORA BELL NUTRI',
+	    'LUBRICANTES BLITZ 2000',
+	    'ADVENTURE',
+	    'ONLY PAN',
+	    'EL GARZON',
+	    'INVERSIONES CANAIMA',
+	    'BOLIPUERTOS',
+	    'AVELINA',
+	    'INVERSIONES VI&CO10',
+	    'AZUCAR MONTALBAN',
+	    'CARGILL',
+	    'BRANYESCKA',
+	    'CHICO KALOHA',
+	    'INVERSIONES KARAKA',
+	    'KASU',
+	    'BODEGA CREATIVA',
+	    'MAILOS CHIPS',
+	    'CARMINE',
+	    'PEPBOYS',
+	    'LABORATORIO BUKA',
+	    'TABACALERA NACIONAL',
+	    'MIMADITO',
+	    'LABORATORIO BUKA',
+	    'CERVECERIA ZULIA',
+        'POTIO',
+        'ORCAS',
+        'LA CARNITA',
+        'SURA DE VZLA',
+        'MARIA PIA',
+        'EXCHANGE',
+        'CASA GOURMET',
+        'MOTUL',
+        'COCOS GROUP',
+        'SERVICIOS FUNERARIOS',
+        'UNICARNES',
+        'GRUPO MISTRAL',
+        'AKTIVA BRANDS',
+        'P&G',
+        
+
+
+        ];
 
         // --- COLORES ---
         const GRAY_STYLE = 'bg-slate-100 text-slate-600 border-slate-200';
@@ -319,8 +401,10 @@
             let flatPersonal = [];
             
             // --- FASE 1: PRE-ESCANEO (RESCATE) ---
-            // Recorremos todo EXCEPTO 2022 para identificar nombres de clientes válidos.
             const realClientsSet = new Set();
+            
+            // **NUEVO: AGREGAR CLIENTES FORZADOS AL SET DE INICIO**
+            FORCED_CLIENTS.forEach(fc => realClientsSet.add(fc));
 
             companyRawList.forEach((compData, idx) => {
                 if (!compData) return;
@@ -335,9 +419,9 @@
                 cardsList.forEach(card => {
                     if (card.closed) return;
                     
-                    // Usamos la misma lógica de Regex que usaremos después
+                    // Regex actualizada con soporte para guion bajo
                     let num = null;
-                    const match = card.name.match(/^((?:TENTATIVO\s+)?\d{2,4}\/\d{2})/i);
+                    const match = card.name.match(/^((?:TENTATIVO\s+)?\d{2,4}(?:_\d+)?\/\d{2})/i);
                     if (match) num = match[1];
                     else num = "EXT-" + card.id;
 
@@ -349,7 +433,7 @@
                         potentialClient = parts[1].trim();
                     }
                     
-                    // Guardamos el cliente en mayúsculas para comparar fácil
+                    // Guardamos el cliente en mayúsculas
                     if (potentialClient && potentialClient.length > 2) {
                         realClientsSet.add(potentialClient.toUpperCase());
                     }
@@ -386,7 +470,9 @@
                 const lists = compData.lists || [];
                 const restrictedListIds = new Set();
                 lists.forEach(l => {
-                    if (l.name && l.name.toUpperCase().trim() === 'COMPRAS') {
+                    // --- MODIFICACIÓN: EXCLUIR "COMPRAS" Y "TERMINADO DE COMPRAS" ---
+                    const name = l.name ? l.name.toUpperCase().trim() : '';
+                    if (name === 'COMPRAS' || name === 'TERMINADO DE COMPRAS') {
                         restrictedListIds.add(l.id);
                     }
                 });
@@ -402,7 +488,8 @@
                     if (card.idList && restrictedListIds.has(card.idList)) return;
 
                     let num = null;
-                    const match = card.name.match(/^((?:TENTATIVO\s+)?\d{2,4}\/\d{2})/i); 
+                    // Regex actualizada con soporte para guion bajo
+                    const match = card.name.match(/^((?:TENTATIVO\s+)?\d{2,4}(?:_\d+)?\/\d{2})/i); 
                     
                     if(match) {
                         num = match[1].toUpperCase();
@@ -422,10 +509,9 @@
 
                     // --- MODIFICACIÓN 2022 CON RESCATE DE CLIENTES ---
                     if (sourceYear === '2022') {
-                        // Preguntamos: ¿Este cliente existe en el futuro (2023+)?
+                        // Ahora realClientsSet incluye los de 2023+ Y ADEMÁS los FORCED_CLIENTS
                         if (realClientsSet.has(client.toUpperCase())) {
-                            // SÍ EXISTE: Lo tratamos como un cliente normal (se queda con su nombre)
-                            // Solo arreglamos el título si estaba vacío
+                            // SÍ EXISTE: Lo tratamos como un cliente normal
                         } else {
                             // NO EXISTE: Asumimos que es data vieja/sucia y lo mandamos al grupo 2022
                             client = "2022";
@@ -609,7 +695,8 @@
 
         function getProjectSortValue(p) {
             if (!p.number) return 999999;
-            const match = p.number.match(/(\d+)\/(\d+)/);
+            // Regex actualizada con soporte para guion bajo en ordenamiento
+            const match = p.number.match(/(\d+(?:_\d+)?)\/(\d+)/);
             if (!match) return 999999;
             const num = parseInt(match[1], 10);
             const year = parseInt(match[2], 10);
@@ -697,11 +784,20 @@
                 }
             });
 
-            const sortedClients = Object.keys(clientGroups).map(clientName => {
-                const items = clientGroups[clientName];
-                const uniqueIds = new Set(items.map(i => i.numeroProyecto || i.tituloProyecto));
-                return { name: clientName, items, count: uniqueIds.size };
-            }).sort((a, b) => b.count - a.count);
+            const sortedClients = Object.keys(clientGroups)
+                .map(clientName => {
+                    const items = clientGroups[clientName];
+                    const uniqueIds = new Set(items.map(i => i.numeroProyecto || i.tituloProyecto));
+                    return { name: clientName, items, count: uniqueIds.size };
+                })
+                // --- CAMBIO 1: FILTRAR "SIN CLIENTE" ---
+                .filter(c => c.name !== 'SIN CLIENTE')
+                // --- CAMBIO 2: ORDENAR "2022" AL FINAL ---
+                .sort((a, b) => {
+                    if (a.name === '2022') return 1; // Si A es 2022, va después (al final)
+                    if (b.name === '2022') return -1; // Si B es 2022, B va después (A va primero)
+                    return b.count - a.count; // Orden normal por cantidad
+                });
 
             document.getElementById('results-title').innerText = query ? `Búsqueda: "${query}"` : "Todos los Clientes";
             document.getElementById('results-subtitle').innerText = `${sortedClients.length} clientes encontrados`;
@@ -711,7 +807,7 @@
                 return;
             }
 
-            const maxCount = sortedClients[0].count;
+            const maxCount = sortedClients.length > 0 ? sortedClients[0].count : 1;
             let html = '<div class="flex flex-col gap-3">';
             sortedClients.forEach((c, idx) => {
                 const percentage = Math.round((c.count / maxCount) * 100);
