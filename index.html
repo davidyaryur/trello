@@ -921,7 +921,6 @@
             document.getElementById('category-filters').innerHTML = cats.map(c => {
                  const style = CAT_STYLES[c] || { btnColor: 'bg-slate-500' };
                  const opacity = (activeCategoryFilter && activeCategoryFilter !== c) ? 'opacity-30' : 'opacity-100';
-                 // Aumentado el padding y text-sm
                  return `<button onclick="toggleCategory('${c}')" class="${style.btnColor} text-white px-4 py-2 rounded-full ${opacity} hover:opacity-100 shadow-sm transition-opacity">${toTitleCase(c)}</button>`;
             }).join('');
 
@@ -1009,11 +1008,6 @@
 
             html += `</div>`;
             
-            // Si está fijado le agregamos un indicativo sutil
-            if (isTooltipPinned) {
-                 html += `<div class="text-[10px] text-center text-slate-400 mt-2 font-medium">Ventana fijada (clic fuera para cerrar)</div>`;
-            }
-
             tooltip.innerHTML = html;
             tooltip.classList.remove('hidden');
 
