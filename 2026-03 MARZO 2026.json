@@ -98,7 +98,7 @@
         "trello": "https",
         "descripcion": "Hacer nuevo rendimiento del dispensador de Chocolates Milka a 15 cm de alto",
         "drive": "https://drive.google.com/drive/folders/1ISx_kmwvkJf4MqUbpByK7MiHFGvPFX6t?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
       }
     ]
   },
@@ -196,7 +196,7 @@
         "fecha": "17/03/2026",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "205/26",
-        "cliente": "NESTLE DE VENEZUELA",
+        "cliente": "NESTLE",
         "tituloProyecto": "PUNTAS DE GÓNDOLA 2.0 INNOVACIÓN 2026",
         "trello": "https",
         "descripcion": "Hacer con IA los muebles innovación para Nestlé.",
@@ -208,7 +208,7 @@
         "fecha": "18/03/2026",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "205/26",
-        "cliente": "NESTLE DE VENEZUELA",
+        "cliente": "NESTLE",
         "tituloProyecto": "PUNTAS DE GÓNDOLA 2.0 INNOVACIÓN 2026",
         "trello": "https",
         "descripcion": "Terminé los recursos generados con IA para el video de Innovación de Nestlé",
@@ -352,7 +352,7 @@
         "trello": "https",
         "descripcion": "Hacer el PDF del plano con arte aprobado de los exhibidores de China",
         "drive": "https://drive.google.com/drive/folders/1boKFDCaSG7ljUcvH6ygGo1WBPSHYRgPq?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
       },
       {
         "id": "(10)",
@@ -491,7 +491,7 @@
         "trello": "https",
         "descripcion": "Montar orden de producción de Pintura Brillante para Colgate",
         "drive": "https://drive.google.com/drive/folders/1Ui7-GrWxzO3GXgT7gxwok5q7_lyaXwFT?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
       },
       {
         "id": "(11)",
@@ -654,7 +654,7 @@
         "trello": "https",
         "descripcion": "Sacar la orden de producción de 1 Servilletero y 1 Dispensador de vasos de Nescafé",
         "drive": "https://drive.google.com/drive/folders/14y-fJJPT7LaO-mpOXvE2WmaFa8j9yG_0?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
       },
       {
         "id": "(10)",
@@ -666,7 +666,7 @@
         "trello": "https",
         "descripcion": "Montar la Orden de Producción de la Isla de Colgate",
         "drive": "https://drive.google.com/drive/folders/10tkMzEH6E_76hOQHVcee4uo2i4mBF5sD?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
       },
       {
         "id": "(11)",

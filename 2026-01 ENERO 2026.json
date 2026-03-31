@@ -144,6 +144,18 @@
         "check": "LISTO"
       },
       {
+        "id": "(4)",
+        "fecha": "15/01/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "026/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
+        "trello": "https",
+        "descripcion": "Me reuní con Enmary para definir el proyecto de Fixturización de SCJ",
+        "drive": "https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
         "id": "(5)",
         "fecha": "19/01/2026",
         "trabajoDiseno": "VISUAL",
@@ -314,8 +326,8 @@
         "cliente": "SCJ",
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
         "trello": "https",
-        "descripcion": "Descargué los planos mecánicos de Fixturización de SCJ 3. VISUAL: (4): 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Me reuní con Enmary para definir el proyecto de Fixturización de SCJ",
-        "drive": "https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link",
+        "descripcion": "Descargué los planos mecánicos de Fixturización de SCJ",
+        "drive": "https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link",
         "check": "LISTO"
       },
       {
