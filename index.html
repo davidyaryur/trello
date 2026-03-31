@@ -1066,29 +1066,45 @@
 
         function renderFinalCalendar(items) {
             const eventsByDate = {};
+            let minDate = null;
+            let maxDate = null;
+
             items.forEach(item => {
                 if(!item.fecha) return;
-                const [d, m, y] = item.fecha.split('/');
-                if(!d || !m || !y) return;
-                const key = `${parseInt(y)}-${parseInt(m)}`;
-                const day = parseInt(d);
+                const [dStr, mStr, yStr] = item.fecha.split('/');
+                if(!dStr || !mStr || !yStr) return;
+                
+                const d = parseInt(dStr);
+                const m = parseInt(mStr);
+                const y = parseInt(yStr);
+
+                // Registrar mínimo y máximo para dibujar todos los meses
+                const totalMonths = y * 12 + m;
+                if (minDate === null || totalMonths < minDate) minDate = totalMonths;
+                if (maxDate === null || totalMonths > maxDate) maxDate = totalMonths;
+
+                const key = `${y}-${m}`;
                 if (!eventsByDate[key]) eventsByDate[key] = {};
-                if (!eventsByDate[key][day]) eventsByDate[key][day] = [];
+                if (!eventsByDate[key][d]) eventsByDate[key][d] = [];
                 // Se guarda el item completo para pasarlo al tooltip
-                eventsByDate[key][day].push(item);
+                eventsByDate[key][d].push(item);
             });
 
-            if (Object.keys(eventsByDate).length === 0) {
+            if (Object.keys(eventsByDate).length === 0 || minDate === null || maxDate === null) {
                 finalCalendarContainer.innerHTML = '<div class="w-full text-center text-slate-300 mt-10">Sin fechas registradas</div>'; return;
             }
 
-            const sortedMonths = Object.keys(eventsByDate).sort((a, b) => {
-                const [y1, m1] = a.split('-').map(Number); const [y2, m2] = b.split('-').map(Number);
-                return (y1 * 12 + m1) - (y2 * 12 + m2);
-            });
+            // Generar arreglo de meses continuos
+            const continuousMonths = [];
+            for (let t = minDate; t <= maxDate; t++) {
+                let year = Math.floor((t - 1) / 12);
+                let month = ((t - 1) % 12) + 1;
+                continuousMonths.push(`${year}-${month}`);
+            }
             
-            finalCalendarContainer.innerHTML = sortedMonths.map(key => {
-                const [y, m] = key.split('-').map(Number); return generateCalendarHTML(m, y, eventsByDate[key], key);
+            finalCalendarContainer.innerHTML = continuousMonths.map(key => {
+                const [y, m] = key.split('-').map(Number); 
+                return generateCalendarHTML(m, y, eventsByDate[key] || {}, key);
             }).join('');
         }
 
