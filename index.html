@@ -31,12 +31,8 @@
         .dot-rendimiento { background-color: #2563eb; color: white; box-shadow: 0 0 8px rgba(37, 99, 235, 0.4); } 
         .dot-visual { background-color: #16a34a; color: white; box-shadow: 0 0 8px rgba(22, 163, 74, 0.4); } 
         .dot-plano { background-color: #9333ea; color: white; box-shadow: 0 0 8px rgba(147, 51, 234, 0.4); } 
-        .dot-muestra { background-color: #ca8a04; color: white; box-shadow: 0 0 8px rgba(202, 138, 4, 0.4); } /* Amarillo Mostaza */
-        .dot-produccion { background-color: #ea580c; color: white; box-shadow: 0 0 8px rgba(234, 88, 12, 0.4); } /* Anaranjado */
-        
-        /* Estado Foco / Activo */
-        .dot-dimmed { background-color: #e2e8f0 !important; color: #94a3b8 !important; box-shadow: none !important; transform: scale(0.9); transition: all 0.3s ease; }
-        .dot-active { transform: scale(1.3); z-index: 20; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .dot-muestra { background-color: #ca8a04; color: white; box-shadow: 0 0 8px rgba(202, 138, 4, 0.4); } 
+        .dot-produccion { background-color: #ea580c; color: white; box-shadow: 0 0 8px rgba(234, 88, 12, 0.4); } 
 
         /* Loader */
         .loader {
@@ -56,6 +52,13 @@
             padding: 0 2px;
             border-radius: 2px;
             font-weight: 600;
+        }
+        
+        /* Tooltip */
+        #day-tooltip {
+            pointer-events: none;
+            transition: opacity 0.2s ease-in-out;
+            z-index: 9999;
         }
     </style>
 </head>
@@ -177,23 +180,19 @@
         </header>
         
         <main class="flex-1 overflow-hidden">
-            <div class="h-full max-w-7xl mx-auto p-4 md:p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="md:col-span-2 flex flex-col h-full bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden slide-in-right">
+            <div class="h-full w-full max-w-7xl mx-auto p-4 md:p-6 flex flex-col">
+                <div class="flex flex-col h-full bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden slide-in-right">
                     <div class="p-4 border-b border-slate-100 bg-slate-50 flex justify-between items-center">
-                        <span class="font-bold text-slate-700 text-sm uppercase tracking-wide">Historia del Proyecto</span>
+                        <span class="font-bold text-slate-700 text-sm uppercase tracking-wide">Calendario de Actividades</span>
                         <span id="entries-count-badge" class="text-xs bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full"></span>
                     </div>
-                    <div id="final-entries-container" class="flex-1 overflow-y-auto custom-scrollbar p-4 space-y-4"></div>
-                </div>
-                <div class="flex flex-col h-full bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden slide-in-right" style="animation-delay: 0.1s;">
-                    <div class="p-4 border-b border-slate-100 bg-slate-50 flex justify-between items-center">
-                        <span class="font-bold text-slate-700 text-sm uppercase tracking-wide">Calendario</span>
-                    </div>
-                    <div id="final-calendar-container" class="flex-1 overflow-y-auto custom-scrollbar p-6 flex flex-col items-center gap-8 scroll-smooth relative"></div>
+                    <div id="final-calendar-container" class="flex-1 overflow-y-auto custom-scrollbar p-6 flex flex-row flex-wrap justify-center items-start gap-8 scroll-smooth relative"></div>
                 </div>
             </div>
         </main>
     </div>
+
+    <div id="day-tooltip" class="fixed opacity-0 hidden bg-white shadow-2xl rounded-xl border border-slate-200 p-4 w-80 md:w-96 flex-col gap-2"></div>
 
     <script>
         // --- CONFIGURACIÓN DE ARCHIVOS ---
@@ -264,11 +263,11 @@
         
         let viewMode = 'CLIENT'; // 'CLIENT', 'YEAR' o 'CHART_FILTER'
         let activeYearFilter = '';
-        
-        // --- ESTADO DEL FILTRO DESDE EL GRÁFICO ---
-        let chartFilter = null; // Guardará { month, year, monthName, category }
-        
+        let chartFilter = null; 
         let statsChartInstance = null;
+        
+        // Items renderizados en la vista final actual (usado para el tooltip)
+        window.currentRenderedFinalItems = [];
 
         const loadingIndicator = document.getElementById('loading-indicator');
         const mainInput = document.getElementById('main-search-input');
@@ -442,7 +441,7 @@
             if (!cleanQuery) return;
             const lowerQuery = cleanQuery.toLowerCase();
 
-            // CASO 1: ESTADÍSTICAS POR MES Y AÑO (Ej: "ENERO 2026")
+            // CASO 1: ESTADÍSTICAS POR MES Y AÑO
             const chartMatch = cleanQuery.match(/^(ENERO|FEBRERO|MARZO|ABRIL|MAYO|JUNIO|JULIO|AGOSTO|SEPTIEMBRE|OCTUBRE|NOVIEMBRE|DICIEMBRE)\s+(202[2-6])$/i);
             if (chartMatch) {
                 showStatsChart(chartMatch[1].toUpperCase(), chartMatch[2]);
@@ -490,7 +489,7 @@
         // --- NUEVAS FUNCIONES PARA EL FILTRO DEL GRÁFICO ---
         function itemMatchesChartFilter(item) {
             if (!chartFilter) return true;
-            if (item.isExternal) return false; // Solo proyectos personales
+            if (item.isExternal) return false;
             
             let cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase().trim() : 'OTRO';
             if (cat !== chartFilter.category) return false;
@@ -506,11 +505,9 @@
         function activateChartFilter(month, year, monthName, category) {
             chartFilter = { month, year, monthName, category };
             viewMode = 'CHART_FILTER';
-            activeSearchQuery = ''; // Reseteamos la búsqueda en texto para no mezclar filtros
+            activeSearchQuery = '';
             
             renderClientSelectionList();
-            
-            // Transición: ocultamos el gráfico y mostramos la lista de clientes
             chartView.classList.add('translate-x-full');
             resultsView.classList.remove('translate-y-full');
             resetScroll('results-view');
@@ -553,11 +550,7 @@
                         label: 'Cantidad de Trabajos',
                         data: [ counts['RENDIMIENTO'], counts['VISUAL'], counts['PLANO MECÁNICO'], counts['MUESTRA'], counts['PRODUCCIÓN'] ],
                         backgroundColor: [
-                            'rgba(37, 99, 235, 0.8)',  // RENDIMIENTO (Azul)
-                            'rgba(22, 163, 74, 0.8)',  // VISUAL (Verde)
-                            'rgba(147, 51, 234, 0.8)', // PLANO MECÁNICO (Morado)
-                            'rgba(202, 138, 4, 0.8)',  // MUESTRA (Mostaza - yellow-600)
-                            'rgba(234, 88, 12, 0.8)'   // PRODUCCIÓN (Naranja - orange-600)
+                            'rgba(37, 99, 235, 0.8)', 'rgba(22, 163, 74, 0.8)', 'rgba(147, 51, 234, 0.8)', 'rgba(202, 138, 4, 0.8)', 'rgba(234, 88, 12, 0.8)'
                         ],
                         borderColor: [
                             'rgb(37, 99, 235)', 'rgb(22, 163, 74)', 'rgb(147, 51, 234)', 'rgb(202, 138, 4)', 'rgb(234, 88, 12)'
@@ -569,19 +562,16 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     layout: { padding: { top: 40 } },
-                    // --- NUEVO: HACER EL GRÁFICO INTERACTIVO (CLICKEABLE) ---
                     onClick: (event, elements) => {
                         if (elements.length > 0) {
                             const index = elements[0].index;
                             const category = statsChartInstance.data.labels[index];
-                            // Solo avanzar si la barra tiene datos (> 0)
                             if (counts[category] > 0) {
                                 activateChartFilter(targetMonth, targetYear, monthName, category);
                             }
                         }
                     },
                     onHover: (event, elements) => {
-                        // Cambiar el cursor a "pointer" (manito) si la barra tiene datos
                         const isClickable = elements.length > 0 && counts[statsChartInstance.data.labels[elements[0].index]] > 0;
                         event.native.target.style.cursor = isClickable ? 'pointer' : 'default';
                     },
@@ -611,17 +601,15 @@
             chartView.classList.remove('translate-x-full');
         }
 
-        // --- CERRAR VISTA DE GRÁFICO ---
         function closeChartView() {
             chartView.classList.add('translate-x-full');
             searchView.classList.remove('-translate-y-full', 'opacity-0');
             mainInput.value = '';
-            viewMode = 'CLIENT'; // Reseteamos el modo de vista general
+            viewMode = 'CLIENT'; 
             chartFilter = null;
             setTimeout(() => mainInput.focus(), 500);
         }
 
-        // --- FUNCIONES EXISTENTES (Modificadas para soportar CHART_FILTER) ---
         function itemMatchesQuery(item, query) {
             if (!query) return true;
             const q = query.toLowerCase();
@@ -663,15 +651,12 @@
             const mobileContainer = document.getElementById(containerId + '-mobile');
             let html = '';
             
-            // Si venimos desde el Gráfico (Filtro Estricto)
             if (viewMode === 'CHART_FILTER' && chartFilter) {
                 html = `<div class="flex items-center gap-2 bg-slate-800 text-white border border-slate-700 px-4 py-1.5 rounded-full text-xs font-bold shadow-sm"><span>${query}</span></div>`;
             }
-            // Filtro normal por año
             else if (viewMode === 'YEAR' && activeYearFilter) {
                  html = `<div class="flex items-center gap-2 bg-blue-100 text-blue-800 border border-blue-200 px-4 py-1.5 rounded-full text-xs font-bold shadow-sm"><span>Año: ${activeYearFilter}</span></div>`;
             } 
-            // Búsqueda de texto convencional
             else if (query && query !== 'falta' && query !== 'clientes') {
                 html = `<button onclick="${onClickFn}" class="group flex items-center gap-2 bg-yellow-100 text-yellow-800 hover:bg-red-100 hover:text-red-700 border border-yellow-200 hover:border-red-200 px-4 py-1.5 rounded-full text-xs font-bold transition-all shadow-sm animate-pulse"><span>"${query}"</span><svg class="w-3 h-3 opacity-60 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>`;
             }
@@ -753,7 +738,6 @@
                 const percentage = Math.round((c.count / maxCount) * 100);
                 const bgStyle = `background: linear-gradient(90deg, #fcd34d ${percentage}%, white ${percentage}%);`;
                 
-                // Solo resaltar el texto si no estamos en modo gráfico
                 const hlName = (viewMode === 'CHART_FILTER') ? c.name : highlightMatch(c.name, activeSearchQuery);
                 const safeClientName = c.name.replace(/"/g, '&quot;');
                 
@@ -921,125 +905,109 @@
             document.getElementById('category-filters').innerHTML = cats.map(c => {
                  const style = CAT_STYLES[c] || { btnColor: 'bg-slate-500' };
                  const opacity = (activeCategoryFilter && activeCategoryFilter !== c) ? 'opacity-30' : 'opacity-100';
-                 // Si es modo Chart Filter, el botón de su categoría se mostrará encendido y filtrando
-                 return `<button onclick="toggleCategory('${c}')" class="${style.btnColor} text-white px-3 py-1 rounded-full ${opacity} hover:opacity-100 shadow-sm">${toTitleCase(c)}</button>`;
+                 return `<button onclick="toggleCategory('${c}')" class="${style.btnColor} text-white px-3 py-1 rounded-full ${opacity} hover:opacity-100 shadow-sm transition-opacity">${toTitleCase(c)}</button>`;
             }).join('');
 
-            renderEntriesList(itemsToShow);
+            // Guardamos para uso del tooltip
+            window.currentRenderedFinalItems = itemsToShow;
+            document.getElementById('entries-count-badge').innerText = itemsToShow.length;
+            
             renderFinalCalendar(itemsToShow); 
         }
 
         function toggleCategory(c) { activeCategoryFilter = activeCategoryFilter === c ? null : c; updateFinalViewContent(); }
         function unfilterFinalView() { isFinalViewFiltered = false; updateFinalViewContent(); }
 
-        function renderEntriesList(items) {
-            const container = document.getElementById('final-entries-container');
-            document.getElementById('entries-count-badge').innerText = items.length;
+        // --- SISTEMA DE TOOLTIP EN CALENDARIO ---
+        function showDayTooltip(event, d, m, y) {
+            const tooltip = document.getElementById('day-tooltip');
+            
+            // Filtramos los items renderizados para obtener los del día específico
+            const items = window.currentRenderedFinalItems.filter(item => {
+                if(!item.fecha) return false;
+                const parts = item.fecha.split('/');
+                return parseInt(parts[0]) === d && parseInt(parts[1]) === m && parseInt(parts[2]) === y;
+            });
 
-            if (items.length === 0) {
-                container.innerHTML = `<div class="text-center py-10 text-slate-400">Sin entradas visibles.</div>`;
-                return;
-            }
+            if (items.length === 0) return;
+
+            let html = `
+                <div class="font-bold text-slate-700 border-b border-slate-100 pb-2 mb-2 flex justify-between items-center">
+                    <span>${String(d).padStart(2, '0')}/${String(m).padStart(2, '0')}/${y}</span>
+                    <span class="text-xs font-normal text-slate-500">${items.length} entrada(s)</span>
+                </div>
+                <div class="max-h-64 overflow-y-auto custom-scrollbar flex flex-col gap-3 pr-1">
+            `;
 
             items.sort((a, b) => parseDate(a.fecha) - parseDate(b.fecha));
 
-            let html = '';
-            items.forEach((item, idx) => {
+            items.forEach((item) => {
                 const cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase() : 'OTRO';
                 const style = CAT_STYLES[cat] || CAT_STYLES['OTRO']; 
                 const isFalta = item.check === 'FALTA';
+                
                 let cardClass = style.card;
                 if (isFalta) {
                     cardClass = cardClass.replace(/border-\w+-\d+/g, ''); 
-                    cardClass += ' border-4 border-red-600 shadow-[0_0_15px_rgba(220,38,38,0.25)]';
+                    cardClass += ' border-2 border-red-600 shadow-[0_0_10px_rgba(220,38,38,0.3)]';
                 }
-                cardClass += ' transition-all duration-200';
                 
                 const showHighlight = (viewMode !== 'YEAR' && viewMode !== 'CHART_FILTER' && isFinalViewFiltered);
                 const hlDesc = showHighlight ? highlightMatch(item.descripcion, activeSearchQuery) : item.descripcion;
-                
-                const clickAction = item.drive ? `onclick="window.open('${item.drive}', '_blank')"` : '';
-                const cursorStyle = item.drive ? 'cursor-pointer' : 'cursor-default';
-                const titleHover = item.drive ? 'group-hover:text-blue-800' : '';
-                const mouseEvents = `onmouseenter="focusCalendarDate('${item.fecha}', '${style.dotClass}')" onmouseleave="resetCalendarFocus()"`;
 
                 html += `
-                    <div ${clickAction} ${mouseEvents} class="group flex gap-4 p-4 rounded-lg border text-sm ${cardClass} ${cursorStyle}">
-                         <div class="flex flex-col items-center min-w-[30px]">
-                            <span class="text-slate-600 font-bold font-mono group-hover:text-slate-800 transition-colors">${idx + 1}</span>
-                         </div>
-                         <div class="flex-1">
-                            <div class="flex justify-between mb-2">
-                                <span class="px-2 py-0.5 rounded text-[10px] font-bold ${style.badge}">${cat}</span>
-                                <span class="text-slate-500 text-xs font-medium group-hover:text-slate-700">${item.fecha || 'Sin fecha'}</span>
-                            </div>
-                            <p class="text-slate-700 leading-relaxed ${titleHover} transition-colors">${hlDesc}</p>
-                         </div>
-                         ${item.drive ? `<div class="self-center opacity-0 group-hover:opacity-100 transition-opacity"><svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></div>` : ''}
+                    <div class="p-3 rounded-lg border text-sm ${cardClass} flex flex-col gap-1.5 relative overflow-hidden">
+                        <div class="flex justify-between items-center">
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold ${style.badge}">${cat}</span>
+                            ${item.drive ? `<a href="${item.drive}" target="_blank" class="text-blue-600 hover:text-blue-800" title="Ver archivo"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>` : ''}
+                        </div>
+                        <p class="text-slate-700 leading-relaxed text-xs font-medium">${hlDesc}</p>
                     </div>
                 `;
             });
-            container.innerHTML = html;
+
+            html += `</div>`;
+            tooltip.innerHTML = html;
+            tooltip.classList.remove('hidden');
+
+            // Timeout corto para permitir que la transición de opacidad ocurra tras quitar el hidden
+            requestAnimationFrame(() => {
+                tooltip.classList.remove('opacity-0');
+            });
+
+            moveTooltip(event);
         }
 
-        // --- ANIMACIONES DEL CALENDARIO ---
-        function smoothScrollTo(element, target, duration) {
-            const start = element.scrollTop;
-            const change = target - start;
-            let startTime = 0;
-            function animateScroll(currentTime) {
-                if (!startTime) startTime = currentTime;
-                const timeElapsed = currentTime - startTime;
-                let val = timeElapsed / (duration / 2);
-                let scrollAmount;
-                if (val < 1) scrollAmount = change / 2 * val * val + start;
-                else { val--; scrollAmount = -change / 2 * (val * (val - 2) - 1) + start; }
-                element.scrollTop = scrollAmount;
-                if (timeElapsed < duration) requestAnimationFrame(animateScroll);
-                else element.scrollTop = target;
+        function moveTooltip(event) {
+            const tooltip = document.getElementById('day-tooltip');
+            if (tooltip.classList.contains('hidden')) return;
+
+            const offset = 15;
+            let x = event.clientX + offset;
+            let y = event.clientY + offset;
+
+            // Detección de colisiones con los bordes de la pantalla
+            const rect = tooltip.getBoundingClientRect();
+            if (x + rect.width > window.innerWidth) {
+                x = event.clientX - rect.width - offset;
             }
-            requestAnimationFrame(animateScroll);
+            if (y + rect.height > window.innerHeight) {
+                y = event.clientY - rect.height - offset;
+            }
+
+            tooltip.style.left = `${x}px`;
+            tooltip.style.top = `${y}px`;
         }
 
-        function focusCalendarDate(dateStr, targetColorClass) {
-            if(!dateStr) return;
-            const [d, m, y] = dateStr.split('/');
-            if(!d || !m || !y) return;
-            const monthKey = `${parseInt(y)}-${parseInt(m)}`;
-            const dayVal = parseInt(d);
-
-            const monthEl = document.getElementById(`cal-month-${monthKey}`);
-            if (monthEl) {
-                const containerRect = finalCalendarContainer.getBoundingClientRect();
-                const elRect = monthEl.getBoundingClientRect();
-                const currentRelTop = elRect.top - containerRect.top + finalCalendarContainer.scrollTop;
-                const targetOffset = currentRelTop - (containerRect.height / 2) + (elRect.height / 2);
-                smoothScrollTo(finalCalendarContainer, Math.max(0, targetOffset), 800);
-            }
-
-            const allDots = document.querySelectorAll('.calendar-dot');
-            const targetId = `${monthKey}-${dayVal}`;
-
-            allDots.forEach(dot => {
-                if (!dot.dataset.originalClasses) dot.dataset.originalClasses = dot.className;
-                if (dot.dataset.date === targetId) {
-                    dot.classList.remove('dot-rendimiento', 'dot-visual', 'dot-plano', 'dot-muestra', 'dot-produccion', 'bg-slate-400');
-                    if(targetColorClass) dot.classList.add(targetColorClass);
-                    dot.classList.add('dot-active');
-                    dot.classList.remove('dot-dimmed');
-                } else {
-                    dot.classList.add('dot-dimmed');
-                    dot.classList.remove('dot-active');
+        function hideDayTooltip() {
+            const tooltip = document.getElementById('day-tooltip');
+            tooltip.classList.add('opacity-0');
+            // Esperar a que acabe la transición para ocultarlo del todo
+            setTimeout(() => {
+                if (tooltip.classList.contains('opacity-0')) {
+                    tooltip.classList.add('hidden');
                 }
-            });
-        }
-
-        function resetCalendarFocus() {
-            const allDots = document.querySelectorAll('.calendar-dot');
-            allDots.forEach(dot => {
-                if (dot.dataset.originalClasses) dot.className = dot.dataset.originalClasses;
-                dot.classList.remove('dot-dimmed', 'dot-active');
-            });
+            }, 200);
         }
 
         function renderFinalCalendar(items) {
@@ -1052,13 +1020,12 @@
                 const day = parseInt(d);
                 if (!eventsByDate[key]) eventsByDate[key] = {};
                 if (!eventsByDate[key][day]) eventsByDate[key][day] = [];
-                const cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase() : 'OTRO';
-                const dotColor = (CAT_STYLES[cat] || { dotClass: 'bg-gray-400' }).dotClass;
-                eventsByDate[key][day].push(dotColor);
+                // Se guarda el item completo para pasarlo al tooltip
+                eventsByDate[key][day].push(item);
             });
 
             if (Object.keys(eventsByDate).length === 0) {
-                finalCalendarContainer.innerHTML = '<div class="text-center text-slate-300 mt-10">Sin fechas registradas</div>'; return;
+                finalCalendarContainer.innerHTML = '<div class="w-full text-center text-slate-300 mt-10">Sin fechas registradas</div>'; return;
             }
 
             const sortedMonths = Object.keys(eventsByDate).sort((a, b) => {
@@ -1075,11 +1042,18 @@
             const monthIdx = month - 1;
             const daysInMonth = new Date(year, monthIdx + 1, 0).getDate();
             const firstDay = new Date(year, monthIdx, 1).getDay();
-            let h = `<div id="cal-month-${monthKey}" class="w-full max-w-[260px] mb-6 transition-all duration-500"><div class="text-center font-bold text-slate-700 mb-2 border-b border-slate-100 pb-1">${MONTH_NAMES[monthIdx]} ${year}</div><div class="grid grid-cols-7 text-center text-xs text-slate-300 mb-1"><div>D</div><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div></div><div class="grid grid-cols-7 gap-1 text-sm">`;
+            let h = `<div id="cal-month-${monthKey}" class="w-full max-w-[260px] transition-all duration-500"><div class="text-center font-bold text-slate-700 mb-2 border-b border-slate-100 pb-1">${MONTH_NAMES[monthIdx]} ${year}</div><div class="grid grid-cols-7 text-center text-xs text-slate-300 mb-1"><div>D</div><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div></div><div class="grid grid-cols-7 gap-1 text-sm">`;
             for(let i=0; i<firstDay; i++) h+=`<div></div>`;
             for(let d=1; d<=daysInMonth; d++) {
-                if(eventsMap[d]) h += `<div class="calendar-dot aspect-square rounded-md flex items-center justify-center font-bold text-white shadow-sm ${eventsMap[d][0]} transition-all duration-300" data-date="${monthKey}-${d}">${d}</div>`;
-                else h += `<div class="aspect-square flex items-center justify-center text-slate-300 text-xs">${d}</div>`;
+                if(eventsMap[d] && eventsMap[d].length > 0) {
+                    // Tomamos el color de la primera entrada del día
+                    const firstItemCat = eventsMap[d][0].trabajoDiseno ? eventsMap[d][0].trabajoDiseno.toUpperCase() : 'OTRO';
+                    const dotColorClass = (CAT_STYLES[firstItemCat] || { dotClass: 'bg-slate-400' }).dotClass;
+                    
+                    h += `<div class="aspect-square rounded-md flex items-center justify-center font-bold text-white shadow-sm ${dotColorClass} transition-transform duration-200 cursor-pointer hover:scale-110 relative z-10" onmouseenter="showDayTooltip(event, ${d}, ${month}, ${year})" onmousemove="moveTooltip(event)" onmouseleave="hideDayTooltip()">${d}</div>`;
+                } else {
+                    h += `<div class="aspect-square flex items-center justify-center text-slate-300 text-xs">${d}</div>`;
+                }
             }
             h += `</div></div>`;
             return h;
@@ -1096,12 +1070,11 @@
             const view = document.getElementById(containerId);
             if (view) { const main = view.querySelector('main'); if (main) main.scrollTop = 0; }
             if (containerId === 'final-view') {
-                if (document.getElementById('final-entries-container')) document.getElementById('final-entries-container').scrollTop = 0;
                 if (document.getElementById('final-calendar-container')) document.getElementById('final-calendar-container').scrollTop = 0;
             }
         }
 
-        // --- SISTEMA DE NAVEGACIÓN (MODIFICADO PARA FILTRO GRÁFICO) ---
+        // --- SISTEMA DE NAVEGACIÓN ---
         function openResultsView() { 
             resetScroll('results-view'); 
             searchView.classList.add('-translate-y-full', 'opacity-0'); 
@@ -1110,7 +1083,6 @@
 
         function openProjectListView(clientName) {
             if(!clientName) return;
-            // OJO: No cambiamos viewMode aquí para no estropear 'YEAR' ni 'CHART_FILTER'
             currentClientName = clientName;
             isProjectListFiltered = true;
             renderProjectListContent();
@@ -1119,15 +1091,12 @@
         }
         
         function closeResults() { 
-            // Si le damos atrás desde la Lista de Clientes y veníamos de un gráfico, volvemos al Gráfico
             if (viewMode === 'CHART_FILTER' && chartFilter) {
                 resultsView.classList.add('translate-y-full');
                 chartView.classList.remove('translate-x-full');
-                // Al volver al gráfico no matamos todo, solo ocultamos la vista actual
                 return;
             }
 
-            // Si venimos de la búsqueda normal de texto, regresamos a la pantalla principal
             activeSearchQuery=''; 
             viewMode = 'CLIENT'; 
             activeYearFilter = '';
@@ -1151,6 +1120,7 @@
         function closeFinalView() { 
             resetScroll('project-list-view'); 
             finalView.classList.add('translate-x-full'); 
+            hideDayTooltip(); // Por si quedó abierto
         }
     </script>
 </body>
