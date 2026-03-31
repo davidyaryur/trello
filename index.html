@@ -56,9 +56,7 @@
         
         /* Tooltip */
         #day-tooltip {
-            pointer-events: none;
             transition: opacity 0.2s ease-in-out;
-            z-index: 9999;
         }
     </style>
 </head>
@@ -176,7 +174,7 @@
 
             <div id="active-search-filter-container" class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 hidden md:block"></div>
             
-            <div id="category-filters" class="flex flex-wrap gap-2 text-xs font-bold transition-all duration-300"></div>
+            <div id="category-filters" class="flex flex-wrap gap-3 text-sm font-bold transition-all duration-300"></div>
         </header>
         
         <main class="flex-1 overflow-hidden">
@@ -192,7 +190,7 @@
         </main>
     </div>
 
-    <div id="day-tooltip" class="fixed opacity-0 hidden bg-white shadow-2xl rounded-xl border border-slate-200 p-4 w-80 md:w-96 flex-col gap-2"></div>
+    <div id="day-tooltip" class="fixed opacity-0 hidden pointer-events-none bg-white shadow-2xl rounded-xl border border-slate-200 p-4 w-80 md:w-96 flex-col gap-2 z-[9999]"></div>
 
     <script>
         // --- CONFIGURACIÓN DE ARCHIVOS ---
@@ -266,8 +264,10 @@
         let chartFilter = null; 
         let statsChartInstance = null;
         
-        // Items renderizados en la vista final actual (usado para el tooltip)
+        // Variables para el control de la ventana (tooltip)
         window.currentRenderedFinalItems = [];
+        let isTooltipPinned = false;
+        window.pinnedDayKey = null;
 
         const loadingIndicator = document.getElementById('loading-indicator');
         const mainInput = document.getElementById('main-search-input');
@@ -281,6 +281,20 @@
         const projectListContainer = document.getElementById('project-list-container');
         const finalCalendarContainer = document.getElementById('final-calendar-container');
         
+        // Cierra el tooltip si se hace clic afuera
+        document.addEventListener('click', (e) => {
+            if (isTooltipPinned) {
+                const tooltip = document.getElementById('day-tooltip');
+                if (!tooltip.contains(e.target) && !e.target.closest('.day-dot')) {
+                    isTooltipPinned = false;
+                    window.pinnedDayKey = null;
+                    tooltip.classList.add('pointer-events-none');
+                    tooltip.classList.remove('pointer-events-auto');
+                    hideDayTooltip(true);
+                }
+            }
+        });
+
         // --- UTILS BÚSQUEDA ---
         function normalizeStr(str) { return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
 
@@ -486,7 +500,6 @@
             headerInput.value = activeSearchQuery;
         }
 
-        // --- NUEVAS FUNCIONES PARA EL FILTRO DEL GRÁFICO ---
         function itemMatchesChartFilter(item) {
             if (!chartFilter) return true;
             if (item.isExternal) return false;
@@ -513,7 +526,6 @@
             resetScroll('results-view');
         }
 
-        // --- FUNCIÓN PARA MOSTRAR EL GRÁFICO ---
         function showStatsChart(monthName, yearStr) {
             const targetMonth = MONTH_MAP[monthName];
             const targetYear = parseInt(yearStr, 10);
@@ -876,6 +888,10 @@
 
             activeCategoryFilter = null;
             isFinalViewFiltered = true; 
+            
+            isTooltipPinned = false;
+            window.pinnedDayKey = null;
+
             updateFinalViewContent();
             resetScroll('final-view'); 
             finalView.classList.remove('translate-x-full');
@@ -905,7 +921,8 @@
             document.getElementById('category-filters').innerHTML = cats.map(c => {
                  const style = CAT_STYLES[c] || { btnColor: 'bg-slate-500' };
                  const opacity = (activeCategoryFilter && activeCategoryFilter !== c) ? 'opacity-30' : 'opacity-100';
-                 return `<button onclick="toggleCategory('${c}')" class="${style.btnColor} text-white px-3 py-1 rounded-full ${opacity} hover:opacity-100 shadow-sm transition-opacity">${toTitleCase(c)}</button>`;
+                 // Aumentado el padding y text-sm
+                 return `<button onclick="toggleCategory('${c}')" class="${style.btnColor} text-white px-4 py-2 rounded-full ${opacity} hover:opacity-100 shadow-sm transition-opacity">${toTitleCase(c)}</button>`;
             }).join('');
 
             // Guardamos para uso del tooltip
@@ -918,8 +935,32 @@
         function toggleCategory(c) { activeCategoryFilter = activeCategoryFilter === c ? null : c; updateFinalViewContent(); }
         function unfilterFinalView() { isFinalViewFiltered = false; updateFinalViewContent(); }
 
-        // --- SISTEMA DE TOOLTIP EN CALENDARIO ---
-        function showDayTooltip(event, d, m, y) {
+        // --- SISTEMA DE TOOLTIP EN CALENDARIO (MODIFICADO) ---
+        function togglePinTooltip(event, d, m, y) {
+            event.stopPropagation();
+            const tooltip = document.getElementById('day-tooltip');
+            const clickedDayKey = `${d}-${m}-${y}`;
+
+            if (isTooltipPinned && window.pinnedDayKey === clickedDayKey) {
+                // Si ya está fijado y clicamos en el mismo día, lo des-fijamos
+                isTooltipPinned = false;
+                window.pinnedDayKey = null;
+                tooltip.classList.add('pointer-events-none');
+                tooltip.classList.remove('pointer-events-auto');
+                hideDayTooltip(true);
+            } else {
+                // Si clicamos en otro o no está fijado, lo fijamos a este día
+                isTooltipPinned = true;
+                window.pinnedDayKey = clickedDayKey;
+                tooltip.classList.remove('pointer-events-none');
+                tooltip.classList.add('pointer-events-auto');
+                showDayTooltip(event, d, m, y, true);
+            }
+        }
+
+        function showDayTooltip(event, d, m, y, force = false) {
+            if (isTooltipPinned && !force) return;
+
             const tooltip = document.getElementById('day-tooltip');
             
             // Filtramos los items renderizados para obtener los del día específico
@@ -959,7 +1000,7 @@
                     <div class="p-3 rounded-lg border text-sm ${cardClass} flex flex-col gap-1.5 relative overflow-hidden">
                         <div class="flex justify-between items-center">
                             <span class="px-2 py-0.5 rounded text-[10px] font-bold ${style.badge}">${cat}</span>
-                            ${item.drive ? `<a href="${item.drive}" target="_blank" class="text-blue-600 hover:text-blue-800" title="Ver archivo"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>` : ''}
+                            ${item.drive ? `<a href="${item.drive}" target="_blank" class="text-blue-600 hover:text-blue-800 bg-white/70 hover:bg-white rounded px-1 flex items-center shadow-sm" title="Ver archivo"><svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg> Ver</a>` : ''}
                         </div>
                         <p class="text-slate-700 leading-relaxed text-xs font-medium">${hlDesc}</p>
                     </div>
@@ -967,42 +1008,55 @@
             });
 
             html += `</div>`;
+            
+            // Si está fijado le agregamos un indicativo sutil
+            if (isTooltipPinned) {
+                 html += `<div class="text-[10px] text-center text-slate-400 mt-2 font-medium">Ventana fijada (clic fuera para cerrar)</div>`;
+            }
+
             tooltip.innerHTML = html;
             tooltip.classList.remove('hidden');
 
-            // Timeout corto para permitir que la transición de opacidad ocurra tras quitar el hidden
             requestAnimationFrame(() => {
                 tooltip.classList.remove('opacity-0');
             });
 
-            moveTooltip(event);
+            moveTooltip(event, force);
         }
 
-        function moveTooltip(event) {
+        function moveTooltip(event, force = false) {
+            if (isTooltipPinned && !force) return;
             const tooltip = document.getElementById('day-tooltip');
             if (tooltip.classList.contains('hidden')) return;
 
-            const offset = 15;
-            let x = event.clientX + offset;
-            let y = event.clientY + offset;
-
-            // Detección de colisiones con los bordes de la pantalla
             const rect = tooltip.getBoundingClientRect();
-            if (x + rect.width > window.innerWidth) {
-                x = event.clientX - rect.width - offset;
+            const offset = 15;
+            
+            // Centrado horizontalmente respecto al cursor
+            let x = event.clientX - (rect.width / 2);
+            // Arriba del cursor
+            let y = event.clientY - rect.height - offset;
+
+            // Evitamos que se salga por los lados de la pantalla
+            if (x < 10) x = 10;
+            if (x + rect.width > window.innerWidth - 10) {
+                x = window.innerWidth - rect.width - 10;
             }
-            if (y + rect.height > window.innerHeight) {
-                y = event.clientY - rect.height - offset;
+
+            // Si se sale por arriba de la pantalla, la ponemos por debajo del cursor
+            if (y < 10) {
+                y = event.clientY + offset;
             }
 
             tooltip.style.left = `${x}px`;
             tooltip.style.top = `${y}px`;
         }
 
-        function hideDayTooltip() {
+        function hideDayTooltip(force = false) {
+            if (isTooltipPinned && !force) return;
             const tooltip = document.getElementById('day-tooltip');
             tooltip.classList.add('opacity-0');
-            // Esperar a que acabe la transición para ocultarlo del todo
+            
             setTimeout(() => {
                 if (tooltip.classList.contains('opacity-0')) {
                     tooltip.classList.add('hidden');
@@ -1042,17 +1096,29 @@
             const monthIdx = month - 1;
             const daysInMonth = new Date(year, monthIdx + 1, 0).getDate();
             const firstDay = new Date(year, monthIdx, 1).getDay();
-            let h = `<div id="cal-month-${monthKey}" class="w-full max-w-[260px] transition-all duration-500"><div class="text-center font-bold text-slate-700 mb-2 border-b border-slate-100 pb-1">${MONTH_NAMES[monthIdx]} ${year}</div><div class="grid grid-cols-7 text-center text-xs text-slate-300 mb-1"><div>D</div><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div></div><div class="grid grid-cols-7 gap-1 text-sm">`;
+            
+            // Aumentado el ancho a max-w-[340px]
+            let h = `<div id="cal-month-${monthKey}" class="w-full max-w-[340px] transition-all duration-500">
+                        <div class="text-center font-bold text-slate-700 text-lg mb-3 border-b border-slate-200 pb-2">${MONTH_NAMES[monthIdx]} ${year}</div>
+                        <div class="grid grid-cols-7 text-center text-sm font-semibold text-slate-400 mb-2">
+                            <div>D</div><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div>
+                        </div>
+                        <div class="grid grid-cols-7 gap-2 text-base">`; // text-base y gap-2
+            
             for(let i=0; i<firstDay; i++) h+=`<div></div>`;
             for(let d=1; d<=daysInMonth; d++) {
                 if(eventsMap[d] && eventsMap[d].length > 0) {
-                    // Tomamos el color de la primera entrada del día
                     const firstItemCat = eventsMap[d][0].trabajoDiseno ? eventsMap[d][0].trabajoDiseno.toUpperCase() : 'OTRO';
                     const dotColorClass = (CAT_STYLES[firstItemCat] || { dotClass: 'bg-slate-400' }).dotClass;
                     
-                    h += `<div class="aspect-square rounded-md flex items-center justify-center font-bold text-white shadow-sm ${dotColorClass} transition-transform duration-200 cursor-pointer hover:scale-110 relative z-10" onmouseenter="showDayTooltip(event, ${d}, ${month}, ${year})" onmousemove="moveTooltip(event)" onmouseleave="hideDayTooltip()">${d}</div>`;
+                    // Añadido onclick y clase day-dot
+                    h += `<div class="day-dot aspect-square rounded-lg flex items-center justify-center font-bold text-white shadow-sm ${dotColorClass} transition-transform duration-200 cursor-pointer hover:scale-110 relative z-10" 
+                            onmouseenter="showDayTooltip(event, ${d}, ${month}, ${year})" 
+                            onmousemove="moveTooltip(event)" 
+                            onmouseleave="hideDayTooltip()"
+                            onclick="togglePinTooltip(event, ${d}, ${month}, ${year})">${d}</div>`;
                 } else {
-                    h += `<div class="aspect-square flex items-center justify-center text-slate-300 text-xs">${d}</div>`;
+                    h += `<div class="aspect-square flex items-center justify-center text-slate-300">${d}</div>`;
                 }
             }
             h += `</div></div>`;
@@ -1120,7 +1186,10 @@
         function closeFinalView() { 
             resetScroll('project-list-view'); 
             finalView.classList.add('translate-x-full'); 
-            hideDayTooltip(); // Por si quedó abierto
+            
+            isTooltipPinned = false;
+            window.pinnedDayKey = null;
+            hideDayTooltip(true);
         }
     </script>
 </body>
