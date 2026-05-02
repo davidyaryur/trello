@@ -27,6 +27,18 @@
         "descripcion": "Ayudé a Andrea Torres con un rendimiento de exhibidores de mesa de cartón",
         "drive": "https://drive.google.com/drive/folders/10NbFq7wKwT0ItWUlYfGkUNBMp0aGmays?usp=drive_link",
         "check": "FALTA"
+      },
+      {
+        "id": "(03)",
+        "fecha": "30/04/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "TENTATIVO 007/26",
+        "cliente": "EUROMERCADO",
+        "tituloProyecto": "EXHIBIDOR DE CARTÓN",
+        "trello": "https",
+        "descripcion": "Calculé el rendimiento de un exhibidor de cartón para Zaida",
+        "drive": "https://drive.google.com/drive/folders/1Ajcrj5rMvbtGgAPp7AdEoRAF8Ik20GET?usp=sharing",
+        "check": "LISTO"
       }
     ]
   },
@@ -58,6 +70,54 @@
         "descripcion": "Realicé las capturas de pantalla de SCJ se las envié a Enmary",
         "drive": "https://drive.google.com/drive/folders/1BvQ5d7FB75TPIlT904UzNLW8LijDXCPW?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "29/04/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "026/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
+        "trello": "https",
+        "descripcion": "Me puse a hacer el visual de SCJ",
+        "drive": "https://drive.google.com/drive/folders/1fPPh9u0JF6WdRpS8hTSqcrIn7fEBe6U5?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "30/04/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "026/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
+        "trello": "https",
+        "descripcion": "Realicé las modificaciones solicitadas en la reunión de Enmary al arte de las cajas de luz",
+        "drive": "https://drive.google.com/drive/folders/1cHpObHxs4cZ13nEe2fS_oVcz9o1aXEFA?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "30/04/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "462/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL",
+        "trello": "https",
+        "descripcion": "Envié a Lorena las nuevas propuestas visuales del mueble BT de 7Up y NatuChips",
+        "drive": "https://drive.google.com/drive/folders/1gki-JWLIZpQNe9Kd9nC8GHI4KMFxfalp?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(06)",
+        "fecha": "30/04/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "353/26",
+        "cliente": "DIAGEO",
+        "tituloProyecto": "PROPUESTA TECNOLÓGICA CON PANTALLAS, PROYECTOR",
+        "trello": "https",
+        "descripcion": "Realicé con IA la propuesta para el mueble de Buchanans 🗓️ MAYO 2026 MAYO 2026 LUN MAR MIÉR JUE VIE SÁB DOM 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 Tabla Trabajo de Diseño Filas 21 RENDIMIENTO. 22 VISUAL. 23 PLANO MECÁNICO. 24 MUESTRA. 25 PRODUCCIÓN.",
+        "drive": "https://drive.google.com/drive/folders/15VZ4Wm8jIncgfHSknVHFMU7ibaxXD1Zd?usp=drive_link",
+        "check": "FALTA"
       }
     ]
   },
@@ -87,6 +147,18 @@
         "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
         "trello": "https",
         "descripcion": "Envié el plano con las medidas de las cajas de luz de SCJ",
+        "drive": "https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "30/04/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "026/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
+        "trello": "https",
+        "descripcion": "Realicé el plano mecánico de las cajas de luz de SCJ para la reunión de Enmary",
         "drive": "https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link",
         "check": "LISTO"
       }
@@ -510,6 +582,66 @@
         "trello": "https",
         "descripcion": "Entregué la orden completa del mueble de Cheese Tris",
         "drive": "https://drive.google.com/drive/folders/1OW2nzs3o8cSxy8k2Sz1TqhI2WjYXMyF9?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(30)",
+        "fecha": "27/04/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "336/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE CHECKOUT SANTA ROSA DE LIMA",
+        "trello": "https",
+        "descripcion": "Monté el vinil del mini mueble de NatuChips",
+        "drive": "https://drive.google.com/drive/folders/192ogdX6XYxWyu2qSuy3L55U7jOgZGtxq?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(31)",
+        "fecha": "27/04/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "348/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "REVESTIMIENTO ANAQUELES EUROMERCADO MARACAY",
+        "trello": "https",
+        "descripcion": "Monté el corte de revestimiento Euromercado",
+        "drive": "https://drive.google.com/drive/folders/1Kh5UnjpRDNsfk2_K5c0yqvPretJ14huw?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(32)",
+        "fecha": "29/04/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "347/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE CHEESE TRIS LUXOR LA MORA MARACAY",
+        "trello": "https",
+        "descripcion": "Entregué la OP del cabezal de Cheese Tris corte y vinil",
+        "drive": "https://drive.google.com/drive/folders/1OW2nzs3o8cSxy8k2Sz1TqhI2WjYXMyF9?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(33)",
+        "fecha": "29/04/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "340/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "REVESTIMIENTO DE ANAQUEL Y COLUMNA CARRUSEL",
+        "trello": "https",
+        "descripcion": "Entregué la OP de Carrusel 2001 corte y vinil",
+        "drive": "https://drive.google.com/drive/folders/19qpt1dFXYZNfHwUYaRxKhdL-xBAljnZU?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(34)",
+        "fecha": "29/04/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "348/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "REVESTIMIENTO ANAQUELES EUROMERCADO MARACAY",
+        "trello": "https",
+        "descripcion": "Montar la OP de corte de revestimiento de Euromercado",
+        "drive": "https://drive.google.com/drive/folders/1Kh5UnjpRDNsfk2_K5c0yqvPretJ14huw?usp=drive_link",
         "check": "LISTO"
       }
     ]
