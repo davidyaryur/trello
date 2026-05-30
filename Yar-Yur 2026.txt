@@ -4205,7 +4205,7 @@ Tabla
 	10
 	23
 	PLANO MECÁNICO.
-	00
+	01
 	24
 	MUESTRA.
 	16
@@ -4294,7 +4294,7 @@ Tabla
 * 2. Saqué la muestra de color de Pepsico NatuChips la Muralla
 * Me entregaron las piezas del dispensador de Chocolates Mila
 * Fui a armar el dispensador de Chocolates Milka con Verónica
-* Hablé con Pablo y me recomendó sacar las cajas de luz en MDF pintado de blanco
+* Hablé con Pablo y me recomendó sacar las cajas de luz de SCJ en MDF pintado de blanco
 * Empecé a montar las cajas de luz de SCJ en MDF
 
 
@@ -4702,7 +4702,7 @@ https://drive.google.com/drive/folders/1pDhFnoULaBiXUmgfi5UVzzj-qr8wNrN_?usp=dri
 
 🌅 TARDE:
 * Me puse con la OP del vinil de NatuChips La Muralla
-* Ayudé a Carelis con el troquel de su empaque para Celiveca
+* Ayudé a Carelis con el troquel del  empaque para Celiveca
 * Reunión con Verónica y el cliente de Chocolates Milka
 * Verónica me pidió el rendimiento de la bandeja acostada que solicitó el cliente
 * Recibí el correo de Zaida con la cotización de Kotex
@@ -5058,7 +5058,7 @@ https://drive.google.com/drive/folders/1Tt68CyLb344p__ynl_sNBHusVfqdJXWz?usp=sha
 
 5. RENDIMIENTO: (07) TENTATIVO 010/26 - DISTRIBUIDORA INMARKET - CAJA PARA HOLOGRAMA Comencé el rendimiento para Verónica de la caja para holograma
 TRELLO: https://trello.com/c/5gnejbT4
-DRIVE: FALTA
+DRIVE: LISTO
 https://drive.google.com/drive/folders/1crepRMdvBQBGagFy5jNrl4tHrsKO9mM-?usp=drive_link
 
 
@@ -5198,11 +5198,21 @@ Tabla
 
 🗓️ Lunes 01 de junio del 2026
 🕒 PENDIENTE:
+* Enviar rendimiento a Verónica de la caja para holograma
 * OP de la ristra de Migren
-* MF del botadero de leche condensada
+* OP Multicategoría de Nestlé
+
+
+* Estar pendiente del mueble de la Muralla, hacerle seguimiento, rotulación, altos relieves
+* Estar pendiente de la instalación del mueble fixturización de SCJ, que lleven todo
+* Estar pendiente de la aprobación de la muestra del dispensador de Chocolates Milka, armar mica
+
+
+* MF del botadero de leche condensada: cartón+mica, cartón+acrílico y mdf de 3mm + acrílico
+* OP del mueble BT 7Up NatuChips con cubos
 🌄 MAÑANA:
-* Le envié el rendimiento a Verónica del holograma para Chocolates Milka
-* Entregué la OP de las ristras de Migren
+* 1. Le envié el rendimiento a Verónica del holograma para Chocolates Milka
+* 2. Entregué la OP de las ristras de Migren
 
 
 🌅 TARDE:
