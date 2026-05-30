@@ -4199,19 +4199,19 @@ Tabla
 	Filas
 	21
 	RENDIMIENTO.
-	03
+	07
 	22
 	VISUAL.
-	08
+	10
 	23
 	PLANO MECÁNICO.
 	00
 	24
 	MUESTRA.
-	09
+	16
 	25
 	PRODUCCIÓN.
-	11
+	18
 	
 
 
@@ -4787,7 +4787,7 @@ DRIVE: LISTO
 https://drive.google.com/drive/folders/1gZLo4Mnd0jVlvBzl0CEitPlMxlfoyfTe?usp=drive_link
 
 
-2. VISUAL: (08) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Envié el visual de NatuChips La Muralla al correo producción Yar-Yur
+2. VISUAL: (09) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Envié el visual de NatuChips La Muralla al correo producción Yar-Yur
 TRELLO: https://trello.com/c/jnKUhXD8
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1_OLMsOORkzWeferNWg-Dd4gU1q3o761z?usp=drive_link
@@ -4854,19 +4854,19 @@ https://drive.google.com/drive/folders/1ZhHcSL7jfA3oDF_SLtQX01Ok4pS6H86U?usp=dri
 
 
 📂 CARPETAS:
-1. PRODUCCIÓN: () 436/26 - DIMASSI - REVESTIMIENTO DE EXHIBIDORES KOTEX Monté la OP de la bandeja de Kotex para su reparación
+1. PRODUCCIÓN: (13) 436/26 - DIMASSI - REVESTIMIENTO DE EXHIBIDORES KOTEX Monté la OP de la bandeja de Kotex para su reparación
 TRELLO: https://trello.com/c/4gVLxBVg
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1gZLo4Mnd0jVlvBzl0CEitPlMxlfoyfTe?usp=drive_link
 
 
-2. PRODUCCIÓN: () 026/26 - SCJ - MUEBLE FIXTURIZACIÓN Le entregué la OP de corte del Nueva Colección de SCJ a Andrés David
+2. PRODUCCIÓN: (14) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN Le entregué la OP de corte del Nueva Colección de SCJ a Andrés David
 TRELLO: https://trello.com/c/IXghwijL
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
 
 
-3. PLANO: ()  TENTATIVO 009/26 - COLGATE - CINTAS EN EDITABLE FARMATODO Y LOCATEL Le pasé a Andrea las cintas de Farmatodo en Editable
+3. PLANO MECÁNICO: (01)  TENTATIVO 009/26 - COLGATE - CINTAS EN EDITABLE FARMATODO Y LOCATEL Le pasé a Andrea las cintas de Farmatodo en Editable
 TRELLO: https://trello.com/c/ETv3RGot
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1y02JXRRrDOMob_4_g8vTQDh1U6dJyeZc?usp=drive_link
@@ -4893,25 +4893,25 @@ https://drive.google.com/drive/folders/1y02JXRRrDOMob_4_g8vTQDh1U6dJyeZc?usp=dri
 
 
 📂 CARPETAS:
-1. PRODUCCIÓN: () 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Monté la orden de los preciarios de acrílico transparente de SCJ
+1. PRODUCCIÓN: (15) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Monté la orden de los preciarios de acrílico transparente de SCJ
 TRELLO: https://trello.com/c/IXghwijL
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
 
 
-2. RENDIMIENTO: () 462/25 - PEPSICO - MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL Rendimiento de NatuChips Río Lomas del Sol
+2. RENDIMIENTO: (04) 462/25 - PEPSICO - MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL Rendimiento de NatuChips Río Lomas del Sol
 TRELLO: https://trello.com/c/KTrjOpTQ
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1hMcCSjL3kimzEk6Wbz4ntfbjIYfajGcT?usp=drive_link
 
 
-3. RENDIMIENTO: () 478/26 - NATULAC - CABEZAL DE NÉCTARES MERKAFUR  AV LARA Rendimiento Mueble Natulac
+3. RENDIMIENTO: (05) 478/26 - NATULAC - CABEZAL DE NÉCTARES MERKAFUR  AV LARA Rendimiento Mueble Natulac
 TRELLO: https://trello.com/c/q9pFvo4f
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1_ixijuazXCjFvXpcR0LJ-AVazXJAHkAb?usp=drive_link
 
 
-4. MUESTRA: () 423/26 - GRUPO LETI - RISTRAS MIGREN DOBLE CARGA Me puse a armar la ristra de Migren
+4. MUESTRA: (11) 423/26 - GRUPO LETI - RISTRAS MIGREN DOBLE CARGA Me puse a armar la ristra de Migren
 TRELLO: https://trello.com/c/WK7IrXis
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1u7AA3yovWSPaaKlIt4MGo-lrGzG8BPW0?usp=drive_link
@@ -4941,13 +4941,13 @@ https://drive.google.com/drive/folders/1u7AA3yovWSPaaKlIt4MGo-lrGzG8BPW0?usp=dri
 
 
 📂 CARPETAS:
-1. MUESTRA: () 423/26 - GRUPO LETI - RISTRAS MIGREN DOBLE CARGA Alexander me entregó la Ristra terminada y se la entregué a Vanesa
+1. MUESTRA: (12) 423/26 - GRUPO LETI - RISTRAS MIGREN DOBLE CARGA Alexander me entregó la Ristra terminada y se la entregué a Vanesa
 TRELLO: https://trello.com/c/WK7IrXis
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1u7AA3yovWSPaaKlIt4MGo-lrGzG8BPW0?usp=drive_link
 
 
-2. MUESTRA: () 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Fui a producción con Verónica a armar el dispensador de Chocolates Milka
+2. MUESTRA: (13) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Fui a producción con Verónica a armar el dispensador de Chocolates Milka
 TRELLO: https://trello.com/c/pgXgDNDD
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1ZhHcSL7jfA3oDF_SLtQX01Ok4pS6H86U?usp=drive_link
@@ -4982,25 +4982,25 @@ https://drive.google.com/drive/folders/1ZhHcSL7jfA3oDF_SLtQX01Ok4pS6H86U?usp=dri
 
 
 📂 CARPETAS:
-1. VISUAL: () 432/26 - NESTLE - SUBASTA DISRUPTIVA DESAYUNOS Terminé el visual de Desayunos de Nestlé y se lo envié a Milka
+1. VISUAL: (10) 432/26 - NESTLE - SUBASTA DISRUPTIVA DESAYUNOS Terminé el visual de Desayunos de Nestlé y se lo envié a Milka
 TRELLO: https://trello.com/c/9H6KG0zz
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1wj4n5Emjshwbde7dKVCer0LAoV_kJ148?usp=drive_link
 
 
-2. MUESTRA: () 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Terminé de armar la muestra del dispensador de Chocolates Milka
+2. MUESTRA: (14) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Terminé de armar la muestra del dispensador de Chocolates Milka
 TRELLO: https://trello.com/c/pgXgDNDD
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1ZhHcSL7jfA3oDF_SLtQX01Ok4pS6H86U?usp=drive_link
 
 
-3. PRODUCCIÓN: () 431/26 - COLGATE - RECOMPRA DE 3 ISLAS DE CUIDADO PERSONAL Monté la OP del acrílico transparente de las ISLAS de Colgate
+3. PRODUCCIÓN: (16) 431/26 - COLGATE - RECOMPRA DE 3 ISLAS DE CUIDADO PERSONAL Monté la OP del acrílico transparente de las ISLAS de Colgate
 TRELLO: https://trello.com/c/h6xSobUK
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1kBkL8k_o8L7In-EQYTeAoAbu7GBYuj07?usp=drive_link
 
 
-4. MUESTRA: () 297/26 - NESTLE DE VENEZUELA - CABEZALES CANAL MODERNO NIM MULTICATEGORÍA Le entregué a Pablo la orden de muestra de color de subasta de Nestlé
+4. MUESTRA: (15) 297/26 - NESTLE DE VENEZUELA - CABEZALES CANAL MODERNO NIM MULTICATEGORÍA Le entregué a Pablo la orden de muestra de color de subasta de Nestlé
 TRELLO: https://trello.com/c/XiqKgHCm
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1RqFqVeri2rq7damJ2E0MgAqhGVc4AoLu?usp=drive_link
@@ -5032,31 +5032,31 @@ https://drive.google.com/drive/folders/1RqFqVeri2rq7damJ2E0MgAqhGVc4AoLu?usp=dri
 
 
 📂 CARPETAS:
-1. PRODUCCIÓN: () 502/26 -COLGATE - ISLA CUIDADO PERSONAL AIKOZ UNIMALL  Entregué la OP de una ISLA de COLGATE
+1. PRODUCCIÓN: (17) 502/26 -COLGATE - ISLA CUIDADO PERSONAL AIKOZ UNIMALL  Entregué la OP de una ISLA de COLGATE
 TRELLO: https://trello.com/c/q7WzEihE
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1NTcK9fxrg7ZKsexjPc84GkxmUOQe4cEM?usp=drive_link
 
 
-2. MUESTRA: () 508/26 - EL TUNAL - PUNTERA PURISSIMA MERKAFUR Entegué la orden de muestra de color de El Tunal.
+2. MUESTRA: (16) 508/26 - EL TUNAL - PUNTERA PURISSIMA MERKAFUR Entegué la orden de muestra de color de El Tunal.
 TRELLO: https://trello.com/c/fu2IqiXn
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1lHBbJiiA9rxv4H0M3rcuQKb09t2cfIV3?usp=drive_link
 
 
-3.  PRODUCCIÓN: () 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Entregué la orden de producción del dummy y plantilla de ganchos de SCJ.
+3.  PRODUCCIÓN: (18) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Entregué la orden de producción del dummy y plantilla de ganchos de SCJ.
 TRELLO: https://trello.com/c/IXghwijL
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
 
 
-4. RENDIMIENTO: () TENTATIVO 011/26 - NESTLÉ - SERVILLETEROS Le envié el rendimiento de los servilleteros de Nestlé a Milka y José Gabriel.
+4. RENDIMIENTO: (06) TENTATIVO 011/26 - NESTLÉ - SERVILLETEROS Le envié el rendimiento de los servilleteros de Nestlé a Milka y José Gabriel.
 TRELLO: https://trello.com/c/6b9LqaLG
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1Tt68CyLb344p__ynl_sNBHusVfqdJXWz?usp=sharing
 
 
-5. RENDIMIENTO: () TENTATIVO 010/26 - DISTRIBUIDORA INMARKET - CAJA PARA HOLOGRAMA Comencé el rendimiento para Verónica de la caja para holograma
+5. RENDIMIENTO: (07) TENTATIVO 010/26 - DISTRIBUIDORA INMARKET - CAJA PARA HOLOGRAMA Comencé el rendimiento para Verónica de la caja para holograma
 TRELLO: https://trello.com/c/5gnejbT4
 DRIVE: FALTA
 https://drive.google.com/drive/folders/1crepRMdvBQBGagFy5jNrl4tHrsKO9mM-?usp=drive_link
