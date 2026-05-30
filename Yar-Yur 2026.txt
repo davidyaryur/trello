@@ -1,0 +1,7795 @@
+﻿🧾 Prompt
+Este documento proporciona un sistema de información organizado para proyectos de Yar-Yur 2026. En cada día, hay una sección llamada "CARPETAS" que contiene elementos cruciales de cada proyecto.
+Estos elementos de proyecto se identifican mediante palabras clave específicas: RENDIMIENTO, VISUAL, PLANO MECÁNICO, MUESTRA, PRODUCCIÓN, AUTORIZACIÓN
+Cada elemento sigue un formato estructurado:
+* Palabra Clave: Identifica el tipo de proyecto.
+* Número identificador: Número entre paréntesis.
+* Número de Proyecto:  Número de referencia único.
+* Cliente: Nombre todo en mayúsculas entre dos guiones
+* Título del Proyecto:  Nombre descriptivo en mayúsculas.
+* Descripción del Proyecto: Resumen breve del proyecto.
+* Identificador de Trello: caracteres alfanuméricos que identifican el Trello
+* Enlace a la Carpeta de Google Drive:  Acceso directo al almacenamiento del proyecto.
+* Check de archivos en DRIVE: puede ser LISTO o FALTA
+La solicitud es crear tablas para un archivo html que extraigan y presenten los datos de los proyectos de cada día. Las tablas deben tener 8 columnas en este orden: 
+
+
+* Columna 1: número identificador
+* Columna 2: fecha en formato DD/MM/AAAA
+* Columna 3: palabra clave
+* Columna 4: número de proyecto
+* Columna 5: nombre del cliente
+* Columna 6: título del proyecto
+* Columna 7: Identificador de Trello
+* Columna 8: descripción del proyecto
+* Columna 9: enlace explícito a la carpeta de Google Drive
+* Columna 10: LISTO o FALTA
+
+
+Organizar las filas de la tabla por número identificador ascendente y por fecha ascendente
+
+
+Al principio de cada pestaña está especificado los números de las tablas que se deben crear, qué datos deben tener cada tabla, y la cantidad de filas que debe tener cada tabla.
+
+
+Es muy importante que las tablas tengan el siguiente formato JSON para poder interpretarlo mediante un HTML que lee los datos con esta estructura específica y debe tener el espaciado como se muestra a continuación para su fácil lectura
+
+
+[
+{
+"tableId": 61,
+"mes": "NOVIEMBRE",
+"num": 2,
+"proyectos":
+[
+{
+"id": "(1)",
+"fecha": "04/11/2025",
+"trabajoDiseno": "RENDIMIENTO",
+"numeroProyecto": "269/25",
+"cliente": "ALIMENTOS MARY",
+"tituloProyecto": "EXHIBIDORES CALEDONIA",
+"trello": "HItfP1qy",
+"descripcion": "Le envié a Milka el rendimiento de los preciarios de acrílico",
+"drive": "https://drive.google.com/drive/folders/19yvtu0Nn-oS_sxOLtY-okcJ73S8PYf8O",
+"check": "LISTO"
+},
+{
+"id": "(2)",
+"fecha": "13/11/2025",
+"trabajoDiseno": "RENDIMIENTO",
+"numeroProyecto": "977/25",
+"cliente": "HOLLY MASS",
+"tituloProyecto": "EXHIBIDOR DE PISO GRANDE",
+"trello": "qTaUCgIw",
+"descripcion": "Calculé el rendimiento del mueble de Verónica",
+"drive": "https://drive.google.com/drive/folders/1De0L1YYo-cgoqqZB-8vtYVCwe2eE8SlB",
+"check": "LISTO"
+}
+]
+},
+
+
+{
+"tableId": 62,
+"mes": "NOVIEMBRE",
+"num": 1,
+"proyectos":
+[
+{
+"id": "(1)",
+"fecha": "24/11/2025",
+"trabajoDiseno": "VISUAL",
+"numeroProyecto": "761/25",
+"cliente": "COLGATE",
+"tituloProyecto": "FERIA DE PROVEEDORES",
+"trello": "iKI8or8k",
+"descripcion": "Terminé las experiencias de realidad aumentada del mueble",
+"drive": "https://drive.google.com/drive/folders/1fkb-86ZpxS5DAYsHtH-v13GUZ5MglfXP",
+"check": "LISTO"
+}
+]
+}
+]
+
+
+Presenta el código json completo dentro de un bloque de código Markdown (`json...`) para facilitar su lectura y copia.
+
+
+
+
+🗓️ ENERO 2026
+ENERO 2026
+LUN
+	MAR
+	MIÉR
+	JUE
+	VIE
+	SÁB
+	DOM
+	
+
+	
+
+	
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	29
+	30
+	31
+	
+
+	
+
+Tabla
+	Trabajo de Diseño
+	Filas
+	1
+	RENDIMIENTO.
+	8
+	2
+	VISUAL.
+	17
+	3
+	PLANO MECÁNICO.
+	4
+	4
+	MUESTRA.
+	11
+	5
+	PRODUCCIÓN.
+	19
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Jueves 01 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 02 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 03 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Domingo 04 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 05 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+🗓️ Martes 06 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 07 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Jueves 08 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ Viernes 09 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 10 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 11 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 12 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 1. Adapté los artes de Colgate a las nuevas dimensiones de los exhibidores de Cartón
+* 2. 3. 4. Realicé la orden de los parachoques de las punteras de Pepsico que quedaron para 2026
+* 5. Realicé la orden de pintura de la puntera de Dinamita de color morado
+* 6. Alexander me llamó para preguntarme cómo va armado la Estrella de Oro
+
+
+🌅 TARDE:
+* Realicé los archivos de control de proyectos de Yar-Yur 2026
+* Actualicé los archivos de las pantallas de Yar-Yur
+* PENDIENTE: Enmary me dijo que mañana se va a reunir con SCJ para el proyecto Fixturización
+* 7. Me llamó Samuel para que le explique cómo van rotulados los muebles Doritos Cheese Tris
+* 8. Me di cuenta que el vinil de Doritos no tiene contraste, hablamos con Pablo para que lo repita
+
+
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (1) 761/25 - COLGATE - FERIA DE PROVEEDORES Adapté los artes de Colgate a las nuevas dimensiones de los exhibidores de Cartón
+TRELLO: https://trello.com/c/iKI8or8k
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1559Uk7QdMyNNqBGUW3qv1vziuVkFzVXe?usp=drive_link
+
+
+
+
+2. PRODUCCIÓN: (2) 1004/25 - PEPSICO - PUNTERA CHEESE TRIS PÁRAMO PETARE Realicé la orden de los parachoques de las punteras de Pepsico que quedaron para 2026
+TRELLO: https://trello.com/c/dcNaTeaK
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hMrH4ev1WtYP3HfxOsb3lHGF8Exr8FuV?usp=drive_link
+
+
+
+
+3. PRODUCCIÓN: (3) 1005/25 - PEPSICO - PUNTERA DINAMITA PÁRAMO PALO VERDE Realicé la orden de los parachoques de las punteras de Pepsico que quedaron para 2026
+TRELLO: https://trello.com/c/afnQnWy3
+DRIVE: LISTO
+https://drive.google.com/drive/folders/19sHiE0DBM7uviB449cwRTDczpgD2rKUC?usp=drive_link
+
+
+4. PRODUCCIÓN: (4) 1006/25 - PEPSICO - PUNTERA DORITOS CHEESE TRIS REDVITAL LA URBINA Realicé la orden de los parachoques de las punteras de Pepsico que quedaron para 2026
+TRELLO: https://trello.com/c/DVM3tXZJ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1HLCHeduSaW7mQRKPuHhiVdz8oVJKvtO3?usp=drive_link
+
+
+
+
+5. PRODUCCIÓN: (5) 1005/25 - PEPSICO - PUNTERA DINAMITA PÁRAMO PALO VERDE Realicé la orden de pintura de la puntera de Dinamita de color morado
+TRELLO: https://trello.com/c/afnQnWy3
+DRIVE: LISTO
+https://drive.google.com/drive/folders/19sHiE0DBM7uviB449cwRTDczpgD2rKUC?usp=drive_link
+
+
+6. PRODUCCIÓN: (6) 958/25 - LA ESTRELLA DE ORO - REVESTIMIENTO PUNTERAS Alexander me llamó para preguntarme cómo va armado la Estrella de Oro
+TRELLO: https://trello.com/c/9mGVR4vu
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1lDCuRBrJ57cfksa0L10Sx4b3ib4pjgtn?usp=drive_link
+
+
+7. VISUAL: (1) 1006/25 - PEPSICO - PUNTERA DORITOS CHEESE TRIS REDVITAL LA URBINA Me llamó Samuel para que le explique cómo van rotulados los muebles Doritos Cheese Tris
+TRELLO: https://trello.com/c/DVM3tXZJ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1fM0Z6TmIy7tPRtDwv8FMgPV1gwwkRV2X?usp=drive_link
+
+
+
+
+8. PRODUCCIÓN: (7) 1006/25 - PEPSICO - PUNTERA DORITOS CHEESE TRIS REDVITAL LA URBINA Me di cuenta que el vinil de Doritos no tiene contraste, hablamos con Pablo para que lo repita
+TRELLO: https://trello.com/c/DVM3tXZJ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1HLCHeduSaW7mQRKPuHhiVdz8oVJKvtO3?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Martes 13 de enero del 2026
+🕒 PENDIENTE:
+* Reunión para definir visual Fixturización SCJ
+🌄 MAÑANA:
+* 1. Me llamó Samuel para que le indique cómo van los muebles de Doritos Cheese Tris
+* José Gabriel indicó que no hay dominio yaryur.com temporalmente, se creó un correo
+* 2. Le envié por el nuevo correo las artes del exhibidor de cartón de Colgate
+* 3. Le entregué al señor Ricardo la orden de pintura del mueble Dinamita
+* 4. Oliver me llamó para que le indique cómo va armado el mueble de Dinamita
+* Lorena me pidió hacer el visual de NatuChips 7Up con las últimas indicaciones del cliente
+* 5. Le envié a Lorena video que grabé del mueble Feria de Doritos
+* PENDIENTE: Enmary me mandó por WhatsApp la presentación de SCJ para Fixturización
+
+
+🌅 TARDE:
+* 6. Realicé el visual de NatuChips 7Up, se lo envié a Lorena por correo
+
+
+📂 CARPETAS:
+1. VISUAL: (2) 1006/25 - PEPSICO - PUNTERA DORITOS CHEESE TRIS REDVITAL LA URBINA Me llamó Samuel para que le indique cómo van los muebles de Doritos Chees Tris
+TRELLO: https://trello.com/c/DVM3tXZJ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1fM0Z6TmIy7tPRtDwv8FMgPV1gwwkRV2X?usp=drive_link
+
+
+2. PRODUCCIÓN: (8) 761/25 - COLGATE - FERIA DE PROVEEDORES Le envié por el nuevo correo las artes del exhibidor de cartón de Colgate
+TRELLO: https://trello.com/c/iKI8or8k
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1559Uk7QdMyNNqBGUW3qv1vziuVkFzVXe?usp=drive_link
+
+
+3. PRODUCCIÓN: (9) 1005/25 - PEPSICO - PUNTERA DINAMITA PÁRAMO PALO VERDE Le entregué al señor Ricardo la orden de pintura del mueble Dinamita
+TRELLO: https://trello.com/c/afnQnWy3
+DRIVE: LISTO
+https://drive.google.com/drive/folders/19sHiE0DBM7uviB449cwRTDczpgD2rKUC?usp=drive_link
+
+
+4. PRODUCCIÓN: (10) 1005/25 - PEPSICO - PUNTERA DINAMITA PÁRAMO PALO VERDE Oliver me llamó para que le indique cómo va armado el mueble de Dinamita
+TRELLO: https://trello.com/c/afnQnWy3
+DRIVE: LISTO
+https://drive.google.com/drive/folders/19sHiE0DBM7uviB449cwRTDczpgD2rKUC?usp=drive_link
+
+
+5. PRODUCCIÓN: (11) 871/25 - YARYUR - PUNTERA FERIA DORITOS / RETIRAR FACTURA Y LLEVAR SELLO DE YARYUR Le envié a Lorena video que grabé del mueble Feria de Doritos
+TRELLO: https://trello.com/c/L7qalFXM
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1NDUodEThDwKW9oTmMzrdt80S9osuHSMI?usp=drive_link
+
+
+6. VISUAL: (3) 462/25 - PEPSICO - MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL/ RETIRAR MUEBLES Realicé el visual de NatuChips 7Up, se lo envié a Lorena por correo
+TRELLO: https://trello.com/c/KTrjOpTQ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Cieojek1a3RWc25Z5D-4jZmeRQ2fyfDn?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Miércoles 14 de enero del 2026
+🕒 PENDIENTE:
+* Reunión con Enmary para definir el proyecto de SCJ Fixturización
+🌄 MAÑANA:
+* 1. Me llamó Wilmer para que le explique cómo van los parachoques de Doritos y Cheese Tris
+* Enmary me dijo que hoy a las 3:00 pm nos reunimos para ver el proyecto de Fixturización de SCJ
+* 2. Fui con Alexander a explicarle cómo van armadas las cajas de luz de estrella de oro
+* Reunión con Marina
+
+
+🌅 TARDE:
+* Enmary me dijo que tiene reunión con un cliente a las 3:00pm
+* PENDIENTE: La reunión de Fixturización de SCJ queda para mañana a las 9:00 am
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (12) 1006/25 - PEPSICO - PUNTERA DORITOS CHEESE TRIS RED VITAL LA URBINA Me llamó Wilmer para que le explique cómo van los parachoques de Doritos y Cheese Tris
+TRELLO: https://trello.com/c/DVM3tXZJ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1HLCHeduSaW7mQRKPuHhiVdz8oVJKvtO3?usp=drive_link
+
+
+
+
+2. PRODUCCIÓN: (13) 958/25 - LA ESTRELLA DE ORO - REVESTIMIENTO PUNTERAS Fui con Alexander a explicarle cómo van armadas las cajas de luz de estrella de oro
+TRELLO: https://trello.com/c/9mGVR4vu
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1lDCuRBrJ57cfksa0L10Sx4b3ib4pjgtn?usp=drive_link
+
+
+🗓️ Jueves 15 de enero del 2026
+🕒 PENDIENTE:
+* Reunión a las 3:00 am con Enmary proyecto Fixturización SCJ
+🌄 MAÑANA:
+* Enmary se reunió a las 9:00 am con Virley
+* Me llamó el señor Ricardo a pintura para que le explicara como va el mueble morado de Dinamita
+* Lorena nos envió los artes del proyecto Piezas Tropical de Diageo
+* Lorena pidió adaptar las artes a la pieza a desarrollar y mandar muestra de color
+* Descargué los artes de las Piezas Tropical Diageo en mi computadora
+
+
+🌅 TARDE:
+* 1. Monté la muestra de color de Piezas Tropical Diageo y le entregué la orden a Pablo
+* Enmary me envió los planos mecánicos de los muebles Fixturización de SCJ
+* 2. Descargué los planos mecánicos de Fixturización de SCJ
+* 3. Me reuní con Enmary para definir el proyecto de Fixturización de SCJ
+* 4. Confirmé con Enmary el rendimiento de los muebles Fixturización y actualizamos
+
+
+📂 CARPETAS:
+
+
+1. MUESTRA: (1) 009/26 - DIAGEO - PIEZAS TROPICAL (ANTIGUO 1043/25) Monté la muestra de color de Piezas Tropical Diageo y le entregué la orden a Pablo
+TRELLO:  https://trello.com/c/bSM3isvj
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1OZo75F5oEA0DFKiZRcf17f2d1oLiPF5H?usp=drive_link
+
+
+2. PLANO MECÁNICO: (1) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Descargué los planos mecánicos de Fixturización de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link
+
+
+3. VISUAL: (4) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Me reuní con Enmary para definir el proyecto de Fixturización de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link
+
+
+4. RENDIMIENTO: (1) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Confirmé con Enmary el rendimiento de los muebles Fixturización y actualizamos
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/17xs4VeKwih-pcT6QX_Kp5M61d-E4zbf-?usp=drive_link
+
+
+
+
+
+
+
+
+🗓️ Viernes 16 de enero del 2026
+🕒 PENDIENTE:
+* Comenzar visual de SCJ
+🌄 MAÑANA:
+* Lorena me pidió verificar las medidas del mueble Doritos Feria con el espacio de Río
+* El señor ricardo me preguntó cómo van pintadas las piezas del mueble Dinamita
+* 1. Le envié a Lorena el plano mecánico de las medidas globales del mueble Doritos de la Feria
+* 2. Lorena me pidió actualizar el plano mecánico, para separar la altura del cabezal
+* Rotulamos las mesas de la oficina de Diseño
+🌅 TARDE:
+* Me puse a buscar el visual que realicé el año pasado que más se parece a lo que quiere SCJ
+* Andrea Istúriz envió un correo con indicaciones del desarrollo de mueble isla para Personal Care
+
+
+📂 CARPETAS:
+1. PLANO MECÁNICO: (2) 871/25 - YARYUR - PUNTERA FERIA DORITOS / RETIRAR FACTURA Y LLEVAR SELLO DE YARYUR Le envié a Lorena el plano mecánico de las medidas globales del mueble Doritos de la Feria
+TRELLO: https://trello.com/c/L7qalFXM
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1-_cGC7wa0dMro9eoCplWNX0R-sWjIlDn?usp=drive_link
+
+
+
+
+2. PLANO MECÁNICO: (3) 871/25 - YARYUR - PUNTERA FERIA DORITOS / RETIRAR FACTURA Y LLEVAR SELLO DE YARYUR Lorena me pidió actualizar el plano mecánico, para separar la altura del cabezal
+TRELLO: https://trello.com/c/L7qalFXM
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1-_cGC7wa0dMro9eoCplWNX0R-sWjIlDn?usp=drive_link
+
+
+
+
+
+
+🗓️ Sábado 17 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 18 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 19 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* Instalé NestWorks
+* Reunión de Trello
+* Samuel me llamó para ver el techo del mueble Dinamita
+* Samuel me pidió sacar el techo y el vinil para el mueble Dinamita
+
+
+🌅 TARDE:
+* Milka me pidió que le pasara el audio de EPA BOMBÓN a Pablo
+* Le pasé el audio de EPA BOMBÓN a Pablo
+* 1. Saqué la orden de producción del techo del mueble de Dinamita
+* 2. Me puse con el visual de SCJ Insecticidas
+* Lorena me preguntó por el tamaño del vinil de la pared de Old Parr
+* 3. Le dije a Lorena que el tamaño del vinil es 135x170cm
+* Continué con el visual de SCJ Insecticidas
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (14) 1005/25 - PEPSICO - PUNTERA DINAMITA PÁRAMO PALO VERDE Saqué la orden de producción del techo del mueble de Dinamita
+TRELLO: https://trello.com/c/afnQnWy3
+DRIVE: LISTO
+https://drive.google.com/drive/folders/19sHiE0DBM7uviB449cwRTDczpgD2rKUC?usp=drive_link
+
+
+
+
+2. VISUAL: (5) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Me puse con el visual de SCJ Insecticidas
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link
+
+
+
+
+3. RENDIMIENTO: (2) 773/25 - DIAGEO - CAJA DE LUZ MEGALICOR  LOS PALOS GRANDES Le dije a Lorena que el tamaño del vinil es 135x170cm
+TRELLO: https://trello.com/c/6zithg0E
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ZAO4684kyMSmQEFR0Psr4t_6OHCyR9BR?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Martes 20 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* Continué con el visual de SCJ Insecticidas
+* Le di el mueble de Purina Dog Chow a Yarelly como referencia para el mueble de Diageo
+* Lorena me pidió sacar las cajas de MDF 3mm para la boda de María Antonieta
+* 1. Monté la orden de producción de las cajas de la boda de María Antonieta
+* Continué con el visual de SCJ Insecticidas
+
+
+🌅 TARDE:
+* Milka me preguntó por el rendimiento del portavasos y el porta servilletero de Nescafé
+* Le dije a Milka que caben 16 exhibidores de Nescafé por lámina
+* 2. Imprimí la orden de producción del servilletero para entregarla a Milka como rendimiento
+* 3. Terminé el visual de Insecticidas de SCJ
+* 4. Comencé el visual de repelentes de SCJ
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (15) 022/26 - RICHARD YARJOUR - BODA MARÍA ANTONIETA Monté la orden de producción de las cajas de la boda de María Antonieta
+TRELLO: https://trello.com/c/EAkqqutY
+DRIVE: LISTO
+https://drive.google.com/drive/folders/10GRiFBW9YyOC81AP_vjc_KMN8wSj-AeW?usp=drive_link
+
+
+
+
+2. RENDIMIENTO: (3) 500/25 - NESTLÉ - RECOMPRA 3 EN 1 Imprimí la orden de producción del servilletero para entregarla a Milka como rendimiento
+TRELLO: https://trello.com/c/s8UfGu7d
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1g9djvjX3OU4vXFzgo7GipHpLi95viF7S?usp=drive_link
+
+
+
+
+3. VISUAL: (6) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Terminé el visual de Insecticidas de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link
+
+
+
+
+4. VISUAL: (7) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Comencé el visual de repelentes de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Miércoles 21 de enero del 2026
+🕒 PENDIENTE:
+* Entregar el visual de SCJ Fixturización
+* Hacer el plano mecánico del mueble Purina
+🌄 MAÑANA:
+* Continué con el visual de Repelentes SCJ
+* 1. Calculé con Milka el rendimiento de los dispensadores de vasos Nescafé
+* 2. Calculé con Milka el rendimiento de los servilleteros de Nescafé
+* Le pasé a Yarelly los elementos de Mr Músculo y Pato para el visual que va a hacer
+* Enmary me dijo que aprobaron 100 exhibidores de cartón de Maizoritos
+* 3. Le pasé a Enmary el rendimiento de los 100 exhibidores de cartón de Maizoritos
+* Hablé con Pablo y me dijo que vamos a sacar una muestra producción para firmar
+* Le dije a Enmary para que se haga la hoja de autorización de muestra física
+* Continué con el visual de Repelentes de SCJ
+
+
+🌅 TARDE:
+* 4. Terminé el visual de Repelentes de SCJ
+* 5. Le asigné a Karely el plano mecánico del exhibidor de Purina
+* Comencé con el visual de Ambientadores de SCJ
+* 6. Le envié a Enmary los visuales de Insecticidas, repelentes.
+
+
+📂 CARPETAS:
+1. RENDIMIENTO: (4) TENTATIVO 001/26 - NESTLÉ - DISPENSADOR DE VASOS NESCAFÉ Calculé con Milka el rendimiento de los dispensadores de vasos Nescafé
+TRELLO: https://trello.com/c/jf1FOfNj
+DRIVE: LISTO
+https://drive.google.com/drive/folders/117uf1p58VgjF9hO_dG-a1QxhaasZpvzK?usp=drive_link
+
+
+
+
+2. RENDIMIENTO: (5) TENTATIVO 002/26 - NESTLÉ - SERVILLETERO NESCAFÉ Calculé con Milka el rendimiento de los servilleteros de Nescafé
+TRELLO: https://trello.com/c/uj1ID4s8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1oA6t6MTfdTFIDuNKhduU7BgTr4KxwuZV?usp=drive_link
+
+
+
+
+3. RENDIMIENTO: (6) 049/26 - ALFONZO RIVAS - EXHIBIDORES DE CARTÓN MAIZORITOS  Le pasé a Enmary el rendimiento de los 100 exhibidores de cartón de Maizoritos
+TRELLO: https://trello.com/c/QmdNSllv
+DRIVE: LISTO
+https://drive.google.com/drive/folders/18mwWRZAUHAhlIXMUKmCgK0dpkoGgtTrV?usp=drive_link
+
+
+
+
+4. VISUAL: (8) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Terminé el visual de Repelentes de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link
+
+
+
+
+5. PLANO MECÁNICO: (4) 207/25 - NESTLÉ - EXHIBIDORES PRO PLAN Le asigné a Karely el plano mecánico del exhibidor de Purina
+TRELLO: https://trello.com/c/YXqQqixf
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1x7YRwQoslnUMdnIHVj9xWJZdHD1l4QtH?usp=drive_link
+
+
+
+
+6. VISUAL: (9) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Le envié a Enmary los visuales de Insecticidas, repelentes y las capturas de pantalla de Glade
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+🗓️ Jueves 22 de enero del 2026
+🕒 PENDIENTE:
+* Muestra física de exhibidor Maizoritos
+🌄 MAÑANA:
+* Le escribí a Andrea Istúriz para preguntarle sobre el visual de Colgate
+* 1. Monté la orden de muestra del exhibidor de Maizoritos
+* 2. Dejé montada la orden de producción de del exhibidor de Maizoritos
+* 3. Andrea Istúriz me explicó que el exhibidor de Colgate va a ser de Protex y Palmolive
+* Andrea Istúriz Me dijo que hoy en la tarde llega el arte de Palmolive de Café
+* Milka me dijo que envió las cotizaciones por los servilleteros y dispensadores de Nescafé
+* Eider me pidió la bolsa de Maizoritos para él colocarla como bolsa de jabón en su visual
+* Continué con el visual de Ambientadores SCJ
+
+
+🌅 TARDE:
+* PENDIENTE: Enmary pidió rendimientos para la marca Credelio
+* Andrea llamó para indicar que saque el exhibidor de cartón de los dos tamaños de Colgate
+* Milka me pidió ayuda con las Ristras de Munchis
+* 4. Adelanté Ambientadores de SCJ, tomé captura de pantalla y se la envié a Enmary
+* PENDIENTE: Le dije a Enmary que el rendimiento de Credelio se lo envío en la mañana
+* Enmary me dijo los comentarios de SCJ de Insecticidas y Repelentes
+* Eider me pidió el rendimiento de los portaprecios de Kotex, le envié captura de pantalla
+* 5. Me puse a desarrollar los exhibidores de cartón para Colgate
+
+
+📂 CARPETAS:
+1. MUESTRA: (2) 049/26 - ALFONZO RIVAS - EXHIBIDORES DE CARTÓN MAIZORITOS Monté la orden de muestra del exhibidor de Maizoritos
+TRELLO: https://trello.com/c/QmdNSllv
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ryCX6adu7OpPN-T_1xgtN1K7w1LoIQFX?usp=drive_link
+
+
+
+
+2. PRODUCCIÓN: (16) 049/26 - ALFONZO RIVAS - EXHIBIDORES DE CARTÓN MAIZORITOS Dejé montada la orden de producción de del exhibidor de Maizoritos
+TRELLO: https://trello.com/c/QmdNSllv
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1c7VotsFg1hhD2w_0BzZHbdRERAqhGB0Z?usp=drive_link
+
+
+
+
+3. VISUAL: (10) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Andrea Istúriz me explicó que el exhibidor de Colgate va a ser de Protex y Palmolive
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link
+
+
+
+
+4. VISUAL: (11) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Adelanté Ambientadores de SCJ, tomé captura de pantalla y se la envié a Enmary
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1kFMPww44N8BfomqQU2ahlQl5udtbpgYq?usp=drive_link
+
+
+
+
+5. MUESTRA: (3) 030/26 - COLGATE - EXHIBIDOR PLEGABLE DE CARTÓN (CHINO) Me puse a desarrollar los exhibidores de cartón para Colgate
+TRELLO: https://trello.com/c/VlNxGWPp
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Gueht9E0OY7g4eUsvwIBT3wI2XRhHa9Z?usp=drive_link
+
+
+
+
+🗓️ Viernes 23 de enero del 2026
+🕒 PENDIENTE:
+* Muestra de color de Diageo
+* Exhibidores de Cartón de Colgate
+🌄 MAÑANA:
+* 1. Enmary me dijo los cambios en los muebles de SCJ
+* Lorena explicó los cambios en las muestras de color de Diageo
+* Desarrollé los exhibidores de cartón para Colgate
+
+
+🌅 TARDE:
+* 2. Entregué la muestra física de los exhibidores de Cartón
+* 3. Realicé los cambios de la muestra de color de Diageo
+📂 CARPETAS:
+1. VISUAL: (12) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Enmary me dijo los cambios en los muebles de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1kFMPww44N8BfomqQU2ahlQl5udtbpgYq?usp=drive_link
+
+
+
+
+2. MUESTRA: (4) 030/26 - COLGATE - EXHIBIDOR PLEGABLE DE CARTON (CHINO) Entregué la muestra física de los exhibidores de Cartón
+TRELLO: https://trello.com/c/VlNxGWPp
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Gueht9E0OY7g4eUsvwIBT3wI2XRhHa9Z?usp=drive_link
+
+
+
+
+3. MUESTRA: (5) 009/26 - DIAGEO - PIEZAS TROPICAL (ANTIGUO 1043/25) Realicé los cambios de la muestra de color de Diageo
+TRELLO: https://trello.com/c/bSM3isvj
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1OZo75F5oEA0DFKiZRcf17f2d1oLiPF5H?usp=drive_link
+
+
+
+
+
+
+🗓️ Sábado 24 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 25 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 26 de enero del 2026
+🕒 PENDIENTE:
+* Rendimiento de Credelio
+* Armar exhibidor de Maizoritos
+* Armar exhibidores de Colgate
+🌄 MAÑANA:
+* 1. Calculé el rendimiento del exhibidor de mesa que pidió Enmary de Credelio
+* REUNIÓN DE TRELLO
+* 2. Armé el exhibidor de Maizoritos
+
+
+🌅 TARDE:
+* 3. Armamos los exhibidores de Colgate
+* 4. Entregué la orden de producción de los 100 exhibidores de Maizoritos
+
+
+📂 CARPETAS:
+1. RENDIMIENTO: (7) TENTATIVO 003/26 - CREDELIO - EXHIBIDOR DE MESA Calculé el rendimiento del exhibidor de mesa que pidió Enmary de Credelio
+TRELLO: https://trello.com/c/e2qaNroP
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1-wKxiKpWu5yr70BccEKwrv7Db4AKV78p?usp=drive_link
+
+
+
+
+2. MUESTRA: (6) 049/26 - ALFONZO RIVAS - EXHIBIDORES DE CARTÓN MAIZORITOS Armé el exhibidor de Maizoritos y Enmary lo firmó
+TRELLO: https://trello.com/c/QmdNSllv
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ryCX6adu7OpPN-T_1xgtN1K7w1LoIQFX?usp=drive_link
+
+
+
+
+3. MUESTRA: (7) 030/26 - COLGATE - EXHIBIDOR PLEGABLE DE CARTÓN (CHINO) Armamos los exhibidores de Colgate
+TRELLO: https://trello.com/c/VlNxGWPp
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Gueht9E0OY7g4eUsvwIBT3wI2XRhHa9Z?usp=drive_link
+
+
+
+
+4. PRODUCCIÓN: (17) 049/26 - ALFONZO RIVAS - EXHIBIDORES DE CARTÓN MAIZORITOS Entregué la orden de producción de los 100 exhibidores de Maizoritos
+TRELLO: https://trello.com/c/QmdNSllv
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1c7VotsFg1hhD2w_0BzZHbdRERAqhGB0Z?usp=drive_link
+
+
+
+
+
+
+🗓️ Martes 27 de enero del 2026
+🕒 PENDIENTE:
+* Modificaciones Visual de SCJ
+🌄 MAÑANA:
+* 1. Armamos el mueble delgado de Colgate en la oficina de diseño
+* Me llamó Enmary para preguntar por el visual de SCJ
+* Ayudé a Vanessa a embalar las muestras de muebles de cartón de Colgate
+* 2. Saqué la muestra 3 de Diageo con los degradados de las piezas Tropical
+* Me puse con el visual de SCJ
+
+
+🌅 TARDE:
+* Continué con el visual de SCJ
+* Volvimos a sacar unas muestras del degradado de Tropical
+* Andrea Istúriz me pidió las medidas del exhibidor de cartón más grande
+* 3. Le mostré a Enmary el visual de SCJ, le prometí la animación para mañana
+* 4. Completé la producción de los exhibidores de Alfonzo Rivas, pieza que recomendó Argenis
+
+
+📂 CARPETAS:
+1. MUESTRA: (8) 030/26 - COLGATE - EXHIBIDOR PLEGABLE DE CARTÓN (CHINO) Armamos el mueble delgado de Colgate en la oficina de diseño
+TRELLO: https://trello.com/c/VlNxGWPp
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Gueht9E0OY7g4eUsvwIBT3wI2XRhHa9Z?usp=drive_link
+
+
+
+
+2. MUESTRA: (9) 009/26 - DIAGEO - PIEZAS TROPICAL (ANTIGUO 1043/25) Saqué la muestra 3 de Diageo con los degradados de las piezas Tropical
+TRELLO: https://trello.com/c/bSM3isvj
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1OZo75F5oEA0DFKiZRcf17f2d1oLiPF5H?usp=drive_link
+
+
+
+
+3. VISUAL: (13) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Le mostré a Enmary el visual de SCJ, le prometí la animación para mañana
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1kFMPww44N8BfomqQU2ahlQl5udtbpgYq?usp=drive_link
+
+
+
+
+4. PRODUCCIÓN: (18) 049/26 - ALFONZO RIVAS - EXHIBIDORES DE CARTÓN MAIZORITOS  Completé la producción de los exhibidores de Alfonzo Rivas, pieza que recomendó Argenis
+TRELLO: https://trello.com/c/QmdNSllv
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1c7VotsFg1hhD2w_0BzZHbdRERAqhGB0Z?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Miércoles 28 de enero del 2026
+🕒 PENDIENTE:
+* Visual de NatuChips
+🌄 MAÑANA:
+* Terminé de renderizar la animación del mueble de SCJ
+* 1. Le envié a Enmary los visuales y la animación de Fisturización de SCJ
+* Comencé el mueble NatuChips para la Muralla
+
+
+🌅 TARDE:
+* 2. Terminé el mueble de NatuChips de la Muralla y se lo envié a Lorena
+* Me reuní con Andrea para conversar sobre el mueble de Colgate
+* 3. Mandé la tercera muestra de color de Diageo tropical
+
+
+📂 CARPETAS:
+1. VISUAL: (14) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Le envié a Enmary los visuales y la animación de Fisturización de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1cSqkDEXDkD4LGvqXJaXiMA-tIHTL16TQ?usp=drive_link
+
+
+
+
+2. VISUAL: (15) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Terminé el mueble de NatuChips de la Muralla y se lo envié a Lorena
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ADWsjAQZI_d-3PoSrpuvaktxsOaGbVze?usp=drive_link
+
+
+
+
+3. MUESTRA: (10) 009/26 - DIAGEO - PIEZAS TROPICAL (ANTIGUO 1043/25) Mandé la tercera muestra de color de Diageo tropical
+TRELLO: https://trello.com/c/bSM3isvj
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1OZo75F5oEA0DFKiZRcf17f2d1oLiPF5H?usp=drive_link
+
+
+
+
+
+
+🗓️ Jueves 29 de enero del 2026
+🕒 PENDIENTE:
+* Visual Colgate
+🌄 MAÑANA:
+* Realicé las modificaciones del exhibidor de Colgate de Cuidado Personal
+* Me reuní con Pablo para verificar el mueble de Cuidado Personal de Colgate
+* 1. Ayudé a Verónica a calcular el rendimiento de exhibidores de mesa
+* Puse a renderizar el exhibidor de Cuidado Personal de Colgate
+
+
+🌅 TARDE:
+* Saqué la cédula
+* Antes de enviar la animación renderizada de Colgate a Andrea le mostré a Pablo
+* Pablo me recordó que el Glorificador Giratorio queda al ras del mueble
+* Modifiqué el visual del mueble de Cuidado Personal de Colgate
+* 2. Puse a renderizar el mueble de Cuidado Personal de Colgate
+* Reunión con José Gabriel, feedback.
+
+
+📂 CARPETAS:
+1. RENDIMIENTO: (8) TENTATIVO 004/26 - YARYUR - EXHIBIDOR COUNTER Ayudé a Verónica a calcular el rendimiento de exhibidores de mesa
+TRELLO: https://trello.com/c/bHstuGXm
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1u_0LODpk2cSD9eeI6U7WsfTNv9w-z3BD?usp=drive_link
+
+
+
+
+2. VISUAL: (16) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Puse a renderizar el mueble de Cuidado Personal de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link
+
+
+
+
+🗓️ Viernes 30 de enero del 2026
+🕒 PENDIENTE:
+* Enviar el visual del exhibidor Cuidado Personal de Colgate
+* Enviar corte del juego Plinko de Diageo
+🌄 MAÑANA:
+* Dorian nos comentó que Diageo llamó a José Gabriel ayer pidiendo prioridad a Tropical Diageo
+* 1. Envié a Andrea el visual del exhibidor Cuidado Personal de Colgate
+* Me puse a desarrollar el juego Plinko de Tropical
+* Me reuní con Pablo para definir el juego de Plinko
+
+
+🌅 TARDE:
+* 2. Monté la orden de muestra del Plinko
+* Cuando se la iba a entregar a Pablo me dijo que mejor lo montara como orden de producción
+* Monté la orden de producción del Plinko
+* 3. Entregué la orden de producción del Plinko de Diageo
+
+
+📂 CARPETAS:
+1. VISUAL: (17) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Envié a Andrea el visual del exhibidor Cuidado Personal de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link
+
+
+
+
+2. MUESTRA: (11) 009/26 - DIAGEO - PIEZAS TROPICAL (ANTIGUO 1043/25) Monté la orden de muestra del Plinko
+TRELLO: https://trello.com/c/bSM3isvj
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1OZo75F5oEA0DFKiZRcf17f2d1oLiPF5H?usp=drive_link
+
+
+
+
+3. PRODUCCIÓN: (19) 009/26 - DIAGEO - PIEZAS TROPICAL (ANTIGUO 1043/25) Entregué la orden de producción del Plinko de Diageo
+TRELLO: https://trello.com/c/bSM3isvj
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=drive_link
+
+
+
+
+
+
+🗓️ Sábado 31 de enero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ FEBRERO 2026
+
+
+
+
+FEBRERO 2026
+LUN
+	MAR
+	MIÉR
+	JUE
+	VIE
+	SÁB
+	DOM
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	
+
+	
+
+Tabla
+	Trabajo de Diseño
+	Filas
+	6
+	RENDIMIENTO.
+	4
+	7
+	VISUAL.
+	21
+	8
+	PLANO MECÁNICO.
+	4
+	9
+	MUESTRA.
+	12
+	10
+	PRODUCCIÓN.
+	9
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Domingo 01 de febrero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 02 de febrero del 2026
+🕒 PENDIENTE:
+* 084/26 - INMARKET - Muestra Física (captura de pantalla primero)
+* 009/26 - DIAGEO - Armar muestra física del PLINKO
+🌄 MAÑANA:
+* Desarrollo de dispensador para chocolates Milka
+* Reunión de Trello
+* Continué desarrollando el dispensador para chocolates Milka
+🌅 TARDE:
+* Realicé una simulación de la carga de chocolates
+* 1. Hice un video con el avance del dispensador de chocolate Milka y se lo mandé a Verónica
+📂 CARPETAS:
+1. VISUAL: (01) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Hice un video con el avance del dispensador de chocolate Milka y se lo mandé a Verónica
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1kx1Y-MPv1k7_2LKg2HTVGWsUbtAIoGaI?usp=drive_link
+
+
+
+
+🗓️ Martes 03 de febrero del 2026
+🕒 PENDIENTE:
+* 074/26 - DIAGEO - Orden de Producción del vinil para reparar pared
+* 032/26 - COLGATE - Rendimiento del exhibidor Cuidado Personal
+🌄 MAÑANA:
+* Verónica me pidió las dimensiones de la propuesta de dispensador para Chocolates Milka
+* 1. Realicé el plano con las dimensiones generales del dispensador de chocolates Milka
+* Verónica me pidió actualizar la propuesta del dispensador con el disruptivo del logo Milka
+* Andrea Istúriz me envió un correo solicitando los cambios para el visual de Colgate
+* Andrea me pidió incluir los portaprecios al visual de Colgate
+* Descargué los artes del nuevo Key Visual de Protex para el visual de Colgate
+* Realicé el visual para el señor Ricardo del Chevette
+* 2. Realicé las modificaciones al plano del dispensador de Milka que pidió Verónica
+* Ordené las carpetas de los proyectos del 2026.
+* Milka me pidió el visual de la ristra de La Santé para mañana miércoles
+* Verónica me dijo que el cliente aprobó la segunda propuesta del dispensador de chocolates Milka
+* Verónica me pidió que sacara la muestra física en cartón y PAI
+🌅 TARDE:
+* 3. Monté la Orden de Producción del vinil de la pared de Diageo
+* Le dije a Verónica que mañana realizaré la muestra física del dispensador de chocolates Milka
+* Me reuní con Enmary para definir el proyecto de SCJ, me comentó las indicaciones del cliente
+* Samuel me pidió colocar el Sticker al visual del Chevette del señor Ricardo
+* Lorena me explicó que Better Together no quieren la nevera
+* 4. Calculé el rendimiento del exhibidor de Cuidado Personal de Colgate.
+
+
+📂 CARPETAS:
+1. PLANO MECÁNICO: (01) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Realicé el plano con las dimensiones generales del dispensador de chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Yr_pR5b65C0kSsgZsC4fljyxyLkW8uJE?usp=drive_link
+
+
+
+
+2. PLANO MECÁNICO: (02) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Realicé las modificaciones al plano del dispensador de Milka que pidió Verónica
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Yr_pR5b65C0kSsgZsC4fljyxyLkW8uJE?usp=drive_link
+
+
+
+
+3. PRODUCCIÓN: (01) 074/26 - DIAGEO - ARREGLO PARED MEGALICOR Monté la Orden de Producción del vinil de la pared de Diageo
+TRELLO: https://trello.com/c/JQGqK26J
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1FSSc4GQRSqAbIR09T3bBvVJ1Y2smSeZ4?usp=drive_link
+
+
+
+
+4. RENDIMIENTO: (01) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Calculé el rendimiento del exhibidor de Cuidado Personal de Colgate.
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/18oQX3OQhVcY_F794qkiSX5Ngnrj6-kEi?usp=drive_link
+
+
+
+
+
+
+🗓️ Miércoles 04 de febrero del 2026
+🕒 PENDIENTE:
+* 032/26 - COLGATE - Visual del exhibidor Cuidado Personal
+* 053/26 - PEPSICO - Visual de NatuChips para la Muralla
+
+
+* 009/26 - DIAGEO - Armar muestra física del PLINKO
+
+
+🌄 MAÑANA:
+* Le agregué el sticker que me pidió Samuel al visual del Chevette del señor Ricardo
+* Samuel me dijo que le gustó el visual del Chevette, me explicó cómo quiere los stickers
+* Le dije a Samuel que en la noche me envíe su diseño y lo coloco en el 3D
+* Le dije a Lorena la idea de hacer una caja de luz curva para BT de NatuChips 7Up
+* Me puse a acomodar el visual de Colgate para hacer la presentación
+* Lorena me pidió confirmar la dimensión del perno para el juego Plinko
+* 1. Realicé la presentación del exhibidor de Personal Care de Colgate y se la envié a Andrea
+
+
+
+
+🌅 TARDE:
+* Enmary me pidió verificar la recompra de los puntos rojos y verdes de Neverama Pinova
+* Lorena pidió sacar más portaprecios de mica para los muebles de Pepsico
+* Lorena trajo a diseño las muestras de color aprobadas de Tropical
+* 2. Me llamaron de producción para armar el juego Plinko de Diageo Tropical
+* 3. Acomodé el visual de NatuChips de la Muralla y lo dejé listo para renderizar
+
+
+📂 CARPETAS:
+1. VISUAL: (02) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM  Realicé la presentación del exhibidor de Personal Care de Colgate y se la envié a Andrea
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link
+
+
+
+
+2. PRODUCCIÓN: (02) 009/26 - DIAGEO - PIEZAS TROPICAL (ANTIGUO 1043/25) Me llamaron de producción para armar el juego Plinko de Diageo Tropical
+TRELLO: https://trello.com/c/bSM3isvj
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=drive_link
+
+
+
+
+3. VISUAL: (03) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Acomodé el visual de NatuChips de la Muralla y lo dejé listo para renderizar
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ADWsjAQZI_d-3PoSrpuvaktxsOaGbVze?usp=drive_link
+
+
+
+
+
+
+🗓️ Jueves 05 de febrero del 2026
+🕒 PENDIENTE:
+* Enviar visual de NatuChips La Muralla
+* Acomodar visual de Colgate exhibidor de Cartón
+* Sacar la producción del vinil de Tropical de Diageo
+* Enviar a Verónica el rendimiento del dispensador de chocolates Milka
+* Sacar Portaprecios de los muebles de Pepsico
+* 076/26 - LA SANTÉ - Visual
+🌄 MAÑANA:
+* 1. Terminé el visual de NatuChips para la Muralla y se lo envié a Lorena
+* Andrea Istúriz me pidió acomodar el visual de Colgate
+* 2. Convertí el archivo 3DSMax en OBJ para cambiarle las texturas
+* Ayudé a Yarelly a sacar la producción de Diageo Piezas Tropical su vinil
+* 3. Saqué la orden de producción de Diageo Tropical el vinil del Plinko
+
+
+🌅 TARDE:
+* Desarrollar muestra física del dispensador de Chocolates Milka
+* 4. Le comenté a Verónica el rendimiento del dispensador de chocolates Milka
+* 5. Bajé junto a Lorena y Yarelly a Pintura para ver el mueble de Plinko
+* Dorian mandó a sacar producción de los portaprecios de BT de Pepsico a Andrés
+* 6. Realicé el visual de la ristra de La Santé y se lo envié a Milka
+📂 CARPETAS:
+
+
+1. VISUAL: (04) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Acomodé el visual de NatuChips de la Muralla y se lo mandé a Lorena
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ADWsjAQZI_d-3PoSrpuvaktxsOaGbVze?usp=drive_link
+
+
+
+
+2. VISUAL: (05) 030/26 - COLGATE - EXHIBIDOR PLEGABLE DE CARTÓN (CHINO) Convertí el archivo 3DSMax en OBJ para cambiarle las texturas
+TRELLO: https://trello.com/c/VlNxGWPp
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Q8MmzfPO7TQrPk-C422RU_Sxdp7wTXgh?usp=drive_link
+
+
+
+
+3. PRODUCCIÓN: (03) 009/26 - DIAGEO - PIEZAS TROPICAL (ANTIGUO 1043/25) Saqué la orden de producción de Diageo Tropical el vinil del Plinko
+TRELLO: https://trello.com/c/bSM3isvj
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=drive_link
+
+
+
+
+4. RENDIMIENTO: (02) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Le envié a Verónica el rendimiento del dispensador de chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ISx_kmwvkJf4MqUbpByK7MiHFGvPFX6t?usp=drive_link
+
+
+
+
+5. PRODUCCIÓN: (04) 009/26 - DIAGEO - PIEZAS TROPICAL (ANTIGUO 1043/25) Bajé junto a Lorena y Yarelly a Pintura para ver el mueble de Plinko
+TRELLO: https://trello.com/c/bSM3isvj
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=drive_link
+
+
+
+
+6. VISUAL: (06) 076/26 - LA SANTE - RISTRAS PARA AIREX Realicé el visual de la ristra de La Santé y se lo envié a Milka
+TRELLO: https://trello.com/c/hNu0E4ZO
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1LYNrAOufMtUAkHEW_k77S4vnmyzXBUjN?usp=drive_link
+
+
+
+
+
+
+🗓️ Viernes 06 de febrero del 2026
+🕒 PENDIENTE:
+* Mica de Plinko Diageo
+* Visual ristra Airex
+* Modificación visual NatuChips La Muralla
+* 084/26 - INMARKET - Sacar la muestra del dispensador de chocolates Milka
+* 053/26 - PEPSICO - Rendimiento del mueble de la Muralla
+* 462/25 - PEPSICO - Visual Better Together sin nevera, con caja de luz curva
+🌄 MAÑANA:
+* 1. Sacar el plástico mica para el juego Plinko de Piezas Tropical de Diageo
+* 2. Volver a renderizar la Ristra de Airex con la sugerencia que hizo Milka
+* Samuel me llamó para armar el juego de Plinko de Diageo
+* Lorena me comentó que Pepsico quiere cambiar el visual de La Muralla
+
+
+🌅 TARDE:
+* 3. Modifiqué el visual de la Muralla, le envié las nuevas propuestas a Lorena
+* 4. Sacar la muestra física del dispensador de chocolates Milka
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (05) 009/26 - DIAGEO - PIEZAS TROPICAL (ANTIGUO 1043/25) Sacar el plástico mica para el juego Plinko de Piezas Tropical de Diageo
+TRELLO: https://trello.com/c/bSM3isvj
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=drive_link
+
+
+
+
+2. VISUAL: (07) 076/26 - LA SANTE - RISTRAS PARA AIREX Volver a renderizar la Ristra de Airex con la sugerencia que hizo Milka
+TRELLO: https://trello.com/c/hNu0E4ZO
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1LYNrAOufMtUAkHEW_k77S4vnmyzXBUjN?usp=drive_link
+
+
+
+
+3. VISUAL: (08) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Modifiqué el visual de la Muralla, le envié las nuevas propuestas a Lorena
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1wZz6RLIvTMdaufm3WJypJyTsQ5YrAjQm?usp=drive_link
+
+
+
+
+4. MUESTRA: (01) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Sacar la muestra física del dispensador de chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link
+
+
+🗓️ Sábado 07 de febrero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Domingo 08 de febrero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ Lunes 09 de febrero del 2026
+🕒 PENDIENTE:
+* Entregar orden de pintura de los Plinko
+* 073/26 - ALIMENTOS POLAR - Visual
+* 084/26 - INMARKET - Muestra física
+🌄 MAÑANA:
+* 1. Entregué la orden de muestra física del dispensador de chocolates Milka
+* El señor Ricardo me pidió que le entregara la orden de pintura de los Plinko
+* 2. Realicé la orden de producción de pintura del Plinko y la entregué al señor Ricardo
+* REUNIÓN DE TRELLO
+* Realicé con Inteligencia artificial visuales para Alimentos Polar para Zaida
+* 3. Le envié a Zaida los visuales que realicé para Alimentos Polar
+
+
+🌅 TARDE:
+* Andrés David me entregó las piezas del dispensador de chocolates Milka
+* Me puse a armar el exhibidor de chocolates Milka
+* Verónica me ayudó a armar la muestra física del dispensador
+* Probamos el dispensador con los chocolates Milka y vimos que se atoran
+* Pablo sugirió agregar separadores para evitar que se atoren los chocolates
+* Mandé a cortar los separadores con Andrés David
+* Andrés David me entregó los separadores y las pegué con cloruro
+* Lo volvimos a probar y vimos que carga la cantidad completa en el espacio delgado
+* Decidimos hacer la siguiente muestra con los espacios delgados y toboganes pronunciados.
+
+
+📂 CARPETAS:
+1. MUESTRA: (02) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Entregué la orden de muestra física del dispensador de chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link
+
+
+
+
+2. PRODUCCIÓN: (06) 009/26 - DIAGEO - PIEZAS TROPICAL (ANTIGUO 1043/25) Realicé la orden de producción de pintura del Plinko y la entregué al señor Ricardo
+TRELLO: https://trello.com/c/bSM3isvj
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=drive_link
+
+
+
+
+3. VISUAL: (09) 073/26 - ALIMENTOS POLAR -  PROPUESTA DE PIEZAS Le envié a Zaida los visuales que realicé para Alimentos Polar
+TRELLO: https://trello.com/c/ULa3tJyX
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y0x10VNLKUVS4fIiEl1qXnxaETW-z6XG?usp=drive_link
+
+
+
+
+
+
+
+
+🗓️ Martes 10 de febrero del 2026
+🕒 PENDIENTE:
+* 084/26 - INMARKET - Muestra física
+* 462/25 - PEPSICO - Visual
+* 115/26 - DIMASSI - Orden de producción
+🌄 MAÑANA:
+* Me puse a desarrollar la muestra física de cartón para el dispensador de chocolates Milka
+* 1. Entregué la orden de muestra física del dispensador de chocolates Milka de cartón
+* Me puse con el visual de NatuChips, quitar nevera y colocar caJa de luz curva
+* Zaida mandó el correo de la reparación de los muebles KOTEX
+* 2. Monté la orden de producción de los muebles KOTEX
+🌅 TARDE:
+* Seguí desarrollando el visual de NatuChips
+* Puse a Renderizar el visual de NatuChips
+* Le empecé a redactar el correo con el visual de NatuChips a Lorena
+* Llegó Lorena al departamento y vió que esa versión de NatuChips no es la última
+* Buscamos en el correo de artes yaryur gmail y vimos la última versión
+* Corregí el visual y lo dejé listo para renderizar
+
+
+📂 CARPETAS:
+1. MUESTRA: (03) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Entregué la orden de muestra física del dispensador de chocolates Milka de cartón
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link
+
+
+
+
+2. PRODUCCIÓN: (07) 115/26 - DIMASSI - REPARACIÓN 7 EXHIBIDORES KOTEX Monté la orden de producción de los muebles KOTEX
+TRELLO: https://trello.com/c/mPfmb0z2
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1BCrp1jhpXRLoqprakSSH3sl6wdeiQ8_L?usp=drive_link
+
+
+
+
+3. VISUAL: (10) 462/25 - PEPSICO - MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL Corregí el visual y lo dejé listo para renderizar
+TRELLO: https://trello.com/c/KTrjOpTQ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Cieojek1a3RWc25Z5D-4jZmeRQ2fyfDn?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Miércoles 11 de febrero del 2026
+🕒 PENDIENTE:
+* 032/26 - COLGATE - Visual
+
+
+🌄 MAÑANA:
+* 1. Envié el visual de BT NatuChips 7Up sin Nevera a Lorena
+* Me puse a modificar el visual de Colgate mueble cuidado personal
+
+
+🌅 TARDE:
+* 2. Terminé el visual de Colgate mueble cuidado personal y se lo envié a Andrea
+* La Summa F16 se dañó y José Gabriel pidió sacar la muestra de Chocolates Milka igual
+* 3. Me puse a desarrollar Vinil para cortar la muestra de chocolates Milka
+
+
+📂 CARPETAS:
+1. VISUAL: (11) 462/25 - PEPSICO - MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL Envié el visual de BT NatuChips 7Up sin Nevera a Lorena
+TRELLO: https://trello.com/c/KTrjOpTQ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Cieojek1a3RWc25Z5D-4jZmeRQ2fyfDn?usp=drive_link
+
+
+
+
+2. VISUAL: (12) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Terminé el visual de Colgate mueble cuidado personal y se lo envié a Andrea
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link
+
+
+
+
+3. MUESTRA: (04) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Me puse a desarrollar Vinil para cortar la muestra de chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link
+
+
+
+
+🗓️ Jueves 12 de febrero del 2026
+🕒 PENDIENTE:
+* 084/26 - CHOCOLATES MILKA - Dispensador
+* 053/26 - PEPSICO - Visual
+🌄 MAÑANA:
+* Seguí desarrollando el vinil del dispensador Chocolates Milka
+* Eider me pidó los artes de Pepsico
+* Yannis me pidió que preguntara como van los muebles de KOTEX
+* Le pregunté a Zaida y confirmé con Yannis no llevan luz y ninguno es Farmatodo
+* Continué con el desarrollo de la muestra física del Chocolates Milka
+* 1. Entregué a Pablo el vinil Tiro Retiro para Chocolates Milka para hacer la muestra a mano
+* Enmary pidió el rendimiento de la caja para Tanqueray que hizo Karen, le envié la orden
+* Calculé la cantidad de Vinil necesaria para el mueble de Colgate Cuidado Personal
+* 2. Le envié a Andrea la cantidad de vinil que hace falta para rotular el mueble de Colgate
+* Me puse con las modificaciones del mueble para La Muralla de NatuChips
+
+
+🌅 TARDE:
+* 3. Realicé el visual con las modificaciones del mueble para la Muralla de NatuChips.
+
+
+
+
+📂 CARPETAS:
+1. MUESTRA: (05) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Entregué a Pablo el vinil Tiro Retiro para Chocolates Milka para hacer la muestra a mano
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link
+
+
+
+
+2. RENDIMIENTO: (03) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Le envié a Andrea la cantidad de vinil que hace falta para rotular el mueble de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/18oQX3OQhVcY_F794qkiSX5Ngnrj6-kEi?usp=drive_link
+
+
+
+
+3. VISUAL: (13) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Envié a Lorena el visual con las modificaciones del mueble para la Muralla de NatuChips
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1mjvddw_g7Q_SPMa1VMfWnEJUfbIMcNfM?usp=drive_link
+
+
+
+
+🗓️ Viernes 13 de febrero del 2026
+🕒 PENDIENTE:
+* VIsual de Pepsico NatuChips La Muralla
+🌄 MAÑANA:
+* Yonatan me pidió sacar la orden de producción del espejo de la reparación del mueble Flips
+* 1. Monté la orden de producción del espejo de la reparación del mueble de Flips
+* 2. Le envié a Lorena las actualizaciones del visual de NatuChips La Muralla
+* 3. Armé con Verónica el exhibidor de cartón de chocolates Milka
+* José Gabriel pidió que descartemos la opción de cartón del exhibidor de Chocolates Milka
+* Lorena me recordó que el marco del espejo infinito del exhibidor NatuChips tiene que ser oscuro
+
+
+🌅 TARDE:
+* 4. Actualicé el visual del Mueble NatuChips de la Muralla y se lo envié a Lorena
+* Hablé con José Gabriel sobre el dispensador de cartón de Chocolates Milka
+* Le envié a José Gabriel y a Verónica un video del funcionamiento del dispensador de Milka
+* Le comenté a Jose que voy a sacar otra muestra para el dispensador de chocolates Milka en PAI
+* Me llamó Andrea Istúriz a la oficina para decirme que debo actualizar el visual de Colgate
+* Le envié a Andrea los videos de Realidad Aumentada del mueble de la Feria de Colgate
+* Zaida me pidió hacer un visual con IA para Alimentos Polar, una puntera para Harina Pan
+* 5. Le envié a Andrea Torres para que completara la presentación la puntera nueva de harina Pan
+* Monté la orden de muestra del dispensador de Chocolates Milka en PAI
+* 6. Le entregué a Andrés David la orden de muestra del dispensador de chocolates Milka en PAI
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (08) 081/26 - ALFONZO RIVAS - EXHIBIDOR FLIPS REPARACIÒN. FARMATODO MELANIE Monté la orden de producción del espejo de la reparación del mueble de Flips
+TRELLO: https://trello.com/c/rNphk7MP
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1t9aKter7DsGbPR9cphj2Ws3uIbOQx8Zq?usp=drive_link
+
+
+
+
+2. VISUAL: (14) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Le envié a Lorena las actualizaciones del visual de NatuChips La Muralla
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1mjvddw_g7Q_SPMa1VMfWnEJUfbIMcNfM?usp=drive_link
+
+
+
+
+3. MUESTRA: (06) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Armé con Verónica el exhibidor de cartón de chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link
+
+
+
+
+4. VISUAL: (15) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Actualicé el visual del Mueble NatuChips de la Muralla y se lo envié a Lorena
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1mjvddw_g7Q_SPMa1VMfWnEJUfbIMcNfM?usp=drive_link
+
+
+
+
+5. VISUAL: (16) 073/26 - ALIMENTOS POLAR -  PROPUESTA DE PIEZAS Le envié a Andrea Torres para que completara la presentación la puntera nueva de harina Pan
+TRELLO: https://trello.com/c/ULa3tJyX
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y0x10VNLKUVS4fIiEl1qXnxaETW-z6XG?usp=drive_link
+
+
+6. MUESTRA: (07) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Le entregué a Andrés David la orden de muestra del dispensador de chocolates Milka en PAI
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link
+
+
+
+
+
+
+🗓️ Sábado 14 de febrero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 15 de febrero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 16 de febrero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 17 de febrero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 18 de febrero del 2026
+🕒 PENDIENTE:
+* Actualizar el visual del exhibidor de Cuidado Personal de Colgate
+* Armar el dispensador de PAI de Chocolates Milka
+🌄 MAÑANA:
+* Me puse a actualizar el visual de Colgate Cuidado Personal
+* Puse a renderizar el visual actualizado de Colgate
+
+
+🌅 TARDE:
+* Terminé el visual de Colgate Cuidado Personal
+* 1. Le envié a Andrea la actualización del visual de Cuidado Personal de Colgate
+
+
+📂 CARPETAS:
+1. VISUAL: (17) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Le envié a Andrea la actualización del visual de Cuidado Personal de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link
+
+
+🗓️ Jueves 19 de febrero del 2026
+🕒 PENDIENTE:
+* VISUAL DE NATUCHIPS RÍO
+🌄 MAÑANA:
+* Me puse a actualizar el visual de NatuChips Río
+* 
+
+🌅 TARDE:
+* Me reuní con Pablo para definir el mueble de NatuChips
+* 1. Le envié a Lorena el visual de BT 7Up NatuChips
+
+
+📂 CARPETAS:
+1. VISUAL: (18) 462/25 - PEPSICO - MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL/ RETIRAR MUEBLES Le envié a Lorena el visual de BT 7Up NatuChips
+TRELLO: https://trello.com/c/KTrjOpTQ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1v_K0oOdH3wiJUT54WFfS1hPOUS8Cimlw?usp=drive_link
+
+
+🗓️ Viernes 20 de febrero del 2026
+🕒 PENDIENTE:
+* VISUAL DE NATUCHIPS LA MURALLA
+🌄 MAÑANA:
+* Realicé las modificaciones del visual del mueble NatuChips de la Muralla
+
+
+🌅 TARDE:
+* 1. Le envié a Lorena el visual del mueble NatuChips de la Muralla
+
+
+📂 CARPETAS:
+1. VISUAL: (19) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Le envié a Lorena el visual del mueble NatuChips de la Muralla
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1_IvzbDTBOJGSiNXwDVylDj4bTe15Kwap?usp=drive_link
+
+
+🗓️ Sábado 21 de febrero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 22 de febrero del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 23 de febrero del 2026
+🕒 PENDIENTE:
+* MUESTRA FÍSICA DISPENSADOR NESCAFÉ
+🌄 MAÑANA:
+* 1. Pegué con cloruro el exhibidor de Chocolates Milka
+* REUNIÓN DE TRELLO
+* Me puse a averiguar qué es lo que hay que sacar de Nescafé
+
+
+🌅 TARDE:
+* Desarrollé los nuevos servilleteros y dispensadores de Nescafé
+* Saqué en papel el dispensador
+* 2. Entregué la orden de muestra física del servilletero y dispensador de Nescafé
+* Milka vio la maqueta del dispensador de Nescafé en papel y le pareció pequeña
+
+
+📂 CARPETAS:
+1. MUESTRA: (08) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Pegué con cloruro el exhibidor de Chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link
+
+
+2. MUESTRA: (09) 148/26 - NESTLE - PORTAVASOS Y TRES EN UNO Entregué la orden de muestra física del servilletero y dispensador de Nescafé
+TRELLO: https://trello.com/c/9aoyZ1bt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1q1XEtwgwl-dOJwx4LVIIuir0GmEsyumY?usp=drive_link
+
+
+🗓️ Martes 24 de febrero del 2026
+🕒 PENDIENTE:
+* VISITA AL CLIENTE DE CHOCOLATES MILKA EN CARACAS
+🌄 MAÑANA:
+* Reunión con Verónica en Caracas para el dispensador de Chocolates Milka
+* 1. Al llegar a la oficina sacar producción del vinil de Colgate del exhibidor Chino
+
+
+
+
+🌅 TARDE:
+* 2. Desarrollé el dispensador de chocolates Milka con las modificaciones que solicitó el cliente
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (09) 030/26 - COLGATE - EXHIBIDOR PLEGABLE DE CARTÓN (CHINO) Al llegar a la oficina sacar producción del vinil de Colgate del exhibidor Chino
+TRELLO: https://trello.com/c/VlNxGWPp
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1_j4hBCUFQXR6dZhr24uRLZ0-yMutzi_m?usp=drive_link
+
+
+2. MUESTRA: (10) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Desarrollé el dispensador de chocolates Milka con las modificaciones que solicitó el cliente
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Bc_APHun16QgWE7QbNRICmJCaafs1TEz?usp=drive_link
+
+
+🗓️ Miércoles 25 de febrero del 2026
+🕒 PENDIENTE:
+* Hacer visual del dispensador de Chocolates Milka
+* Muestra de color de SCJ
+🌄 MAÑANA:
+* Aleska me pidió los artes de la oliva de Palmolive
+* Enmary me pidió la muestra de color de SCJ, la prometí para la tarde
+* Hacer el visual del dispensador de Chocolates Milka
+
+
+🌅 TARDE:
+* 1. Envié el visual del dispensador de Chocolates Milka
+* Andrea Istúriz me pidió colocar el audio del doctor muelitas en el sensor de movimiento
+* Coloqué el audio del doctor muelitas en el sensor de movimiento
+* 2. Envié el plano mecánico del exhibidor de cartón para Palmolive y Protex (chino)
+
+
+📂 CARPETAS:
+1. VISUAL: (20) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Envié el visual del dispensador de Chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1kx1Y-MPv1k7_2LKg2HTVGWsUbtAIoGaI?usp=drive_link
+
+
+2. PLANO MECÁNICO: (03) 167/26 - COLGATE - EXHIBIDOR PLEGABLE CHINO PARA PROTEX Y PALMOLIVE Envié el plano mecánico del exhibidor de cartón para Palmolive y Protex (chino)
+TRELLO: https://trello.com/c/igg5jOpa
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1boKFDCaSG7ljUcvH6ygGo1WBPSHYRgPq?usp=drive_link
+
+
+🗓️ Jueves 26 de febrero del 2026
+🕒 PENDIENTE:
+* Actualizar visual del mueble de Cuidado Personal de Colgate
+🌄 MAÑANA:
+* Fui con Enmary y Samuel a medir el mueble de Fixturización
+
+
+🌅 TARDE:
+* Le prometí a Enmary enviarle las medidas de los muebles de Fixturización
+* Limpié las piezas de Nescafé y me di cuenta que no caben los vasos
+* Hablé con Andrés David para explicarle que voy a volver a sacar los círculos de Nescafé
+* 1. Envié las medidas de los muebles Fixturización a Enmary
+* Volver a conectar la red de corte.
+* 2. Volver a sacar los círculos de Nescafé para que funcione el dispensador, y pieza extraviada
+
+
+📂 CARPETAS:
+1. PLANO MECÁNICO: (04) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Envié las medidas de los muebles Fixturización a Enmary
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link
+
+
+2. MUESTRA: (11) 148/26 - NESTLE - PORTAVASOS Y TRES EN UNO Volver a sacar los círculos de Nescafé para que funcione el dispensador, y pieza extraviada
+TRELLO: https://trello.com/c/9aoyZ1bt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1q1XEtwgwl-dOJwx4LVIIuir0GmEsyumY?usp=drive_link
+
+
+
+
+🗓️ Viernes 27 de febrero del 2026
+🕒 PENDIENTE:
+* Armar el dispensador y servilletero de Nescafé
+* Visual de exhibidor cuidado personal solo sprys
+🌄 MAÑANA:
+* 1. Calculé con Milka el nuevo rendimiento de Nescafé
+* Andrés David me entregó las piezas de Nescafé
+* Armé el exhibidor de Nescafé y Mario me preguntó por qué no he sacado el vinil
+* Le expliqué que quería armarlo primero para verificar el tamaño y luego sacar el vinil
+* Mario me preguntó si sacaba el vinil Pablo lo imprime rápido, le dije que si
+* 2. Monté la orden de muestra del vinil del exhibidor de Nescafé y se la entregué a Pablo
+* Le dije a Milka que monté la orden del vinil y me dijo que la muestra la va a mandar el lunes
+
+
+
+
+🌅 TARDE:
+* 3. Actualizar el visual de Colgate Cuidado Personal y enviarlo a Andrea Isturiz
+
+
+📂 CARPETAS:
+1. RENDIMIENTO: (04) 148/26 - NESTLE - PORTAVASOS Y TRES EN UNO Calculé con Milka el nuevo rendimiento de Nescafé
+TRELLO: https://trello.com/c/9aoyZ1bt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1nbUrLRKJjNae5YL0jp2DRQtv-vJ1iomU?usp=drive_link
+
+
+2. MUESTRA: (12) 148/26 - NESTLE - PORTAVASOS Y TRES EN UNO Monté la orden de muestra del vinil del exhibidor de Nescafé y se la entregué a Pablo
+TRELLO: https://trello.com/c/9aoyZ1bt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1q1XEtwgwl-dOJwx4LVIIuir0GmEsyumY?usp=drive_link
+
+
+3. VISUAL: (21) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Actualizar el visual de Colgate Cuidado Personal y enviarlo a Andrea Isturiz
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link
+
+
+🗓️ Sábado 28 de febrero del 2026
+🕒 PENDIENTE:
+* Visual del exhibidor de cartón Chino de Palmolive
+
+
+* Planos acotados de Fixturization
+* Muestra de Color de Fixturización
+
+
+* Rendimiento Mueble Muralla
+🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ MARZO 2026
+MARZO 2026
+LUN
+	MAR
+	MIÉR
+	JUE
+	VIE
+	SÁB
+	DOM
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	29
+	30
+	31
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+Tabla
+	Trabajo de Diseño
+	Filas
+	11
+	RENDIMIENTO.
+	8
+	12
+	VISUAL.
+	11
+	13
+	PLANO MECÁNICO.
+	10
+	14
+	MUESTRA.
+	14
+	15
+	PRODUCCIÓN.
+	15
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Domingo 01 de marzo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 02 de marzo del 2026
+🕒 PENDIENTE:
+* Muestra de color SCJ
+* Visual Colgate Palmolive
+🌄 MAÑANA:
+* Me puse a revisar las dimensiones del mueble de SCJ
+* 1. Realicé la muestra de color de SCJ Fixturización y la entregué a Pablo
+
+
+🌅 TARDE:
+* 2. Busqué el render en blanco del exhibidor de cartón para enviarle a Aleska.
+* Me puse a montar el visual de SCJ para que aprueba el Gama
+* 3. Andrea pidió el rendimiento del acrílico transparente y espejo de Colgate
+* 4. Andrea pidió el rendimiento del cartón para un exhibidor de pastillas
+* Continué con el visual de SCJ de los muebles de Fixturización
+
+
+📂 CARPETAS:
+1. MUESTRA: (01) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Realicé la muestra de color de SCJ Fixturización y la entregué a Pablo
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1mX6ECcMZeRF7dx3nKAR_YsEq_V6sSQgS?usp=drive_link
+
+
+2. VISUAL: (01) 167/26 - COLGATE - EXHIBIDOR PLEGABLE CHINO PARA PROTEX Y PALMOLIVE Busqué el render en blanco del exhibidor de cartón para enviarle a Aleska.
+TRELLO: https://trello.com/c/igg5jOpa
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1NGQghsDVrEBmfwLyhpKg_aIAvzt2qJMi?usp=drive_link
+
+
+3. RENDIMIENTO: (01) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Andrea pidió el rendimiento del acrílico transparente y espejo de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/18oQX3OQhVcY_F794qkiSX5Ngnrj6-kEi?usp=drive_link
+
+
+4. RENDIMIENTO: (02) TENTATIVO 005/26 - YAR YUR - EXHIBIDOR DE CARTÓN Y MICA  COUNTER Andrea pidió el rendimiento del cartón para un exhibidor de pastillas
+TRELLO: https://trello.com/c/xJ2CNBkC
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1lvIp9vdF7ofZonq0eCjfQQ9QGO7Tn9Fu?usp=sharing
+
+
+
+
+🗓️ Martes 03 de marzo del 2026
+🕒 PENDIENTE:
+* Entregar visual de SCJ
+🌄 MAÑANA:
+* Llevé a herrería las piezas de Nescafé para que se secara la pintura
+* Creé el video con los fotogramas que se terminaron de renderizar en la noche
+* Grabé el audio explicando la instalación en el automercado
+* Realicé el video con música y audio para SCJ
+* Volví a renderizar algunos fotogramas sin las bandejas para completar el video
+* Puse a guardar el video en premiere
+
+
+🌅 TARDE:
+* 1. Le envié a Enmary el video terminado del mueble de SCJ
+* Reunión con José Gabriel para hablar del Incentivo
+* Fui a herrería a buscar las piezas de Nescafé
+* Milka llegó a la oficina de diseño y me dijo que le encantaron las piezas de Nescafé
+* Milka pidió que repartieramos los proyectos que llegaron de Munchi
+* Recibí de parte de Verónica la autorización del visual de NatuChips para la Muralla
+📂 CARPETAS:
+
+
+1. VISUAL: (02) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Le envié a Enmary el video terminado del mueble de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1XylI5xeNlKdwK61Go57tU2B5jlP-vgbU?usp=drive_link
+
+
+🗓️ Miércoles 04 de marzo del 2026
+🕒 PENDIENTE:
+* Muestra de color del exhibidor Isla de Colgate
+* Rendimiento de dispensador de Chocolates Milka
+* Rendimiento de Ristras La Santé
+🌄 MAÑANA:
+* Realicé un prompt para hacer propuestas para el mueble de NatuChips de la Muralla
+* Me reuní con Aleska y Milka para definir el Stand de Munchi de la carrera Farmatodo
+* Me puse con el rendimiento del dispensador de chocolates Milka para Verónica
+* 1. Ayudé a Verónica con el visual de Fontana, modifiqué el visual con lo que necesitaba
+* Vanesa me recordó que tenía que sacar la muestra de color de Colgate
+* 2. Monté la orden de muestra de color del exhibidor Isla de Colgate
+
+
+🌅 TARDE:
+* Enmary me pidió plano mecánico del cabezal de SCJ Fixturización
+* 3. Le envié a Enmary el plano mecánico del cabezal de SCJ Fixturización
+* Continué con el rendimiento del dispensador de chocolates Milka
+* Reunión con Enmary para el mueble de Fixturización de SCJ
+* 4. Le envié a Verónica el rendimiento del dispensador de chocolates Milka
+* Ayudé a Yarelly a buscar los archivos de la cenefa de Doritos CM La Alameda
+* 5. Le envié el rendimiento a Milka de la ristra de La Santé
+
+
+📂 CARPETAS:
+1. VISUAL: (03) 135/26 - AGUA FONTANA - EXHIBIDOR PARA EVENTO DESARMABLE Ayudé a Verónica con el visual de Fontana, modifiqué el visual con lo que necesitaba
+TRELLO: https://trello.com/c/V2IwTU2q
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1aCveetcY3Wj5dCucOLa--GZcprULZCVv?usp=drive_link
+
+
+2. MUESTRA: (02) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM  Monté la orden de muestra de color del exhibidor Isla de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ui7-GrWxzO3GXgT7gxwok5q7_lyaXwFT?usp=drive_link
+
+
+3. PLANO MECÁNICO: (01) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Le envié a Enmary el plano mecánico del cabezal de SCJ Fixturización
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link
+
+
+4. RENDIMIENTO: (03) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Le envié a Verónica el rendimiento del dispensador de chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ISx_kmwvkJf4MqUbpByK7MiHFGvPFX6t?usp=drive_link
+
+
+5. RENDIMIENTO: (04) 076/26 - LA SANTE - RISTRAS PARA AIREX Le envié el rendimiento a Milka de la ristra de La Santé
+TRELLO: https://trello.com/c/hNu0E4ZO
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1CHphL9_jJosaDgsTPDdA9moMUT2fOcm2?usp=drive_link
+
+
+
+
+
+
+🗓️ Jueves 05 de marzo del 2026
+🕒 PENDIENTE:
+* Plano general del mueble Fixturización de SCJ
+* Muestra Producción del exhibidor Isla de Colgate
+
+
+
+
+🌄 MAÑANA:
+* Me puse con el plano mecánico general del mueble de Futurización de SCJ
+* 1. Envié el plano mecánico con las dimensiones generales del mueble Fixturización
+* Me puse con la orden de muestra producción del exhibidor Isla de Colgate
+* Verónica me preguntó por el plástico mica del intercambiable del dispensador de Chocolates Milka
+* 2. Le envié a Verónica el rendimiento del plastico mica del intercambiable del dispensador
+* Verónica me pidió las dimensiones del dispensador de chocolates Milka
+* 3. Realicé el plano mecánico de las dimensiones generales del dispensador de chocolates Milka
+* Continué con la muestra producción del exhibidor isla de Colgate
+
+
+🌅 TARDE:
+* Enmary me pidió hacer el plano mecánico de frente y bajar la altura del cabezal de SCJ
+📂 CARPETAS:
+
+
+1. PLANO MECÁNICO: (02) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Envié el plano mecánico con las dimensiones generales del mueble Fixturización
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link
+
+
+2. RENDIMIENTO: (05) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Le envié a Verónica el rendimiento del plastico mica del intercambiable del dispensador
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ISx_kmwvkJf4MqUbpByK7MiHFGvPFX6t?usp=drive_link
+
+
+3. PLANO MECÁNICO: (03) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Realicé el plano mecánico de las dimensiones generales del dispensador de chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Yr_pR5b65C0kSsgZsC4fljyxyLkW8uJE?usp=drive_link
+
+
+
+
+
+
+🗓️ Viernes 06 de marzo del 2026
+🕒 PENDIENTE:
+🌄 MAÑANA:
+* Me puse con el plano mecánico de vista frontal de Fixturización de SCJ
+* 1. Enmary me pidió rendimiento de unas Chupetas para Alfonzo Rivas
+* Continué con el plano mecánico de Fixturización SCJ
+* 2. Terminé el planograma frontal del mueble Fixturización SCJ
+* 3. Envié a Enmary el visual con las últimas modificaciones solicitadas por el cliente SCJ
+🌅 TARDE:
+* Seguí montando el exhibidor isla de Colgate
+
+
+📂 CARPETAS:
+1. RENDIMIENTO: (06) TENTATIVO 006/26 - ALFONZO RIVAS - CHUPETAS Enmary me pidió rendimiento de unas Chupetas para Alfonzo Rivas
+TRELLO: https://trello.com/c/EdPdYYnx
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1aca11ARxY-OTBYIDKETYd6m5A2e4KKKT?usp=sharing
+
+
+2. PLANO MECÁNICO: (04) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Terminé el planograma frontal del mueble Fixturización SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link
+
+
+3. VISUAL: (04) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Envié a Enmary el visual con las últimas modificaciones solicitadas por el cliente SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1oMAzv4fWXw7kYfnAqcPePLLfpnDSFEeq?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+🗓️ Sábado 07 de marzo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Domingo 08 de marzo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ Lunes 09 de marzo del 2026
+🕒 PENDIENTE:
+* Muestra Producción del exhibidor Isla de Colgate
+
+
+🌄 MAÑANA:
+* Terminé de montar el exhibidor Isla de Colgate
+* Enmary me pidió el plano del exhibidor SCJ con las modificaciones
+
+
+
+
+🌅 TARDE:
+* 1. Monté el corte de la muestra física producción de la Isla de Colgate
+
+
+📂 CARPETAS:
+1. MUESTRA: (03) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Monté el corte de la muestra física producción de la Isla de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ui7-GrWxzO3GXgT7gxwok5q7_lyaXwFT?usp=drive_link
+
+
+
+
+
+
+
+
+🗓️ Martes 10 de marzo del 2026
+🕒 PENDIENTE:
+* Plano mecánico del mueble Fixturización de SCJ
+* Montar los cortes de los muebles Insecticidas y Repelentes
+* Hacer excel de las Punteras Pepsico
+🌄 MAÑANA:
+* 1. Realicé el siguiente visual de SCJ Fixturización
+* 2. Realicé el plano mecánico de SCJ Fixturización
+* Me reuní con Pablo para definir el mueble de Insecticidas de SCJ
+* Me reuní con Lorena para definir las dimensiones de las punteras de Pepsico
+* Lorena me envió la presentación de las punteras de Pepsico que tiene
+* Yo le dije a Lorena que voy a hacer un excel con todas las punteras de Pepsico
+* Comencé a montar los cortes de mueble Fixturización SCJ
+
+
+🌅 TARDE:
+* Continué los archivos de corte de los muebles de Fixturización SCJ Insecticidas
+* Enmary envió los cambios de la muestra de color de Fixturización SCJ
+* Quedamos en reunirnos en la mañana Enmary y yo, para ver los cambios de SCJ
+* Terminé de montar el archivo de Insecticidas de SCJ, solo faltan los encastres
+
+
+📂 CARPETAS:
+
+
+1. VISUAL: (05) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Realicé el siguiente visual de SCJ Fixturización
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/10YHSJkGBxqLA8F2WvERJzwAZRRm5I4Vz?usp=drive_link
+
+
+2. PLANO MECÁNICO: (05) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Realicé el plano mecánico de SCJ Fixturización
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link
+
+
+
+
+🗓️ Miércoles 11 de marzo del 2026
+🕒 PENDIENTE:
+* Armar muestra producción de exhibidor Colgate Cuidado Personal
+🌄 MAÑANA:
+* Me reuní con Enmary para validar los cambios de SCJ
+* 1. Terminé de acomodar los encastres del mueble de insecticidas de SCJ
+
+
+🌅 TARDE:
+* 2. Me llamó Oliver para armar el mueble de Colgate Cuidado Personal
+* Falta Incluir un cuadro de MDF de 9mm del glorificador, se cortó a mano
+
+
+📂 CARPETAS:
+
+
+1. PRODUCCIÓN: (01) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Terminé de acomodar los encastres del mueble de insecticidas de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+2. MUESTRA: (04) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Me llamó Oliver para armar el mueble de Colgate Cuidado Personal
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ui7-GrWxzO3GXgT7gxwok5q7_lyaXwFT?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+🗓️ Jueves 12 de marzo del 2026
+🕒 PENDIENTE:
+* Orden de pintura Exhibidor Cuidado Personal Colgate
+* Visual Colgate Exhibidor Cuidado Personal
+🌄 MAÑANA:
+* Samuel me dijo que ya el mueble de Colgate está en pintura
+* Acomodé el visual sin stickers de vinil ni carga para hacer visual interactivo 3D
+* 1. Realicé la orden de pintura del exhibidor Cuidado Personal con QR al interactivo
+* Le entregué al señor Ricardo la orden de pintura, me preguntó ¿cuál morado y cuál azul?
+* Andrea me pidió hacer visual de Colgate el exhibidor urgente para el cliente sin carga
+
+
+🌅 TARDE:
+* Me puse con el visual del exhibidor de Colgate para Andrea
+* Pablo me pidió sacar los dummies de Sedival
+* Diego me dijo que no es necesario que él se encarga de los dummies de Sedival
+* Enmary me entregó la muestra de color de SCJ, me pidió sacar muestra 2
+* 2. Terminé el Visual de Colgate Cuidado Personal y se lo envié a Andrea Isturiz
+* Andrea Torres me pidió ayuda para montar un hablador de Doterra
+* Monté el hablador de Doterra con Andrea
+* Andrea Istúriz me pidió sacar una muestra de color 2 a Colgate Mate y Brillante
+* Andrea Istúriz me explicó que los colores azul y morado están aprobados para pintura
+
+
+📂 CARPETAS:
+1. MUESTRA: (05) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Realicé la orden de pintura del exhibidor Cuidado Personal con QR al interactivo
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ui7-GrWxzO3GXgT7gxwok5q7_lyaXwFT?usp=drive_link
+
+
+2. VISUAL: (06) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Terminé el Visual de Colgate Cuidado Personal y se lo envié a Andrea Isturiz
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=drive_link
+
+
+🗓️ Viernes 13 de marzo del 2026
+🕒 PENDIENTE:
+* Hablar con el señor ricardo muestras azul y morada aprobadas
+* Muestra de color 2 de Colgate
+* Muestra de color 2 de SCJ la va a hacer Carelis
+* Visual del 13 de Marzo para SCJ
+* Plano mecánico del 13 de Marzo para SCJ
+* Hacer prueba del stand intercambiable
+🌄 MAÑANA:
+* Me reuní con el señor Ricardo, él me dijo que le falta el MDF 3mm
+* Le expliqué al señor Ricardo que tenemos el azul y morado aprobado
+* Le entregué la muestra de color aprobada a Branyesca para preparar la pintura
+* 1. Muestra de color 2 de Colgate Mate y Brillante.
+🌅 TARDE:
+* 2. Realicé el visual del 13 de marzo del 2026 con los cambios que pidió SCJ
+* 3. Realicé el nuevo plano mecánico con las medidas de SCJ del 13 de marzo del 2026
+* 4. Muestra del stand intercambiable para Yar-Yur
+📂 CARPETAS:
+1. MUESTRA: (06) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Muestra de color 2 de Colgate Mate y Brillante.
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ui7-GrWxzO3GXgT7gxwok5q7_lyaXwFT?usp=drive_link
+
+
+2. VISUAL: (07) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS  Realicé el visual del 13 de marzo del 2026 con los cambios que pidió SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ET_r7GZZhXoiX5Cv-idHWE1Dc028ynCG?usp=drive_link
+
+
+3. PLANO MECÁNICO: (06) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS  Realicé el nuevo plano mecánico con las medidas de SCJ del 13 de marzo del 2026
+TRELLO:https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link
+
+
+4. MUESTRA: (07) 215/26 - ALIMENTOS MUNCHY - STAND INTERCAMBIABLE Muestra del stand intercambiable para Yar-Yur
+TRELLO: https://trello.com/c/ppzuV9bA
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1aOioKlKVArj5IhGSlpr75hiMt2z7mO_7?usp=drive_link
+
+
+🗓️ Sábado 14 de marzo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 15 de marzo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 16 de marzo del 2026
+🕒 PENDIENTE:
+* 207/25 - NESTLE - EXHIBIDORES PRO PLAN
+* Hacer muestra de color
+
+
+* 012/26 - GRUPO LETI -  EXH/GLORIFICADOR FIBERFIT PLUS (ANTIGUO 1051/25)
+* Hacer Rendimiento
+🌄 MAÑANA:
+* 1. Muestra de color de Purina Exhibidor Pro Plan
+* REUNIÓN TRELLO
+* Anotar lo acordado en la reunión de Trello
+* Pablo me entregó la muestra de color de Purina 
+* Le entregué la muestra de color de Purina a Vanessa
+* Milka me explicó que ese archivo tiene una modificación
+* Me puse a realizar la modificación que indicó Milka de Purina
+
+
+
+
+🌅 TARDE:
+* Continué con la muestra de color de Purina
+* Aleska me llamó para indicarme que hay que hacer el plano mecánico con los artes Exh Chino
+* 3. Rendimiento de glorificador Fiber Fit Plus
+
+
+📂 CARPETAS:
+1. MUESTRA: (08) 207/25 - NESTLE - EXHIBIDORES PRO PLAN - Muestra de color de Purina Exhibidor Pro Plan
+TRELLO: https://trello.com/c/YXqQqixf
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1PM3Ia7HxmFzP42PUv2CkdhlmUt41jV8X?usp=drive_link
+
+
+2. RENDIMIENTO: (07) 012/26 - GRUPO LETI -  EXH/GLORIFICADOR FIBERFIT PLUS (ANTIGUO 1051/25) Rendimiento de glorificador Fiber Fit Plus
+TRELLO: https://trello.com/c/gQbacAzU
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1JOM_eggKEuFb3K6Xjpdvq27EIsbWOxHT?usp=drive_link
+
+
+
+
+🗓️ Martes 17 de marzo del 2026
+🕒 PENDIENTE:
+* 197/26 - PEPSICO - MUEBLE DORITOS MÁS POR MENOS LECHERÍA
+
+
+* 199/26 - PEPSICO - MUEBLE DORITOS TODO HOGAR VISTAMAR PTO LA CRUZ
+
+
+🌄 MAÑANA:
+* Recibí un correo de Andrea con las modificaciones del arte del exhibidor ISLA de Colgate.
+* Recibí un correo de Enmary diciendo que puedo enviar a corte los muebles de Fixtrurización.
+* 1. Volver a enviar la muestra de color de Purina Pro Plan.
+* Andrea me dijo que la pintura del mueble de colgate es Brillante
+* 2. Montar orden de muestra de Pintura Brillante para Colgate
+* Enmary me dijo que no hay melamina de 15mm, espero confirmación para mostrar el corte.
+* Revisar las rectificaciones de Pepsico y verificar si se puede enviar uno ya existente de Doritos.
+
+
+🌅 TARDE:
+* El señor Ricardo me llamó para ver el mueble de Colgate
+* Monté las órdenes de producción de Pepsico basado en muebles anteriores
+* 3. Monté la orden de producción del mueble Doritos Más por menos Lecherías
+* 4. Monté la orden de producción del mueble Doritos Todo Hogar Vista Mar Pto La Cruz
+* Le pedí a Aleska que me ayudara con los artes de Chocolates Milka
+* 5. Hacer con IA los muebles innovación para Nestlé.
+*  Le pedí a Aleska que actualice las artes del dispensador de Chocolates Milka
+* Milka notificó que está aprobado el arte mate de Purina
+* Milka me pidió hacer muestra física en melamina negra para Purina
+📂 CARPETAS:
+
+
+1. MUESTRA: (09) 207/25 - NESTLE - EXHIBIDORES PRO PLAN - Volver a enviar la muestra de color de Purina Pro Plan
+TRELLO: https://trello.com/c/YXqQqixf
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1PM3Ia7HxmFzP42PUv2CkdhlmUt41jV8X?usp=drive_link
+
+
+2. MUESTRA: (10) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Montar orden de producción de Pintura Brillante para Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ui7-GrWxzO3GXgT7gxwok5q7_lyaXwFT?usp=drive_link
+
+
+3. PRODUCCIÓN: (02) 197/26 - PEPSICO - MUEBLE DORITOS MÁS POR MENOS LECHERÍA Monté la orden de producción del mueble Doritos Más por menos Lecherías
+TRELLO: https://trello.com/c/cY9cy5EL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1jIvwtWZN1cajewb3It2oMGFJDfCN6EGJ?usp=drive_link
+
+
+4. PRODUCCIÓN: (03) 199/26 - PEPSICO - MUEBLE DORITOS TODO HOGAR VISTAMAR PTO LA CRUZ Monté la orden de producción del mueble Doritos Todo Hogar Vista Mar Pto La Cruz
+TRELLO: https://trello.com/c/lPb0dWKs
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1bYsuSeZCu5333yqJCSVh0K6y4v0A7hIX?usp=drive_link
+
+
+5. VISUAL: (08) 205/26 - NESTLE - PUNTAS DE GÓNDOLA 2.0 INNOVACIÓN 2026 Hacer con IA los muebles innovación para Nestlé.
+TRELLO: https://trello.com/c/lfd0D5DO
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1fgm72JdknUAXbJuzIhXVSXgZoVjWB_b_?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Miércoles 18 de marzo del 2026
+🕒 PENDIENTE:
+
+
+Miércoles Mañana:
+* 205/26 - NESTLE DE VENEZUELA - PUNTAS DE GÓNDOLA 2.0 INNOVACION 2026
+* Pendiente presentación de innovación para Nestlé
+
+
+* CORREGIR VINIL DE PUNTERAS DE PEPSICO
+
+
+
+
+Miércoles Tarde:
+* 167/26 - COLGATE - EXHIBIDOR PLEGABLE CHINO PARA PROTEX Y PALMOLIVE
+* Hacer Plano mecánico con artes para enviar a China
+
+
+🌄 MAÑANA:
+* 1. Terminé los recursos generados con IA para el video de Innovación de Nestlé
+
+
+* Dorian me dijo que le faltan los viniles de Colgate Isla
+* Andrea me dijo que podemos avanzar con lo que está aprobado de la Isla (Polyfan)
+* Andrea me explicó cuáles son los cambios que pidió el cliente en el vinil de Colgate
+* Le prometí trabajar en todo lo de la Isla Mañana Jueves para que salga esta semana
+* Le prometí trabajar en la Realidad Aumentada el fin de semana.
+
+
+* Enmary me pidió que la ayudara enviando las órdenes de producción de SCJ
+* Enmary me dijo que vamos a hacer el mueble Ambientadores con melamina de 18mm
+* Le prometí a Enmary trabajar hoy en la tarde en la OP de SCJ
+
+
+* Milka me dijo que está aprobado el dispensador y servilletero de Nescafé
+* Le prometí a Milka montar la OP de Nescafé el viernes
+
+
+* 2. Me puse a corregir los artes de los viniles de las punteras de Pepsico
+
+
+
+
+🌅 TARDE:
+* 3. Me puse con la adaptación de los artes en el plano mecánico de China
+
+
+* 4. Terminé los archivos de corte del mueble Insecticidas de Fixturización SCJ.
+
+
+* 5. Plano mecánico con medidas generales del glorificador de FiberFit
+
+
+📂 CARPETAS:
+
+
+1. VISUAL: (09) 205/26 - NESTLE - PUNTAS DE GÓNDOLA 2.0 INNOVACIÓN 2026 Terminé los recursos generados con IA para el video de Innovación de Nestlé
+TRELLO: https://trello.com/c/lfd0D5DO
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1fgm72JdknUAXbJuzIhXVSXgZoVjWB_b_?usp=drive_link
+
+
+2. PRODUCCIÓN: (04) 199/26 - PEPSICO - MUEBLE DORITOS TODO HOGAR VISTAMAR PTO LA CRUZ Me puse a corregir los artes de los viniles de las punteras de Pepsico
+TRELLO: https://trello.com/c/lPb0dWKs
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1bYsuSeZCu5333yqJCSVh0K6y4v0A7hIX?usp=drive_link
+
+
+3. PLANO MECÁNICO: (07) 167/26 - COLGATE - EXHIBIDOR PLEGABLE CHINO PARA PROTEX Y PALMOLIVE Me puse con la adaptación de los artes en el plano mecánico de China
+TRELLO: https://trello.com/c/igg5jOpa
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1boKFDCaSG7ljUcvH6ygGo1WBPSHYRgPq?usp=drive_link
+
+
+4. PRODUCCIÓN: (05) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Terminé los archivos de corte del mueble Insecticidas de Fixturización SCJ.
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+5. PLANO MECÁNICO: (08) 012/26 - GRUPO LETI -  EXH/GLORIFICADOR FIBERFIT PLUS (ANTIGUO 1051/25) Plano mecánico con medidas generales del glorificador de FiberFit
+TRELLO: https://trello.com/c/gQbacAzU
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1zkErsCjjnRZzysAToA4Xg5-VRgaBKRKI?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+🗓️ Jueves 19 de marzo del 2026
+🕒 PENDIENTE:
+* 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS
+* Corte de Fixturización SCJ
+
+
+* 215/26 - ALIMENTOS MUNCHY - STAND INTERCAMBIABLE
+* Armar el stand intercambiable
+
+
+* 207/26 - NESTLÉ - EXHIBIDORES PRO PLAN
+* Montar orden de muestra física 
+🌄 MAÑANA:
+* 1. Armar el Stand Intercambiable. 
+* 2. Monté la muestra física del exhibidor de PURINA en melamina Negra
+* Continué montando los corte de SCJ Fixturización
+
+
+🌅 TARDE:
+* 3. Monté la muestra de color de los artes de China
+* Continué montando los corte de SCJ Fixturización
+* Verónica me pidió el Rendimiento del Dispensador de Chocolates Milka a 15 cm de alto
+* 4. Terminé los archivos de corte del mueble Repelentes de Fixturización SCJ.
+* Continué con los cortes de Ambientadores SCJ
+
+
+📂 CARPETAS:
+1. MUESTRA: (11) 215/26 - ALIMENTOS MUNCHY - STAND INTERCAMBIABLE Armar el Stand Intercambiable
+TRELLO: https://trello.com/c/ppzuV9bA
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1aOioKlKVArj5IhGSlpr75hiMt2z7mO_7?usp=drive_link
+
+
+2. MUESTRA: (12) 207/25 - NESTLE - EXHIBIDORES PRO PLAN Monté la muestra física del exhibidor de PURINA en melamina Negra
+TRELLO: https://trello.com/c/YXqQqixf
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1PM3Ia7HxmFzP42PUv2CkdhlmUt41jV8X?usp=drive_link
+
+
+3. MUESTRA: (13) 167/26 - COLGATE - EXHIBIDOR PLEGABLE CHINO PARA PROTEX Y PALMOLIVE Monté la muestra de color de los artes de China
+TRELLO: https://trello.com/c/igg5jOpa
+DRIVE: LISTO
+https://drive.google.com/drive/folders/18PP08ULqAAKRnfAd8rExXPmpghBTAJpG?usp=drive_link
+
+
+4. PRODUCCIÓN: (06) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Terminé los archivos de corte del mueble Repelentes de Fixturización SCJ.
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+
+
+🗓️ Viernes 20 de marzo del 2026
+🕒 PENDIENTE:
+
+
+* 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS
+* Corte de Fixturización SCJ
+
+
+* Pendiente sacar muestra producción del vinil del exhibidor ISLA Colgate con las modificaciones
+* Dorian me dijo que le faltan los viniles de Colgate Isla
+* Andrea me dijo que podemos avanzar con lo que está aprobado de la Isla (Polyfan)
+* Andrea me explicó cuáles son los cambios que pidió el cliente en el vinil de Colgate
+
+
+* 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY
+* Calcular rendimiento a 15 cm de alto
+
+
+🌄 MAÑANA:
+* Monté el maestro del arte y cortes de lo que faltaba de la ISLA de COLGATE
+
+
+🌅 TARDE:
+* 1. Sacar la muestra producción del vinil del exhibidor de Colgate con las modificaciones
+* 2. Hacer nuevo rendimiento del dispensador de Chocolates Milka a 15 cm de alto
+
+
+📂 CARPETAS:
+1. MUESTRA: (14) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Sacar la muestra producción del vinil del exhibidor de Colgate con las modificaciones
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ui7-GrWxzO3GXgT7gxwok5q7_lyaXwFT?usp=drive_link
+
+
+2. RENDIMIENTO: (08) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Hacer nuevo rendimiento del dispensador de Chocolates Milka a 15 cm de alto
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ISx_kmwvkJf4MqUbpByK7MiHFGvPFX6t?usp=drive_link
+
+
+
+
+🗓️ Sábado 21 de marzo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 22 de marzo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 23 de marzo del 2026
+🕒 PENDIENTE:
+* Reunión en Colgate para mostrar el mueble ISLA de Cuidado Personal
+🌄 MAÑANA:
+
+
+* Reunión en Colgate para mostrar el mueble ISLA de Cuidado Personal
+🌅 TARDE:
+
+
+* 1. Hacer las modificaciones del visual de la ISLA de Colgate solicitadas en la reunión
+
+
+📂 CARPETAS:
+
+
+1. VISUAL: (10) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Hacer las modificaciones del visual de la ISLA de Colgate solicitadas en la reunión
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1zA2ri--YgDJNJvUV5v8BM4VV2QL6BgfE?usp=drive_link
+
+
+
+
+🗓️ Martes 24 de marzo del 2026
+🕒 PENDIENTE:
+* 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS
+* Mandar orden de corte del mueble MDF 18mm Ambientadores
+🌄 MAÑANA:
+* 1. Entregué el visual de la Isla de Colgate con las modificaciones
+* Empecé a montar el mueble de Fixturización Ambientadores
+* Andrea me pidió agregar los preciarios al mueble de Isla Colgate
+* Volví a enviarle el visual actualizado
+
+
+🌅 TARDE:
+* José Gabriel me pidió que hiciera el PDF con los artes que van para China
+* 2. Terminé de montar el mueble de Ambientadores en la Melanina de 18mm
+* Fui a medir la melamina para confirmar que tenga 18mm
+* Aprobaron el mueble tipo Isla con las modificaciones, prometí entre hoy y mañana la OP
+
+
+📂 CARPETAS:
+1. VISUAL: (11) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Hacer las modificaciones del visual de la ISLA de Colgate solicitadas en la reunión
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1zA2ri--YgDJNJvUV5v8BM4VV2QL6BgfE?usp=drive_link
+
+
+2. PRODUCCIÓN: (07) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Terminé de montar el mueble de Ambientadores en la Melanina de 18mm
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+🗓️ Miércoles 25 de marzo del 2026
+🕒 PENDIENTE:
+* 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS
+* Mandar orden de corte del mueble MDF 18mm Ambientadores
+
+
+🌄 MAÑANA:
+* 1. Entregar la orden de la melamina de 18mm del mueble Ambientadores SCJ
+* Me reuní con Aleska para montar el arte aprobado de los exhibidores de China
+* 2. Hacer el PDF del plano con arte aprobado de los exhibidores de China
+* 3. Sacar la orden de producción de 1 Servilletero y 1 Dispensador de vasos de Nescafé
+
+
+🌅 TARDE:
+* 4. Montar la Orden de Producción de la Isla de Colgate
+
+
+📂 CARPETA
+1. PRODUCCIÓN: (08) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Entregar la orden de la melamina de 18mm del mueble Ambientadores SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+2. PLANO MECÁNICO: (09) 167/26 - COLGATE - EXHIBIDOR PLEGABLE CHINO PARA PROTEX Y PALMOLIVE Hacer el PDF del plano con arte aprobado de los exhibidores de China
+TRELLO: https://trello.com/c/igg5jOpa
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1boKFDCaSG7ljUcvH6ygGo1WBPSHYRgPq?usp=drive_link
+3. PRODUCCIÓN: (09) 148/26 - NESTLE - PORTAVASOS Y TRES EN UNO Sacar la orden de producción de 1 Servilletero y 1 Dispensador de vasos de Nescafé
+TRELLO: https://trello.com/c/9aoyZ1bt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/14y-fJJPT7LaO-mpOXvE2WmaFa8j9yG_0?usp=drive_link
+
+
+4. PRODUCCIÓN: (10) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM  Montar la Orden de Producción de la Isla de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/10tkMzEH6E_76hOQHVcee4uo2i4mBF5sD?usp=drive_link
+
+
+
+
+🗓️ Jueves 26 de marzo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* Fui a la Universidad a entregar el libro de la Tesis
+
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 27 de marzo del 2026
+🕒 PENDIENTE:
+* MODIFICAR ARTES DE CHINA
+* ÓRDENES DE PEPSICO
+
+
+* MONTAR 400 DISPENSADORES Y SERVILLETEROS
+* MONTAR LAS ISLAS DE COLGATE
+* MONTAR LOS MUEBLES DE FIXTURIZACIÓN SCJ
+* ALIMENTOS MUNCHY - EXHIBIDOR DE METAL GIRATORIO
+
+
+* PENDIENTE: MDF 3mm COLGATE EXHIBIDOR ISLA
+
+
+🌄 MAÑANA:
+* Revisé las rectificaciones de medidas de Margarita
+* 198/26 Doritos Más Por Menos Caracola 100x50x200cm
+* 201/26 Doritos Sigo Sambil 128x56x180cm
+* 200/26 Cheese Tris Sigo Costa Azul 122x53x205 
+* Me puse a modificar el mueble de 128cm
+* Me llamó Oliver para armar el mueble de Melamina de SCJ
+* Seguí con Pepsico
+* Me llamó Diego para sacar unos triángulos de melamina
+* Seguí con Pepsico
+* Me llamaron de producción para armar Purina en Melamina Negra
+
+
+🌅 TARDE:
+* 1. Monté los triángulos del mueble de SCJ
+* Monté la revisión de los artes de China
+* Continué con los cortes de Pepsico
+* 2. Le di a Andrea Torres los cortes de Pepsico para que me ayude con la OP de Sambil Margarita
+* 3. Le envié a José Gabriel los artes para China
+* 4.  Le di a Andrea Torres los cortes para que me ayude con la OP de Más Por Menos Caracola
+* 5.  Le di a Andrea Torres los cortes para que me ayude con la OP de Costa Azul Margarita
+* 6. Monté la orden de producción del MDF de 3mm de los exhibidores ISLA de Colgate
+
+
+* Dejar preparado para montar los 400 dispensadores y 400 servilleteros
+* Dejar editable para ajustar los artes de Pepsico para el mueble Sambil Margarita
+* Dejar preparado para montar la producción de las 19 ISLAS de Colgate
+* Dejar preparado para montar lo que falta de Fixturización
+* Dejar preparado artes en editable de Purina
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (11) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Monté los triángulos del mueble de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link+
+
+
+2. PRODUCCIÓN: (12) 201/26 - PEPSICO - MUEBLE DORITOS SIGO SAMBIL MARGARITA Le di a Andrea Torres los cortes de Pepsico para que me ayude con la OP de Sambil Margarita
+TRELLO: https://trello.com/c/24oa69Wl
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1355joEKYzOJfs1XtFM4QAVTX7bvHU0cV?usp=drive_link
+
+
+3. PLANO MECÁNICO: (10) 030/26 - COLGATE - EXHIBIDOR PLEGABLE DE CARTÓN (CHINO)  Le envié a José Gabriel los artes para China
+TRELLO: https://trello.com/c/VlNxGWPp
+DRIVE: LISTO
+https://drive.google.com/drive/folders/14c6u7_rGXN_kqZyVrEF2JYGZOmziET86?usp=drive_link
+
+
+4. PRODUCCIÓN: (13) 198/26 - PEPSICO - MUEBLE DORITOS MÁS POR MENOS LA CARACOLA MARGARITA Le di a Andrea Torres los cortes para que me ayude con la OP de Más Por Menos Caracola
+TRELLO: https://trello.com/c/xDBqgbbs
+DRIVE: LISTO
+https://drive.google.com/drive/folders/17RvxSMhPkrE8fCkduPSJJR6gvliKbN35?usp=drive_link
+
+
+5. PRODUCCIÓN: (14) 200/26 - PEPSICO - MUEBLE CHEESE TRIS SIGO COSTA AZUL MARGARITA Le di a Andrea Torres los cortes para que me ayude con la OP de Costa Azul Margarita
+TRELLO: https://trello.com/c/bkvxwLfh
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1wIGOYjy5U7_fbsL6O5kYyFfGvbZyW1Sz?usp=drive_link
+
+
+6. PRODUCCIÓN: (15) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Monté la orden de producción del MDF de 3mm de los exhibidores ISLA de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: FALTA
+https://drive.google.com/drive/folders/10tkMzEH6E_76hOQHVcee4uo2i4mBF5sD?usp=drive_link
+
+
+
+
+🗓️ Sábado 28 de marzo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 29 de marzo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 30 de marzo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* SEMANA SANTA
+
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 31 de marzo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* SEMANA SANTA
+
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ ABRIL 2026
+ABRIL 2026
+LUN
+	MAR
+	MIÉR
+	JUE
+	VIE
+	SÁB
+	DOM
+	
+
+	
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	29
+	30
+	
+
+	
+
+	
+
+	
+
+Tabla
+	Trabajo de Diseño
+	Filas
+	16
+	RENDIMIENTO.
+	03
+	17
+	VISUAL.
+	06
+	18
+	PLANO MECÁNICO.
+	03
+	19
+	MUESTRA.
+	05
+	20
+	PRODUCCIÓN.
+	34
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Miércoles 01 de abril del 2026
+🕒 PENDIENTE:
+* SEMANA SANTA
+🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 02 de abril del 2026
+🕒 PENDIENTE:
+* SEMANA SANTA
+🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 03 de abril del 2026
+🕒 PENDIENTE:
+* SEMANA SANTA
+🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Sábado 04 de abril del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 05 de abril del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+🗓️ Lunes 06 de abril del 2026
+🕒 PENDIENTE:
+* 148/26 NESTLÉ (MF) Servilletero y dispensador
+* 026/26 SCJ (OP) muebles Santa Eduvigis
+* 026/26 SCJ (MC) muebles Santa Eduvigis
+🌄 MAÑANA:
+* Hablé con Dorian sobre las muestras de Pai Negro de Nescafé
+* Dorian me dijo que ya las muestras de Nescafé están armadas
+* Pablo me dijo que le falta la orden del vinil de las muestras de Nescafé
+* 1. Entregué la orden del vinil de la muestra física de Nescafé
+* Vi que ya están armadas las Islas de Colgate, le falta las tapas de MDF 3mm
+* Vi las tapas de MDF 3mm ya cortadas, no caben porque ya tienen las cenefas
+* Eider me ayudó a cortar una de las tapas a mano con el exacto
+* Hablé con Dorian para explicarle, que corté una a mano y si cabe
+* Dorian me dijo que él iba a resolver con las demás tapas de MDF de 3mm
+* El señor Ricardo me pidió la orden de pintura por las 20 Islas de Colgate
+* 2. Entregué la orden de producción de Pintura de las Islas de Colgate
+* En pintura me dijeron que faltan piezas del mueble de Doritos, los espaciadores
+* Eider me pidió ayuda con el rendimiento de Coca Cola
+* Primero Eider y yo buscamos en Kasemake para hacer el mueble de Coca Cola
+* Luego Busqué en la red de corte el exhibidor de Coca Cola que se había hecho
+* 3. Le dije a Eider cual fue el rendimiento del mueble de Coca Cola
+* Caminando por la planta pisé una pieza de Doritos y la partí
+* Hablé con Dorian para volver a sacar esa pieza, aproveché para sacar piezas faltantes
+* 4. Entregué la orden de producción de las piezas faltantes de Pepsico Doritos
+
+
+🌅 TARDE:
+* Anoté en la pizarra mis proyectos pendientes de la semana
+* Me puse a montar los archivos de corte que faltan de los muebles de SCJ
+* Terminé de montar los archivos de corte de SCJ
+* Hablé con Andrés David para decirle que mañana le entregaré la órden de SCJ
+
+
+📂 CARPETAS:
+1. MUESTRA: (01) 148/26 - NESTLE - PORTAVASOS Y TRES EN UNO Entregué la orden del vinil de la muestra física de Nescafé
+TRELLO: https://trello.com/c/9aoyZ1bt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1q1XEtwgwl-dOJwx4LVIIuir0GmEsyumY?usp=drive_link
+
+
+2. PRODUCCIÓN: (01) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA Entregué la orden de producción de Pintura de las Islas de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/10tkMzEH6E_76hOQHVcee4uo2i4mBF5sD?usp=drive_link
+
+
+3. RENDIMIENTO: (01) 288/26 - COCA COCA - EXHIBIDOR DE CARTÓN CON REFUERZOS Le dije a Eider cual fue el rendimiento del mueble de Coca Cola
+TRELLO: https://trello.com/c/os9QHEW7
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1VSiwRMq7WDTtXlfKSDqHckmyDy7Ld0sp?usp=drive_link
+
+
+4. PRODUCCIÓN: (02) 201/26 - PEPSICO - MUEBLE DORITOS SIGO SAMBIL MARGARITA Entregué la orden de producción de las piezas faltantes de Pepsico Doritos
+TRELLO: https://trello.com/c/24oa69Wl
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1355joEKYzOJfs1XtFM4QAVTX7bvHU0cV?usp=drive_link
+
+
+🗓️ Martes 07 de abril del 2026
+🕒 PENDIENTE:
+* 026/26 SCJ (OP) viniles muebles Santa Eduvigis
+* 148/26 NESTLÉ (OP) Servilletero y Dispensador
+🌄 MAÑANA:
+* Revisé cuantas láminas de PAI 1.8 negro se compraron para Nescafé
+* Terminé de montar la producción de los dispensadores y servilleteros
+* 1. Entregué la orden de producción de los dispensadores y Servilleteros de Nescafé
+* Monté la orden de producción de los cortes que faltan de SCJ
+* 2. Entregué la orden de producción de los cortes que faltan de SCJ
+
+
+🌅 TARDE:
+* 3. Monté los viniles de SCJ y entregué la orden de producción
+📂 CARPETAS:
+1. PRODUCCIÓN: (03) 148/26 - NESTLE - PORTAVASOS Y TRES EN UNO Entregué la orden de producción de los dispensadores y Servilleteros de Nescafé
+TRELLO: https://trello.com/c/9aoyZ1bt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/14y-fJJPT7LaO-mpOXvE2WmaFa8j9yG_0?usp=drive_link
+
+
+2. PRODUCCIÓN: (04) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Entregué la orden de producción de los cortes que faltan de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+3. PRODUCCIÓN: (05) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Monté los viniles de SCJ y entregué la orden de producción
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+🗓️ Miércoles 08 de abril del 2026
+🕒 PENDIENTE:
+* 026/26 SCJ (OP) Fixturización (lo que falta)
+* 148/26 NESTLÉ (OP) Servilleteros y Dispensadores (vinil)
+* 207/25 NESTLÉ (OP) Purina Corte
+🌄 MAÑANA:
+* Corregí el vector del mosquito del acrílico transparente de SCJ que me pidió Andrés David
+* Hablé con Dorian para rotular el mueble de Colgate
+* Hablé con Dorian para rotular el mueble de Purina Blanco
+* Hablé con Dorian para rotular la muestra interna de Nescafé
+* Samuel va a rotular los muebles de Colgate y Purina
+* Alexander va a rotular los de Nescafé
+* Samuel me pidió que le indique cómo va el mueble de Colgate
+* Alexander me entregó las piezas de Nescafé rotuladas, me dijo que el vinil está bien
+* Samuel me pidió que le indique cómo va rotulado el mueble de Purina
+* Fuimos a buscar el mueble de Purina abajo en el almacén
+* Le indiqué a Samuel como debe ir rotulado el mueble de Purina
+* Yarelly me dió preciarios que le sobraron, los usé para completar el mueble de Colgate
+* 1. Monté los cortes que faltaban del mueble Fixturización, se lo entregué a Andrés David
+* Me llamó Oliver para armar las cajas de Luz, cabezales y piezas que faltaban de SCJ
+* Vino la clienta de SCJ y vió el avance de los muebles, dijo que volverá el lunes
+* Le dije a Enmary que falta uno de los artes de uno de los SKU de OFF para el dummy
+* Enmary me dijo que le pidió el arte al cliente, que el cliente le va a mandar el arte que falta
+
+
+🌅 TARDE:
+* Samuel me dijo que terminó el mueble le de Purina
+* Le tomé fotos y videos al mueble de Purina
+* Samuel me dijo que terminó el mueble de Colgate
+* Le tomé fotos y videos al mueble de Colgate
+* 2. Mandé el vinil de la producción de los servilleteros y dispensadores Nescafé
+* Fui a producción a marcar las piezas de SCJ con los colores que van pintadas
+* Hablé con Mario para decirle que voy a sacar un solo mueble de Purina adelante
+* 3. Entregué la orden de producción de corte de los muebles de Purina
+* Reunión con Dorian y Mario para explicar que no es eficiente en producción sacar uno solo
+* Verifiqué el corte de Purina en Rhino y está bien
+* Hablé con Dorian para decirle que el corte de Purina debería estar bien
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (06) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Monté los cortes que faltaban del mueble Fixturización, se lo entregué a Andrés David
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+2. PRODUCCIÓN: (07) 148/26 - NESTLE - PORTAVASOS Y TRES EN UNO Mandé el vinil de la producción de los servilleteros y dispensadores Nescafé
+TRELLO: https://trello.com/c/9aoyZ1bt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/14y-fJJPT7LaO-mpOXvE2WmaFa8j9yG_0?usp=drive_link
+
+
+3. PRODUCCIÓN: (08) 207/25 - NESTLÉ - EXHIBIDORES PRO PLAN Entregué la orden de producción de corte de los muebles de Purina
+TRELLO: https://trello.com/c/YXqQqixf
+DRIVE: LISTO
+https://drive.google.com/drive/folders/18AQT6lJWRJF1yaTpad17TJKChkJjRSYY?usp=drive_link
+
+
+
+
+🗓️ Jueves 09 de abril del 2026
+🕒 PENDIENTE:
+* Órdenes de pintura para Ricardo de Pepsico
+* Órdenes de parachoques de Pepsico
+
+
+* 201/26 PEPSICO (OP) Doritos (vinil)
+* 198/26 PEPSICO (OP) Doritos (vinil)
+* 200/26 PEPSICO (OP) Cheese Tris (vinil)
+
+
+* 032/26 COLGATE (OP) ISLAS (parachoques y completar orden)
+
+
+🌄 MAÑANA:
+* Hacer las órdenes de pintura  y parachoques de Pepsico
+* 1. Entregué las órdenes de pintura y parachoques de Pepsico
+* Montar los viniles de Pepsico
+* Montar las piezas que faltan de Colgate
+* Montar los viniles de Colgate
+
+
+
+
+🌅 TARDE:
+* Entregué la orden de producción de los viniles de Pepsico
+* 4. Entregué la orden de producción de las piezas que faltan de Colgate
+* Entregué la orden de producción de los parachoques de Colgate
+* Entregué la orden de producción de los viniles de Colgate
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (09) 201/26 - PEPSICO - MUEBLE DORITOS SIGO SAMBIL MARGARITA Entregué las órdenes de pintura, parachoques y viniles de Pepsico
+TRELLO: https://trello.com/c/24oa69Wl
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1355joEKYzOJfs1XtFM4QAVTX7bvHU0cV?usp=drive_link
+
+
+2. PRODUCCIÓN: (10) 198/26 - PEPSICO - MUEBLE DORITOS MÁS POR MENOS LA CARACOLA MARGARITA Entregué las órdenes de pintura, parachoques y viniles de Pepsico
+TRELLO: https://trello.com/c/xDBqgbbs
+DRIVE: LISTO
+https://drive.google.com/drive/folders/17RvxSMhPkrE8fCkduPSJJR6gvliKbN35?usp=drive_link
+
+
+3. PRODUCCIÓN: (11) 200/26 - PEPSICO - MUEBLE CHEESE TRIS SIGO COSTA AZUL MARGARITA Entregué las órdenes de pintura, parachoques y viniles de Pepsico
+TRELLO: https://trello.com/c/bkvxwLfh
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1wIGOYjy5U7_fbsL6O5kYyFfGvbZyW1Sz?usp=drive_link
+
+
+4. PRODUCCIÓN: (12) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Entregué la orden de producción de las piezas que faltan, parachoques y viniles de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/10tkMzEH6E_76hOQHVcee4uo2i4mBF5sD?usp=drive_link
+
+
+
+
+🗓️ Viernes 10 de abril del 2026
+🕒 PENDIENTE:
+* Visual de Chocolates Milka
+* 053/26 PEPSICO (R) Mueble NatuChips
+* 189/26 Alimentos Munchy (V) giratorio
+🌄 MAÑANA:
+* Pablo me llamó para identificar los muebles de Pepsico
+* Estuve en Pintura y herrería indicando cómo va pintado los muebles de SCJ
+* 1. Rendericé tres vistas en blanco del dispensador para chocolates Milka
+
+
+🌅 TARDE:
+* Me dediqué a sacar todo lo que faltaba del mueble SCJ
+* Dorian me pidió imprimir el visual aprobado en grande
+* Llegó el último arte que faltaba de SCJ a las 5:00pm
+* 2. Le entregué a Pablo a las 8:00pm todas las órdenes para completar SCJ
+
+
+📂 CARPETAS:
+1. VISUAL: (01) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Rendericé tres vistas en blanco del dispensador para chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1kx1Y-MPv1k7_2LKg2HTVGWsUbtAIoGaI?usp=drive_link
+
+
+2. PRODUCCIÓN: (13) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Le entregué a Pablo a las 8:00pm todas las órdenes para completar SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+
+
+
+
+🗓️ Sábado 11 de abril del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 12 de abril del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 13 de abril del 2026
+🕒 PENDIENTE:
+* Parachoques Colgate
+* Lista de pendientes SCJ
+* Planograma SCJ
+🌄 MAÑANA:
+* Reunión con Cliente SCJ para ver avance de Fixturización
+* Reunión de Trello
+* Andrea Istúriz me dijo que la Isla de Colgate se va el Miércoles
+* 1. Saqué los triángulos para los parachoques de la Isla de Colgate
+* Realicé la pizarra con los proyectos pendientes
+* 2. Realicé la orden de producción de pintura de los muebles de Purina
+
+
+
+
+🌅 TARDE:
+* Realicé la lista con lo pendiente de Fixturización SCJ
+* 3. Envié el nuevo planograma del mueble Fixturización
+* Me puse a hacer las órdenes de producción de lo que anoté en la lista de SCJ
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (14) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX Saqué los triángulos para los parachoques de la Isla de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/10tkMzEH6E_76hOQHVcee4uo2i4mBF5sD?usp=drive_link
+
+
+2. PRODUCCIÓN: (15) 207/25 - NESTLÉ - EXHIBIDORES PRO PLAN Realicé la orden de producción de pintura de los muebles de Purina
+TRELLO: https://trello.com/c/YXqQqixf
+DRIVE: LISTO
+https://drive.google.com/drive/folders/18AQT6lJWRJF1yaTpad17TJKChkJjRSYY?usp=drive_link
+
+
+3. PLANO MECÁNICO: (01) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Envié el nuevo planograma del mueble Fixturización
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link
+
+
+🗓️ Martes 14 de abril del 2026
+🕒 PENDIENTE:
+* Terminar la OP de SCJ
+🌄 MAÑANA:
+* Terminé de montar todas las órdenes de producción de lo que faltaba de SCJ
+
+
+🌅 TARDE:
+* 1. Entregué todas las órdenes de producción para terminar los muebles de SCJ
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (16) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Entregué todas las órdenes de producción para terminar los muebles de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+🗓️ Miércoles 15 de abril del 2026
+🕒 PENDIENTE:
+* 207/25 NESTLÉ (OP) Purina Viniles
+* Enviar la orden de producción de los preciarios de Colgate
+* Revisar corte del cubo flash
+🌄 MAÑANA:
+* Empecé a montar los viniles de los muebles de Purina
+* Me llamó Samuel para colocar los parachoques de Pepsico
+* Todos los parachoques de Pepsico quedaron bien
+* Luego Samuel me llamó para ver los muebles de Colgate
+* Nos dimos cuenta que faltan los preciarios
+* Milka me pidió revisar el corte del cubo flash que se mandó en el 2022
+* Se armó una Isla para verificar que todas las piezas calcen
+* Nos dimos cuenta que las bandejas del glorificador giratorio están centradas al ojo
+* Los acrílicos espejo no cuadran. Reunión con Andrea y Dorian para resolver
+* Se decidió medir uno por uno y volver a sacar los espejos personalizados
+* Monté la orden de producción de los preciarios de las Islas de Colgate
+
+
+* Pablo me pidió que montara el corte con los puntos sobre el arte de Nescafé
+* José Gabriel me pidió confirmar los planos que van para China
+* Le envié a Aleska las modificaciones del plano mecánico solicitadas desde China
+* Nos reunimos Jose Gabriel, Aleska y yo en Detal para confirmar las medidas de China
+
+
+
+
+🌅 TARDE:
+* Andrés David me pidió acomodar el corte de la melamina de 18mm de SCJ
+* 1. Le di a Pablo el corte en SummaCut de Nescafé
+* Ayudé a acomodar el cubo flash, marqué con marcador donde deben ir los signados
+* 2. Entregué la orden de los preciarios del mueble Isla de Colgate a Andrés David.
+* Revisé los artes que me envió Aleska que van a China, se lo envié a José Gabriel
+* Medí uno por uno los glorificadores para identificarlos y sacar los espejos
+* Hablé con Samuel para verificar que se debe montar para reparar el glorificador Bicentenario
+* Samuel me explicó que hay que mandar la orden de pintura y la orden del vinil dorado
+* 3. Terminé de montar el vinil de Purina
+📂 CARPETAS:
+1. PRODUCCIÓN: (17) 148/26 - NESTLE - PORTAVASOS Y TRES EN UNO Le di a Pablo el corte en SummaCut de Nescafé
+TRELLO: https://trello.com/c/9aoyZ1bt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/14y-fJJPT7LaO-mpOXvE2WmaFa8j9yG_0?usp=drive_link
+
+
+2. PRODUCCIÓN: (18) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA Entregué la orden de los preciarios del mueble Isla de Colgate a Andrés David.
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/10tkMzEH6E_76hOQHVcee4uo2i4mBF5sD?usp=drive_link
+
+
+3. PRODUCCIÓN: (19) 207/25 - NESTLÉ - EXHIBIDORES PRO PLAN Terminé de montar el vinil de Purina
+TRELLO: https://trello.com/c/YXqQqixf
+DRIVE: LISTO
+https://drive.google.com/drive/folders/18AQT6lJWRJF1yaTpad17TJKChkJjRSYY?usp=drive_link
+
+
+🗓️ Jueves 16 de abril del 2026
+🕒 PENDIENTE:
+* Defensa
+🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 17 de abril del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* Reemplacé el control de proyectos 2026 por el Google Sheet
+* 1. Pablo me pidió sacar piezas para completar servilletero y dispensador
+* Monté la orden de producción para completar las piezas de Nescafé
+* Me llamó Oliver para armar los marcos de SCJ
+* Verónica me dijo que podemos sacar la muestra física de Chocolates Milka
+* Le pregunté a Andrés David por la plantilla de los ganchos de SCJ, se traspapeló
+* 2. Volví a imprimir la orden de producción de la plantilla de los ganchos de SCJ
+🌅 TARDE:
+* Modificaciones al mueble de SCJ
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (20) 148/26 - NESTLE - PORTAVASOS Y TRES EN UNO Pablo me pidió sacar piezas para completar servilletero y dispensador
+TRELLO: https://trello.com/c/9aoyZ1bt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/14y-fJJPT7LaO-mpOXvE2WmaFa8j9yG_0?usp=drive_link
+
+
+2. PRODUCCIÓN: (21) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Volví a imprimir la orden de producción de la plantilla de los ganchos de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+
+
+🗓️ Sábado 18 de abril del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 19 de abril del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 20 de abril del 2026
+🕒 PENDIENTE:
+* Orden de pintura de los marcos de SCJ
+* Reparación Bicentenario Santa Teresa
+🌄 MAÑANA:
+* Volví a poner el archivo de Control de Proyectos
+* Hacer cotización del dashboard de los workflows de Yar-Yur
+* Reunión de Trello
+* Fui con Enmary para grabar y tomarle fotos al mueble SCJ
+* Reunión con la cliente SCJ
+* 1. Ayudé a Andrea Torres con un rendimiento de exhibidores de mesa de cartón
+🌅 TARDE:
+* Fui con Enmary para grabar y tomarle fotos al mueble SCJ otra vez
+* Descargar los artes de Pepsico y organizar las subcarpetas
+* Hacer pantalla de diseño con Vanessa
+* 2. Sacar las órden de pintura y calibre 16 + vinil de nueva colección de SCJ 
+* 3. Sacar la órden de pintura y vinil ploteado de reparación Bicentenario Santa Teresa
+
+
+📂 CARPETAS:
+1. RENDIMIENTO: (02) 334/26 - TIKITIKI - EXHIBIDOR DE MESA EN CARTÓN Ayudé a Andrea Torres con un rendimiento de exhibidores de mesa de cartón
+TRELLO: https://trello.com/c/uGdD1EmF
+DRIVE: FALTA
+https://drive.google.com/drive/folders/10NbFq7wKwT0ItWUlYfGkUNBMp0aGmays?usp=drive_link
+
+
+2. PRODUCCIÓN: (22) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Sacar las órden de pintura y calibre 16 + vinil de nueva colección de SCJ 
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+3. PRODUCCIÓN: (23) 190/26 - SANTA TERESA - REPARACIÓN GLORIFICADOR BICENTENARIO Sacar la órden de pintura y vinil ploteado de reparación Bicentenario Santa Teresa
+TRELLO: https://trello.com/c/GJCye3zm
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1tYQMDMizqJxqZZTspYTvmcb6a8lEgudl?usp=drive_link
+
+
+🗓️ Martes 21 de abril del 2026
+🕒 PENDIENTE:
+* MUESTRA FÍSICA DE CHOCOLATES MILKA
+🌄 MAÑANA:
+* Descargue los artes que llegaron de Pepsico
+* Coloqué todos los artes que descargué de Pepsico en la RED
+* Organicé los proyectos de Pepsico Abril 2026 y creé un excel
+
+
+🌅 TARDE:
+* 1. Monté la orden de muestra física del dispensador grande de Chocolates Milka
+
+
+📂 CARPETAS:
+1. MUESTRA: (02) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Monté la orden de muestra física del dispensador grande de Chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1WSMJRzBNjbR5nYiXedrH54-9eBhkCwtt?usp=drive_link
+
+
+🗓️ Miércoles 22 de abril del 2026
+🕒 PENDIENTE:
+* MUESTRA FÍSICA DE CHOCOLATES MILKA
+🌄 MAÑANA:
+* 1. Envié la orden de muestra física del dispensador grande de Chocolates Milka
+* 2. Monté las Muestras de color de Pepsico de Valparaiso
+* 3. Pablo me pidió sacar un glorificador para las Islas de Colgate
+
+
+🌅 TARDE:
+* 4. Realicé las capturas de pantalla de SCJ se las envié a Enmary
+* Enmary me pidió que hiciera el plano mecánico de las cajas de luz de SCJ
+* 084/26 INMARKET MF2 MEDIANA EN PROCESO
+* Milka me dijo que el corpóreo de PURINA está aprobado
+
+
+📂 CARPETAS:
+1. MUESTRA: (03) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Envié la orden de muestra física del dispensador grande de Chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1WSMJRzBNjbR5nYiXedrH54-9eBhkCwtt?usp=drive_link
+
+
+2. MUESTRA: (04) 339/26 - PEPSICO - MUEBLES VALPARAÍSO Monté las Muestras de color de Pepsico de Valparaiso
+TRELLO: https://trello.com/c/goXrGyvi
+LISTO: LISTO
+https://drive.google.com/drive/folders/1PYfeVkFaej2h7awMc-HPK5Q5WAwfWN7W?usp=drive_link
+
+
+3. PRODUCCIÓN: (24) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA Pablo me pidió sacar un glorificador para las Islas de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/10tkMzEH6E_76hOQHVcee4uo2i4mBF5sD?usp=drive_link
+
+
+4. VISUAL: (02) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Realicé las capturas de pantalla de SCJ se las envié a Enmary
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1BvQ5d7FB75TPIlT904UzNLW8LijDXCPW?usp=drive_link
+
+
+🗓️ Jueves 23 de abril del 2026
+🕒 PENDIENTE:
+* 305/26 PEPSICO REPARACIÓN OP 
+* CORPÓREO DE PURINA
+🌄 MAÑANA:
+* Me puse a organizar las muestras de color de Pepsico
+* Busqué las medidas de los muebles de Ruffles y se las di a Guillermo
+* 1. Envié la orden de muestra física mediana de Chocolates Milka
+
+
+🌅 TARDE:
+* 2. Envié el plano con las medidas de las cajas de luz de SCJ
+* 3. Monté la orden de producción del corpóreo de PURINA
+* 4. Monté la orden de producción de las reparaciones de Pepsico
+
+
+
+
+📂 CARPETAS:
+1. MUESTRA: (05) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Envié la orden de muestra física mediana de Chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1WSMJRzBNjbR5nYiXedrH54-9eBhkCwtt?usp=drive_link
+
+
+2. PLANO MECÁNICO: (02) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Envié el plano con las medidas de las cajas de luz de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link
+
+
+3. PRODUCCIÓN: (25) 359/26 - NESTLE - RECOMPRA DE CORPOREO PURINA Monté la orden de producción del corpóreo de PURINA
+TRELLO: https://trello.com/c/HGEUihQV
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1V-brc_GMJxS_ncSv7cniCsEoigSHQUjf?usp=drive_link
+
+
+4. PRODUCCIÓN: (26) 305/26 - PEPSICO - REPARACIÓN LOMAS DEL SOL Monté la orden de producción de las reparaciones de Pepsico
+TRELLO: https://trello.com/c/ztLuXhdK
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1btEgEhS504vFAXwTCNTbwcEDlihxJNju?usp=drive_link
+
+
+🗓️ Viernes 24 de abril del 2026
+🕒 PENDIENTE:
+* Ordenes de Pepsico
+🌄 MAÑANA:
+* Me llamó Aleska para que le explique como van los artes de Chocolates Milka
+* Le mostré a Aleska donde están los cortes que envié para que se guíe para hacer el arte
+* Carelis me dijo que podía ayudarme entonces le pedí que adapte los artes de Cheese Tris
+* También le pedí a Carelis que haga el fotomontaje de Cheese Tris de la pared
+* Me puse a montar el corte de Carrusel
+* 1. Entregué la orden de producción de Carrusel
+
+
+🌅 TARDE:
+* Le expliqué a Dorian que envié la orden de producción del corpóreo de PURINA
+* Me puse a montar las órdenes del checkout de NatuChips y el mueble de Cheese Tris
+* 2. Entregué la orden de corte del CheckOut de NatuChips
+* Le indiqué a Carelis que montara el vinil para el mueble de Cheese Tris
+* 3. Entregué la orden completa del mueble de Cheese Tris
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (27) 340/26 - PEPSICO - REVESTIMIENTO DE ANAQUEL Y COLUMNA CARRUSEL Entregué la orden de producción de Carrusel
+TRELLO: https://trello.com/c/oB6hKIEJ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/19qpt1dFXYZNfHwUYaRxKhdL-xBAljnZU?usp=drive_link
+
+
+2. PRODUCCIÓN: (28) 336/26 - PEPSICO - MUEBLE CHECKOUT SANTA ROSA DE LIMA Entregué la orden de corte del CheckOut de NatuChips
+TRELLO: LISTO
+https://drive.google.com/drive/folders/192ogdX6XYxWyu2qSuy3L55U7jOgZGtxq?usp=drive_link
+
+
+3. PRODUCCIÓN: (29) 347/26 - PEPSICO - MUEBLE CHEESE TRIS LUXOR LA MORA MARACAY Entregué la orden completa del mueble de Cheese Tris
+TRELLO: https://trello.com/c/POrS8oBA
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1OW2nzs3o8cSxy8k2Sz1TqhI2WjYXMyF9?usp=drive_link
+
+
+
+
+🗓️ Sábado 25 de abril del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 26 de abril del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 27 de abril del 2026
+🕒 PENDIENTE:
+* 336/26 - PEPSICO - MUEBLE CHECKOUT SANTA ROSA DE LIMA
+* 348/26 - PEPSICO - REVESTIMIENTO ANAQUELES EUROMERCADO MARACAY
+🌄 MAÑANA:
+* Actualicé los enlaces de los proyectos de abril
+* Reunión de Trello
+
+
+🌅 TARDE:
+* 1. Monté el vinil del mini mueble de NatuChips
+* 2. Monté el corte de revestimiento Euromercado
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (30) 336/26 - PEPSICO - MUEBLE CHECKOUT SANTA ROSA DE LIMA Monté el vinil del mini mueble de NatuChips
+TRELLO: https://trello.com/c/R39XmRhI
+DRIVE: LISTO
+https://drive.google.com/drive/folders/192ogdX6XYxWyu2qSuy3L55U7jOgZGtxq?usp=drive_link
+
+
+2. PRODUCCIÓN: (31) 348/26 - PEPSICO - REVESTIMIENTO ANAQUELES EUROMERCADO MARACAY Monté el corte de revestimiento Euromercado
+TRELLO: https://trello.com/c/86vGbrLh
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1Kh5UnjpRDNsfk2_K5c0yqvPretJ14huw?usp=drive_link
+
+
+🗓️ Martes 28 de abril del 2026
+🕒 PENDIENTE:
+* Presolicitud de Grado
+🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 29 de abril del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* Me llamó Oliver para decirme que el cabezal de Cheese Tris salió malo
+* Monté el cabezal de Cheese Tris y el vinil junto a la recompra de Carrusel
+* Llegó Enmary para decirme los comentarios del cliente de SCJ
+* Enmary me explica que escogieron las cajas como cenefas, sin arte, color de fondo con texto.
+* Me puse a montar la recompra de Carrusel 2001
+* 1. Entregué la OP del cabezal de Cheese Tris corte y vinil
+* 2. Entregué la OP de Carrusel 2001 corte y vinil
+
+
+🌅 TARDE:
+* Vanesa me indicó que ya tiene la autorización de Visual de SCJ para las cajas de luz
+* Revisé las órdenes de producción que se han entregado de Pepsico de los proyectos de Abril
+* 3. Montar la OP de corte de revestimiento de Euromercado
+* Me puse a hacer el visual de SCJ
+* Visual de Natuchips
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (32) 347/26 - PEPSICO - MUEBLE CHEESE TRIS LUXOR LA MORA MARACAY Entregué la OP del cabezal de Cheese Tris corte y vinil
+TRELLO: https://trello.com/c/POrS8oBA
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1OW2nzs3o8cSxy8k2Sz1TqhI2WjYXMyF9?usp=drive_link
+
+
+2. PRODUCCIÓN: (33) 340/26 - PEPSICO - REVESTIMIENTO DE ANAQUEL Y COLUMNA CARRUSEL Entregué la OP de Carrusel 2001 corte y vinil
+TRELLO: https://trello.com/c/oB6hKIEJ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/19qpt1dFXYZNfHwUYaRxKhdL-xBAljnZU?usp=drive_link
+
+
+3. PRODUCCIÓN: (34) 348/26 - PEPSICO - REVESTIMIENTO ANAQUELES EUROMERCADO MARACAY Montar la OP de corte de revestimiento de Euromercado
+TRELLO: https://trello.com/c/86vGbrLh
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Kh5UnjpRDNsfk2_K5c0yqvPretJ14huw?usp=drive_link
+
+
+4. VISUAL: (03) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Me puse a hacer el visual de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1fPPh9u0JF6WdRpS8hTSqcrIn7fEBe6U5?usp=drive_link
+
+
+
+
+🗓️ Jueves 30 de abril del 2026
+🕒 PENDIENTE:
+* 462/25 - PEPSICO - MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL
+* 353/26 - DIAGEO - PROPUESTA TECNOLÓGICA CON PANTALLAS, PROYECTOR
+🌄 MAÑANA:
+* 1. Realicé el plano mecánico de las cajas de luz de SCJ para la reunión de Enmary 
+* 2. Realicé las modificaciones solicitadas en la reunión de Enmary al arte de las cajas de luz
+* 3. Calculé el rendimiento de un exhibidor de cartón para Zaida
+
+
+🌅 TARDE:
+* 4. Envié a Lorena las nuevas propuestas visuales del mueble BT de 7Up y NatuChips
+* 5. Realicé con IA la propuesta para el mueble de Buchanans
+
+
+📂 CARPETAS:
+1. PLANO MECÁNICO: (03) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Realicé el plano mecánico de las cajas de luz de SCJ para la reunión de Enmary 
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y_wWX2rhPXyHr-mTkwlr7bqgd_tKMbwK?usp=drive_link
+
+
+2. VISUAL: (04) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Realicé las modificaciones solicitadas en la reunión de Enmary al arte de las cajas de luz
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1cHpObHxs4cZ13nEe2fS_oVcz9o1aXEFA?usp=drive_link
+
+
+3. RENDIMIENTO: (03) TENTATIVO 007/26 - EUROMERCADO - EXHIBIDOR DE CARTÓN Calculé el rendimiento de un exhibidor de cartón para Zaida
+TRELLO: https://trello.com/c/1lBMprBi
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ajcrj5rMvbtGgAPp7AdEoRAF8Ik20GET?usp=sharing
+
+
+4. VISUAL: (05) 462/25 - PEPSICO - MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL Envié a Lorena las nuevas propuestas visuales del mueble BT de 7Up y NatuChips
+TRELLO: https://trello.com/c/KTrjOpTQ
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1gki-JWLIZpQNe9Kd9nC8GHI4KMFxfalp?usp=drive_link
+
+
+5. VISUAL: (06) 353/26 - DIAGEO - PROPUESTA TECNOLÓGICA CON PANTALLAS, PROYECTOR Realicé con IA la propuesta para el mueble de Buchanans
+TRELLO: https://trello.com/c/A5UFKzpM
+DRIVE: FALTA
+https://drive.google.com/drive/folders/15VZ4Wm8jIncgfHSknVHFMU7ibaxXD1Zd?usp=drive_link
+
+
+
+
+🗓️ MAYO 2026
+MAYO 2026
+LUN
+	MAR
+	MIÉR
+	JUE
+	VIE
+	SÁB
+	DOM
+	
+
+	
+
+	
+
+	
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	29
+	30
+	31
+	
+
+Tabla
+	Trabajo de Diseño
+	Filas
+	21
+	RENDIMIENTO.
+	03
+	22
+	VISUAL.
+	08
+	23
+	PLANO MECÁNICO.
+	00
+	24
+	MUESTRA.
+	09
+	25
+	PRODUCCIÓN.
+	11
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Viernes 01 de mayo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 02 de mayo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 03 de mayo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Lunes 04 de mayo del 2026
+🕒 PENDIENTE:
+* 026/26 - SCJ - MUEBLE FIXTURIZACIÓN
+🌄 MAÑANA:
+* Imprimí la rectificación de medidas de la Muralla
+* Lorena me pidió que preparemos la muestra de color de NatuChips la Muralla
+* Me puse a desarrollar el cajón central para SCJ
+* Monté la OP del cajón central de SCJ
+
+
+🌅 TARDE:
+* 1. Entregué la orden de producción del cajón central de SCJ
+* Verónica me acordó preguntarle a Dorian por la muestra del dispensador de chocolates Milka
+* Jhonatan me llamó para que le indicara cómo va el corpóreo de PURINA
+* Vi que Andrés David estaba picando las piezas del dispensador de Chocolates Milka
+* Enmary me pidió ayuda con el exhibidor de Regional Sed Tu Mismo de Cerveza Zulia
+* 2. Saqué la muestra de color de Pepsico NatuChips la Muralla
+* Me entregaron las piezas del dispensador de Chocolates Mila
+* Fui a armar el dispensador de Chocolates Milka con Verónica
+* Hablé con Pablo y me recomendó sacar las cajas de luz en MDF pintado de blanco
+* Empecé a montar las cajas de luz de SCJ en MDF
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (01) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Entregué la orden de producción del cajón central de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+2. MUESTRA: (01) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Sacar la muestra de color de Pepsico NatuChips la Muralla
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1mC6cL-CeqjX_hcvW4gzKUjZH_MtBtg4o?usp=drive_link
+
+
+
+
+🗓️ Martes 05 de mayo del 2026
+🕒 PENDIENTE:
+* 026/26 - SCJ - MUEBLE FIXTURIZACIÓN
+🌄 MAÑANA:
+* Terminé de armar la muestra del dispensador de Chocolates Milka
+* 1. Mandé a cortar en la Summa F16 los bolsillos de plástico Mica
+
+
+🌅 TARDE:
+* El señor Ricardo me pidió la orden de pintura del mueble NatuChips Pequeño
+* 2. Le entregué al señor Ricardo la orden de pintura verde NatuChips
+* 3. Mandé las cajas de Luz de SCJ
+* 4. Hacer visual de Columna de Colgate
+* Andrea me dio los productos para hacer las huellas en Polyfan para el glorificador giratorio
+📂 CARPETAS:
+1. MUESTRA: (02) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Mandé a cortar en la Summa F16 los bolsillos de plástico Mica
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1WSMJRzBNjbR5nYiXedrH54-9eBhkCwtt?usp=drive_link
+
+
+2. PRODUCCIÓN: (02) 336/26 - PEPSICO - MUEBLE CHECKOUT SANTA ROSA DE LIMA Le entregué al señor Ricardo la orden de pintura verde NatuChips
+TRELLO: https://trello.com/c/R39XmRhI
+DRIVE: LISTO
+https://drive.google.com/drive/folders/192ogdX6XYxWyu2qSuy3L55U7jOgZGtxq?usp=drive_link
+
+
+3. PRODUCCIÓN: (03) 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Mandé las cajas de Luz de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+4. VISUAL: (01) 936/25 - COLGATE - INTERVENCIÓN DE COLUMNAS Hacer visual de Columna de Colgate
+TRELLO: https://trello.com/c/aCfM5PVS
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1h8l5peEs6a1nB8XjULC2_wUH8nZTvri4?usp=drive_link
+
+
+
+
+🗓️ Miércoles 06 de mayo del 2026
+🕒 PENDIENTE:
+* 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS
+🌄 MAÑANA:
+* Identifiqué los muebles de Pepsico
+* Fui a Pintura para explicarle al señor Ricardo como van pintados los adornos de Pepsico
+* Pablo me pidió verificar la lista de Pepsico, vimos que es lo que sí está y qué es lo que falta
+* Marcamos con puntos lo que faltaba y me pidió que averiguara con Andrés David
+* Andrés David me dijo lo que ya estaba y Pablo me pidió ponerlo en el pasillo
+* Le bajé al señor Ricardo las piezas del revestimiento de NatuChips
+* 1. Visual de Columna Colgate
+
+
+🌅 TARDE:
+* Milka me pidió el arte de Dolce Gusto. Le envié por correo el arte.
+* Continué con el visual de la columna de Colgate
+
+
+📂 CARPETAS:
+1. VISUAL: (02) 936/25 - COLGATE - INTERVENCIÓN DE COLUMNAS Visual de Columna Colgate
+TRELLO: https://trello.com/c/aCfM5PVS
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1h8l5peEs6a1nB8XjULC2_wUH8nZTvri4?usp=drive_link
+
+
+
+
+🗓️ Jueves 07 de mayo del 2026
+🕒 PENDIENTE:
+* 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS
+🌄 MAÑANA:
+* 1. Envié el visual de la intervención de columnas de Colgate
+* Terminé de armar la muestra pequeña de chocolates Milka con Eider
+* Me puse con el huellero de la Isla de Colgate
+* Lorena me pidió actualizar el visual de BT con los cubos
+* Andrés David me entregó las piezas de la muestra grande de Chocolates Milka
+* 2. Me puse con Verónica a armar la muestra física grande de Chocolates Milka
+
+
+🌅 TARDE:
+* Andrea envió un correo con las modificaciones que solicitó el cliente de la columna
+* 3. Entregué la orden del huellero de la Isla de Colgate
+* Me puse con las modificaciones del visual de BT 7Up NatuChips
+* 4. Milka me pidió que la ayudara con el rendimiento del botadero para Nestlé
+* Hice una maqueta en papel para ver cómo sería el botadero de Nestlé
+* Nos reunimos con Pablo para que le explique a Milka por que no es viable hacerlo en Yar-Yur
+* Continué con el visual de BT de 7Up NatuChips
+📂 CARPETAS:
+1. VISUAL: (03) 936/25 - COLGATE - INTERVENCIÓN DE COLUMNAS Envié el visual de la intervención de columnas de Colgate
+TRELLO: https://trello.com/c/aCfM5PVS
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1h8l5peEs6a1nB8XjULC2_wUH8nZTvri4?usp=drive_link
+
+
+2. MUESTRA: (03) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Me puse con Verónica a armar la muestra física grande de Chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1WSMJRzBNjbR5nYiXedrH54-9eBhkCwtt?usp=drive_link
+
+
+3. PRODUCCIÓN: (04) 032/26 - COLGATE - EXHIBIDOR TIPO ISLA PROTEX/SPEED STICK PREMIUM Entregué la orden del huellero de la Isla de Colgate
+TRELLO: https://trello.com/c/b9rLxy4Z
+DRIVE: LISTO
+https://drive.google.com/drive/folders/10tkMzEH6E_76hOQHVcee4uo2i4mBF5sD?usp=drive_link
+
+
+4. RENDIMIENTO: (01) TENTATIVO 008/26 - NESTLE - BOTADERO Milka me pidió que la ayudara con el rendimiento del botadero para Nestlé
+TRELLO: https://trello.com/c/nSLgBzNk
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1WAkPUPrzeQmpljhFj0T7DiUzt26eB55T?usp=drive_link
+
+
+
+
+
+
+🗓️ Viernes 08 de mayo del 2026
+🕒 PENDIENTE:
+* 353/26 - DIAGEO - PROPUESTA TECNOLÓGICA
+🌄 MAÑANA:
+* 1. Le envié a Lorena el visual de BT 7Up NatuChips modificado a Lorena
+* 2. Terminé la muestra física grande de Chocolates Milka
+* Me puse con la orden de producción del mueble de la Muralla
+
+
+🌅 TARDE:
+* 3. Continué con el desarrollo del mueble de la Muralla de Pepsico
+
+
+📂 CARPETAS:
+1. VISUAL: (04) 462/25 - PEPSICO - MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL  Le envié a Lorena el visual de BT 7Up NatuChips modificado a Lorena
+TRELLO: https://trello.com/c/KTrjOpTQ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gki-JWLIZpQNe9Kd9nC8GHI4KMFxfalp?usp=drive_link
+
+
+2. MUESTRA: (04) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Terminé la muestra física grande de Chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+
+
+3. PRODUCCIÓN: (05) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Continué con el desarrollo del mueble de la Muralla de Pepsico
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1pDhFnoULaBiXUmgfi5UVzzj-qr8wNrN_?usp=drive_link
+
+
+
+
+🗓️ Sábado 09 de mayo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 10 de mayo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 11 de mayo del 2026
+🕒 PENDIENTE:
+* CORTE MUEBLE MURALLA
+🌄 MAÑANA:
+* Verifiqué la medida de los cajones de Viva Supercentro
+* Reunión de Trello
+* Continué con el desarrollo del mueble de la Muralla
+* 1. Realicé el fotomontaje de Euromercado
+
+
+🌅 TARDE:
+* Continué con el desarrollo del mueble de la Muralla
+* Lorena me dijo que el color de la Muralla no está aprobado
+* Lorena me dijo que vamos a usar el color de los guacales de Yarelly
+* 2. Continué con el desarrollo del mueble de la Muralla
+
+
+
+
+📂 CARPETAS:
+1. VISUAL: (05) 348/26 - PEPSICO - REVESTIMIENTO ANAQUELES EUROMERCADO MARACAY Realicé el fotomontaje de Euromercado
+TRELLO: https://trello.com/c/86vGbrLh
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ac4Oz_G8TeWCF7tEvBnZL0DNXn1cHpQU?usp=drive_link
+
+
+2. PRODUCCIÓN: (06) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Continué con el desarrollo del mueble de la Muralla
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1pDhFnoULaBiXUmgfi5UVzzj-qr8wNrN_?usp=drive_link
+
+
+
+
+🗓️ Martes 12 de mayo del 2026
+🕒 PENDIENTE:
+* VINIL MUESTRA 2 MUEBLE MURALLA
+🌄 MAÑANA:
+* 1. Entregué la muestra de color 2 de la Muralla
+* Continué con el desarrollo del mueble de la Muralla
+
+
+🌅 TARDE:
+* 2. Realicé el rendimiento para Verónica de los exhibidores de cartón para Chocolates Milka
+* 3. Envié la muestra de color de Dimassi de los exhibidores Kotex
+* Verónica me dijo que quieren hacer un exhibidor como el de Chocolates Kron
+
+
+📂 CARPETAS:
+1. MUESTRA: (05) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIP Entregué la muestra de color 2 de la Muralla
+TRELLO: ttps://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1mC6cL-CeqjX_hcvW4gzKUjZH_MtBtg4o?usp=drive_link
+
+
+2. RENDIMIENTO: (02) 428/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES EN CARTÓN Realicé el rendimiento para Verónica de los exhibidores de cartón para Chocolates Milka
+TRELLO: https://trello.com/c/1g14Jfag
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1bmg2UpWtREmj6K38x41ZIu8MFf_K25Gf?usp=drive_link
+
+
+3. MUESTRA: (06) 436/26 - DIMASSI - REVESTIMIMENTO DE EXHIBIDORES KOTEX CON NUEVA CAMPAÑA Envié la muestra de color de Dimassi de los exhibidores Kotex
+TRELLO: https://trello.com/c/4gVLxBVg
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1WoJbDlOJgEmRLhIgil5lhrY_S1vkPQY-?usp=drive_link
+
+
+🗓️ Miércoles 13 de mayo del 2026
+🕒 PENDIENTE:
+* Entregar OP de la Muralla
+* Montar la OP de tres Islas más de Colgate
+🌄 MAÑANA:
+* Continué montando la OP de la Muralla
+* 1. Terminé de montar el mueble de la Muralla de NatuChips
+* Empecé a montar la OP de la recompra de las Islas de Colgate
+
+
+🌅 TARDE:
+* Fui con Alexander para explicarle cómo van las cajas de luz de Fix SCJ
+* 2. Entregué la OP de la recompra de las 3 Islas de Colgate y los huelleros
+* Monté la orden de muestra del exhibidor de cartón de Chocolates Milka
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (07) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Terminé de montar el mueble de la Muralla de NatuChips
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1pDhFnoULaBiXUmgfi5UVzzj-qr8wNrN_?usp=drive_link
+
+
+2. PRODUCCIÓN: (08) 431/26 - COLGATE - RECOMPRA DE 3 ISLAS DE CUIDADO PERSONAL Entregué la OP de la recompra de las 3 Islas de Colgate y los huelleros
+TRELLO: https://trello.com/c/h6xSobUK
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1kBkL8k_o8L7In-EQYTeAoAbu7GBYuj07?usp=drive_link
+
+
+
+
+🗓️ Jueves 14 de mayo del 2026
+🕒 PENDIENTE:
+* MODIFICACIONES COLUMNA COLGATE
+* Muestra de Ristra Migren
+* Muestra fìsica de las tres cajitas de Chocolates Milka
+
+
+🌄 MAÑANA:
+* 1. Terminé el visual de Intervención de Columna de Colgate
+* 2. Monté la muestra física de la ristra de Migren
+
+
+🌅 TARDE:
+* Diagramé el arte del exhibidor de cartón de Chocolates Milka
+* 3. Entregué la orden de muestra física del exhibidor de Chocolates Milka de cartón
+* Monté la orden de muestra del exhibidor de cartón de Chocolates Milka con compartimiento
+* Verónica me dijo que el cliente le cambió la seña, pasó a espera el compartimiento
+* Me puse a investigar que se puede proponer para el mueble de Diageo
+* Generé imagenes para el exhibidor de Diageo con pantallas y proyector
+
+
+📂 CARPETAS:
+1. VISUAL: (06) 936/25 - COLGATE - INTERVENCIÓN DE COLUMNAS Terminé el visual de Intervención de Columna de Colgate
+TRELLO: https://trello.com/c/aCfM5PVS
+DRIVE: LISTO
+https://drive.google.com/drive/folders/15v3HSRrnh9VTTCOXDvcf3tFUb1xu-k-q?usp=drive_link
+
+
+2. MUESTRA: (07) 423/26 - GRUPO LETI - RISTRAS MIGREN DOBLE CARGA Y SARGENTOS TIPO GANCHO Monté la muestra física de la ristra de Migren
+TRELLO: https://trello.com/c/WK7IrXis
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1u7AA3yovWSPaaKlIt4MGo-lrGzG8BPW0?usp=drive_link
+
+
+3. MUESTRA: (08) 428/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES EN CARTÓN Entregué la orden de muestra física del exhibidor de Chocolates Milka de cartón
+TRELLO: https://trello.com/c/1g14Jfag
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1oBYYM9yuzG7i9xr3IjAvsK16V7Yv-Dag?usp=drive_link
+
+
+
+
+
+
+
+
+🗓️ Viernes 15 de mayo del 2026
+🕒 PENDIENTE:
+* Visual de Buchanans
+* Muestra física de Dispensador de Chocolates Milka
+🌄 MAÑANA:
+* Seguí modificando el visual de Buchanans con Gemini
+* Ayudé a Verónica con el rendimiento del revestimiento de St Moritz
+
+
+🌅 TARDE:
+* Continué con la propuesta para Diageo
+* Envié la propuesta de Diageo
+
+
+📂 CARPETAS:
+1. VISUAL: (07) 353/26 - DIAGEO - PROPUESTA TECNOLÓGICA CON PANTALLAS, PROYECTOR Envié la propuesta de Diageo
+TRELLO: https://trello.com/c/A5UFKzpM
+DRIVE: LISTO
+https://drive.google.com/drive/folders/15VZ4Wm8jIncgfHSknVHFMU7ibaxXD1Zd?usp=drive_link
+
+
+🗓️ Sábado 16 de mayo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 17 de mayo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 18 de mayo del 2026
+🕒 PENDIENTE:
+* OP Viniles de NatuChips La Muralla
+🌄 MAÑANA:
+* Realicé la cotización del sistema de información para el Tunal
+* Subi el catálogo de Bandejas y Carteleras a Genially
+* REUNIÓN DE TRELLO
+
+
+🌅 TARDE:
+* 1. Me puse a montar los viniles del mueble de NatuChips de la Muralla
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (09) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Me puse a montar los viniles del mueble de NatuChips de la Muralla
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1pDhFnoULaBiXUmgfi5UVzzj-qr8wNrN_?usp=drive_link
+
+
+🗓️ Martes 19 de mayo del 2026
+🕒 PENDIENTE:
+* Visual de Mueble Desayunos para Nestlé
+🌄 MAÑANA:
+* Me puse a desarrollar el mueble para Desayunos de Nestlé
+* Vanesa vino a buscar la copia de la muestra de color de Kotex
+* Zaida me pidió los rendimientos de los viniles de Kotex
+* Vanesa me pidió la muestra de la Ristra de Migren
+* Hablé con Diego y me dijo que va a imprimir los bolsillos faltantes en la tarde
+* Le expliqué a Andrea y me dijo que veía el color del bolsillo sospechoso
+* Hablé con Diego y quedamos que en la tarde le voy a enviar una nueva orden
+* Continué con el visual de Desayunos
+* Puse a renderizar el visual de Desayunos
+* 1. Le entregué a Diego la orden de muestra de los bolsillos de la ristra de Migren
+
+
+🌅 TARDE:
+* Me puse con la OP del vinil de NatuChips La Muralla
+* Ayudé a Carelis con el troquel de su empaque para Celiveca
+* Reunión con Verónica y el cliente de Chocolates Milka
+* Verónica me pidió el rendimiento de la bandeja acostada que solicitó el cliente
+* Recibí el correo de Zaida con la cotización de Kotex
+* Vino Oliver a ver cómo va armado el mueble de NatuChips de la Muralla
+* 2. Envié el visual del mueble para Nestlé Desayunos
+* Continué con la OP del vinil de NatuChips La Muralla
+📂 CARPETAS:
+1. MUESTRA: (09) 423/26 - GRUPO LETI - RISTRAS MIGREN DOBLE CARGA Y SARGENTOS TIPO GANCHO Le entregué a Diego la orden de muestra de los bolsillos de la ristra de Migren
+TRELLO: https://trello.com/c/WK7IrXis
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1u7AA3yovWSPaaKlIt4MGo-lrGzG8BPW0?usp=drive_link
+
+
+2. VISUAL: (08) 432/26 - NESTLE - SUBASTA DISRUPTIVA DESAYUNOS Envié el visual del mueble para Nestlé Desayunos
+TRELLO: https://trello.com/c/9H6KG0zz
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1wj4n5Emjshwbde7dKVCer0LAoV_kJ148?usp=drive_link
+
+
+
+
+🗓️ Miércoles 20 de mayo del 2026
+🕒 PENDIENTE:
+* Rendimiento Bandeja Chocolates Milka
+* OP del vinil de NatuChips de la Muralla
+* OP del vinil de KOTEX
+
+
+🌄 MAÑANA:
+* Me llamó Oliver para armar el mueble de NatuChips de la Muralla
+* Me puse con Oliver a armar el mueble de la Muralla
+* Le dije a Pablo que el vinil del mueble se lo envío en la tarde
+
+
+🌅 TARDE:
+* 1. Realicé el rendimiento de la bandeja acostada de Chocolates Milka
+* 2. Terminé de montar la OP de vinil de NatuChips La Muralla
+* 3. Monté la OP de Kotex de los 6 viniles de los cuadrados 
+
+
+📂 CARPETAS:
+1. RENDIMIENTO: (03) 428/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES EN CARTÓN/ RENDIMIENTO BANDEJA Realicé el rendimiento de la bandeja acostada de Chocolates Milka
+TRELLO: https://trello.com/c/1g14Jfag
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1bmg2UpWtREmj6K38x41ZIu8MFf_K25Gf?usp=drive_link
+
+
+2. PRODUCCIÓN: (10) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Terminé de montar la OP de vinil de NatuChips La Muralla
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1pDhFnoULaBiXUmgfi5UVzzj-qr8wNrN_?usp=drive_link
+
+
+3. PRODUCCIÓN: (11) 436/26 - DIMASSI - REVESTIMIENTO DE EXHIBIDORES KOTEX Monté la OP de Kotex
+TRELLO: https://trello.com/c/4gVLxBVg
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1gZLo4Mnd0jVlvBzl0CEitPlMxlfoyfTe?usp=drive_link
+
+
+🗓️ Jueves 21 de mayo del 2026
+🕒 PENDIENTE:
+* Montar el vinil de KOTEX 5 caras
+* Desarrollo de dispensador para Chocolates Milka
+🌄 MAÑANA:
+* Me reuní con Pablo para ver el vinil de KOTEX
+* Pablo me recomendó colocar las palabras más pequeñas por sangrado
+* 1. Entregué la OP del vinil de Dimassi del revestimiento de KOTEX
+* Me puse con el visual del mueble de la Muralla de NatuChips
+* 2. Envié el visual de NatuChips La Muralla al correo producción Yar-Yur
+
+
+🌅 TARDE:
+* Me puse a montar el vinil de las 5 caras de KOTEX
+* Entregué la OP del revestimiento de 5 caras de KOTEX
+* Le agregué al visual de NatuChips La Muralla el Sticker de Jacks
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (12) 436/26 - DIMASSI - REVESTIMIENTO DE EXHIBIDORES KOTEX Entregué la OP del vinil de Dimassi del revestimiento de KOTEX
+TRELLO: https://trello.com/c/4gVLxBVg
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gZLo4Mnd0jVlvBzl0CEitPlMxlfoyfTe?usp=drive_link
+
+
+2. VISUAL: (08) 053/26 - PEPSICO - MUEBLE MURALLA NATUCHIPS Envié el visual de NatuChips La Muralla al correo producción Yar-Yur
+TRELLO: https://trello.com/c/jnKUhXD8
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1_OLMsOORkzWeferNWg-Dd4gU1q3o761z?usp=drive_link
+🗓️ Viernes 22 de mayo del 2026
+🕒 PENDIENTE:
+* Muestra física del dispensador de Chocolates Milka
+🌄 MAÑANA:
+* Me puse a desarrollar la nueva muestra física del dispensador de Chocolates Milka
+
+
+🌅 TARDE:
+* 1. Entregué la orden de muestra física del dispensador de Chocolates Milka
+
+
+📂 CARPETAS:
+1. MUESTRA: (10) 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Entregué la orden de muestra física del dispensador de Chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ZhHcSL7jfA3oDF_SLtQX01Ok4pS6H86U?usp=drive_link
+
+
+🗓️ Sábado 23 de mayo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 24 de mayo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 25 de mayo del 2026
+🕒 PENDIENTE:
+* Preguntar a Zaida por la bandeja de PAI de Kotex que estaba partida
+🌄 MAÑANA:
+* Le pasé a Yarelly el maestro de Sledo de Buchanans
+* Le di a Pablo el glorificador de acrílico del mueble Fix de SCJ
+* Pablo me pidió que le volviera a pasar la orden del letrero Nueva Colección
+* REUNIÓN DE TRELLO
+* Realicé el diseño de la naranja en MDF de 3mm para Natulac para hablar con Pablo
+* Andrés David me dió los bolsillo de la Ristra de Migren
+* Fui donde Tiby para doblar los bolsillos y luego armar la ristra
+* Me reuní con Zaida y le expliqué que hay que sacar una bandeja para reparar Kotex
+* 1. Monté la OP de la bandeja de Kotex para su reparación
+* Me dijo Pablo que Andrés David no tiene el archivo de corte de Nueva Colección de SCJ
+* Andrea Isturiz pidió las cintas en editable de Farmatodo y Locatel
+* Me ofrecí a entregarle esas cintas en editable de Farmatodo y Locatel por correo a Andrea
+* Coloqué el archivo de corte de Nueva Colección en la red de corte
+
+
+🌅 TARDE:
+* 2. Le entregué la OP de corte del Nueva Colección de SCJ a Andrés David
+* Me puse a acomodar las cintas en editable de Farmatodo para pasarle a Andrea
+* 3. Le pasé a Andrea las cintas de Farmatodo en Editable
+* Me puse a imprimir una por una las rectificaciones de medidas del proyecto de Subasta de Nestlé
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: () 436/26 - DIMASSI - REVESTIMIENTO DE EXHIBIDORES KOTEX Monté la OP de la bandeja de Kotex para su reparación
+TRELLO: https://trello.com/c/4gVLxBVg
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gZLo4Mnd0jVlvBzl0CEitPlMxlfoyfTe?usp=drive_link
+
+
+2. PRODUCCIÓN: () 026/26 - SCJ - MUEBLE FIXTURIZACIÓN Le entregué la OP de corte del Nueva Colección de SCJ a Andrés David
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+3. PLANO: ()  TENTATIVO 009/26 - COLGATE - CINTAS EN EDITABLE FARMATODO Y LOCATEL Le pasé a Andrea las cintas de Farmatodo en Editable
+TRELLO: https://trello.com/c/ETv3RGot
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1y02JXRRrDOMob_4_g8vTQDh1U6dJyeZc?usp=drive_link
+
+
+
+
+🗓️ Martes 26 de mayo del 2026
+🕒 PENDIENTE:
+* Rendimiento de NatuChips
+* Rendimiento de Natulac
+🌄 MAÑANA:
+* Organicé las rectificaciones de medidas del proyecto de Nestlé
+* Busqué donde Tiby los bolsillos de la muestra de Migren
+* Enmary me dijo que se olvidaron los preciarios de SCJ
+* 1. Monté la orden de los preciarios de acrílico transparente de SCJ
+
+
+🌅 TARDE:
+* 2. Rendimiento de NatuChips Río Lomas del Sol
+* 3. Rendimiento Mueble Natulac
+* Descargué los artes del botadero de Leche Condensada
+* 4. Me puse a armar la ristra de Migren
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: () 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Monté la orden de los preciarios de acrílico transparente de SCJ
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+2. RENDIMIENTO: () 462/25 - PEPSICO - MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL Rendimiento de NatuChips Río Lomas del Sol
+TRELLO: https://trello.com/c/KTrjOpTQ
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hMcCSjL3kimzEk6Wbz4ntfbjIYfajGcT?usp=drive_link
+
+
+3. RENDIMIENTO: () 478/26 - NATULAC - CABEZAL DE NÉCTARES MERKAFUR  AV LARA Rendimiento Mueble Natulac
+TRELLO: https://trello.com/c/q9pFvo4f
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1_ixijuazXCjFvXpcR0LJ-AVazXJAHkAb?usp=drive_link
+
+
+4. MUESTRA: () 423/26 - GRUPO LETI - RISTRAS MIGREN DOBLE CARGA Me puse a armar la ristra de Migren
+TRELLO: https://trello.com/c/WK7IrXis
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1u7AA3yovWSPaaKlIt4MGo-lrGzG8BPW0?usp=drive_link
+
+
+
+
+🗓️ Miércoles 27 de mayo del 2026
+🕒 PENDIENTE:
+* Armar la muestra física del dispensador de Chocolates Milka
+* Visual Desayunos
+🌄 MAÑANA:
+* Le di a Alexander la ristra de Migren para que me ayude a armarla
+* 1. Alexander me entregó la Ristra terminada y se la entregué a Vanesa
+* Andrés David me entregó las piezas del dispensador de Chocolates Milka
+* Quedé con Verónica de armar en la tarde la muestra del dispensador de Chocolates Milka
+* Eider y yo nos reunimos con Pablo y Milka para definir el mueble de Multicategoría
+* Me llamaron de Pintura para que expliqué cómo va el mueble de NatuChips de la Muralla
+* Reunión con Richard y después con Mario para definir las reglas de juego
+
+
+🌅 TARDE:
+* Me puse con el visual de Desayunos de Nestlé
+* Eider fue montando el mueble Multicategoría en SolidWorks
+* 2. Fui a producción con Verónica a armar el dispensador de Chocolates Milka
+* El dispensador de Chocolates Milka funcionó, mañana pego los toboganes
+
+
+📂 CARPETAS:
+1. MUESTRA: () 423/26 - GRUPO LETI - RISTRAS MIGREN DOBLE CARGA Alexander me entregó la Ristra terminada y se la entregué a Vanesa
+TRELLO: https://trello.com/c/WK7IrXis
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1u7AA3yovWSPaaKlIt4MGo-lrGzG8BPW0?usp=drive_link
+
+
+2. MUESTRA: () 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Fui a producción con Verónica a armar el dispensador de Chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ZhHcSL7jfA3oDF_SLtQX01Ok4pS6H86U?usp=drive_link
+
+
+🗓️ Jueves 28 de mayo del 2026
+🕒 PENDIENTE:
+* Muestras de color de subasta Nestlé
+🌄 MAÑANA:
+* 1. Terminé el visual de Desayunos de Nestlé y se lo envié a Milka.
+* 2. Terminé de armar la muestra del dispensador de Chocolates Milka.
+* Probé con Verónica la carga de los chocolates y funcionó bien el dispensador.
+* El señor Ricardo me llamó para ver el mueble de NatuChips de la Muralla.
+* Andrea Istúriz me mandó un mensaje diciendo que está aprobada la ristra de Migren.
+* Andrea Istúriz me mandó un mensaje diciendo que está aprobada una ISLA de Colgate.
+* Milka me mandó un mensaje diciendo que está aprobado el visual de Desayuno Nestlé.
+* Empecé a montar los maestros de Viniles de subasta Nestlé.
+
+
+🌅 TARDE:
+* Vanesa me mostró las tres autorizaciones de muestra del dispensador de leche condensada
+* Milka me entregó las muestras de leche condensada
+* Enmary me pidió sacar el dummy de SCJ de la caja de OFF más pequeño
+* Enmary me pidió conseguir dos ganchos para SCJ
+* Continué montando los viniles de subasta Nestlé
+* Verónica me pidió el rendimiento del holograma para chocolates Milka.
+* Pablo me dijo que Andrés David no tiene la orden de corte del acrílico transparente de las ISLAS
+* 3. Monté la OP del acrílico transparente de las ISLAS de Colgate
+* 4. Le entregué a Pablo la orden de muestra de color de subasta de Nestlé
+
+
+
+
+📂 CARPETAS:
+1. VISUAL: () 432/26 - NESTLE - SUBASTA DISRUPTIVA DESAYUNOS Terminé el visual de Desayunos de Nestlé y se lo envié a Milka
+TRELLO: https://trello.com/c/9H6KG0zz
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1wj4n5Emjshwbde7dKVCer0LAoV_kJ148?usp=drive_link
+
+
+2. MUESTRA: () 084/26 - DISTRIBUIDORA INMARKET - EXHIBIDORES DE MESA ESTILO GRAVITY Terminé de armar la muestra del dispensador de Chocolates Milka
+TRELLO: https://trello.com/c/pgXgDNDD
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ZhHcSL7jfA3oDF_SLtQX01Ok4pS6H86U?usp=drive_link
+
+
+3. PRODUCCIÓN: () 431/26 - COLGATE - RECOMPRA DE 3 ISLAS DE CUIDADO PERSONAL Monté la OP del acrílico transparente de las ISLAS de Colgate
+TRELLO: https://trello.com/c/h6xSobUK
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1kBkL8k_o8L7In-EQYTeAoAbu7GBYuj07?usp=drive_link
+
+
+4. MUESTRA: () 297/26 - NESTLE DE VENEZUELA - CABEZALES CANAL MODERNO NIM MULTICATEGORÍA Le entregué a Pablo la orden de muestra de color de subasta de Nestlé
+TRELLO: https://trello.com/c/XiqKgHCm
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1RqFqVeri2rq7damJ2E0MgAqhGVc4AoLu?usp=drive_link
+
+
+
+
+🗓️ Viernes 29 de mayo del 2026
+🕒 PENDIENTE:
+* Rendimiento holograma para Verónica Chocolates Milka
+* OP de la ISLA de Colgate
+* OP de la plantilla para los ganchos y el nuevo dummy de OFF de SCJ
+🌄 MAÑANA:
+* Le pregunté a Zaida si se envía la muestra de color de la puntera Purísima.
+* Pablo me pidió una orden para sacar el Polyfan de una Isla de Colgate.
+* Le entregué a Pablo la orden del Polyfan de una Isla de Colgate.
+* Me puse a montar la OP de la recompra de la Isla de Colgate.
+
+
+🌅 TARDE:
+* Busqué los ganchos para el mueble de SCJ
+* Me reuní con Enmary para definir todo lo que falta para SCJ
+* Le recordé a Dorian que hay unos preciarios de acrílico transparente para SCJ
+* 1. Entregué la OP de una ISLA de COLGATE.
+* 2. Entegué la orden de muestra de color de El Tunal.
+* 3. Entregué la orden de producción del dummy y plantilla de ganchos de SCJ.
+* 4. Le envié el rendimiento de los servilleteros de Nestlé a Milka y José Gabriel.
+* 5. Comencé el rendimiento para Verónica de la caja para holograma
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: () 502/26 -COLGATE - ISLA CUIDADO PERSONAL AIKOZ UNIMALL  Entregué la OP de una ISLA de COLGATE
+TRELLO: https://trello.com/c/q7WzEihE
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1NTcK9fxrg7ZKsexjPc84GkxmUOQe4cEM?usp=drive_link
+
+
+2. MUESTRA: () 508/26 - EL TUNAL - PUNTERA PURISSIMA MERKAFUR Entegué la orden de muestra de color de El Tunal.
+TRELLO: https://trello.com/c/fu2IqiXn
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1lHBbJiiA9rxv4H0M3rcuQKb09t2cfIV3?usp=drive_link
+
+
+3.  PRODUCCIÓN: () 026/26 - SCJ - MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS Entregué la orden de producción del dummy y plantilla de ganchos de SCJ.
+TRELLO: https://trello.com/c/IXghwijL
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link
+
+
+4. RENDIMIENTO: () TENTATIVO 011/26 - NESTLÉ - SERVILLETEROS Le envié el rendimiento de los servilleteros de Nestlé a Milka y José Gabriel.
+TRELLO: https://trello.com/c/6b9LqaLG
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Tt68CyLb344p__ynl_sNBHusVfqdJXWz?usp=sharing
+
+
+5. RENDIMIENTO: () TENTATIVO 010/26 - DISTRIBUIDORA INMARKET - CAJA PARA HOLOGRAMA Comencé el rendimiento para Verónica de la caja para holograma
+TRELLO: https://trello.com/c/5gnejbT4
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1crepRMdvBQBGagFy5jNrl4tHrsKO9mM-?usp=drive_link
+
+
+🗓️ Sábado 30 de mayo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 31 de mayo del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ JUNIO 2026
+JUNIO 2026
+LUN
+	MAR
+	MIÉR
+	JUE
+	VIE
+	SÁB
+	DOM
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	29
+	30
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+Tabla
+	Trabajo de Diseño
+	Filas
+	26
+	RENDIMIENTO.
+	
+
+	27
+	VISUAL.
+	
+
+	28
+	PLANO MECÁNICO.
+	
+
+	29
+	MUESTRA.
+	
+
+	30
+	PRODUCCIÓN.
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Lunes 01 de junio del 2026
+🕒 PENDIENTE:
+* OP de la ristra de Migren
+* MF del botadero de leche condensada
+🌄 MAÑANA:
+* Le envié el rendimiento a Verónica del holograma para Chocolates Milka
+* Entregué la OP de las ristras de Migren
+
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 02 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 03 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Jueves 04 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 05 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+🗓️ Sábado 06 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 07 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Lunes 08 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ Martes 09 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 10 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 11 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 12 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 13 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 14 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 15 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 16 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 17 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 18 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 19 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 20 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 21 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 22 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 23 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 24 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 25 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 26 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 27 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 28 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 29 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 30 de junio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ JULIO 2026
+JULIO 2026
+LUN
+	MAR
+	MIÉR
+	JUE
+	VIE
+	SÁB
+	DOM
+	
+
+	
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	29
+	30
+	31
+	
+
+	
+
+	
+
+Tabla
+	Trabajo de Diseño
+	Filas
+	31
+	RENDIMIENTO.
+	
+
+	32
+	VISUAL.
+	
+
+	33
+	PLANO MECÁNICO.
+	
+
+	34
+	MUESTRA.
+	
+
+	35
+	PRODUCCIÓN.
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Miércoles 01 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 02 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 03 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Sábado 04 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 05 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+🗓️ Lunes 06 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 07 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Miércoles 08 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ Jueves 09 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 10 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 11 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 12 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 13 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 14 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 15 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 16 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 17 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 18 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 19 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 20 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 21 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 22 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 23 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 24 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 25 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 26 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 27 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 28 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 29 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 30 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 31 de julio del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ AGOSTO 2026
+AGOSTO 2026
+LUN
+	MAR
+	MIÉR
+	JUE
+	VIE
+	SÁB
+	DOM
+	
+
+	
+
+	
+
+	
+
+	
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	29
+	30
+	31
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+Tabla
+	Trabajo de Diseño
+	Filas
+	36
+	RENDIMIENTO.
+	
+
+	37
+	VISUAL.
+	
+
+	38
+	PLANO MECÁNICO.
+	
+
+	39
+	MUESTRA.
+	
+
+	40
+	PRODUCCIÓN.
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Sábado 01 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 02 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 03 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Martes 04 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 05 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+🗓️ Jueves 06 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 07 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Sábado 08 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ Domingo 09 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 10 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 11 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 12 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 13 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 14 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 15 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 16 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 17 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 18 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 19 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 20 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 21 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 22 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 23 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 24 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 25 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 26 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 27 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 28 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 29 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 30 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 31 de agosto del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ SEPTIEMBRE 2026
+SEPTIEMBRE 2026
+LUN
+	MAR
+	MIÉR
+	JUE
+	VIE
+	SÁB
+	DOM
+	
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	29
+	30
+	
+
+	
+
+	
+
+	
+
+	
+
+Tabla
+	Trabajo de Diseño
+	Filas
+	41
+	RENDIMIENTO.
+	
+
+	42
+	VISUAL.
+	
+
+	43
+	PLANO MECÁNICO.
+	
+
+	44
+	MUESTRA.
+	
+
+	45
+	PRODUCCIÓN.
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Martes 01 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 02 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 03 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Viernes 04 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 05 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+🗓️ Domingo 06 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 07 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Martes 08 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ Miércoles 09 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 10 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 11 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 12 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 13 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 14 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 15 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 16 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 17 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 18 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 19 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 20 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 21 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 22 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 23 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 24 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 25 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 26 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 27 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 28 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 29 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 30 de septiembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ OCTUBRE 2026
+OCTUBRE 2026
+LUN
+	MAR
+	MIÉR
+	JUE
+	VIE
+	SÁB
+	DOM
+	
+
+	
+
+	
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	29
+	30
+	31
+	
+
+	
+
+Tabla
+	Trabajo de Diseño
+	Filas
+	46
+	RENDIMIENTO.
+	
+
+	47
+	VISUAL.
+	
+
+	48
+	PLANO MECÁNICO.
+	
+
+	49
+	MUESTRA.
+	
+
+	50
+	PRODUCCIÓN.
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Jueves 01 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 02 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 03 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Domingo 04 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 05 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+🗓️ Martes 06 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 07 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Jueves 08 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ Viernes 09 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 10 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 11 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 12 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 13 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 14 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 15 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 16 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 17 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 18 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 19 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 20 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 21 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 22 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 23 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 24 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 25 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 26 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 27 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 28 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 29 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 30 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 31 de octubre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ NOVIEMBRE 2026
+NOVIEMBRE 2026
+LUN
+	MAR
+	MIÉR
+	JUE
+	VIE
+	SÁB
+	DOM
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	29
+	30
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+Tabla
+	Trabajo de Diseño
+	Filas
+	51
+	RENDIMIENTO.
+	
+
+	52
+	VISUAL.
+	
+
+	53
+	PLANO MECÁNICO.
+	
+
+	54
+	MUESTRA.
+	
+
+	55
+	PRODUCCIÓN.
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Domingo 01 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 02 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 03 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Miércoles 04 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 05 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+🗓️ Viernes 06 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 07 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Domingo 08 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ Lunes 09 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 10 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 11 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 12 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 13 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 14 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 15 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 16 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 17 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 18 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 19 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 20 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 21 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 22 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 23 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 24 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 25 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 26 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 27 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 28 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 29 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 30 de noviembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ DICIEMBRE 2026
+DICIEMBRE 2026
+LUN
+	MAR
+	MIÉR
+	JUE
+	VIE
+	SÁB
+	DOM
+	
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	29
+	30
+	31
+	
+
+	
+
+	
+
+	
+
+Tabla
+	Trabajo de Diseño
+	Filas
+	56
+	RENDIMIENTO.
+	
+
+	57
+	VISUAL.
+	
+
+	58
+	PLANO MECÁNICO.
+	
+
+	59
+	MUESTRA.
+	
+
+	60
+	PRODUCCIÓN.
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🗓️ Martes 01 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 02 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 03 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Viernes 04 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 05 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+🗓️ Domingo 06 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 07 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 📂 CARPETAS:
+1. 🗓️ Martes 08 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 
+
+🗓️ Miércoles 09 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 10 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 11 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 12 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 13 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 14 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 15 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 16 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 17 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 18 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 19 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 20 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 21 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 22 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 23 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 24 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Viernes 25 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Sábado 26 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Domingo 27 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Lunes 28 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Martes 29 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Miércoles 30 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1. 🗓️ Jueves 31 de diciembre del 2026
+🕒 PENDIENTE:
+* 🌄 MAÑANA:
+* 
+
+🌅 TARDE:
+* 
+
+📂 CARPETAS:
+1.
