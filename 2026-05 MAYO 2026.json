@@ -39,6 +39,54 @@
         "descripcion": "Realicé el rendimiento de la bandeja acostada de Chocolates Milka",
         "drive": "https://drive.google.com/drive/folders/1bmg2UpWtREmj6K38x41ZIu8MFf_K25Gf?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "26/05/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "462/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL",
+        "trello": "https",
+        "descripcion": "Rendimiento de NatuChips Río Lomas del Sol",
+        "drive": "https://drive.google.com/drive/folders/1hMcCSjL3kimzEk6Wbz4ntfbjIYfajGcT?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "26/05/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "478/26",
+        "cliente": "NATULAC",
+        "tituloProyecto": "CABEZAL DE NÉCTARES MERKAFUR  AV LARA",
+        "trello": "https",
+        "descripcion": "Rendimiento Mueble Natulac",
+        "drive": "https://drive.google.com/drive/folders/1_ixijuazXCjFvXpcR0LJ-AVazXJAHkAb?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "29/05/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "TENTATIVO 011/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "SERVILLETEROS",
+        "trello": "https",
+        "descripcion": "Le envié el rendimiento de los servilleteros de Nestlé a Milka y José Gabriel.",
+        "drive": "https://drive.google.com/drive/folders/1Tt68CyLb344p__ynl_sNBHusVfqdJXWz?usp=sharing",
+        "check": "LISTO"
+      },
+      {
+        "id": "(07)",
+        "fecha": "29/05/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "TENTATIVO 010/26",
+        "cliente": "DISTRIBUIDORA INMARKET",
+        "tituloProyecto": "CAJA PARA HOLOGRAMA",
+        "trello": "https",
+        "descripcion": "Comencé el rendimiento para Verónica de la caja para holograma",
+        "drive": "https://drive.google.com/drive/folders/1crepRMdvBQBGagFy5jNrl4tHrsKO9mM-?usp=drive_link",
+        "check": "LISTO"
       }
     ]
   },
@@ -144,7 +192,7 @@
         "check": "LISTO"
       },
       {
-        "id": "(08)",
+        "id": "(09)",
         "fecha": "21/05/2026",
         "trabajoDiseno": "VISUAL",
         "numeroProyecto": "053/26",
@@ -154,6 +202,18 @@
         "descripcion": "Envié el visual de NatuChips La Muralla al correo producción Yar-Yur",
         "drive": "https://drive.google.com/drive/folders/1_OLMsOORkzWeferNWg-Dd4gU1q3o761z?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(10)",
+        "fecha": "28/05/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "432/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "SUBASTA DISRUPTIVA DESAYUNOS",
+        "trello": "https",
+        "descripcion": "Terminé el visual de Desayunos de Nestlé y se lo envié a Milka",
+        "drive": "https://drive.google.com/drive/folders/1wj4n5Emjshwbde7dKVCer0LAoV_kJ148?usp=drive_link",
+        "check": "LISTO"
       }
     ]
   },
@@ -161,6 +221,25 @@
     "tableId": 92,
     "mes": "MAYO",
     "num": 92,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "25/05/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "TENTATIVO 009/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "CINTAS EN EDITABLE FARMATODO Y LOCATEL",
+        "trello": "https",
+        "descripcion": "Le pasé a Andrea las cintas de Farmatodo en Editable",
+        "drive": "https://drive.google.com/drive/folders/1y02JXRRrDOMob_4_g8vTQDh1U6dJyeZc?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 93,
+    "mes": "MAYO",
+    "num": 93,
     "proyectos": [
       {
         "id": "(01)",
@@ -281,13 +360,85 @@
         "descripcion": "Entregué la orden de muestra física del dispensador de Chocolates Milka",
         "drive": "https://drive.google.com/drive/folders/1ZhHcSL7jfA3oDF_SLtQX01Ok4pS6H86U?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(11)",
+        "fecha": "26/05/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "423/26",
+        "cliente": "GRUPO LETI",
+        "tituloProyecto": "RISTRAS MIGREN DOBLE CARGA",
+        "trello": "https",
+        "descripcion": "Me puse a armar la ristra de Migren",
+        "drive": "https://drive.google.com/drive/folders/1u7AA3yovWSPaaKlIt4MGo-lrGzG8BPW0?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(12)",
+        "fecha": "27/05/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "423/26",
+        "cliente": "GRUPO LETI",
+        "tituloProyecto": "RISTRAS MIGREN DOBLE CARGA",
+        "trello": "https",
+        "descripcion": "Alexander me entregó la Ristra terminada y se la entregué a Vanesa",
+        "drive": "https://drive.google.com/drive/folders/1u7AA3yovWSPaaKlIt4MGo-lrGzG8BPW0?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(13)",
+        "fecha": "27/05/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "084/26",
+        "cliente": "DISTRIBUIDORA INMARKET",
+        "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
+        "trello": "https",
+        "descripcion": "Fui a producción con Verónica a armar el dispensador de Chocolates Milka",
+        "drive": "https://drive.google.com/drive/folders/1ZhHcSL7jfA3oDF_SLtQX01Ok4pS6H86U?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(14)",
+        "fecha": "28/05/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "084/26",
+        "cliente": "DISTRIBUIDORA INMARKET",
+        "tituloProyecto": "EXHIBIDORES DE MESA ESTILO GRAVITY",
+        "trello": "https",
+        "descripcion": "Terminé de armar la muestra del dispensador de Chocolates Milka",
+        "drive": "https://drive.google.com/drive/folders/1ZhHcSL7jfA3oDF_SLtQX01Ok4pS6H86U?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(15)",
+        "fecha": "28/05/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "297/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "CABEZALES CANAL MODERNO NIM MULTICATEGORÍA",
+        "trello": "https",
+        "descripcion": "Le entregué a Pablo la orden de muestra de color de subasta de Nestlé",
+        "drive": "https://drive.google.com/drive/folders/1RqFqVeri2rq7damJ2E0MgAqhGVc4AoLu?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(16)",
+        "fecha": "29/05/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "508/26",
+        "cliente": "EL TUNAL",
+        "tituloProyecto": "PUNTERA PURISSIMA MERKAFUR",
+        "trello": "https",
+        "descripcion": "Entegué la orden de muestra de color de El Tunal.",
+        "drive": "https://drive.google.com/drive/folders/1lHBbJiiA9rxv4H0M3rcuQKb09t2cfIV3?usp=drive_link",
+        "check": "LISTO"
       }
     ]
   },
   {
-    "tableId": 93,
+    "tableId": 94,
     "mes": "MAYO",
-    "num": 93,
+    "num": 94,
     "proyectos": [
       {
         "id": "(01)",
@@ -431,6 +582,78 @@
         "trello": "https",
         "descripcion": "Entregué la OP del vinil de Dimassi del revestimiento de KOTEX",
         "drive": "https://drive.google.com/drive/folders/1gZLo4Mnd0jVlvBzl0CEitPlMxlfoyfTe?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(13)",
+        "fecha": "25/05/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "436/26",
+        "cliente": "DIMASSI",
+        "tituloProyecto": "REVESTIMIENTO DE EXHIBIDORES KOTEX",
+        "trello": "https",
+        "descripcion": "Monté la OP de la bandeja de Kotex para su reparación",
+        "drive": "https://drive.google.com/drive/folders/1gZLo4Mnd0jVlvBzl0CEitPlMxlfoyfTe?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(14)",
+        "fecha": "25/05/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "026/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "MUEBLE FIXTURIZACIÓN",
+        "trello": "https",
+        "descripcion": "Le entregué la OP de corte del Nueva Colección de SCJ a Andrés David",
+        "drive": "https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(15)",
+        "fecha": "26/05/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "026/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
+        "trello": "https",
+        "descripcion": "Monté la orden de los preciarios de acrílico transparente de SCJ",
+        "drive": "https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(16)",
+        "fecha": "28/05/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "431/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "RECOMPRA DE 3 ISLAS DE CUIDADO PERSONAL",
+        "trello": "https",
+        "descripcion": "Monté la OP del acrílico transparente de las ISLAS de Colgate",
+        "drive": "https://drive.google.com/drive/folders/1kBkL8k_o8L7In-EQYTeAoAbu7GBYuj07?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(17)",
+        "fecha": "29/05/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "S/N",
+        "cliente": "DESCONOCIDO",
+        "tituloProyecto": "502/26 -COLGATE - ISLA CUIDADO PERSONAL AIKOZ UNIMALL  Entregué la OP de una ISLA de COLGATE",
+        "trello": "https",
+        "descripcion": "",
+        "drive": "https://drive.google.com/drive/folders/1NTcK9fxrg7ZKsexjPc84GkxmUOQe4cEM?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(18)",
+        "fecha": "29/05/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "026/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "MUEBLE FIXTURIZACIÓN - GAMA SANTA EDUVIGIS",
+        "trello": "https",
+        "descripcion": "Entregué la orden de producción del dummy y plantilla de ganchos de SCJ.",
+        "drive": "https://drive.google.com/drive/folders/1gsmQqN5YCv_FOGJfABCNHEvjCwW_VTnM?usp=drive_link",
         "check": "LISTO"
       }
     ]
