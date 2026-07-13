@@ -57,8 +57,8 @@
 </head>
 <body class="bg-white text-slate-800 h-screen w-screen overflow-hidden flex flex-col relative">
 
-    <div id="welcome-view" class="absolute inset-0 z-[100] flex items-center justify-center bg-slate-900 transition-opacity duration-700 ease-in-out">
-        <button onclick="startApp()" class="px-10 py-5 bg-amber-500 hover:bg-amber-600 text-white text-3xl md:text-5xl font-black rounded-3xl shadow-[0_0_40px_rgba(245,158,11,0.4)] hover:shadow-[0_0_60px_rgba(245,158,11,0.6)] hover:scale-105 transition-all duration-300 tracking-tight">
+    <div id="welcome-view" class="absolute inset-0 z-[100] flex items-center justify-center bg-white transition-opacity duration-700 ease-in-out">
+        <button onclick="startApp()" class="px-10 py-5 bg-amber-500 hover:bg-amber-600 text-slate-900 text-3xl md:text-5xl font-black rounded-3xl shadow-[0_0_40px_rgba(245,158,11,0.4)] hover:shadow-[0_0_60px_rgba(245,158,11,0.6)] hover:scale-105 transition-all duration-300 tracking-tight">
             Proyectos Yar-Yur
         </button>
     </div>
@@ -70,7 +70,9 @@
 
     <div id="search-view" class="absolute inset-0 z-30 flex flex-col items-center justify-center p-6 transition-all duration-500 ease-in-out bg-white">
         <div class="w-full max-w-2xl text-center fade-in-up">
-            <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-8 tracking-tight">Proyectos <span class="text-amber-500">Yar-Yur</span></h1>
+            <h1 onclick="startApp()" class="text-4xl md:text-5xl font-black text-slate-900 mb-8 tracking-tight cursor-pointer hover:scale-105 transition-transform inline-block select-none" title="Poner en pantalla completa">
+                Proyectos <span class="text-amber-500">Yar-Yur</span>
+            </h1>
             <div class="relative group">
                 <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                     <svg class="h-6 w-6 text-slate-400 group-focus-within:text-amber-500 transition-colors" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -241,7 +243,7 @@
     </div>
 
     <div id="day-panel-backdrop" onclick="closeDayPanel()" class="fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-[9998] opacity-0 pointer-events-none transition-opacity duration-300"></div>
-    <div id="day-details-panel" class="fixed inset-y-0 left-0 w-[85vw] sm:w-96 md:w-[400px] bg-white shadow-[10px_0_30px_rgba(0,0,0,0.15)] z-[9999] transform -translate-x-full transition-transform duration-300 flex flex-col border-r border-slate-200">
+    <div id="day-details-panel" class="fixed inset-y-0 left-0 w-[85vw] sm:w-96 md:w-[400px] bg-white z-[9999] transform -translate-x-full transition-transform duration-300 flex flex-col border-r border-slate-200">
         <div class="px-5 py-4 border-b border-slate-200 bg-slate-50 flex justify-between items-center shrink-0">
             <div>
                 <h3 id="day-panel-title" class="font-black text-xl text-slate-800 tracking-tight">Fecha</h3>
@@ -259,21 +261,26 @@
         // --- FUNCIÓN PANTALLA COMPLETA ---
         function startApp() {
             const elem = document.documentElement;
-            if (elem.requestFullscreen) {
-                elem.requestFullscreen().catch(err => console.log(err));
-            } else if (elem.webkitRequestFullscreen) { /* Safari */
-                elem.webkitRequestFullscreen().catch(err => console.log(err));
-            } else if (elem.msRequestFullscreen) { /* IE11 */
-                elem.msRequestFullscreen().catch(err => console.log(err));
+            // Solo pedimos pantalla completa si no estamos en ella ya
+            if (!document.fullscreenElement) {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen().catch(err => console.log(err));
+                } else if (elem.webkitRequestFullscreen) { /* Safari */
+                    elem.webkitRequestFullscreen().catch(err => console.log(err));
+                } else if (elem.msRequestFullscreen) { /* IE11 */
+                    elem.msRequestFullscreen().catch(err => console.log(err));
+                }
             }
 
             const welcomeView = document.getElementById('welcome-view');
-            welcomeView.classList.add('opacity-0');
-            setTimeout(() => {
-                welcomeView.classList.add('hidden');
-                // Auto enfocar el buscador al quitar la bienvenida
-                document.getElementById('main-search-input').focus();
-            }, 700);
+            if (!welcomeView.classList.contains('hidden')) {
+                welcomeView.classList.add('opacity-0');
+                setTimeout(() => {
+                    welcomeView.classList.add('hidden');
+                    // Auto enfocar el buscador al quitar la bienvenida
+                    document.getElementById('main-search-input').focus();
+                }, 700);
+            }
         }
 
         // --- CONFIGURACIÓN DE ARCHIVOS ---
@@ -843,7 +850,7 @@
                 const counts = {};
                 const clientItems = state.baseItems.filter(i => (i.cliente || 'SIN CLIENTE') === state.selectedClient);
                 clientItems.forEach(i => {
-                    const p = i.tituloProyecto || 'SIN TÍTULO'; // Ahora se agrupa por el título del proyecto
+                    const p = i.tituloProyecto || 'SIN TÍTULO'; // Agrupa por título
                     counts[p] = (counts[p] || 0) + 1;
                 });
                 
