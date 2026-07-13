@@ -53,11 +53,6 @@
             border-radius: 2px;
             font-weight: 600;
         }
-        
-        /* Tooltip */
-        #day-tooltip {
-            transition: opacity 0.2s ease-in-out;
-        }
     </style>
 </head>
 <body class="bg-white text-slate-800 h-screen w-screen overflow-hidden flex flex-col relative">
@@ -78,30 +73,79 @@
                 </div>
                 <input type="text" id="main-search-input" disabled
                     class="block w-full pl-12 pr-4 py-4 text-lg bg-slate-50 border-2 border-slate-200 rounded-2xl focus:outline-none focus:border-amber-500 focus:bg-white focus:ring-4 focus:ring-amber-500/10 transition-all shadow-sm placeholder-slate-400 disabled:opacity-50 disabled:cursor-not-allowed" 
-                    placeholder="Buscar..." autocomplete="off">
+                    placeholder="Buscar cliente, año (ej. 2026), mes..." autocomplete="off">
             </div>
         </div>
     </div>
 
-    <div id="chart-view" class="absolute inset-0 z-40 bg-slate-50 flex flex-col translate-x-full transition-transform duration-300 ease-in-out">
-        <header class="bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between shrink-0 shadow-sm relative">
+    <div id="year-dashboard-view" class="absolute inset-0 z-40 bg-slate-50 flex flex-col translate-x-full transition-transform duration-300 ease-in-out">
+        <header class="bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between shrink-0 shadow-sm relative z-20">
             <div class="flex items-center gap-4">
-                <button onclick="closeChartView()" class="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-slate-200 hover:border-blue-200">
+                <button onclick="closeYearDashboardView()" class="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-slate-200 hover:border-blue-200">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                     Atrás al Buscador
                 </button>
                 <div class="border-l border-slate-200 pl-4 h-8 flex items-center">
-                    <h2 class="text-xl font-bold text-slate-800" id="chart-view-title">Estadísticas</h2>
+                    <h2 class="text-xl font-bold text-slate-800" id="year-dashboard-title">Dashboard Anual</h2>
                 </div>
             </div>
-            <div class="hidden md:flex flex-col text-xs text-slate-500 text-right">
-                <span class="font-bold text-slate-700">Exploración Interactiva</span>
-                <span>Haz clic en una barra para ver los detalles</span>
+        </header>
+        <main class="flex-1 overflow-hidden flex flex-col lg:flex-row relative z-10">
+            <div class="lg:w-1/3 p-4 md:p-6 lg:border-r border-slate-200 overflow-y-auto bg-white flex flex-col z-10 shadow-[4px_0_24px_rgba(0,0,0,0.02)]">
+                <h3 class="text-2xl font-black text-slate-800 mb-2">Resumen General <span id="year-dashboard-label" class="text-amber-500"></span></h3>
+                <p class="text-sm text-slate-500 mb-6">Haz clic en una barra para explorar los clientes y proyectos.</p>
+                <div class="relative flex-1 min-h-[350px] w-full">
+                    <canvas id="yearGeneralChart"></canvas>
+                </div>
+            </div>
+            <div class="lg:w-2/3 p-4 md:p-8 overflow-y-auto custom-scrollbar bg-slate-50">
+                <p class="text-sm text-slate-500 mb-4 font-medium md:hidden">Desliza hacia abajo para ver los meses</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6" id="year-months-grid">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="chart-details-view" class="absolute inset-0 z-40 bg-slate-50 flex flex-col translate-x-full transition-transform duration-300 ease-in-out">
+        <header class="bg-white border-b border-slate-200 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 shrink-0 shadow-sm relative z-20">
+            <div class="flex items-center gap-4 flex-1">
+                <button onclick="closeChartDetailsView()" class="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-slate-200 hover:border-blue-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Atrás al Dashboard
+                </button>
+                <div class="border-l border-slate-200 pl-4 flex flex-col justify-center">
+                    <h2 class="text-lg font-bold text-slate-800 leading-tight" id="chart-details-title">Filtrando Datos</h2>
+                    <p class="text-xs text-slate-500 font-medium mt-0.5" id="chart-details-subtitle">Exploración</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <button id="chart-details-back-btn" onclick="goBackChartDetails()" class="hidden flex items-center gap-2 px-4 py-1.5 text-sm font-bold text-amber-700 bg-amber-100 hover:bg-amber-200 rounded-lg transition-colors shadow-sm">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path></svg>
+                    Desfiltrar (Subir nivel)
+                </button>
             </div>
         </header>
-        <main class="flex-1 overflow-y-auto p-4 md:p-8 flex items-center justify-center custom-scrollbar">
-            <div class="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-slate-100 w-full max-w-4xl h-[60vh] min-h-[400px]">
-                <canvas id="statsChart"></canvas>
+        
+        <main class="flex-1 overflow-hidden flex flex-col lg:flex-row">
+            <div class="lg:w-1/3 xl:w-[400px] p-6 lg:border-r border-slate-200 bg-white flex flex-col z-10 shadow-[4px_0_24px_rgba(0,0,0,0.02)] h-full overflow-hidden">
+                <h3 class="text-xl font-black text-slate-800 mb-1" id="pie-chart-title">Distribución</h3>
+                <p class="text-sm text-slate-500 mb-4" id="pie-chart-desc">Haz clic en la torta o la leyenda para filtrar.</p>
+                
+                <div class="relative w-full flex flex-col items-center flex-1 min-h-0">
+                    <div class="w-full h-[220px] shrink-0 relative">
+                        <canvas id="detailsPieChart"></canvas>
+                    </div>
+                    <div id="detailsPieLegend" class="mt-4 flex flex-col gap-2 overflow-y-auto custom-scrollbar w-full flex-1 pb-4"></div>
+                </div>
+            </div>
+            <div class="lg:flex-1 p-4 md:p-6 overflow-hidden bg-slate-50 flex flex-col">
+                <div class="flex flex-col h-full bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden slide-in-right">
+                    <div class="p-4 border-b border-slate-100 bg-slate-50 flex justify-between items-center shrink-0">
+                        <span class="font-bold text-slate-700 text-sm uppercase tracking-wide">Calendario de Actividades</span>
+                        <span id="details-entries-count" class="text-xs bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full font-bold"></span>
+                    </div>
+                    <div id="details-calendar-container" class="flex-1 overflow-y-auto custom-scrollbar p-6 flex flex-row flex-wrap justify-center items-start gap-8 scroll-smooth relative"></div>
+                </div>
             </div>
         </main>
     </div>
@@ -156,7 +200,7 @@
         </main>
     </div>
 
-    <div id="final-view" class="absolute inset-0 z-50 bg-slate-50 flex flex-col translate-x-full transition-transform duration-300 ease-in-out">
+    <div id="final-view" class="absolute inset-0 z-40 bg-slate-50 flex flex-col translate-x-full transition-transform duration-300 ease-in-out">
         <header class="bg-white border-b border-slate-200 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 shrink-0 shadow-sm z-50 relative">
             <div class="flex items-center gap-4 flex-1">
                 <button onclick="closeFinalView()" class="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-slate-200 hover:border-blue-200">
@@ -182,7 +226,7 @@
                 <div class="flex flex-col h-full bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden slide-in-right">
                     <div class="p-4 border-b border-slate-100 bg-slate-50 flex justify-between items-center">
                         <span class="font-bold text-slate-700 text-sm uppercase tracking-wide">Calendario de Actividades</span>
-                        <span id="entries-count-badge" class="text-xs bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full"></span>
+                        <span id="entries-count-badge" class="text-xs bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full font-bold"></span>
                     </div>
                     <div id="final-calendar-container" class="flex-1 overflow-y-auto custom-scrollbar p-6 flex flex-row flex-wrap justify-center items-start gap-8 scroll-smooth relative"></div>
                 </div>
@@ -190,7 +234,20 @@
         </main>
     </div>
 
-    <div id="day-tooltip" class="fixed opacity-0 hidden pointer-events-none bg-white shadow-2xl rounded-xl border border-slate-200 p-4 w-80 md:w-96 flex-col gap-2 z-[9999]"></div>
+    <div id="day-panel-backdrop" onclick="closeDayPanel()" class="fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-[9998] opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    <div id="day-details-panel" class="fixed inset-y-0 left-0 w-[85vw] sm:w-96 md:w-[400px] bg-white shadow-[10px_0_30px_rgba(0,0,0,0.15)] z-[9999] transform -translate-x-full transition-transform duration-300 flex flex-col border-r border-slate-200">
+        <div class="px-5 py-4 border-b border-slate-200 bg-slate-50 flex justify-between items-center shrink-0">
+            <div>
+                <h3 id="day-panel-title" class="font-black text-xl text-slate-800 tracking-tight">Fecha</h3>
+                <p id="day-panel-subtitle" class="text-xs font-bold text-blue-600 uppercase mt-0.5">0 entradas</p>
+            </div>
+            <button onclick="closeDayPanel()" class="p-2 text-slate-400 hover:text-slate-800 hover:bg-slate-200 rounded-full transition-colors focus:outline-none">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        <div id="day-panel-content" class="flex-1 overflow-y-auto p-5 flex flex-col gap-4 bg-slate-50 custom-scrollbar">
+            </div>
+    </div>
 
     <script>
         // --- CONFIGURACIÓN DE ARCHIVOS ---
@@ -245,6 +302,12 @@
             'OTRO': { card: 'bg-slate-100 border-slate-200 hover:border-slate-500 hover:ring-1 hover:ring-slate-500 hover:shadow-md', badge: 'bg-white text-slate-600 border-slate-200', dotClass: 'bg-slate-400 text-white', btnColor: 'bg-slate-500 hover:bg-slate-600' }
         };
 
+        const PASTEL_COLORS = [
+            '#FFB3BA', '#FFDFBA', '#FFFFBA', '#BAFFC9', '#BAE1FF', 
+            '#E2CBF7', '#F2C6E7', '#FFC6D9', '#D5E8D4', '#FFF2CC', 
+            '#F8CECC', '#E1D5E7', '#DAE8FC', '#D4E1F9', '#FBE5C8'
+        ];
+
         const MONTH_NAMES = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"];
         const MONTH_MAP = { "ENERO": 1, "FEBRERO": 2, "MARZO": 3, "ABRIL": 4, "MAYO": 5, "JUNIO": 6, "JULIO": 7, "AGOSTO": 8, "SEPTIEMBRE": 9, "OCTUBRE": 10, "NOVIEMBRE": 11, "DICIEMBRE": 12 };
 
@@ -259,41 +322,37 @@
         let isProjectListFiltered = true;
         let isFinalViewFiltered = true;
         
-        let viewMode = 'CLIENT'; // 'CLIENT', 'YEAR' o 'CHART_FILTER'
-        let activeYearFilter = '';
-        let chartFilter = null; 
-        let statsChartInstance = null;
+        let viewMode = 'CLIENT'; // 'CLIENT', 'CHART_DETAILS'
         
-        // Variables para el control de la ventana (tooltip)
-        window.currentRenderedFinalItems = [];
-        let isTooltipPinned = false;
-        window.pinnedDayKey = null;
+        let yearChartInstances = []; 
+        let detailsPieChartInstance = null;
+        
+        // Estado del gráfico particionado
+        window.chartDetailsState = {
+            year: null, month: null, monthName: null, category: null,
+            level: 'CLIENT', // 'CLIENT' | 'PROJECT' | 'FILTERED_PROJECT'
+            selectedClient: null, selectedProject: null, baseItems: []
+        };
+        
+        // Exponer función de clic global para la leyenda HTML de la torta
+        window.currentPieClickCallback = null;
+
+        // Elementos renderizados actuales en el calendario para pasarlos al Day Panel
+        window.currentRenderedFinalItems = []; 
 
         const loadingIndicator = document.getElementById('loading-indicator');
         const mainInput = document.getElementById('main-search-input');
         const headerInput = document.getElementById('header-search-input');
-        const resultsView = document.getElementById('results-view');
+        
         const searchView = document.getElementById('search-view');
+        const resultsView = document.getElementById('results-view');
         const projectListView = document.getElementById('project-list-view');
         const finalView = document.getElementById('final-view');
-        const chartView = document.getElementById('chart-view'); 
+        const yearDashboardView = document.getElementById('year-dashboard-view');
+        const chartDetailsView = document.getElementById('chart-details-view');
+        
         const resultsContainer = document.getElementById('results-container');
         const projectListContainer = document.getElementById('project-list-container');
-        const finalCalendarContainer = document.getElementById('final-calendar-container');
-        
-        // Cierra el tooltip si se hace clic afuera
-        document.addEventListener('click', (e) => {
-            if (isTooltipPinned) {
-                const tooltip = document.getElementById('day-tooltip');
-                if (!tooltip.contains(e.target) && !e.target.closest('.day-dot')) {
-                    isTooltipPinned = false;
-                    window.pinnedDayKey = null;
-                    tooltip.classList.add('pointer-events-none');
-                    tooltip.classList.remove('pointer-events-auto');
-                    hideDayTooltip(true);
-                }
-            }
-        });
 
         // --- UTILS BÚSQUEDA ---
         function normalizeStr(str) { return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
@@ -455,14 +514,7 @@
             if (!cleanQuery) return;
             const lowerQuery = cleanQuery.toLowerCase();
 
-            // CASO 1: ESTADÍSTICAS POR MES Y AÑO
-            const chartMatch = cleanQuery.match(/^(ENERO|FEBRERO|MARZO|ABRIL|MAYO|JUNIO|JULIO|AGOSTO|SEPTIEMBRE|OCTUBRE|NOVIEMBRE|DICIEMBRE)\s+(202[2-6])$/i);
-            if (chartMatch) {
-                showStatsChart(chartMatch[1].toUpperCase(), chartMatch[2]);
-                return;
-            }
-
-            // CASO 2: CLIENTES
+            // CASO 1: CLIENTES
             if (lowerQuery === 'clientes') {
                 viewMode = 'CLIENT';
                 activeSearchQuery = ''; 
@@ -474,154 +526,478 @@
                 return;
             }
 
-            // CASO 3: AÑOS
-            const yearMatch = cleanQuery.match(/^202[2-6]$/);
+            // CASO 2: AÑOS (DASHBOARD ANUAL) - ej. "2026"
+            const yearMatch = cleanQuery.match(/^202[0-9]$/);
             if (yearMatch) {
-                viewMode = 'YEAR';
-                activeYearFilter = cleanQuery;
-                activeSearchQuery = cleanQuery;
-                resultsView.classList.add('translate-y-full'); 
-                searchView.classList.add('-translate-y-full', 'opacity-0');
-                chartView.classList.add('translate-x-full'); 
-                renderProjectListContent(); 
-                projectListView.classList.remove('translate-x-full');
+                showYearDashboard(yearMatch[0]);
                 return;
             }
 
-            // CASO 4: BÚSQUEDA NORMAL
+            // CASO 3: BÚSQUEDA NORMAL
             viewMode = 'CLIENT';
             activeSearchQuery = cleanQuery;
             isClientListFiltered = true;
             renderClientSelectionList();
             
             if (!projectListView.classList.contains('translate-x-full')) closeProjectListView();
-            chartView.classList.add('translate-x-full');
+            chartDetailsView.classList.add('translate-x-full');
+            yearDashboardView.classList.add('translate-x-full');
             openResultsView();
             headerInput.value = activeSearchQuery;
         }
 
-        function itemMatchesChartFilter(item) {
-            if (!chartFilter) return true;
-            if (item.isExternal) return false;
-            
-            let cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase().trim() : 'OTRO';
-            if (cat !== chartFilter.category) return false;
-            
-            if (!item.fecha) return false;
-            const [d, m, y] = item.fecha.split('/');
-            if (!m || !y) return false;
-            if (parseInt(m, 10) !== chartFilter.month || parseInt(y, 10) !== chartFilter.year) return false;
-            
-            return true;
-        }
+        // --- SISTEMA DE GRÁFICOS REUTILIZABLE (BARRAS) ---
+        function createReusableChart(ctx, counts, year, monthNum, useShortLabels, fontSize, chartTitleText) {
+            const fullLabels = ['RENDIMIENTO', 'VISUAL', 'PLANO MECÁNICO', 'MUESTRA', 'PRODUCCIÓN'];
+            const shortLabels = ['REND', 'VIS', 'PLANO', 'MUES', 'PROD'];
+            const displayLabels = useShortLabels ? shortLabels : fullLabels;
+            const data = fullLabels.map(l => counts[l] || 0);
+            const monthName = monthNum ? MONTH_NAMES[monthNum - 1] : "General";
 
-        function activateChartFilter(month, year, monthName, category) {
-            chartFilter = { month, year, monthName, category };
-            viewMode = 'CHART_FILTER';
-            activeSearchQuery = '';
-            
-            renderClientSelectionList();
-            chartView.classList.add('translate-x-full');
-            resultsView.classList.remove('translate-y-full');
-            resetScroll('results-view');
-        }
-
-        function showStatsChart(monthName, yearStr) {
-            const targetMonth = MONTH_MAP[monthName];
-            const targetYear = parseInt(yearStr, 10);
-
-            const filteredData = mergedData.filter(item => {
-                if (item.isExternal) return false; 
-                if (item.fecha) {
-                    const [d, m, y] = item.fecha.split('/');
-                    if (m && y) {
-                        return parseInt(m, 10) === targetMonth && parseInt(y, 10) === targetYear;
-                    }
-                }
-                return false;
-            });
-
-            const counts = { 'RENDIMIENTO': 0, 'VISUAL': 0, 'PLANO MECÁNICO': 0, 'MUESTRA': 0, 'PRODUCCIÓN': 0 };
-
-            filteredData.forEach(item => {
-                let cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase().trim() : 'OTRO';
-                if (counts[cat] !== undefined) counts[cat]++;
-            });
-
-            const ctx = document.getElementById('statsChart').getContext('2d');
-            if (statsChartInstance) statsChartInstance.destroy(); 
-
-            document.getElementById('chart-view-title').innerText = `Estadísticas: ${monthName} ${yearStr}`;
-
-            statsChartInstance = new Chart(ctx, {
+            return new Chart(ctx, {
                 type: 'bar',
                 plugins: [ChartDataLabels],
                 data: {
-                    labels: ['RENDIMIENTO', 'VISUAL', 'PLANO MECÁNICO', 'MUESTRA', 'PRODUCCIÓN'],
+                    labels: displayLabels,
                     datasets: [{
-                        label: 'Cantidad de Trabajos',
-                        data: [ counts['RENDIMIENTO'], counts['VISUAL'], counts['PLANO MECÁNICO'], counts['MUESTRA'], counts['PRODUCCIÓN'] ],
-                        backgroundColor: [
-                            'rgba(37, 99, 235, 0.8)', 'rgba(22, 163, 74, 0.8)', 'rgba(147, 51, 234, 0.8)', 'rgba(202, 138, 4, 0.8)', 'rgba(234, 88, 12, 0.8)'
-                        ],
-                        borderColor: [
-                            'rgb(37, 99, 235)', 'rgb(22, 163, 74)', 'rgb(147, 51, 234)', 'rgb(202, 138, 4)', 'rgb(234, 88, 12)'
-                        ],
-                        borderWidth: 1, borderRadius: 8
+                        data: data,
+                        backgroundColor: ['rgba(37, 99, 235, 0.8)', 'rgba(22, 163, 74, 0.8)', 'rgba(147, 51, 234, 0.8)', 'rgba(202, 138, 4, 0.8)', 'rgba(234, 88, 12, 0.8)'],
+                        borderColor: ['rgb(37, 99, 235)', 'rgb(22, 163, 74)', 'rgb(147, 51, 234)', 'rgb(202, 138, 4)', 'rgb(234, 88, 12)'],
+                        borderWidth: 1, borderRadius: 6
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    layout: { padding: { top: 40 } },
-                    onClick: (event, elements) => {
+                    layout: { padding: { top: fontSize + 15 } },
+                    onClick: (event, elements, chart) => {
                         if (elements.length > 0) {
                             const index = elements[0].index;
-                            const category = statsChartInstance.data.labels[index];
+                            const category = fullLabels[index];
                             if (counts[category] > 0) {
-                                activateChartFilter(targetMonth, targetYear, monthName, category);
+                                openChartDetails(monthNum, year, monthName, category);
                             }
                         }
                     },
-                    onHover: (event, elements) => {
-                        const isClickable = elements.length > 0 && counts[statsChartInstance.data.labels[elements[0].index]] > 0;
+                    onHover: (event, elements, chart) => {
+                        const isClickable = elements.length > 0 && counts[fullLabels[elements[0].index]] > 0;
                         event.native.target.style.cursor = isClickable ? 'pointer' : 'default';
                     },
                     plugins: {
                         legend: { display: false },
-                        title: {
-                            display: true, text: `Rendimiento de Diseño Personal - ${monthName} ${yearStr}`,
-                            font: { size: 16, family: "'Inter', sans-serif", weight: 'bold' }, padding: { bottom: 20 }
+                        title: { 
+                            display: !!chartTitleText, 
+                            text: chartTitleText,
+                            font: { size: 16, family: "'Inter', sans-serif", weight: 'bold' }, 
+                            padding: { bottom: 20 }
                         },
                         datalabels: {
                             anchor: 'end', align: 'top', color: '#334155',
-                            font: { size: 28, weight: 'black', family: "'Inter', sans-serif" },
+                            font: { size: fontSize, weight: 'black', family: "'Inter', sans-serif" },
                             formatter: function(value) { return value > 0 ? value : ''; }
                         }
                     },
                     scales: {
-                        y: { beginAtZero: true, grace: '15%', ticks: { stepSize: 1, font: { family: "'Inter', sans-serif" } } },
-                        x: { ticks: { font: { family: "'Inter', sans-serif", weight: 'bold' } } }
+                        y: { beginAtZero: true, grace: '20%', ticks: { stepSize: 1, display: false }, grid: { display: false, drawBorder: false } },
+                        x: { ticks: { font: { family: "'Inter', sans-serif", weight: 'bold', size: useShortLabels ? 10 : 12 } }, grid: { display: false, drawBorder: false } }
                     }
                 }
+            });
+        }
+
+        // --- DASHBOARD ANUAL ---
+        function showYearDashboard(yearStr) {
+            const targetYear = parseInt(yearStr, 10);
+            document.getElementById('year-dashboard-label').innerText = yearStr;
+
+            const yearData = mergedData.filter(item => {
+                if (item.isExternal) return false;
+                if (item.fecha) {
+                    const [d, m, y] = item.fecha.split('/');
+                    return parseInt(y, 10) === targetYear;
+                }
+                return false;
+            });
+
+            if (yearChartInstances.length > 0) {
+                yearChartInstances.forEach(c => c.destroy());
+                yearChartInstances = [];
+            }
+
+            const generalCounts = { 'RENDIMIENTO': 0, 'VISUAL': 0, 'PLANO MECÁNICO': 0, 'MUESTRA': 0, 'PRODUCCIÓN': 0 };
+            const monthlyCounts = {};
+            for(let i = 1; i <= 12; i++) {
+                monthlyCounts[i] = { 'RENDIMIENTO': 0, 'VISUAL': 0, 'PLANO MECÁNICO': 0, 'MUESTRA': 0, 'PRODUCCIÓN': 0 };
+            }
+
+            yearData.forEach(item => {
+                let cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase().trim() : 'OTRO';
+                const m = parseInt(item.fecha.split('/')[1], 10);
+                if (generalCounts[cat] !== undefined) generalCounts[cat]++;
+                if (monthlyCounts[m] && monthlyCounts[m][cat] !== undefined) monthlyCounts[m][cat]++;
+            });
+
+            // Gráfico General
+            const ctxGen = document.getElementById('yearGeneralChart').getContext('2d');
+            const genChart = createReusableChart(ctxGen, generalCounts, targetYear, null, false, 24, null);
+            yearChartInstances.push(genChart);
+
+            let gridHtml = '';
+            MONTH_NAMES.forEach((monthName, idx) => {
+                gridHtml += `
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-[280px] hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-center mb-1">
+                        <h4 class="font-bold text-slate-700 tracking-wide">${monthName}</h4>
+                    </div>
+                    <div class="relative flex-1 w-full"><canvas id="monthChart_${idx + 1}"></canvas></div>
+                </div>`;
+            });
+            document.getElementById('year-months-grid').innerHTML = gridHtml;
+
+            MONTH_NAMES.forEach((monthName, idx) => {
+                const mNum = idx + 1;
+                const ctxM = document.getElementById(`monthChart_${mNum}`).getContext('2d');
+                const mChart = createReusableChart(ctxM, monthlyCounts[mNum], targetYear, mNum, true, 13, null);
+                yearChartInstances.push(mChart);
             });
 
             searchView.classList.add('-translate-y-full', 'opacity-0');
             resultsView.classList.add('translate-y-full');
             projectListView.classList.add('translate-x-full');
             finalView.classList.add('translate-x-full');
-            chartView.classList.remove('translate-x-full');
+            chartDetailsView.classList.add('translate-x-full');
+            yearDashboardView.classList.remove('translate-x-full');
         }
 
-        function closeChartView() {
-            chartView.classList.add('translate-x-full');
+        function closeYearDashboardView() {
+            yearDashboardView.classList.add('translate-x-full');
             searchView.classList.remove('-translate-y-full', 'opacity-0');
             mainInput.value = '';
             viewMode = 'CLIENT'; 
-            chartFilter = null;
             setTimeout(() => mainInput.focus(), 500);
         }
 
+        // --- SISTEMA DE DETALLES (PANTALLA PARTIDA) ---
+        function renderDetailsPieChart(labels, data, onClick) {
+            const ctx = document.getElementById('detailsPieChart').getContext('2d');
+            if (detailsPieChartInstance) detailsPieChartInstance.destroy();
+
+            const bgColors = labels.map((_, i) => PASTEL_COLORS[i % PASTEL_COLORS.length]);
+            
+            // Exponemos la función de clic globalmente para que el HTML legend pueda usarla
+            window.currentPieClickCallback = onClick;
+
+            detailsPieChartInstance = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: bgColors,
+                        borderWidth: 2,
+                        borderColor: '#ffffff',
+                        hoverOffset: 10
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }, // Ocultamos la de Chart.js
+                        datalabels: { display: false }
+                    },
+                    onClick: (event, elements) => {
+                        if (elements.length > 0) {
+                            const index = elements[0].index;
+                            onClick(labels[index]);
+                        }
+                    },
+                    onHover: (event, elements) => {
+                        event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+                    }
+                }
+            });
+
+            // Generar Leyenda HTML Personalizada (Lista vertical)
+            const legendContainer = document.getElementById('detailsPieLegend');
+            let legendHTML = '';
+            
+            labels.forEach((label, i) => {
+                const color = PASTEL_COLORS[i % PASTEL_COLORS.length];
+                const val = data[i];
+                const safeLabel = label.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                
+                legendHTML += `
+                    <div onclick="if(window.currentPieClickCallback) window.currentPieClickCallback('${safeLabel}')" 
+                         class="flex items-center gap-2 cursor-pointer hover:bg-slate-100 p-1.5 rounded-md transition-colors group">
+                        <span class="w-3 h-3 rounded-full shrink-0 shadow-sm" style="background-color: ${color}; border: 1px solid rgba(0,0,0,0.05)"></span>
+                        <span class="text-xs font-semibold text-slate-700 truncate group-hover:text-amber-600 transition-colors" title="${label}">${label}</span>
+                        <span class="text-xs font-bold text-slate-400 ml-auto bg-slate-100 px-1.5 py-0.5 rounded">${val}</span>
+                    </div>
+                `;
+            });
+            
+            legendContainer.innerHTML = legendHTML;
+        }
+
+        function openChartDetails(monthNum, year, monthName, category) {
+            window.chartDetailsState = {
+                year: year, month: monthNum, monthName: monthName, category: category,
+                level: 'CLIENT', selectedClient: null, selectedProject: null, baseItems: []
+            };
+
+            window.chartDetailsState.baseItems = mergedData.filter(item => {
+                if (item.isExternal) return false;
+                let cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase().trim() : 'OTRO';
+                if (cat !== category) return false;
+                if (!item.fecha) return false;
+                const [d, m, yStr] = item.fecha.split('/');
+                if (parseInt(yStr, 10) !== year) return false;
+                if (monthNum !== null && parseInt(m, 10) !== monthNum) return false;
+                return true;
+            });
+
+            viewMode = 'CHART_DETAILS';
+            yearDashboardView.classList.add('translate-x-full');
+            chartDetailsView.classList.remove('translate-x-full');
+            
+            renderChartDetailsView();
+        }
+
+        function updateDetailsHeader(title, subtitle, showBackBtn) {
+            document.getElementById('chart-details-title').innerText = title;
+            document.getElementById('chart-details-subtitle').innerText = subtitle;
+            
+            const btn = document.getElementById('chart-details-back-btn');
+            if (showBackBtn) btn.classList.remove('hidden');
+            else btn.classList.add('hidden');
+        }
+
+        function renderChartDetailsView() {
+            const state = window.chartDetailsState;
+
+            // 1. Filtrar ítems activos
+            let activeItems = state.baseItems;
+            if (state.level === 'PROJECT' || state.level === 'FILTERED_PROJECT') {
+                activeItems = activeItems.filter(i => (i.cliente || 'SIN CLIENTE') === state.selectedClient);
+            }
+            if (state.level === 'FILTERED_PROJECT') {
+                activeItems = activeItems.filter(i => {
+                    const key = (i.numeroProyecto && i.numeroProyecto.trim().length > 2) ? i.numeroProyecto : (i.tituloProyecto || 'SIN TITULO');
+                    return key === state.selectedProject;
+                });
+            }
+
+            // 2. Renderizar Calendario Derecho
+            renderCalendar(activeItems, 'details-calendar-container', 'details-entries-count');
+
+            // 3. Renderizar Gráfico Izquierdo y Leyenda
+            if (state.level === 'CLIENT') {
+                const counts = {};
+                state.baseItems.forEach(i => {
+                    const c = i.cliente || 'SIN CLIENTE';
+                    counts[c] = (counts[c] || 0) + 1;
+                });
+                
+                const labels = Object.keys(counts);
+                const data = Object.values(counts);
+                
+                renderDetailsPieChart(labels, data, (clickedClient) => {
+                    state.level = 'PROJECT';
+                    state.selectedClient = clickedClient;
+                    renderChartDetailsView();
+                });
+                
+                const timeLabel = state.month === null ? `Año ${state.year}` : `${state.monthName} ${state.year}`;
+                updateDetailsHeader(`Filtro: ${state.category} (${timeLabel})`, 'Distribución por Clientes', false);
+                document.getElementById('pie-chart-title').innerText = "Clientes";
+                document.getElementById('pie-chart-desc').innerText = "Haz clic en la torta o en un cliente de la lista para ver sus proyectos.";
+
+            } else if (state.level === 'PROJECT' || state.level === 'FILTERED_PROJECT') {
+                const counts = {};
+                const clientItems = state.baseItems.filter(i => (i.cliente || 'SIN CLIENTE') === state.selectedClient);
+                clientItems.forEach(i => {
+                    const p = (i.numeroProyecto && i.numeroProyecto.trim().length > 2) ? i.numeroProyecto : (i.tituloProyecto || 'SIN TITULO');
+                    counts[p] = (counts[p] || 0) + 1;
+                });
+                
+                const labels = Object.keys(counts);
+                const data = Object.values(counts);
+
+                renderDetailsPieChart(labels, data, (clickedProject) => {
+                    state.level = 'FILTERED_PROJECT';
+                    state.selectedProject = clickedProject;
+                    renderChartDetailsView();
+                });
+
+                if (state.level === 'PROJECT') {
+                    updateDetailsHeader(`Cliente: ${state.selectedClient}`, 'Distribución por Proyectos', true);
+                    document.getElementById('pie-chart-title').innerText = "Proyectos";
+                    document.getElementById('pie-chart-desc').innerText = "Clic en un proyecto para filtrar calendario.";
+                } else {
+                    updateDetailsHeader(`Proyecto: ${state.selectedProject}`, 'Calendario Filtrado', true);
+                    document.getElementById('pie-chart-title').innerText = "Proyectos";
+                    document.getElementById('pie-chart-desc').innerText = "Selección activa (haz clic para cambiar).";
+                }
+            }
+        }
+
+        function goBackChartDetails() {
+            const state = window.chartDetailsState;
+            if (state.level === 'FILTERED_PROJECT') {
+                state.level = 'PROJECT';
+                state.selectedProject = null;
+                renderChartDetailsView();
+            } else if (state.level === 'PROJECT') {
+                state.level = 'CLIENT';
+                state.selectedClient = null;
+                renderChartDetailsView();
+            }
+        }
+
+        function closeChartDetailsView() {
+            chartDetailsView.classList.add('translate-x-full');
+            yearDashboardView.classList.remove('translate-x-full');
+            closeDayPanel();
+        }
+
+        // --- SISTEMA GENÉRICO DE CALENDARIOS ---
+        function renderCalendar(items, containerId, countBadgeId = 'entries-count-badge') {
+            const container = document.getElementById(containerId);
+            window.currentRenderedFinalItems = items; 
+
+            if (countBadgeId) document.getElementById(countBadgeId).innerText = items.length;
+
+            const eventsByDate = {};
+            let minDate = null;
+            let maxDate = null;
+
+            items.forEach(item => {
+                if(!item.fecha) return;
+                const [dStr, mStr, yStr] = item.fecha.split('/');
+                if(!dStr || !mStr || !yStr) return;
+                
+                const d = parseInt(dStr);
+                const m = parseInt(mStr);
+                const y = parseInt(yStr);
+
+                const totalMonths = y * 12 + m;
+                if (minDate === null || totalMonths < minDate) minDate = totalMonths;
+                if (maxDate === null || totalMonths > maxDate) maxDate = totalMonths;
+
+                const key = `${y}-${m}`;
+                if (!eventsByDate[key]) eventsByDate[key] = {};
+                if (!eventsByDate[key][d]) eventsByDate[key][d] = [];
+                eventsByDate[key][d].push(item);
+            });
+
+            if (Object.keys(eventsByDate).length === 0 || minDate === null || maxDate === null) {
+                container.innerHTML = '<div class="w-full text-center text-slate-300 mt-10">Sin fechas registradas</div>'; return;
+            }
+
+            const continuousMonths = [];
+            for (let t = minDate; t <= maxDate; t++) {
+                let year = Math.floor((t - 1) / 12);
+                let month = ((t - 1) % 12) + 1;
+                continuousMonths.push(`${year}-${month}`);
+            }
+            
+            container.innerHTML = continuousMonths.map(key => {
+                const [y, m] = key.split('-').map(Number); 
+                return generateCalendarHTML(m, y, eventsByDate[key] || {}, key);
+            }).join('');
+        }
+
+        function generateCalendarHTML(month, year, eventsMap, monthKey) {
+            const monthIdx = month - 1;
+            const daysInMonth = new Date(year, monthIdx + 1, 0).getDate();
+            const firstDay = new Date(year, monthIdx, 1).getDay();
+            
+            let h = `<div id="cal-month-${monthKey}" class="w-full max-w-[340px] transition-all duration-500">
+                        <div class="text-center font-bold text-slate-700 text-lg mb-3 border-b border-slate-200 pb-2">${MONTH_NAMES[monthIdx]} ${year}</div>
+                        <div class="grid grid-cols-7 text-center text-sm font-semibold text-slate-400 mb-2">
+                            <div>D</div><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div>
+                        </div>
+                        <div class="grid grid-cols-7 gap-2 text-base">`; 
+            
+            for(let i=0; i<firstDay; i++) h+=`<div></div>`;
+            for(let d=1; d<=daysInMonth; d++) {
+                if(eventsMap[d] && eventsMap[d].length > 0) {
+                    const firstItemCat = eventsMap[d][0].trabajoDiseno ? eventsMap[d][0].trabajoDiseno.toUpperCase() : 'OTRO';
+                    const dotColorClass = (CAT_STYLES[firstItemCat] || { dotClass: 'bg-slate-400' }).dotClass;
+                    
+                    h += `<div class="day-dot aspect-square rounded-lg flex items-center justify-center font-bold text-white shadow-sm ${dotColorClass} transition-transform duration-200 cursor-pointer hover:scale-110 relative z-10" 
+                            onclick="openDayPanel(${d}, ${month}, ${year})">${d}</div>`;
+                } else {
+                    h += `<div class="aspect-square flex items-center justify-center text-slate-300">${d}</div>`;
+                }
+            }
+            h += `</div></div>`;
+            return h;
+        }
+
+        // --- SISTEMA DEL PANEL LATERAL DE DÍAS (Drawer Slide-in) ---
+        function openDayPanel(d, m, y) {
+            const items = window.currentRenderedFinalItems.filter(item => {
+                if(!item.fecha) return false;
+                const parts = item.fecha.split('/');
+                return parseInt(parts[0]) === d && parseInt(parts[1]) === m && parseInt(parts[2]) === y;
+            });
+
+            document.getElementById('day-panel-title').innerText = `${String(d).padStart(2, '0')}/${String(m).padStart(2, '0')}/${y}`;
+            document.getElementById('day-panel-subtitle').innerText = `${items.length} entrada(s)`;
+
+            let html = '';
+            if (items.length === 0) {
+                html = '<div class="text-center text-slate-400 text-sm mt-10">No hay entradas para este día.</div>';
+            } else {
+                items.sort((a, b) => parseDate(a.fecha) - parseDate(b.fecha));
+                items.forEach((item) => {
+                    const cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase() : 'OTRO';
+                    const style = CAT_STYLES[cat] || CAT_STYLES['OTRO']; 
+                    const isFalta = item.check === 'FALTA';
+                    
+                    let cardClass = style.card;
+                    if (isFalta) {
+                        cardClass = cardClass.replace(/border-\w+-\d+/g, ''); 
+                        cardClass += ' border-2 border-red-600 shadow-[0_0_10px_rgba(220,38,38,0.3)]';
+                    }
+                    
+                    const showHighlight = (viewMode === 'CLIENT' && isFinalViewFiltered);
+                    const hlDesc = showHighlight ? highlightMatch(item.descripcion, activeSearchQuery) : (item.descripcion || '');
+                    
+                    const itemClient = item.cliente || 'SIN CLIENTE';
+                    const itemProject = item.numeroProyecto || item.tituloProyecto || 'SIN PROYECTO';
+
+                    html += `
+                        <div class="p-4 rounded-xl border text-sm ${cardClass} flex flex-col gap-2 relative overflow-hidden bg-white hover:bg-slate-50 transition-colors">
+                            <div class="flex justify-between items-start">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-bold ${style.badge}">${cat}</span>
+                                ${item.drive ? `<a href="${item.drive}" target="_blank" class="text-blue-600 hover:text-blue-800 bg-slate-100 hover:bg-slate-200 rounded px-1.5 py-0.5 flex items-center shadow-sm text-[10px] font-bold transition-colors" title="Ver archivo"><svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg> VER</a>` : ''}
+                            </div>
+                            <div>
+                                <div class="text-xs font-black text-slate-800 uppercase leading-tight">${itemClient}</div>
+                                <div class="text-[11px] font-bold text-slate-500 leading-tight mt-0.5">${itemProject}</div>
+                            </div>
+                            <p class="text-slate-700 leading-relaxed text-xs font-medium border-t border-slate-100 pt-2 mt-1">${hlDesc}</p>
+                        </div>
+                    `;
+                });
+            }
+
+            document.getElementById('day-panel-content').innerHTML = html;
+            
+            // Mostrar Panel y Backdrop
+            document.getElementById('day-details-panel').classList.remove('-translate-x-full');
+            document.getElementById('day-panel-backdrop').classList.remove('opacity-0', 'pointer-events-none');
+        }
+
+        function closeDayPanel() {
+            document.getElementById('day-details-panel').classList.add('-translate-x-full');
+            document.getElementById('day-panel-backdrop').classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        // --- FUNCIONES COMPLEMENTARIAS (Búsqueda General) ---
         function itemMatchesQuery(item, query) {
             if (!query) return true;
             const q = query.toLowerCase();
@@ -634,7 +1010,7 @@
 
         function highlightMatch(text, query) {
             if (!text || !query) return text;
-            if (query.toLowerCase() === 'falta' || query.match(/^202[2-6]$/)) return text;
+            if (query.toLowerCase() === 'falta' || query.match(/^202[0-9]$/)) return text;
             const normText = normalizeStr(text);
             const tokens = normalizeStr(query).split(/\s+/).filter(t => t.length > 0);
             if (tokens.length === 0) return text;
@@ -663,13 +1039,7 @@
             const mobileContainer = document.getElementById(containerId + '-mobile');
             let html = '';
             
-            if (viewMode === 'CHART_FILTER' && chartFilter) {
-                html = `<div class="flex items-center gap-2 bg-slate-800 text-white border border-slate-700 px-4 py-1.5 rounded-full text-xs font-bold shadow-sm"><span>${query}</span></div>`;
-            }
-            else if (viewMode === 'YEAR' && activeYearFilter) {
-                 html = `<div class="flex items-center gap-2 bg-blue-100 text-blue-800 border border-blue-200 px-4 py-1.5 rounded-full text-xs font-bold shadow-sm"><span>Año: ${activeYearFilter}</span></div>`;
-            } 
-            else if (query && query !== 'falta' && query !== 'clientes') {
+            if (query && query !== 'falta' && query !== 'clientes' && !query.match(/^202[0-9]$/)) {
                 html = `<button onclick="${onClickFn}" class="group flex items-center gap-2 bg-yellow-100 text-yellow-800 hover:bg-red-100 hover:text-red-700 border border-yellow-200 hover:border-red-200 px-4 py-1.5 rounded-full text-xs font-bold transition-all shadow-sm animate-pulse"><span>"${query}"</span><svg class="w-3 h-3 opacity-60 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>`;
             }
             if (container) container.innerHTML = html;
@@ -685,34 +1055,14 @@
             return (year * 10000) + num;
         }
 
-        function checkItemYear(item, yearStr) {
-            const shortYear = yearStr.substring(2); 
-            const numberMatch = item.numeroProyecto ? item.numeroProyecto.match(/\/(\d{2})$/) : null;
-            if (numberMatch) return numberMatch[1] === shortYear;
-            if (item.fecha && item.fecha.includes(yearStr)) return true;
-            return false;
-        }
-
+        // --- RENDER DE LISTAS NORMALES ---
         function renderClientSelectionList() {
-            let filterText = '';
-            if (viewMode === 'CHART_FILTER') {
-                filterText = `${chartFilter.monthName} ${chartFilter.year} - ${chartFilter.category}`;
-                renderFilterButton('client-filter-container', filterText, ''); 
-            } else {
-                const query = isClientListFiltered ? activeSearchQuery : '';
-                renderFilterButton('client-filter-container', query, 'unfilterClients()');
-            }
+            const query = isClientListFiltered ? activeSearchQuery : '';
+            renderFilterButton('client-filter-container', query, 'unfilterClients()');
 
             const clientGroups = {};
             mergedData.forEach(item => {
-                let match = false;
-                if (viewMode === 'CHART_FILTER') {
-                    match = itemMatchesChartFilter(item);
-                } else if (!isClientListFiltered || itemMatchesQuery(item, activeSearchQuery)) {
-                    match = true;
-                }
-
-                if (match) {
+                if (!isClientListFiltered || itemMatchesQuery(item, activeSearchQuery)) {
                     if (!clientGroups[item.cliente]) clientGroups[item.cliente] = [];
                     clientGroups[item.cliente].push(item);
                 }
@@ -731,13 +1081,8 @@
                     return b.count - a.count; 
                 });
 
-            if (viewMode === 'CHART_FILTER') {
-                document.getElementById('results-title').innerText = `Filtro: ${chartFilter.category}`;
-                document.getElementById('results-subtitle').innerText = `${sortedClients.length} clientes en ${chartFilter.monthName} ${chartFilter.year}`;
-            } else {
-                document.getElementById('results-title').innerText = activeSearchQuery ? `Búsqueda: "${activeSearchQuery}"` : "Todos los Clientes";
-                document.getElementById('results-subtitle').innerText = `${sortedClients.length} clientes encontrados`;
-            }
+            document.getElementById('results-title').innerText = activeSearchQuery ? `Búsqueda: "${activeSearchQuery}"` : "Todos los Clientes";
+            document.getElementById('results-subtitle').innerText = `${sortedClients.length} clientes encontrados`;
 
             if (sortedClients.length === 0) {
                 resultsContainer.innerHTML = `<div class="text-center py-20 text-slate-400">No hay resultados.</div>`;
@@ -750,7 +1095,7 @@
                 const percentage = Math.round((c.count / maxCount) * 100);
                 const bgStyle = `background: linear-gradient(90deg, #fcd34d ${percentage}%, white ${percentage}%);`;
                 
-                const hlName = (viewMode === 'CHART_FILTER') ? c.name : highlightMatch(c.name, activeSearchQuery);
+                const hlName = highlightMatch(c.name, activeSearchQuery);
                 const safeClientName = c.name.replace(/"/g, '&quot;');
                 
                 html += `<div onclick="openProjectListView(this.dataset.client)" data-client="${safeClientName}" style="${bgStyle}" class="p-5 rounded-xl border border-slate-200 hover:shadow-md transition-all cursor-pointer group relative overflow-hidden"><div class="flex items-center relative z-10 gap-4"><span class="text-2xl font-black text-slate-600 font-mono w-8 text-right shrink-0">${idx + 1}</span><div class="flex-1"><h3 class="font-bold text-lg text-slate-800 group-hover:text-amber-600 transition-colors">${hlName}</h3><p class="text-sm text-slate-500 font-medium">${c.count} proyectos</p></div><div class="h-10 w-10 bg-white/50 backdrop-blur-sm rounded-full flex items-center justify-center text-slate-400 group-hover:text-amber-600 shadow-sm"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div></div></div>`;
@@ -763,26 +1108,11 @@
 
         function renderProjectListContent() {
             let filteredItems = [];
-            let listTitle = "";
-
-            if (viewMode === 'CHART_FILTER') {
-                listTitle = currentClientName;
-                filteredItems = mergedData.filter(i => i.cliente === currentClientName && itemMatchesChartFilter(i));
-                let filterText = `${chartFilter.monthName} ${chartFilter.year} - ${chartFilter.category}`;
-                renderFilterButton('project-filter-container', filterText, ''); 
-            }
-            else if (viewMode === 'YEAR') {
-                listTitle = `Proyectos ${activeYearFilter}`;
-                filteredItems = mergedData.filter(i => checkItemYear(i, activeYearFilter));
-                renderFilterButton('project-filter-container', '', ''); 
-            } else {
-                const query = isProjectListFiltered ? activeSearchQuery : '';
-                renderFilterButton('project-filter-container', query, 'unfilterProjects()');
-                listTitle = currentClientName;
-                filteredItems = mergedData.filter(i => i.cliente === currentClientName && itemMatchesQuery(i, query));
-            }
-
-            document.getElementById('project-list-title').innerText = listTitle;
+            const query = isProjectListFiltered ? activeSearchQuery : '';
+            renderFilterButton('project-filter-container', query, 'unfilterProjects()');
+            
+            document.getElementById('project-list-title').innerText = currentClientName;
+            filteredItems = mergedData.filter(i => i.cliente === currentClientName && itemMatchesQuery(i, query));
 
             projectGroupsCache = {};
             const grouped = {};
@@ -790,7 +1120,12 @@
             filteredItems.forEach(item => {
                 const key = (item.numeroProyecto && item.numeroProyecto.trim().length > 2) ? item.numeroProyecto : item.tituloProyecto;
                 if (!grouped[key]) {
-                    grouped[key] = { key: key, number: item.numeroProyecto, title: item.tituloProyecto, items: [], isExternal: !!item.isExternal, trelloTags: item.trelloTags || [], clientName: item.cliente, sourceYear: item.sourceYear };
+                    grouped[key] = { 
+                        key: key, number: item.numeroProyecto, title: item.tituloProyecto, 
+                        items: [], isExternal: !!item.isExternal, trelloTags: item.trelloTags || [], 
+                        clientName: item.cliente, sourceYear: item.sourceYear,
+                        latestDate: 0, latestDateStr: '' 
+                    };
                 }
                 grouped[key].items.push(item);
                 if(!item.isExternal) grouped[key].isExternal = false; 
@@ -800,6 +1135,14 @@
                      if(!grouped[key].trelloTags) grouped[key].trelloTags = [];
                      item.trelloTags.forEach(t => { if(!existing.has(t.name)) grouped[key].trelloTags.push(t); });
                 }
+
+                if (item.fecha) {
+                    let itemTimestamp = parseDate(item.fecha);
+                    if (itemTimestamp > grouped[key].latestDate) {
+                        grouped[key].latestDate = itemTimestamp;
+                        grouped[key].latestDateStr = item.fecha;
+                    }
+                }
             });
 
             let projectsArray = Object.values(grouped);
@@ -807,14 +1150,17 @@
             projectsArray.sort((a, b) => {
                 const isTentativeA = (a.number + a.title).toUpperCase().includes('TENTATIVO');
                 const isTentativeB = (b.number + b.title).toUpperCase().includes('TENTATIVO');
+                
                 if (isTentativeA !== isTentativeB) return isTentativeA ? 1 : -1;
-
-                if (viewMode === 'YEAR') { return getProjectSortValue(a) - getProjectSortValue(b); } 
-                else {
-                    if (a.isExternal !== b.isExternal) return a.isExternal ? 1 : -1;
-                    if (!a.isExternal) return b.items.length - a.items.length;
+                if (a.isExternal !== b.isExternal) return a.isExternal ? 1 : -1;
+                
+                if (!a.isExternal) {
+                    const dateA = a.latestDate || 0;
+                    const dateB = b.latestDate || 0;
+                    if (dateA !== dateB) return dateB - dateA;
                     return getProjectSortValue(b) - getProjectSortValue(a);
                 }
+                return getProjectSortValue(b) - getProjectSortValue(a);
             });
 
             if (projectsArray.length === 0) {
@@ -822,15 +1168,12 @@
                 return;
             }
 
-            const maxEntries = projectsArray.length > 0 ? (projectsArray.find(p => !p.isExternal)?.items.length || 1) : 1;
             let html = '';
-            
             projectsArray.forEach((p, idx) => {
                 const groupId = `group_${idx}`;
                 projectGroupsCache[groupId] = p;
 
                 const count = p.items.length;
-                let barColor = p.isExternal ? '#cbd5e1' : '#dcfce7'; 
                 let topRightContent = '';
                 const trelloUrl = p.items[0]?.trelloUrl;
                 let onClickAttr = `onclick="openFinalView(this.dataset.group)" data-group="${groupId}"`;
@@ -839,29 +1182,26 @@
                 let iconSvg = `<svg class="w-5 h-5 text-slate-300 group-hover:text-green-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>`;
 
                 if (p.isExternal) {
-                    onClickAttr = ''; cursorClass = 'cursor-default'; titleHoverClass = 'text-slate-700'; iconSvg = ''; 
+                    onClickAttr = ''; cursorClass = 'cursor-default opacity-80'; titleHoverClass = 'text-slate-700'; iconSvg = ''; 
                     const yearLabel = p.sourceYear ? `<span class="text-xs font-black text-slate-400 mt-1">${p.sourceYear}</span>` : '';
                     if (trelloUrl) {
                         const safeUrl = trelloUrl.replace(/"/g, '&quot;');
                         topRightContent = `<div class="flex flex-col items-center justify-center"><a href="${safeUrl}" target="_blank" class="flex items-center gap-1 text-xs font-bold text-blue-600 bg-blue-50 hover:bg-blue-600 hover:text-white px-2 py-1 rounded transition-all border border-blue-200 hover:border-blue-600 z-20 relative shadow-sm"><span>Trello</span><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>${yearLabel}</div>`;
                     } else { topRightContent = `<div class="flex flex-col items-center justify-center"><span class="text-xs text-slate-400 font-medium">Trello (Sin Link)</span>${yearLabel}</div>`; }
-                } else { topRightContent = `<span class="text-xs text-slate-400 font-medium">${count} entradas</span>`; }
-
-                const percentage = (viewMode === 'YEAR' || p.isExternal) ? 100 : Math.round((count / maxEntries) * 100);
-                const bgStyle = `background: linear-gradient(90deg, ${barColor} ${percentage}%, white ${percentage}%);`;
+                } else { 
+                    let dateHtml = p.latestDateStr ? `<div class="text-xs font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 flex items-center gap-1"><svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>${p.latestDateStr}</div>` : '';
+                    topRightContent = `<div class="flex flex-col items-end justify-center gap-1">${dateHtml}<span class="text-[10px] text-slate-400 font-medium">${count} entrada(s)</span></div>`; 
+                }
 
                 let tagsHtml = '';
                 if(p.trelloTags && p.trelloTags.length > 0) {
                     tagsHtml = `<div class="flex flex-wrap gap-1 mt-1">` + p.trelloTags.map(t => `<span class="text-[9px] px-1.5 py-0.5 rounded border ${TRELLO_COLORS[t.color] || TRELLO_COLORS['default']} font-bold uppercase opacity-80">${t.name}</span>`).join('') + `</div>`;
                 }
 
-                let clientLabelHtml = (viewMode === 'YEAR') ? `<div class="text-[10px] font-bold text-amber-600 uppercase tracking-wider mb-0.5">${p.clientName}</div>` : '';
+                const hlTitle = highlightMatch(p.title, activeSearchQuery);
+                const hlNum = highlightMatch(p.number || '', activeSearchQuery);
                 
-                const showHighlight = viewMode !== 'CHART_FILTER';
-                const hlTitle = showHighlight ? highlightMatch(p.title, activeSearchQuery) : p.title;
-                const hlNum = showHighlight ? highlightMatch(p.number || '', activeSearchQuery) : (p.number || '');
-                
-                html += `<div ${onClickAttr} style="${bgStyle}" class="p-4 rounded-xl border border-slate-200 shadow-sm transition-all ${cursorClass} group relative"><div class="flex items-start gap-3 relative z-10"><span class="text-lg font-black text-slate-600 font-mono w-6 text-right pt-1">${idx + 1}</span><div class="flex-1"><div class="flex justify-between items-start"><div class="flex items-center gap-2 mb-1">${p.number ? `<span class="text-xs font-mono font-bold text-slate-500 bg-white/80 backdrop-blur-sm px-2 py-0.5 rounded border border-slate-200">${hlNum}</span>` : ''}</div>${topRightContent}</div>${clientLabelHtml}<h3 class="font-bold text-base leading-tight text-slate-800 ${titleHoverClass} transition-colors">${hlTitle}</h3>${tagsHtml}</div><div class="self-center">${iconSvg}</div></div></div>`;
+                html += `<div ${onClickAttr} class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm transition-all ${cursorClass} group relative"><div class="flex items-start gap-3 relative z-10"><span class="text-lg font-black text-slate-400 font-mono w-6 text-right pt-1">${idx + 1}</span><div class="flex-1"><div class="flex justify-between items-start"><div class="flex items-center gap-2 mb-1">${p.number ? `<span class="text-xs font-mono font-bold text-slate-500 bg-slate-50 px-2 py-0.5 rounded border border-slate-200">${hlNum}</span>` : ''}</div>${topRightContent}</div><h3 class="font-bold text-base leading-tight text-slate-800 ${titleHoverClass} transition-colors">${hlTitle}</h3>${tagsHtml}</div><div class="self-center">${iconSvg}</div></div></div>`;
             });
             projectListContainer.innerHTML = html;
         }
@@ -872,14 +1212,12 @@
             const groupData = projectGroupsCache[groupId];
             if (!groupData) return;
 
-            const targetClient = viewMode === 'YEAR' ? groupData.clientName : currentClientName;
             const fullProjectItems = mergedData.filter(item => {
                 const key = (item.numeroProyecto && item.numeroProyecto.trim().length > 2) ? item.numeroProyecto : item.tituloProyecto;
-                return key === groupData.key && item.cliente === targetClient; 
+                return key === groupData.key && item.cliente === currentClientName; 
             });
             
             window.currentViewItems = fullProjectItems; 
-            window.currentViewExternal = groupData.isExternal;
             
             document.getElementById('final-view-title').innerText = `${groupData.number || ''} ${groupData.title}`;
             
@@ -889,8 +1227,7 @@
             activeCategoryFilter = null;
             isFinalViewFiltered = true; 
             
-            isTooltipPinned = false;
-            window.pinnedDayKey = null;
+            closeDayPanel();
 
             updateFinalViewContent();
             resetScroll('final-view'); 
@@ -898,23 +1235,14 @@
         }
 
         function updateFinalViewContent() {
-            let filterText = '';
-            if (viewMode === 'CHART_FILTER') {
-                filterText = `${chartFilter.monthName} ${chartFilter.year} - ${chartFilter.category}`;
-                renderFilterButton('active-search-filter-container', filterText, '');
-            } else {
-                const query = isFinalViewFiltered ? activeSearchQuery : '';
-                renderFilterButton('active-search-filter-container', query, 'unfilterFinalView()');
-            }
+            const query = isFinalViewFiltered ? activeSearchQuery : '';
+            renderFilterButton('active-search-filter-container', query, 'unfilterFinalView()');
 
             let itemsToShow = window.currentViewItems;
             
-            if (viewMode === 'CHART_FILTER') {
-                itemsToShow = itemsToShow.filter(item => itemMatchesChartFilter(item));
-            } else if (isFinalViewFiltered && activeSearchQuery && viewMode !== 'YEAR') {
+            if (isFinalViewFiltered && activeSearchQuery) {
                 itemsToShow = itemsToShow.filter(item => itemMatchesQuery(item, activeSearchQuery));
             }
-            
             if (activeCategoryFilter) itemsToShow = itemsToShow.filter(item => item.trabajoDiseno && item.trabajoDiseno.toUpperCase() === activeCategoryFilter);
 
             const cats = [...new Set(window.currentViewItems.map(i => i.trabajoDiseno ? i.trabajoDiseno.toUpperCase() : 'PRODUCCIÓN'))];
@@ -923,217 +1251,12 @@
                  const opacity = (activeCategoryFilter && activeCategoryFilter !== c) ? 'opacity-30' : 'opacity-100';
                  return `<button onclick="toggleCategory('${c}')" class="${style.btnColor} text-white px-4 py-2 rounded-full ${opacity} hover:opacity-100 shadow-sm transition-opacity">${toTitleCase(c)}</button>`;
             }).join('');
-
-            // Guardamos para uso del tooltip
-            window.currentRenderedFinalItems = itemsToShow;
-            document.getElementById('entries-count-badge').innerText = itemsToShow.length;
             
-            renderFinalCalendar(itemsToShow); 
+            renderCalendar(itemsToShow, 'final-calendar-container', 'entries-count-badge');
         }
 
         function toggleCategory(c) { activeCategoryFilter = activeCategoryFilter === c ? null : c; updateFinalViewContent(); }
         function unfilterFinalView() { isFinalViewFiltered = false; updateFinalViewContent(); }
-
-        // --- SISTEMA DE TOOLTIP EN CALENDARIO (MODIFICADO) ---
-        function togglePinTooltip(event, d, m, y) {
-            event.stopPropagation();
-            const tooltip = document.getElementById('day-tooltip');
-            const clickedDayKey = `${d}-${m}-${y}`;
-
-            if (isTooltipPinned && window.pinnedDayKey === clickedDayKey) {
-                // Si ya está fijado y clicamos en el mismo día, lo des-fijamos
-                isTooltipPinned = false;
-                window.pinnedDayKey = null;
-                tooltip.classList.add('pointer-events-none');
-                tooltip.classList.remove('pointer-events-auto');
-                hideDayTooltip(true);
-            } else {
-                // Si clicamos en otro o no está fijado, lo fijamos a este día
-                isTooltipPinned = true;
-                window.pinnedDayKey = clickedDayKey;
-                tooltip.classList.remove('pointer-events-none');
-                tooltip.classList.add('pointer-events-auto');
-                showDayTooltip(event, d, m, y, true);
-            }
-        }
-
-        function showDayTooltip(event, d, m, y, force = false) {
-            if (isTooltipPinned && !force) return;
-
-            const tooltip = document.getElementById('day-tooltip');
-            
-            // Filtramos los items renderizados para obtener los del día específico
-            const items = window.currentRenderedFinalItems.filter(item => {
-                if(!item.fecha) return false;
-                const parts = item.fecha.split('/');
-                return parseInt(parts[0]) === d && parseInt(parts[1]) === m && parseInt(parts[2]) === y;
-            });
-
-            if (items.length === 0) return;
-
-            let html = `
-                <div class="font-bold text-slate-700 border-b border-slate-100 pb-2 mb-2 flex justify-between items-center">
-                    <span>${String(d).padStart(2, '0')}/${String(m).padStart(2, '0')}/${y}</span>
-                    <span class="text-xs font-normal text-slate-500">${items.length} entrada(s)</span>
-                </div>
-                <div class="max-h-64 overflow-y-auto custom-scrollbar flex flex-col gap-3 pr-1">
-            `;
-
-            items.sort((a, b) => parseDate(a.fecha) - parseDate(b.fecha));
-
-            items.forEach((item) => {
-                const cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase() : 'OTRO';
-                const style = CAT_STYLES[cat] || CAT_STYLES['OTRO']; 
-                const isFalta = item.check === 'FALTA';
-                
-                let cardClass = style.card;
-                if (isFalta) {
-                    cardClass = cardClass.replace(/border-\w+-\d+/g, ''); 
-                    cardClass += ' border-2 border-red-600 shadow-[0_0_10px_rgba(220,38,38,0.3)]';
-                }
-                
-                const showHighlight = (viewMode !== 'YEAR' && viewMode !== 'CHART_FILTER' && isFinalViewFiltered);
-                const hlDesc = showHighlight ? highlightMatch(item.descripcion, activeSearchQuery) : item.descripcion;
-
-                html += `
-                    <div class="p-3 rounded-lg border text-sm ${cardClass} flex flex-col gap-1.5 relative overflow-hidden">
-                        <div class="flex justify-between items-center">
-                            <span class="px-2 py-0.5 rounded text-[10px] font-bold ${style.badge}">${cat}</span>
-                            ${item.drive ? `<a href="${item.drive}" target="_blank" class="text-blue-600 hover:text-blue-800 bg-white/70 hover:bg-white rounded px-1 flex items-center shadow-sm" title="Ver archivo"><svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg> Ver</a>` : ''}
-                        </div>
-                        <p class="text-slate-700 leading-relaxed text-xs font-medium">${hlDesc}</p>
-                    </div>
-                `;
-            });
-
-            html += `</div>`;
-            
-            tooltip.innerHTML = html;
-            tooltip.classList.remove('hidden');
-
-            requestAnimationFrame(() => {
-                tooltip.classList.remove('opacity-0');
-            });
-
-            moveTooltip(event, force);
-        }
-
-        function moveTooltip(event, force = false) {
-            if (isTooltipPinned && !force) return;
-            const tooltip = document.getElementById('day-tooltip');
-            if (tooltip.classList.contains('hidden')) return;
-
-            const rect = tooltip.getBoundingClientRect();
-            const offset = 15;
-            
-            // Centrado horizontalmente respecto al cursor
-            let x = event.clientX - (rect.width / 2);
-            // Arriba del cursor
-            let y = event.clientY - rect.height - offset;
-
-            // Evitamos que se salga por los lados de la pantalla
-            if (x < 10) x = 10;
-            if (x + rect.width > window.innerWidth - 10) {
-                x = window.innerWidth - rect.width - 10;
-            }
-
-            // Si se sale por arriba de la pantalla, la ponemos por debajo del cursor
-            if (y < 10) {
-                y = event.clientY + offset;
-            }
-
-            tooltip.style.left = `${x}px`;
-            tooltip.style.top = `${y}px`;
-        }
-
-        function hideDayTooltip(force = false) {
-            if (isTooltipPinned && !force) return;
-            const tooltip = document.getElementById('day-tooltip');
-            tooltip.classList.add('opacity-0');
-            
-            setTimeout(() => {
-                if (tooltip.classList.contains('opacity-0')) {
-                    tooltip.classList.add('hidden');
-                }
-            }, 200);
-        }
-
-        function renderFinalCalendar(items) {
-            const eventsByDate = {};
-            let minDate = null;
-            let maxDate = null;
-
-            items.forEach(item => {
-                if(!item.fecha) return;
-                const [dStr, mStr, yStr] = item.fecha.split('/');
-                if(!dStr || !mStr || !yStr) return;
-                
-                const d = parseInt(dStr);
-                const m = parseInt(mStr);
-                const y = parseInt(yStr);
-
-                // Registrar mínimo y máximo para dibujar todos los meses
-                const totalMonths = y * 12 + m;
-                if (minDate === null || totalMonths < minDate) minDate = totalMonths;
-                if (maxDate === null || totalMonths > maxDate) maxDate = totalMonths;
-
-                const key = `${y}-${m}`;
-                if (!eventsByDate[key]) eventsByDate[key] = {};
-                if (!eventsByDate[key][d]) eventsByDate[key][d] = [];
-                // Se guarda el item completo para pasarlo al tooltip
-                eventsByDate[key][d].push(item);
-            });
-
-            if (Object.keys(eventsByDate).length === 0 || minDate === null || maxDate === null) {
-                finalCalendarContainer.innerHTML = '<div class="w-full text-center text-slate-300 mt-10">Sin fechas registradas</div>'; return;
-            }
-
-            // Generar arreglo de meses continuos
-            const continuousMonths = [];
-            for (let t = minDate; t <= maxDate; t++) {
-                let year = Math.floor((t - 1) / 12);
-                let month = ((t - 1) % 12) + 1;
-                continuousMonths.push(`${year}-${month}`);
-            }
-            
-            finalCalendarContainer.innerHTML = continuousMonths.map(key => {
-                const [y, m] = key.split('-').map(Number); 
-                return generateCalendarHTML(m, y, eventsByDate[key] || {}, key);
-            }).join('');
-        }
-
-        function generateCalendarHTML(month, year, eventsMap, monthKey) {
-            const monthIdx = month - 1;
-            const daysInMonth = new Date(year, monthIdx + 1, 0).getDate();
-            const firstDay = new Date(year, monthIdx, 1).getDay();
-            
-            // Aumentado el ancho a max-w-[340px]
-            let h = `<div id="cal-month-${monthKey}" class="w-full max-w-[340px] transition-all duration-500">
-                        <div class="text-center font-bold text-slate-700 text-lg mb-3 border-b border-slate-200 pb-2">${MONTH_NAMES[monthIdx]} ${year}</div>
-                        <div class="grid grid-cols-7 text-center text-sm font-semibold text-slate-400 mb-2">
-                            <div>D</div><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div>
-                        </div>
-                        <div class="grid grid-cols-7 gap-2 text-base">`; // text-base y gap-2
-            
-            for(let i=0; i<firstDay; i++) h+=`<div></div>`;
-            for(let d=1; d<=daysInMonth; d++) {
-                if(eventsMap[d] && eventsMap[d].length > 0) {
-                    const firstItemCat = eventsMap[d][0].trabajoDiseno ? eventsMap[d][0].trabajoDiseno.toUpperCase() : 'OTRO';
-                    const dotColorClass = (CAT_STYLES[firstItemCat] || { dotClass: 'bg-slate-400' }).dotClass;
-                    
-                    // Añadido onclick y clase day-dot
-                    h += `<div class="day-dot aspect-square rounded-lg flex items-center justify-center font-bold text-white shadow-sm ${dotColorClass} transition-transform duration-200 cursor-pointer hover:scale-110 relative z-10" 
-                            onmouseenter="showDayTooltip(event, ${d}, ${month}, ${year})" 
-                            onmousemove="moveTooltip(event)" 
-                            onmouseleave="hideDayTooltip()"
-                            onclick="togglePinTooltip(event, ${d}, ${month}, ${year})">${d}</div>`;
-                } else {
-                    h += `<div class="aspect-square flex items-center justify-center text-slate-300">${d}</div>`;
-                }
-            }
-            h += `</div></div>`;
-            return h;
-        }
 
         function parseDate(dStr) { 
             if(!dStr) return 0; const parts = dStr.split('/');
@@ -1150,7 +1273,7 @@
             }
         }
 
-        // --- SISTEMA DE NAVEGACIÓN ---
+        // --- SISTEMA DE NAVEGACIÓN GENERAL ---
         function openResultsView() { 
             resetScroll('results-view'); 
             searchView.classList.add('-translate-y-full', 'opacity-0'); 
@@ -1167,39 +1290,30 @@
         }
         
         function closeResults() { 
-            if (viewMode === 'CHART_FILTER' && chartFilter) {
-                resultsView.classList.add('translate-y-full');
-                chartView.classList.remove('translate-x-full');
-                return;
-            }
-
             activeSearchQuery=''; 
             viewMode = 'CLIENT'; 
-            activeYearFilter = '';
-            chartFilter = null;
             mainInput.value=''; 
             headerInput.value=''; 
             resultsView.classList.add('translate-y-full'); 
             searchView.classList.remove('-translate-y-full', 'opacity-0'); 
             projectListView.classList.add('translate-x-full'); 
             finalView.classList.add('translate-x-full'); 
-            if (typeof chartView !== 'undefined') chartView.classList.add('translate-x-full');
+            if (typeof chartDetailsView !== 'undefined') chartDetailsView.classList.add('translate-x-full');
+            if (typeof yearDashboardView !== 'undefined') yearDashboardView.classList.add('translate-x-full');
+            
+            closeDayPanel();
             setTimeout(()=>mainInput.focus(),500); 
         }
         
         function closeProjectListView() { 
             resetScroll('results-view'); 
             projectListView.classList.add('translate-x-full'); 
-            if(viewMode === 'YEAR') closeResults(); 
         }
         
         function closeFinalView() { 
             resetScroll('project-list-view'); 
             finalView.classList.add('translate-x-full'); 
-            
-            isTooltipPinned = false;
-            window.pinnedDayKey = null;
-            hideDayTooltip(true);
+            closeDayPanel();
         }
     </script>
 </body>
