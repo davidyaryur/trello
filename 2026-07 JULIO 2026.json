@@ -1,0 +1,337 @@
+[
+  {
+    "tableId": 100,
+    "mes": "JULIO",
+    "num": 100,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "08/07/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "429/26",
+        "cliente": "DISTRIBUIDORA INMARKET",
+        "tituloProyecto": "DESARROLLO DE EXHIBIDOR CON BANDEJAS",
+        "trello": "https",
+        "descripcion": "Comencé a realizar el rendimiento de exhibidores de mesa para Chocolates Milka",
+        "drive": "https://drive.google.com/drive/folders/1cggSdWUCwnoaq4L9PMRAqQhkI8w6o16-?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "09/07/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "429/26",
+        "cliente": "DISTRIBUIDORA INMARKET",
+        "tituloProyecto": "DESARROLLO DE EXHIBIDOR CON BANDEJAS",
+        "trello": "https",
+        "descripcion": "Realice los 8 rendimientos de las propuestas de exhibidor de mesa para Chocolates Milka",
+        "drive": "https://drive.google.com/drive/folders/1cggSdWUCwnoaq4L9PMRAqQhkI8w6o16-?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 101,
+    "mes": "JULIO",
+    "num": 101,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "02/07/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "313/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE CM ALAMEDA NATUCHIPS",
+        "trello": "https",
+        "descripcion": "Le envié el visual de NatuChips a Lorena",
+        "drive": "https://drive.google.com/drive/folders/1hd2_pQnG0xofvouz2nympe3d0ZL6qT05?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 102,
+    "mes": "JULIO",
+    "num": 102,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "02/07/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "313/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE CM ALAMEDA NATUCHIPS",
+        "trello": "https",
+        "descripcion": "Le envié el plano con las dimensiones de NatuChips a Lorena DRIVE:",
+        "drive": "https://drive.google.com/drive/folders/1x-O6qHby6xcH35j2Kf_lfP4NpzdHhBmF?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(02)",
+        "fecha": "03/07/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "313/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE CM ALAMEDA NATUCHIPS",
+        "trello": "https",
+        "descripcion": "Agregué la medida del ancho total al mueble de la Muralla",
+        "drive": "https://drive.google.com/drive/folders/1x-O6qHby6xcH35j2Kf_lfP4NpzdHhBmF?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "08/07/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "605/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "CABEZAL NUEVA ALTURA FIXTURIZACION GAMA - RECTIFICACIÓN DE MEDIDAS",
+        "trello": "https",
+        "descripcion": "Fui con Enmary y Meliche a Gama Santa Eduvigis a medir el cabezal",
+        "drive": "https://drive.google.com/drive/folders/1Zt_BA-m_j1-rskZPki_jkZV-L7aJO65c?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(04)",
+        "fecha": "08/07/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "604/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "MUEBLE FIXTURIZACION CENTRAL MADEIRENSE LA ALAMEDA - RECTIFICACIÓN DE MEDIDAS",
+        "trello": "https",
+        "descripcion": "Fuimos a Central Madeirense La Alameda para medir Fixturización",
+        "drive": "https://drive.google.com/drive/folders/1w_HAYEXarJXw-gawroUbtN75KRTBcKlr?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "08/07/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "313/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE CM ALAMEDA NATUCHIPS",
+        "trello": "https",
+        "descripcion": "En Central Madeirense La Alameda medí el espacio para Pepsico",
+        "drive": "https://drive.google.com/drive/folders/1x-O6qHby6xcH35j2Kf_lfP4NpzdHhBmF?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "08/07/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "TENTATIVO 012/26",
+        "cliente": "FARMATODO TEPUY",
+        "tituloProyecto": "RECTIFICACIÓN DE MEDIDAS",
+        "trello": "https",
+        "descripcion": "Fuimos al Farmatodo Tepuy a hacer una rectificación de medidas a la puntera y parrillera",
+        "drive": "https://drive.google.com/drive/folders/143kPONJJqoLkOpY8IgU9Ukpsw-QIJigW?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 103,
+    "mes": "JULIO",
+    "num": 103,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "01/07/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "486/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "BOTADERO LECHE CONDENSADA",
+        "trello": "https",
+        "descripcion": "Muestra física del botadero de Leche Condensada",
+        "drive": "https://drive.google.com/drive/folders/1yphMmUjimTccTTWIMTxCPItM9XigACE2?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(02)",
+        "fecha": "07/07/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "486/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "BOTADERO LECHE CONDENSADA",
+        "trello": "https",
+        "descripcion": "Me puse a armar el botadero de leche condensada",
+        "drive": "https://drive.google.com/drive/folders/1yphMmUjimTccTTWIMTxCPItM9XigACE2?usp=drive_link",
+        "check": "FALTA"
+      }
+    ]
+  },
+  {
+    "tableId": 104,
+    "mes": "JULIO",
+    "num": 104,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "01/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "508/26",
+        "cliente": "EL TUNAL",
+        "tituloProyecto": "PUNTERA PURISSIMA MERKAFUR",
+        "trello": "https",
+        "descripcion": "Corrección del vinil ploteado del mueble de Purísima",
+        "drive": "https://drive.google.com/drive/folders/1hMMx0hfyRtannxpgyGJkL3QqyKxabVba?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "01/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "562/26",
+        "cliente": "EL TUNAL",
+        "tituloProyecto": "RIO CHARALLAVE",
+        "trello": "https",
+        "descripcion": "Vasos para los nuevos muebles de Purísima",
+        "drive": "https://drive.google.com/drive/folders/1FuhRjY_oEqtfjjFjq5_9q8VFq2zMnvqb?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(03)",
+        "fecha": "01/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "313/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE CM ALAMEDA NATUCHIPS",
+        "trello": "https",
+        "descripcion": "Empecé el desarrollo del mueble Natuchips Central Madeirense la Alameda",
+        "drive": "https://drive.google.com/drive/folders/1kggdiCOyobB0IWmgcXhJcBlWvT2v3aRy?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(04)",
+        "fecha": "02/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "462/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL",
+        "trello": "https",
+        "descripcion": "Acomodé el corte de los adornos de BT NatuChips",
+        "drive": "https://drive.google.com/drive/folders/1dlzfkh_9k-xXOckfic_cr6bSphxsEqTX?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "02/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "508/26",
+        "cliente": "EL TUNAL",
+        "tituloProyecto": "PUNTERA PURISSIMA MERKAFUR Y RIO BARQUISIMETO",
+        "trello": "https",
+        "descripcion": "Le di a Pablo el vinil de los vasos del mueble Purísima",
+        "drive": "https://drive.google.com/drive/folders/1hMMx0hfyRtannxpgyGJkL3QqyKxabVba?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(06)",
+        "fecha": "03/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "313/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE CM ALAMEDA NATUCHIPS",
+        "trello": "https",
+        "descripcion": "Continué montando el corte del mueble NatuChips CM La Alameda",
+        "drive": "https://drive.google.com/drive/folders/1kggdiCOyobB0IWmgcXhJcBlWvT2v3aRy?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(07)",
+        "fecha": "06/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "477/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "ISLA PERSONAL CARE",
+        "trello": "https",
+        "descripcion": "Locatel La Castellana. Monté los archivos de la Isla de Colgate Locatel para impresión",
+        "drive": "https://drive.google.com/drive/folders/1UWjHcmoJnKLUeeGlGlF9eBfP9iFyCMtG?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(08)",
+        "fecha": "06/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "313/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE CM ALAMEDA NATUCHIPS",
+        "trello": "https",
+        "descripcion": "Revisé los archivos de corte del mueble NatuChips Central Madeirense La Alameda",
+        "drive": "https://drive.google.com/drive/folders/1p5ir-biD0_RYlcojBsNWRpqTqy4CBisv?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(09)",
+        "fecha": "07/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "462/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL",
+        "trello": "https",
+        "descripcion": "Monté la orden de producción de los adornos que faltaban del mueble BT Up NatuChips",
+        "drive": "https://drive.google.com/drive/folders/1dlzfkh_9k-xXOckfic_cr6bSphxsEqTX?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(10)",
+        "fecha": "07/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "313/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE CM ALAMEDA NATUCHIPS",
+        "trello": "https",
+        "descripcion": "Continué montando la orden de producción del mueble NatuChips CM La Alameda",
+        "drive": "https://drive.google.com/drive/folders/1p5ir-biD0_RYlcojBsNWRpqTqy4CBisv?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(11)",
+        "fecha": "09/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "462/25",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE BT NATUCHIPS Y 7UP RÍO LOMAS DEL SOL",
+        "trello": "https",
+        "descripcion": "El señor Ricardo me llamó para ver como va el mueble de 7Up NatuChips",
+        "drive": "https://drive.google.com/drive/folders/1dlzfkh_9k-xXOckfic_cr6bSphxsEqTX?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(12)",
+        "fecha": "09/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "484/26",
+        "cliente": "YOLO",
+        "tituloProyecto": "MANTENIMIENTO Y REPARACIÓN YOLO BAR",
+        "trello": "https",
+        "descripcion": "Pablo me pidió el corte de las topineras del carrito de Yolo para cortar en el Engraver",
+        "drive": "https://drive.google.com/drive/folders/12O6aynugR5Fecd63zVvGhhwzKPJ1_xnK?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(13)",
+        "fecha": "09/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "313/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE CM ALAMEDA NATUCHIPS",
+        "trello": "https",
+        "descripcion": "Empecé el vinil del mueble CM La Alameda de NatuChips",
+        "drive": "https://drive.google.com/drive/folders/1kggdiCOyobB0IWmgcXhJcBlWvT2v3aRy?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(14)",
+        "fecha": "09/07/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "297/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "CABEZALES CANAL MODERNO NIM MULTICATEGORÍA",
+        "trello": "https",
+        "descripcion": "Envié el corte del mueble Multicategoría Nestlé Emporium",
+        "drive": "https://drive.google.com/drive/folders/18_LAOJVml-24VmtNcWkrfOPhKk5K8HcG?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  }
+]
