@@ -57,6 +57,12 @@
 </head>
 <body class="bg-white text-slate-800 h-screen w-screen overflow-hidden flex flex-col relative">
 
+    <div id="welcome-view" class="absolute inset-0 z-[100] flex items-center justify-center bg-slate-900 transition-opacity duration-700 ease-in-out">
+        <button onclick="startApp()" class="px-10 py-5 bg-amber-500 hover:bg-amber-600 text-white text-3xl md:text-5xl font-black rounded-3xl shadow-[0_0_40px_rgba(245,158,11,0.4)] hover:shadow-[0_0_60px_rgba(245,158,11,0.6)] hover:scale-105 transition-all duration-300 tracking-tight">
+            Proyectos Yar-Yur
+        </button>
+    </div>
+
     <div id="loading-indicator" class="fixed top-4 right-4 bg-white shadow-md rounded-full px-4 py-2 flex items-center gap-3 z-50 text-sm font-medium text-slate-500 transition-opacity opacity-0 pointer-events-none">
         <div class="loader"></div>
         <span id="loading-text">Indexando archivos...</span>
@@ -73,7 +79,7 @@
                 </div>
                 <input type="text" id="main-search-input" disabled
                     class="block w-full pl-12 pr-4 py-4 text-lg bg-slate-50 border-2 border-slate-200 rounded-2xl focus:outline-none focus:border-amber-500 focus:bg-white focus:ring-4 focus:ring-amber-500/10 transition-all shadow-sm placeholder-slate-400 disabled:opacity-50 disabled:cursor-not-allowed" 
-                    placeholder="Buscar cliente, año (ej. 2026), mes..." autocomplete="off">
+                    placeholder="" autocomplete="off">
             </div>
         </div>
     </div>
@@ -250,6 +256,26 @@
     </div>
 
     <script>
+        // --- FUNCIÓN PANTALLA COMPLETA ---
+        function startApp() {
+            const elem = document.documentElement;
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen().catch(err => console.log(err));
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen().catch(err => console.log(err));
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen().catch(err => console.log(err));
+            }
+
+            const welcomeView = document.getElementById('welcome-view');
+            welcomeView.classList.add('opacity-0');
+            setTimeout(() => {
+                welcomeView.classList.add('hidden');
+                // Auto enfocar el buscador al quitar la bienvenida
+                document.getElementById('main-search-input').focus();
+            }, 700);
+        }
+
         // --- CONFIGURACIÓN DE ARCHIVOS ---
         const PERSONAL_FILES = [
             '2025-01 ENERO 2025.json', '2025-02 FEBRERO 2025.json', '2025-03 MARZO 2025.json', '2025-04 ABRIL 2025.json',
@@ -372,7 +398,7 @@
                 processAndMergeData(validPersonal, validCompany);
                 
                 mainInput.disabled = false;
-                mainInput.focus();
+                // No enfocamos el mainInput aquí automáticamente porque primero está la pantalla de bienvenida.
             } catch (e) {
                 console.error("Error fatal iniciando la app:", e);
                 mainInput.placeholder = "Error al conectar con archivos locales.";
@@ -783,8 +809,8 @@
             }
             if (state.level === 'FILTERED_PROJECT') {
                 activeItems = activeItems.filter(i => {
-                    const key = (i.numeroProyecto && i.numeroProyecto.trim().length > 2) ? i.numeroProyecto : (i.tituloProyecto || 'SIN TITULO');
-                    return key === state.selectedProject;
+                    const title = i.tituloProyecto || 'SIN TÍTULO';
+                    return title === state.selectedProject;
                 });
             }
 
@@ -817,7 +843,7 @@
                 const counts = {};
                 const clientItems = state.baseItems.filter(i => (i.cliente || 'SIN CLIENTE') === state.selectedClient);
                 clientItems.forEach(i => {
-                    const p = (i.numeroProyecto && i.numeroProyecto.trim().length > 2) ? i.numeroProyecto : (i.tituloProyecto || 'SIN TITULO');
+                    const p = i.tituloProyecto || 'SIN TÍTULO'; // Ahora se agrupa por el título del proyecto
                     counts[p] = (counts[p] || 0) + 1;
                 });
                 
