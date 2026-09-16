@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
@@ -57,22 +58,14 @@
 </head>
 <body class="bg-white text-slate-800 h-screen w-screen overflow-hidden flex flex-col relative">
 
-    <div id="welcome-view" class="absolute inset-0 z-[100] flex items-center justify-center bg-white transition-opacity duration-700 ease-in-out">
-        <button onclick="startApp()" class="px-10 py-5 bg-amber-500 hover:bg-amber-600 text-slate-900 text-3xl md:text-5xl font-black rounded-3xl shadow-[0_0_40px_rgba(245,158,11,0.4)] hover:shadow-[0_0_60px_rgba(245,158,11,0.6)] hover:scale-105 transition-all duration-300 tracking-tight">
-            Proyectos Yar-Yur
-        </button>
-    </div>
-
-    <div id="loading-indicator" class="fixed top-4 right-4 bg-white shadow-md rounded-full px-4 py-2 flex items-center gap-3 z-50 text-sm font-medium text-slate-500 transition-opacity opacity-0 pointer-events-none">
+    <div id="loading-indicator" class="fixed top-4 right-4 bg-white shadow-md rounded-full px-4 py-2 flex items-center gap-3 z-50 text-sm font-medium text-slate-50 transition-opacity opacity-0 pointer-events-none">
         <div class="loader"></div>
         <span id="loading-text">Indexando archivos...</span>
     </div>
 
     <div id="search-view" class="absolute inset-0 z-30 flex flex-col items-center justify-center p-6 transition-all duration-500 ease-in-out bg-white">
         <div class="w-full max-w-2xl text-center fade-in-up">
-            <h1 onclick="startApp()" class="text-4xl md:text-5xl font-black text-slate-900 mb-8 tracking-tight cursor-pointer hover:scale-105 transition-transform inline-block select-none" title="Poner en pantalla completa">
-                Proyectos <span class="text-amber-500">Yar-Yur</span>
-            </h1>
+            <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-8 tracking-tight">Proyectos <span class="text-amber-500">Yar-Yur</span></h1>
             <div class="relative group">
                 <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                     <svg class="h-6 w-6 text-slate-400 group-focus-within:text-amber-500 transition-colors" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -81,9 +74,43 @@
                 </div>
                 <input type="text" id="main-search-input" disabled
                     class="block w-full pl-12 pr-4 py-4 text-lg bg-slate-50 border-2 border-slate-200 rounded-2xl focus:outline-none focus:border-amber-500 focus:bg-white focus:ring-4 focus:ring-amber-500/10 transition-all shadow-sm placeholder-slate-400 disabled:opacity-50 disabled:cursor-not-allowed" 
-                    placeholder="" autocomplete="off">
+                    placeholder="Buscar cliente, año (ej. 2026), mes..." autocomplete="off">
             </div>
         </div>
+    </div>
+
+    <!-- NUEVA VISTA: Auditoría de Enlaces -->
+    <div id="enlaces-view" class="absolute inset-0 z-[45] bg-slate-50 flex flex-col translate-y-full transition-transform duration-500 ease-in-out">
+        <header class="bg-white border-b border-slate-200 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 shrink-0 shadow-sm relative z-20">
+            <div class="flex items-center gap-4">
+                <button onclick="closeEnlacesView()" class="p-2 -ml-2 text-slate-500 hover:text-slate-800 hover:bg-slate-100 rounded-full transition-colors group" title="Ir al inicio">
+                    <svg class="w-6 h-6 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                </button>
+                <div>
+                    <h2 class="text-xl font-bold text-slate-800">Auditoría de Enlaces (2025 - 2026)</h2>
+                    <p class="text-xs text-slate-500" id="enlaces-count">0 proyectos</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-end md:items-center gap-3 flex-wrap justify-end">
+                <div class="flex items-center gap-2">
+                    <button onclick="filterEnlaces('todos')" id="btn-enlaces-todos" class="px-4 py-1.5 rounded-full text-sm font-bold bg-slate-600 text-white shadow-md transition-colors">Todos</button>
+                    <button onclick="filterEnlaces('buenos')" id="btn-enlaces-buenos" class="px-4 py-1.5 rounded-full text-sm font-bold bg-green-100 text-green-700 hover:bg-green-200 transition-colors">Buenos</button>
+                    <button onclick="filterEnlaces('malos')" id="btn-enlaces-malos" class="px-4 py-1.5 rounded-full text-sm font-bold bg-red-100 text-red-700 hover:bg-red-200 transition-colors">Por Corregir</button>
+                </div>
+                <div class="w-full md:w-px h-px md:h-6 bg-slate-200 mx-1"></div>
+                <div class="flex items-center gap-2 flex-wrap justify-end">
+                    <button onclick="toggleEnlaceFiltro('sinMensual')" id="btn-filtro-sin-mensual" class="px-3 py-1.5 rounded-full text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors border border-slate-200">Sin Mensual</button>
+                    <button onclick="toggleEnlaceFiltro('conMensual')" id="btn-filtro-con-mensual" class="px-3 py-1.5 rounded-full text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors border border-slate-200">Con Mensual</button>
+                    <button onclick="toggleEnlaceFiltro('sinTrello')" id="btn-filtro-sin-trello" class="px-3 py-1.5 rounded-full text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors border border-slate-200">Sin Trello</button>
+                    <button onclick="toggleEnlaceFiltro('conTrello')" id="btn-filtro-con-trello" class="px-3 py-1.5 rounded-full text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors border border-slate-200">Con Trello</button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1 overflow-y-auto p-4 md:p-8 custom-scrollbar">
+            <div class="max-w-5xl mx-auto flex flex-col gap-3" id="enlaces-container">
+            </div>
+        </main>
     </div>
 
     <div id="year-dashboard-view" class="absolute inset-0 z-40 bg-slate-50 flex flex-col translate-x-full transition-transform duration-300 ease-in-out">
@@ -100,8 +127,8 @@
         </header>
         <main class="flex-1 overflow-hidden flex flex-col lg:flex-row relative z-10">
             <div class="lg:w-1/3 p-4 md:p-6 lg:border-r border-slate-200 overflow-y-auto bg-white flex flex-col z-10 shadow-[4px_0_24px_rgba(0,0,0,0.02)]">
-                <h3 class="text-2xl font-black text-slate-800 mb-2">Resumen General <span id="year-dashboard-label" class="text-amber-500"></span></h3>
-                <p class="text-sm text-slate-500 mb-6">Haz clic en una barra para explorar los clientes y proyectos.</p>
+                <h3 class="text-2xl font-black text-slate-800 mb-2 cursor-pointer hover:text-amber-500 transition-colors" onclick="openChartDetails(null, window.currentDashboardYear, 'General', 'TODAS')" title="Ver año completo en calendario">Resumen General <span id="year-dashboard-label" class="text-amber-500"></span></h3>
+                <p class="text-sm text-slate-500 mb-6">Haz clic en una barra o en el título general para explorar.</p>
                 <div class="relative flex-1 min-h-[350px] w-full">
                     <canvas id="yearGeneralChart"></canvas>
                 </div>
@@ -114,23 +141,31 @@
         </main>
     </div>
 
+    <!-- HEADER CHART DETAILS VIEW -->
     <div id="chart-details-view" class="absolute inset-0 z-40 bg-slate-50 flex flex-col translate-x-full transition-transform duration-300 ease-in-out">
         <header class="bg-white border-b border-slate-200 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 shrink-0 shadow-sm relative z-20">
             <div class="flex items-center gap-4 flex-1">
-                <button onclick="closeChartDetailsView()" class="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-slate-200 hover:border-blue-200">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                    Atrás al Dashboard
-                </button>
+                <div id="chart-details-nav-buttons" class="flex items-center">
+                    <button id="btn-close-chart-details" onclick="closeChartDetailsView()" class="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-slate-200 hover:border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        Atrás al Dashboard
+                    </button>
+                    <button id="btn-back-chart-details" onclick="goBackChartDetails()" class="hidden flex items-center gap-2 px-3 py-1.5 text-sm font-bold text-amber-700 bg-amber-100 hover:bg-amber-200 rounded-lg transition-colors shadow-sm border border-amber-200 hover:border-amber-300">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path></svg>
+                        Desfiltrar
+                    </button>
+                </div>
+                
                 <div class="border-l border-slate-200 pl-4 flex flex-col justify-center">
                     <h2 class="text-lg font-bold text-slate-800 leading-tight" id="chart-details-title">Filtrando Datos</h2>
-                    <p class="text-xs text-slate-500 font-medium mt-0.5" id="chart-details-subtitle">Exploración</p>
+                    <div class="flex items-center gap-2 mt-0.5">
+                        <p class="text-xs text-slate-500 font-medium" id="chart-details-subtitle">Exploración</p>
+                        <div id="chart-details-links" class="flex items-center gap-2"></div>
+                    </div>
                 </div>
             </div>
-            <div class="flex items-center gap-3">
-                <button id="chart-details-back-btn" onclick="goBackChartDetails()" class="hidden flex items-center gap-2 px-4 py-1.5 text-sm font-bold text-amber-700 bg-amber-100 hover:bg-amber-200 rounded-lg transition-colors shadow-sm">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path></svg>
-                    Desfiltrar (Subir nivel)
-                </button>
+            <div class="flex flex-wrap items-center justify-end gap-3">
+                <div id="chart-details-category-filters" class="flex flex-wrap gap-2 text-xs md:text-sm font-bold transition-all duration-300"></div>
             </div>
         </header>
         
@@ -242,8 +277,9 @@
         </main>
     </div>
 
+    <!-- Panel lateral -->
     <div id="day-panel-backdrop" onclick="closeDayPanel()" class="fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-[9998] opacity-0 pointer-events-none transition-opacity duration-300"></div>
-    <div id="day-details-panel" class="fixed inset-y-0 right-0 w-[85vw] sm:w-96 md:w-[400px] bg-white z-[9999] transform translate-x-full transition-transform duration-300 flex flex-col border-l border-slate-200 shadow-[-10px_0_30px_rgba(0,0,0,0.15)]">
+    <div id="day-details-panel" class="fixed inset-y-0 right-0 w-[85vw] sm:w-96 md:w-[400px] bg-white shadow-[-10px_0_30px_rgba(0,0,0,0.15)] z-[9999] transform translate-x-full transition-transform duration-300 flex flex-col border-l border-slate-200">
         <div class="px-5 py-4 border-b border-slate-200 bg-slate-50 flex justify-between items-center shrink-0">
             <div>
                 <h3 id="day-panel-title" class="font-black text-xl text-slate-800 tracking-tight">Fecha</h3>
@@ -254,36 +290,13 @@
             </button>
         </div>
         <div id="day-panel-content" class="flex-1 overflow-y-auto p-5 flex flex-col gap-4 bg-slate-50 custom-scrollbar">
-            </div>
+        </div>
     </div>
+    
+    <!-- Contenedor para Toast Messages -->
+    <div id="toast-container" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-[10000] flex flex-col gap-2 pointer-events-none"></div>
 
     <script>
-        // --- FUNCIÓN PANTALLA COMPLETA ---
-        function startApp() {
-            const elem = document.documentElement;
-            // Solo pedimos pantalla completa si no estamos en ella ya
-            if (!document.fullscreenElement) {
-                if (elem.requestFullscreen) {
-                    elem.requestFullscreen().catch(err => console.log(err));
-                } else if (elem.webkitRequestFullscreen) { /* Safari */
-                    elem.webkitRequestFullscreen().catch(err => console.log(err));
-                } else if (elem.msRequestFullscreen) { /* IE11 */
-                    elem.msRequestFullscreen().catch(err => console.log(err));
-                }
-            }
-
-            const welcomeView = document.getElementById('welcome-view');
-            if (!welcomeView.classList.contains('hidden')) {
-                welcomeView.classList.add('opacity-0');
-                setTimeout(() => {
-                    welcomeView.classList.add('hidden');
-                    // Auto enfocar el buscador al quitar la bienvenida
-                    document.getElementById('main-search-input').focus();
-                }, 700);
-            }
-        }
-
-        // --- CONFIGURACIÓN DE ARCHIVOS ---
         const PERSONAL_FILES = [
             '2025-01 ENERO 2025.json', '2025-02 FEBRERO 2025.json', '2025-03 MARZO 2025.json', '2025-04 ABRIL 2025.json',
             '2025-05 MAYO 2025.json', '2025-06 JUNIO 2025.json', '2025-07 JULIO 2025.json', '2025-08 AGOSTO 2025.json',
@@ -318,7 +331,6 @@
             'INVERSIONES PELUCHES' 
         ];
 
-        // --- COLORES ---
         const GRAY_STYLE = 'bg-slate-100 text-slate-600 border-slate-200';
         const TRELLO_COLORS = {
             'lime': GRAY_STYLE, 'yellow': GRAY_STYLE, 'orange': GRAY_STYLE, 'red': GRAY_STYLE,
@@ -335,6 +347,10 @@
             'OTRO': { card: 'bg-slate-100 border-slate-200 hover:border-slate-500 hover:ring-1 hover:ring-slate-500 hover:shadow-md', badge: 'bg-white text-slate-600 border-slate-200', dotClass: 'bg-slate-400 text-white', btnColor: 'bg-slate-500 hover:bg-slate-600' }
         };
 
+        const CAT_PRIORITY = {
+            'PRODUCCIÓN': 5, 'MUESTRA': 4, 'PLANO MECÁNICO': 3, 'VISUAL': 2, 'RENDIMIENTO': 1, 'OTRO': 0
+        };
+
         const PASTEL_COLORS = [
             '#FFB3BA', '#FFDFBA', '#FFFFBA', '#BAFFC9', '#BAE1FF', 
             '#E2CBF7', '#F2C6E7', '#FFC6D9', '#D5E8D4', '#FFF2CC', 
@@ -342,9 +358,7 @@
         ];
 
         const MONTH_NAMES = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"];
-        const MONTH_MAP = { "ENERO": 1, "FEBRERO": 2, "MARZO": 3, "ABRIL": 4, "MAYO": 5, "JUNIO": 6, "JULIO": 7, "AGOSTO": 8, "SEPTIEMBRE": 9, "OCTUBRE": 10, "NOVIEMBRE": 11, "DICIEMBRE": 12 };
-
-        // --- ESTADO GLOBAL ---
+        
         let mergedData = []; 
         let activeSearchQuery = '';
         let currentClientName = '';
@@ -355,22 +369,21 @@
         let isProjectListFiltered = true;
         let isFinalViewFiltered = true;
         
-        let viewMode = 'CLIENT'; // 'CLIENT', 'CHART_DETAILS'
+        let viewMode = 'CLIENT'; 
+        let currentEnlacesFilter = 'todos'; 
+        let enlacesFiltros = { sinMensual: false, conMensual: false, sinTrello: false, conTrello: false };
         
         let yearChartInstances = []; 
         let detailsPieChartInstance = null;
         
-        // Estado del gráfico particionado
         window.chartDetailsState = {
             year: null, month: null, monthName: null, category: null,
-            level: 'CLIENT', // 'CLIENT' | 'PROJECT' | 'FILTERED_PROJECT'
-            selectedClient: null, selectedProject: null, baseItems: []
+            level: 'CLIENT', selectedClient: null, selectedProject: null, baseItems: []
         };
-        
-        // Exponer función de clic global para la leyenda HTML de la torta
-        window.currentPieClickCallback = null;
 
-        // Elementos renderizados actuales en el calendario para pasarlos al Day Panel
+        window.currentDashboardYear = null; 
+        window.currentPieClickCallback = null;
+        window.currentPieOriginalLabels = [];
         window.currentRenderedFinalItems = []; 
 
         const loadingIndicator = document.getElementById('loading-indicator');
@@ -383,16 +396,49 @@
         const finalView = document.getElementById('final-view');
         const yearDashboardView = document.getElementById('year-dashboard-view');
         const chartDetailsView = document.getElementById('chart-details-view');
+        const enlacesView = document.getElementById('enlaces-view');
         
         const resultsContainer = document.getElementById('results-container');
         const projectListContainer = document.getElementById('project-list-container');
 
-        // --- UTILS BÚSQUEDA ---
-        function normalizeStr(str) { return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+        // Manejador de Toast Global
+        window.showToast = function(msg) {
+            const container = document.getElementById('toast-container');
+            if (!container) return;
+            const toast = document.createElement('div');
+            toast.className = 'bg-slate-800 text-white px-4 py-2 rounded-lg shadow-lg text-sm font-medium transition-opacity duration-300 opacity-0';
+            toast.innerText = msg;
+            container.appendChild(toast);
+            
+            setTimeout(() => toast.classList.remove('opacity-0'), 10);
+            
+            setTimeout(() => {
+                toast.classList.add('opacity-0');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        };
+
+        // Función para copiar ruta al portapapeles
+        window.copyLocalPath = function(path, el) {
+            navigator.clipboard.writeText(path).then(() => {
+                const originalHtml = el.innerHTML;
+                el.innerHTML = '<svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> COPIADO';
+                
+                window.showToast('ruta local copiada con éxito');
+                
+                setTimeout(() => {
+                    el.innerHTML = originalHtml;
+                }, 2000);
+            }).catch(err => {
+                console.error('Error al copiar:', err);
+                alert('Error al copiar al portapapeles');
+            });
+        };
+
+        function normalizeStr(str) { return str.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
 
         window.onload = loadAllData;
 
-        // --- FUNCIÓN DE CARGA ---
         async function loadAllData() {
             loadingIndicator.style.opacity = '1';
             try {
@@ -405,7 +451,7 @@
                 processAndMergeData(validPersonal, validCompany);
                 
                 mainInput.disabled = false;
-                // No enfocamos el mainInput aquí automáticamente porque primero está la pantalla de bienvenida.
+                mainInput.focus();
             } catch (e) {
                 console.error("Error fatal iniciando la app:", e);
                 mainInput.placeholder = "Error al conectar con archivos locales.";
@@ -448,7 +494,39 @@
                                     if (!p.trabajoDiseno) return;
                                     if (p.trabajoDiseno.toUpperCase().includes('AUTORIZA')) return;
                                     const searchText = `${p.cliente || ''} ${p.tituloProyecto || ''} ${p.numeroProyecto || ''} ${p.descripcion || ''} ${p.check || ''}`;
-                                    flatPersonal.push({ ...p, mesGrupo: table.mes, searchIndex: searchText });
+                                    
+                                    let rawLink = String(p.trello || p.trelloUrl || p.enlaceTrello || p.url || "").trim();
+                                    let finalLinkMensual = "";
+                                    
+                                    if (rawLink.includes('trello.com/c/')) {
+                                        finalLinkMensual = rawLink;
+                                    } else if (/^[a-zA-Z0-9]{8}$/.test(rawLink)) {
+                                        finalLinkMensual = `https://trello.com/c/${rawLink}`;
+                                    } else {
+                                        let pStr = JSON.stringify(p);
+                                        let matchFull = pStr.match(/trello\.com\/c\/([a-zA-Z0-9]{8})/i);
+                                        if (matchFull) {
+                                            finalLinkMensual = `https://trello.com/c/${matchFull[1]}`;
+                                        } else {
+                                            let matchShort = pStr.match(/"trello"\s*:\s*"([a-zA-Z0-9]{8})"/i);
+                                            if (matchShort) {
+                                                finalLinkMensual = `https://trello.com/c/${matchShort[1]}`;
+                                            } else {
+                                                finalLinkMensual = rawLink;
+                                            }
+                                        }
+                                    }
+
+                                    let driveMatch = JSON.stringify(p).match(/(https:\/\/drive\.google\.com\/[a-zA-Z0-9\/\-_?=&.]+)/i);
+                                    if (driveMatch && !p.drive) {
+                                        p.drive = driveMatch[1];
+                                    }
+
+                                    if (finalLinkMensual && finalLinkMensual.includes('trello.com')) {
+                                        p.trelloUrl = finalLinkMensual;
+                                    }
+                                    
+                                    flatPersonal.push({ ...p, mesGrupo: table.mes, searchIndex: searchText, linkMensual: finalLinkMensual });
                                 });
                             }
                         });
@@ -518,8 +596,14 @@
                 if(num && companyProjectsMap[num]) {
                     const comp = companyProjectsMap[num];
                     p.cliente = comp.cliente; p.tituloProyecto = comp.tituloProyecto;
-                    p.trelloTags = comp.tags; p.trelloUrl = comp.trelloUrl; p.sourceYear = comp.sourceYear; 
+                    p.trelloTags = comp.tags; 
+                    p.linkTrello = comp.trelloUrl || ""; 
+                    p.trelloUrl = p.linkMensual || comp.trelloUrl || p.trelloUrl; 
+                    p.sourceYear = comp.sourceYear; 
                     p.searchIndex += " " + comp.searchIndex; comp.merged = true;
+                } else {
+                    p.linkTrello = ""; 
+                    p.trelloUrl = p.linkMensual || p.trelloUrl;
                 }
             });
 
@@ -529,16 +613,15 @@
                         cliente: comp.cliente, tituloProyecto: comp.tituloProyecto, numeroProyecto: comp.numeroProyecto,
                         descripcion: "Registro externo en Trello.", fecha: comp.fecha, trabajoDiseno: "PRODUCCIÓN", 
                         isExternal: true, trelloTags: comp.tags, trelloUrl: comp.trelloUrl, sourceYear: comp.sourceYear, 
-                        entries: [], searchIndex: comp.searchIndex
+                        entries: [], searchIndex: comp.searchIndex,
+                        linkMensual: "", linkTrello: comp.trelloUrl || "" 
                     });
                 }
             });
 
             mergedData = flatPersonal;
-            console.log(`✅ Datos procesados: ${mergedData.length}`);
         }
 
-        // --- LÓGICA DE BÚSQUEDA ---
         mainInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') performSearch(mainInput.value); });
         headerInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') performSearch(headerInput.value); });
 
@@ -547,7 +630,16 @@
             if (!cleanQuery) return;
             const lowerQuery = cleanQuery.toLowerCase();
 
-            // CASO 1: CLIENTES
+            if (lowerQuery === 'enlaces') {
+                openEnlacesView();
+                resultsView.classList.add('translate-y-full');
+                projectListView.classList.add('translate-x-full');
+                finalView.classList.add('translate-x-full');
+                chartDetailsView.classList.add('translate-x-full');
+                yearDashboardView.classList.add('translate-x-full');
+                return;
+            }
+
             if (lowerQuery === 'clientes') {
                 viewMode = 'CLIENT';
                 activeSearchQuery = ''; 
@@ -559,14 +651,12 @@
                 return;
             }
 
-            // CASO 2: AÑOS (DASHBOARD ANUAL) - ej. "2026"
             const yearMatch = cleanQuery.match(/^202[0-9]$/);
             if (yearMatch) {
                 showYearDashboard(yearMatch[0]);
                 return;
             }
 
-            // CASO 3: BÚSQUEDA NORMAL
             viewMode = 'CLIENT';
             activeSearchQuery = cleanQuery;
             isClientListFiltered = true;
@@ -579,7 +669,169 @@
             headerInput.value = activeSearchQuery;
         }
 
-        // --- SISTEMA DE GRÁFICOS REUTILIZABLE (BARRAS) ---
+        function openEnlacesView() {
+            currentEnlacesFilter = 'todos';
+            enlacesFiltros = { sinMensual: false, conMensual: false, sinTrello: false, conTrello: false };
+            renderEnlacesView();
+            searchView.classList.add('-translate-y-full', 'opacity-0');
+            enlacesView.classList.remove('translate-y-full');
+        }
+
+        function closeEnlacesView() {
+            mainInput.value = '';
+            enlacesView.classList.add('translate-y-full');
+            searchView.classList.remove('-translate-y-full', 'opacity-0');
+            setTimeout(() => mainInput.focus(), 500);
+        }
+
+        function filterEnlaces(type) {
+            currentEnlacesFilter = type;
+            renderEnlacesView();
+        }
+
+        function toggleEnlaceFiltro(filtro) {
+            enlacesFiltros[filtro] = !enlacesFiltros[filtro];
+            renderEnlacesView();
+        }
+
+        function updateEnlacesButtons() {
+            const btnTodos = document.getElementById('btn-enlaces-todos');
+            const btnBuenos = document.getElementById('btn-enlaces-buenos');
+            const btnMalos = document.getElementById('btn-enlaces-malos');
+            
+            btnTodos.className = "px-4 py-1.5 rounded-full text-sm font-bold transition-colors " + (currentEnlacesFilter === 'todos' ? 'bg-slate-600 text-white shadow-md' : 'bg-slate-200 text-slate-600 hover:bg-slate-300');
+            btnBuenos.className = "px-4 py-1.5 rounded-full text-sm font-bold transition-colors " + (currentEnlacesFilter === 'buenos' ? 'bg-green-600 text-white shadow-md' : 'bg-green-100 text-green-700 hover:bg-green-200');
+            btnMalos.className = "px-4 py-1.5 rounded-full text-sm font-bold transition-colors " + (currentEnlacesFilter === 'malos' ? 'bg-red-600 text-white shadow-md' : 'bg-red-100 text-red-700 hover:bg-red-200');
+
+            const btnSinMensual = document.getElementById('btn-filtro-sin-mensual');
+            const btnConMensual = document.getElementById('btn-filtro-con-mensual');
+            const btnSinTrello = document.getElementById('btn-filtro-sin-trello');
+            const btnConTrello = document.getElementById('btn-filtro-con-trello');
+
+            const activeClass = 'bg-amber-100 text-amber-700 border-amber-300 shadow-sm';
+            const inactiveClass = 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200';
+
+            btnSinMensual.className = `px-3 py-1.5 rounded-full text-xs font-bold transition-colors border ${enlacesFiltros.sinMensual ? activeClass : inactiveClass}`;
+            btnConMensual.className = `px-3 py-1.5 rounded-full text-xs font-bold transition-colors border ${enlacesFiltros.conMensual ? activeClass : inactiveClass}`;
+            btnSinTrello.className = `px-3 py-1.5 rounded-full text-xs font-bold transition-colors border ${enlacesFiltros.sinTrello ? activeClass : inactiveClass}`;
+            btnConTrello.className = `px-3 py-1.5 rounded-full text-xs font-bold transition-colors border ${enlacesFiltros.conTrello ? activeClass : inactiveClass}`;
+        }
+
+        function renderEnlacesView() {
+            const projectMap = {};
+            
+            const getTrelloId = (link) => {
+                if (!link) return "";
+                let m = String(link).match(/trello\.com\/c\/([a-zA-Z0-9]{8})/i);
+                if (m) return m[1];
+                let clean = String(link).trim();
+                if (/^[a-zA-Z0-9]{8}$/.test(clean)) return clean;
+                return clean;
+            };
+
+            mergedData.forEach(item => {
+                const num = item.numeroProyecto ? item.numeroProyecto.trim() : null;
+                if (!num) return;
+                
+                const is25or26 = num.match(/\/(25|26)$/);
+                if (!is25or26) return;
+                
+                if (!projectMap[num]) {
+                    projectMap[num] = {
+                        numero: num,
+                        cliente: item.cliente || 'SIN CLIENTE',
+                        titulo: item.tituloProyecto || '',
+                        linkMensual: item.linkMensual || '',
+                        linkTrello: item.linkTrello || ''
+                    };
+                } else {
+                    if (!projectMap[num].linkMensual && item.linkMensual) projectMap[num].linkMensual = item.linkMensual;
+                    if (!projectMap[num].linkTrello && item.linkTrello) projectMap[num].linkTrello = item.linkTrello;
+                    if (item.tituloProyecto && projectMap[num].titulo === '') projectMap[num].titulo = item.tituloProyecto;
+                }
+            });
+            
+            let projects = Object.values(projectMap);
+            
+            projects.sort((a, b) => {
+                const getVal = (num) => {
+                    const match = num.match(/(\d+)(?:_\d+)?\/(\d+)/);
+                    if(!match) return 0;
+                    return parseInt(match[2], 10) * 10000 + parseInt(match[1], 10);
+                };
+                return getVal(a.numero) - getVal(b.numero);
+            });
+            
+            projects = projects.filter(p => {
+                const idMensual = getTrelloId(p.linkMensual);
+                const idTrello = getTrelloId(p.linkTrello);
+                
+                const isMatch = (idMensual === idTrello) && idMensual !== '' && idMensual !== 'http' && idMensual !== 'https';
+                const hasMensual = idMensual !== '' && idMensual !== 'http' && idMensual !== 'https';
+                const hasTrello = idTrello !== '' && idTrello !== 'http' && idTrello !== 'https';
+
+                if (currentEnlacesFilter === 'buenos' && !isMatch) return false;
+                if (currentEnlacesFilter === 'malos' && isMatch) return false;
+
+                if (enlacesFiltros.sinMensual && hasMensual) return false;
+                if (enlacesFiltros.conMensual && !hasMensual) return false;
+                if (enlacesFiltros.sinTrello && hasTrello) return false;
+                if (enlacesFiltros.conTrello && !hasTrello) return false;
+
+                return true;
+            });
+            
+            document.getElementById('enlaces-count').innerText = `${projects.length} proyectos encontrados`;
+            
+            const container = document.getElementById('enlaces-container');
+            let html = '';
+            
+            projects.forEach(p => {
+                const idMensual = getTrelloId(p.linkMensual);
+                const idTrello = getTrelloId(p.linkTrello);
+                const isMatch = (idMensual === idTrello) && idMensual !== '' && idMensual !== 'http' && idMensual !== 'https';
+                
+                const rowClass = isMatch ? 'bg-green-50 border-green-300 shadow-[0_0_8px_rgba(34,197,94,0.15)]' : 'bg-red-50 border-red-300 shadow-[0_0_8px_rgba(239,68,68,0.15)]';
+                const textClass = isMatch ? 'text-green-800' : 'text-red-800';
+                const iconMatch = isMatch 
+                    ? `<svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>` 
+                    : `<svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>`;
+
+                const mensualUrl = p.linkMensual;
+                const trelloUrl = p.linkTrello;
+
+                const linkMensualEl = mensualUrl ? `<a href="${mensualUrl}" target="_blank" class="text-[11px] font-bold bg-white/80 hover:bg-white border border-slate-300 px-2 py-1 rounded text-blue-600 truncate max-w-[200px] flex items-center gap-1 shadow-sm transition-colors" title="${mensualUrl}">JSON MENSUAL <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>` : `<span class="text-[11px] font-bold text-slate-400 italic px-2 py-1 bg-white/40 border border-slate-200 rounded">Sin JSON Mensual</span>`;
+                const linkTrelloEl = trelloUrl ? `<a href="${trelloUrl}" target="_blank" class="text-[11px] font-bold bg-white/80 hover:bg-white border border-slate-300 px-2 py-1 rounded text-sky-600 truncate max-w-[200px] flex items-center gap-1 shadow-sm transition-colors" title="${trelloUrl}">JSON TRELLO <svg class="w-3 h-3 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 15H7V7h5v10zm5-4h-3V7h3v6z"/></svg></a>` : `<span class="text-[11px] font-bold text-slate-400 italic px-2 py-1 bg-white/40 border border-slate-200 rounded">Sin JSON Trello</span>`;
+
+                html += `
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between p-4 rounded-xl border ${rowClass} gap-4 transition-all hover:-translate-y-0.5">
+                    <div class="flex items-center gap-4 flex-1 w-full overflow-hidden">
+                        <div class="shrink-0 flex items-center justify-center bg-white rounded-full p-2 border border-white/50 shadow-sm">
+                            ${iconMatch}
+                        </div>
+                        <div class="flex flex-col flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-0.5">
+                                <span class="font-mono font-black text-lg ${textClass}">${p.numero}</span>
+                                <span class="text-[10px] font-bold text-slate-500 uppercase bg-white/60 px-2 py-0.5 rounded border border-slate-200/50 truncate max-w-[150px] sm:max-w-none">${p.cliente}</span>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-700 truncate" title="${p.titulo}">${p.titulo}</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-full md:w-auto shrink-0 bg-white/40 p-2.5 rounded-lg border border-white/60">
+                        ${linkMensualEl}
+                        ${linkTrelloEl}
+                    </div>
+                </div>`;
+            });
+            
+            if (projects.length === 0) {
+                html = `<div class="text-center py-20 text-slate-400 font-medium bg-white rounded-xl border border-slate-200 shadow-sm">No hay proyectos que coincidan con este filtro.</div>`;
+            }
+            
+            container.innerHTML = html;
+            updateEnlacesButtons();
+        }
+
         function createReusableChart(ctx, counts, year, monthNum, useShortLabels, fontSize, chartTitleText) {
             const fullLabels = ['RENDIMIENTO', 'VISUAL', 'PLANO MECÁNICO', 'MUESTRA', 'PRODUCCIÓN'];
             const shortLabels = ['REND', 'VIS', 'PLANO', 'MUES', 'PROD'];
@@ -638,9 +890,9 @@
             });
         }
 
-        // --- DASHBOARD ANUAL ---
         function showYearDashboard(yearStr) {
             const targetYear = parseInt(yearStr, 10);
+            window.currentDashboardYear = targetYear; 
             document.getElementById('year-dashboard-label').innerText = yearStr;
 
             const yearData = mergedData.filter(item => {
@@ -670,7 +922,6 @@
                 if (monthlyCounts[m] && monthlyCounts[m][cat] !== undefined) monthlyCounts[m][cat]++;
             });
 
-            // Gráfico General
             const ctxGen = document.getElementById('yearGeneralChart').getContext('2d');
             const genChart = createReusableChart(ctxGen, generalCounts, targetYear, null, false, 24, null);
             yearChartInstances.push(genChart);
@@ -680,7 +931,7 @@
                 gridHtml += `
                 <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-[280px] hover:shadow-md transition-shadow">
                     <div class="flex justify-between items-center mb-1">
-                        <h4 class="font-bold text-slate-700 tracking-wide">${monthName}</h4>
+                        <h4 class="font-bold text-slate-700 tracking-wide cursor-pointer hover:text-amber-500 transition-colors" onclick="openChartDetails(${idx + 1}, ${targetYear}, '${monthName}', 'TODAS')" title="Ver mes completo">${monthName}</h4>
                     </div>
                     <div class="relative flex-1 w-full"><canvas id="monthChart_${idx + 1}"></canvas></div>
                 </div>`;
@@ -699,6 +950,7 @@
             projectListView.classList.add('translate-x-full');
             finalView.classList.add('translate-x-full');
             chartDetailsView.classList.add('translate-x-full');
+            if (typeof enlacesView !== 'undefined') enlacesView.classList.add('translate-y-full');
             yearDashboardView.classList.remove('translate-x-full');
         }
 
@@ -710,20 +962,20 @@
             setTimeout(() => mainInput.focus(), 500);
         }
 
-        // --- SISTEMA DE DETALLES (PANTALLA PARTIDA) ---
-        function renderDetailsPieChart(labels, data, onClick) {
+        function renderDetailsPieChart(labels, data, onClick, displayLabels = null) {
             const ctx = document.getElementById('detailsPieChart').getContext('2d');
             if (detailsPieChartInstance) detailsPieChartInstance.destroy();
 
-            const bgColors = labels.map((_, i) => PASTEL_COLORS[i % PASTEL_COLORS.length]);
+            const chartLabels = displayLabels || labels;
+            const bgColors = chartLabels.map((_, i) => PASTEL_COLORS[i % PASTEL_COLORS.length]);
             
-            // Exponemos la función de clic globalmente para que el HTML legend pueda usarla
             window.currentPieClickCallback = onClick;
+            window.currentPieOriginalLabels = labels;
 
             detailsPieChartInstance = new Chart(ctx, {
                 type: 'pie',
                 data: {
-                    labels: labels,
+                    labels: chartLabels,
                     datasets: [{
                         data: data,
                         backgroundColor: bgColors,
@@ -736,13 +988,13 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: { display: false }, // Ocultamos la de Chart.js
+                        legend: { display: false }, 
                         datalabels: { display: false }
                     },
                     onClick: (event, elements) => {
                         if (elements.length > 0) {
                             const index = elements[0].index;
-                            onClick(labels[index]);
+                            onClick(window.currentPieOriginalLabels[index]); 
                         }
                     },
                     onHover: (event, elements) => {
@@ -751,20 +1003,20 @@
                 }
             });
 
-            // Generar Leyenda HTML Personalizada (Lista vertical)
             const legendContainer = document.getElementById('detailsPieLegend');
             let legendHTML = '';
             
-            labels.forEach((label, i) => {
+            chartLabels.forEach((displayLabel, i) => {
                 const color = PASTEL_COLORS[i % PASTEL_COLORS.length];
                 const val = data[i];
-                const safeLabel = label.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                const originalLabel = labels[i];
+                const safeOriginalLabel = originalLabel.replace(/'/g, "\'").replace(/"/g, "&quot;");
                 
                 legendHTML += `
-                    <div onclick="if(window.currentPieClickCallback) window.currentPieClickCallback('${safeLabel}')" 
+                    <div onclick="if(window.currentPieClickCallback) window.currentPieClickCallback('${safeOriginalLabel}')" 
                          class="flex items-center gap-2 cursor-pointer hover:bg-slate-100 p-1.5 rounded-md transition-colors group">
                         <span class="w-3 h-3 rounded-full shrink-0 shadow-sm" style="background-color: ${color}; border: 1px solid rgba(0,0,0,0.05)"></span>
-                        <span class="text-xs font-semibold text-slate-700 truncate group-hover:text-amber-600 transition-colors" title="${label}">${label}</span>
+                        <span class="text-xs font-semibold text-slate-700 truncate group-hover:text-amber-600 transition-colors" title="${displayLabel}">${displayLabel}</span>
                         <span class="text-xs font-bold text-slate-400 ml-auto bg-slate-100 px-1.5 py-0.5 rounded">${val}</span>
                     </div>
                 `;
@@ -782,7 +1034,7 @@
             window.chartDetailsState.baseItems = mergedData.filter(item => {
                 if (item.isExternal) return false;
                 let cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase().trim() : 'OTRO';
-                if (cat !== category) return false;
+                if (category !== 'TODAS' && cat !== category) return false;
                 if (!item.fecha) return false;
                 const [d, m, yStr] = item.fecha.split('/');
                 if (parseInt(yStr, 10) !== year) return false;
@@ -797,34 +1049,72 @@
             renderChartDetailsView();
         }
 
-        function updateDetailsHeader(title, subtitle, showBackBtn) {
+        function updateDetailsHeader(title, subtitle, showBackBtn, trelloHtml = '') {
             document.getElementById('chart-details-title').innerText = title;
             document.getElementById('chart-details-subtitle').innerText = subtitle;
             
-            const btn = document.getElementById('chart-details-back-btn');
-            if (showBackBtn) btn.classList.remove('hidden');
-            else btn.classList.add('hidden');
+            const btnClose = document.getElementById('btn-close-chart-details');
+            const btnBack = document.getElementById('btn-back-chart-details');
+            
+            if (showBackBtn) {
+                btnClose.classList.add('hidden');
+                btnBack.classList.remove('hidden');
+            } else {
+                btnClose.classList.remove('hidden');
+                btnBack.classList.add('hidden');
+            }
+
+            const linksContainer = document.getElementById('chart-details-links');
+            if (linksContainer) {
+                linksContainer.innerHTML = trelloHtml;
+            }
+        }
+
+        function toggleChartDetailsCategory(c) {
+            const state = window.chartDetailsState;
+            const newCat = (state.category === c) ? 'TODAS' : c;
+            state.category = newCat;
+            
+            state.baseItems = mergedData.filter(item => {
+                if (item.isExternal) return false;
+                let cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase().trim() : 'OTRO';
+                if (newCat !== 'TODAS' && cat !== newCat) return false;
+                if (!item.fecha) return false;
+                const [d, m, yStr] = item.fecha.split('/');
+                if (parseInt(yStr, 10) !== state.year) return false;
+                if (state.month !== null && parseInt(m, 10) !== state.month) return false;
+                return true;
+            });
+            
+            renderChartDetailsView();
         }
 
         function renderChartDetailsView() {
             const state = window.chartDetailsState;
+            
+            const detailsCats = ['RENDIMIENTO', 'VISUAL', 'PLANO MECÁNICO', 'MUESTRA', 'PRODUCCIÓN'];
+            document.getElementById('chart-details-category-filters').innerHTML = detailsCats.map(c => {
+                 const style = CAT_STYLES[c] || { btnColor: 'bg-slate-500' };
+                 const opacity = (state.category !== 'TODAS' && state.category !== c) ? 'opacity-30' : 'opacity-100';
+                 return `<button onclick="toggleChartDetailsCategory('${c}')" class="${style.btnColor} text-white px-3 md:px-4 py-1.5 md:py-2 rounded-full ${opacity} hover:opacity-100 shadow-sm transition-opacity text-xs md:text-sm font-bold">${toTitleCase(c)}</button>`;
+            }).join('');
 
-            // 1. Filtrar ítems activos
             let activeItems = state.baseItems;
             if (state.level === 'PROJECT' || state.level === 'FILTERED_PROJECT') {
                 activeItems = activeItems.filter(i => (i.cliente || 'SIN CLIENTE') === state.selectedClient);
             }
             if (state.level === 'FILTERED_PROJECT') {
                 activeItems = activeItems.filter(i => {
-                    const title = i.tituloProyecto || 'SIN TÍTULO';
-                    return title === state.selectedProject;
+                    const key = (i.numeroProyecto && i.numeroProyecto.trim().length > 2) ? i.numeroProyecto : (i.tituloProyecto || 'SIN TITULO');
+                    return key === state.selectedProject;
                 });
             }
 
-            // 2. Renderizar Calendario Derecho
             renderCalendar(activeItems, 'details-calendar-container', 'details-entries-count');
 
-            // 3. Renderizar Gráfico Izquierdo y Leyenda
+            const timeLabel = state.month === null ? `Año ${state.year}` : `${state.monthName} ${state.year}`;
+            const headerMainText = state.category === 'TODAS' ? `Resumen General` : `Filtro: ${state.category}`;
+
             if (state.level === 'CLIENT') {
                 const counts = {};
                 state.baseItems.forEach(i => {
@@ -832,12 +1122,12 @@
                     counts[c] = (counts[c] || 0) + 1;
                 });
                 
-                // Ordenar de mayor a menor
-                let sortedArray = Object.keys(counts).map(k => ({ label: k, val: counts[k] }));
-                sortedArray.sort((a, b) => b.val - a.val);
-
-                const labels = sortedArray.map(item => item.label);
-                const data = sortedArray.map(item => item.val);
+                const sortedClients = Object.keys(counts).map(k => ({
+                    key: k, count: counts[k]
+                })).sort((a, b) => b.count - a.count);
+                
+                const labels = sortedClients.map(item => item.key);
+                const data = sortedClients.map(item => item.count);
                 
                 renderDetailsPieChart(labels, data, (clickedClient) => {
                     state.level = 'PROJECT';
@@ -845,40 +1135,112 @@
                     renderChartDetailsView();
                 });
                 
-                const timeLabel = state.month === null ? `Año ${state.year}` : `${state.monthName} ${state.year}`;
-                updateDetailsHeader(`Filtro: ${state.category} (${timeLabel})`, 'Distribución por Clientes', false);
+                updateDetailsHeader(`${headerMainText} (${timeLabel})`, 'Distribución por Clientes', false);
                 document.getElementById('pie-chart-title').innerText = "Clientes";
                 document.getElementById('pie-chart-desc').innerText = "Haz clic en la torta o en un cliente de la lista para ver sus proyectos.";
 
             } else if (state.level === 'PROJECT' || state.level === 'FILTERED_PROJECT') {
                 const counts = {};
+                const titles = {};
                 const clientItems = state.baseItems.filter(i => (i.cliente || 'SIN CLIENTE') === state.selectedClient);
                 clientItems.forEach(i => {
-                    const p = i.tituloProyecto || 'SIN TÍTULO'; // Agrupa por título
+                    const p = (i.numeroProyecto && i.numeroProyecto.trim().length > 2) ? i.numeroProyecto : (i.tituloProyecto || 'SIN TITULO');
                     counts[p] = (counts[p] || 0) + 1;
+                    if (!titles[p] && i.tituloProyecto) {
+                        titles[p] = i.tituloProyecto;
+                    }
                 });
                 
-                // Ordenar de mayor a menor
-                let sortedArray = Object.keys(counts).map(k => ({ label: k, val: counts[k] }));
-                sortedArray.sort((a, b) => b.val - a.val);
-
-                const labels = sortedArray.map(item => item.label);
-                const data = sortedArray.map(item => item.val);
+                const sortedProjects = Object.keys(counts).map(k => {
+                    let display = k;
+                    if (titles[k] && k !== titles[k]) {
+                        display = `${k} - ${titles[k]}`;
+                    }
+                    return { key: k, count: counts[k], display: display };
+                }).sort((a, b) => b.count - a.count);
+                
+                const labels = sortedProjects.map(item => item.key);
+                const data = sortedProjects.map(item => item.count);
+                const displayLabels = sortedProjects.map(item => item.display);
 
                 renderDetailsPieChart(labels, data, (clickedProject) => {
                     state.level = 'FILTERED_PROJECT';
                     state.selectedProject = clickedProject;
                     renderChartDetailsView();
-                });
+                }, displayLabels);
 
                 if (state.level === 'PROJECT') {
                     updateDetailsHeader(`Cliente: ${state.selectedClient}`, 'Distribución por Proyectos', true);
                     document.getElementById('pie-chart-title').innerText = "Proyectos";
                     document.getElementById('pie-chart-desc').innerText = "Clic en un proyecto para filtrar calendario.";
                 } else {
-                    updateDetailsHeader(`Proyecto: ${state.selectedProject}`, 'Calendario Filtrado', true);
-                    document.getElementById('pie-chart-title').innerText = "Proyectos";
-                    document.getElementById('pie-chart-desc').innerText = "Selección activa (haz clic para cambiar).";
+                    let fullTitle = state.selectedProject;
+                    let trelloLink = '';
+                    
+                    if (activeItems.length > 0) {
+                        const firstItem = activeItems[0];
+                        let titleParts = [];
+                        
+                        if (firstItem.numeroProyecto && firstItem.numeroProyecto.trim().length > 2) {
+                            titleParts.push(firstItem.numeroProyecto);
+                        }
+                        
+                        if (firstItem.tituloProyecto && firstItem.tituloProyecto !== firstItem.numeroProyecto) {
+                            let cleanTitle = firstItem.tituloProyecto;
+                            if (firstItem.numeroProyecto && cleanTitle.startsWith(firstItem.numeroProyecto)) {
+                                cleanTitle = cleanTitle.replace(firstItem.numeroProyecto, '').replace(/^[\s\-\.]+/, '');
+                            }
+                            if (cleanTitle) {
+                                titleParts.push(cleanTitle);
+                            }
+                        }
+                        
+                        fullTitle = titleParts.join(' - ') || state.selectedProject;
+                        
+                        const itemWithUrl = activeItems.find(i => i.trelloUrl);
+                        if (itemWithUrl) {
+                            const safeUrl = itemWithUrl.trelloUrl.replace(/"/g, '&quot;');
+                            trelloLink = `<a href="${safeUrl}" target="_blank" class="flex items-center gap-1.5 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded-md transition-colors shadow-sm ml-2"><svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 15H7V7h5v10zm5-4h-3V7h3v6z"/></svg>Trello</a>`;
+                        }
+                    }
+
+                    updateDetailsHeader(`Proyecto: ${fullTitle}`, 'Calendario Filtrado', true, trelloLink);
+                    
+                    document.getElementById('pie-chart-title').innerText = "Entradas del Proyecto";
+                    document.getElementById('pie-chart-desc').innerText = "Listado ordenado por fecha.";
+                    
+                    const legendContainer = document.getElementById('detailsPieLegend');
+                    let listHtml = '';
+                    const sortedEntries = [...activeItems].sort((a, b) => parseDate(a.fecha) - parseDate(b.fecha));
+                    
+                    sortedEntries.forEach(item => {
+                        const cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase() : 'OTRO';
+                        const style = CAT_STYLES[cat] || CAT_STYLES['OTRO']; 
+                        const isFalta = item.check === 'FALTA';
+                        
+                        let cardClass = style.card;
+                        if (isFalta) {
+                            cardClass = cardClass.replace(/border-\w+-\d+/g, ''); 
+                            cardClass += ' border-2 border-red-600 shadow-[0_0_10px_rgba(220,38,38,0.3)]';
+                        }
+                        
+                        const hlDesc = item.descripcion || '';
+                        
+                        listHtml += `
+                            <div class="p-3 mb-2 rounded-xl border text-sm ${cardClass} flex flex-col gap-2 relative overflow-hidden bg-white hover:bg-slate-50 transition-colors shrink-0 mx-1">
+                                <div class="flex justify-between items-start">
+                                    <div class="flex flex-wrap items-center gap-2">
+                                        <span class="px-2 py-0.5 rounded text-[10px] font-bold ${style.badge}">${cat}</span>
+                                        <span class="text-[10px] font-bold text-slate-600 bg-white/80 px-1.5 py-0.5 rounded border border-slate-200/60 shadow-sm flex items-center gap-1"><svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>${item.fecha}</span>
+                                    </div>
+                                    ${item.drive ? `<a href="${item.drive}" target="_blank" class="text-blue-600 hover:text-blue-800 bg-slate-100 hover:bg-slate-200 rounded px-1.5 py-0.5 flex items-center shadow-sm text-[10px] font-bold transition-colors" title="Ver archivo Drive"><svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>DRIVE</a>` : ''}
+                                </div>
+                                <p class="text-slate-700 leading-relaxed text-xs font-medium border-t border-slate-100/60 pt-1.5 mt-0.5">${hlDesc}</p>
+                            </div>
+                        `;
+                    });
+                    
+                    legendContainer.innerHTML = listHtml;
                 }
             }
         }
@@ -902,7 +1264,6 @@
             closeDayPanel();
         }
 
-        // --- SISTEMA GENÉRICO DE CALENDARIOS ---
         function renderCalendar(items, containerId, countBadgeId = 'entries-count-badge') {
             const container = document.getElementById(containerId);
             window.currentRenderedFinalItems = items; 
@@ -914,9 +1275,9 @@
             let maxDate = null;
 
             items.forEach(item => {
-                if(!item.fecha) return;
+                if(!item.fecha) return false;
                 const [dStr, mStr, yStr] = item.fecha.split('/');
-                if(!dStr || !mStr || !yStr) return;
+                if(!dStr || !mStr || !yStr) return false;
                 
                 const d = parseInt(dStr);
                 const m = parseInt(mStr);
@@ -964,8 +1325,19 @@
             for(let i=0; i<firstDay; i++) h+=`<div></div>`;
             for(let d=1; d<=daysInMonth; d++) {
                 if(eventsMap[d] && eventsMap[d].length > 0) {
-                    const firstItemCat = eventsMap[d][0].trabajoDiseno ? eventsMap[d][0].trabajoDiseno.toUpperCase() : 'OTRO';
-                    const dotColorClass = (CAT_STYLES[firstItemCat] || { dotClass: 'bg-slate-400' }).dotClass;
+                    let highestPriority = -1;
+                    let topCat = 'OTRO';
+                    
+                    eventsMap[d].forEach(item => {
+                        let cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase() : 'OTRO';
+                        let prio = CAT_PRIORITY[cat] || 0;
+                        if (prio > highestPriority) {
+                            highestPriority = prio;
+                            topCat = cat;
+                        }
+                    });
+                    
+                    const dotColorClass = (CAT_STYLES[topCat] || { dotClass: 'bg-slate-400' }).dotClass;
                     
                     h += `<div class="day-dot aspect-square rounded-lg flex items-center justify-center font-bold text-white shadow-sm ${dotColorClass} transition-transform duration-200 cursor-pointer hover:scale-110 relative z-10" 
                             onclick="openDayPanel(${d}, ${month}, ${year})">${d}</div>`;
@@ -977,7 +1349,14 @@
             return h;
         }
 
-        // --- SISTEMA DEL PANEL LATERAL DE DÍAS (Drawer Slide-in) ---
+        function limpiarNombreCarpeta(nombre) {
+            if (!nombre) return '';
+            let limpio = nombre.replace(/\n|\r/g, ' ');
+            limpio = limpio.replace(/[\\/*?:"<>|]/g, '-');
+            limpio = limpio.replace(/\s+/g, ' ');
+            return limpio.replace(/^[ .]+|[ .]+$/g, '');
+        }
+
         function openDayPanel(d, m, y) {
             const items = window.currentRenderedFinalItems.filter(item => {
                 if(!item.fecha) return false;
@@ -985,7 +1364,15 @@
                 return parseInt(parts[0]) === d && parseInt(parts[1]) === m && parseInt(parts[2]) === y;
             });
 
-            document.getElementById('day-panel-title').innerText = `${String(d).padStart(2, '0')}/${String(m).padStart(2, '0')}/${y}`;
+            const titleEl = document.getElementById('day-panel-title');
+            titleEl.innerHTML = `
+                <span class="hover:underline cursor-pointer text-blue-600 transition-colors flex items-center gap-2" onclick="handleTitleClick(${d}, ${m}, ${y}, this)" title="Abrir enlace del día en Google Docs">
+                    ${String(d).padStart(2, '0')}/${String(m).padStart(2, '0')}/${y}
+                    <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    <div class="spinner hidden border-2 border-t-blue-500 border-blue-200 rounded-full w-3 h-3 animate-spin ml-1"></div>
+                </span>
+            `;
+            
             document.getElementById('day-panel-subtitle').innerText = `${items.length} entrada(s)`;
 
             let html = '';
@@ -994,7 +1381,7 @@
             } else {
                 items.sort((a, b) => parseDate(a.fecha) - parseDate(b.fecha));
                 items.forEach((item) => {
-                    const cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase() : 'OTRO';
+                    const cat = item.trabajoDiseno ? item.trabajoDiseno.toUpperCase().trim() : 'OTRO';
                     const style = CAT_STYLES[cat] || CAT_STYLES['OTRO']; 
                     const isFalta = item.check === 'FALTA';
                     
@@ -1008,30 +1395,66 @@
                     const hlDesc = showHighlight ? highlightMatch(item.descripcion, activeSearchQuery) : (item.descripcion || '');
                     
                     const itemClient = item.cliente || 'SIN CLIENTE';
-                    const itemProject = item.numeroProyecto || item.tituloProyecto || 'SIN PROYECTO';
+                    const itemNumber = item.numeroProyecto ? `${item.numeroProyecto} - ` : '';
+                    const itemProjectTitle = item.tituloProyecto || 'SIN PROYECTO';
+                    const fullItemProject = `${itemNumber}${itemProjectTitle}`;
+
+                    // Mapeo de subcarpetas según categoría de diseño
+                    const subfolderMap = {
+                        'VISUAL': '03 - Visual',
+                        'RENDIMIENTO': '04 - Rendimiento',
+                        'PLANO MECÁNICO': '05 - Plano mecánico',
+                        'PLANO MECANICO': '05 - Plano mecánico',
+                        'MUESTRA': '06 - Muestra',
+                        'PRODUCCIÓN': '08 - Orden de Producción',
+                        'PRODUCCION': '08 - Orden de Producción'
+                    };
+
+                    // Generación dinámica de la ruta
+                    let winPath = "";
+                    let numMatch = (item.numeroProyecto || '').match(/(?:TENTATIVO\s+)?(\d{1,4})(?:_\d+)?\/(\d{2})/i);
+                    if (numMatch) {
+                        let num = numMatch[1].padStart(4, '0');
+                        let year = "20" + numMatch[2];
+                        winPath = `K:\\${year}\\PROYECTOS\\${num}`;
+                    } else {
+                        const clientFolder = limpiarNombreCarpeta(item.cliente || 'OTROS');
+                        const numClean = (item.numeroProyecto || '').replace(/\//g, '-');
+                        const projectFolderRaw = `${numClean} - ${item.tituloProyecto || ''}`.replace(/^- | -$/g, '').trim();
+                        const projectFolder = limpiarNombreCarpeta(projectFolderRaw);
+                        winPath = `K:\\${clientFolder}\\${projectFolder}`;
+                    }
+
+                    if (subfolderMap[cat]) {
+                        winPath += `\\${subfolderMap[cat]}`;
+                    }
+
+                    const safeWinPath = winPath.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
 
                     html += `
                         <div class="p-4 rounded-xl border text-sm ${cardClass} flex flex-col gap-2 relative overflow-hidden bg-white hover:bg-slate-50 transition-colors">
                             <div class="flex justify-between items-start gap-2">
-                                <span class="px-2 py-0.5 rounded text-[10px] font-bold ${style.badge} shrink-0">${cat}</span>
-                                <div class="flex items-center gap-1.5 ml-auto flex-wrap justify-end">
-                                    ${item.drive ? `<a href="${item.drive}" target="_blank" class="text-blue-600 hover:text-blue-800 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded px-1.5 py-0.5 flex items-center shadow-sm text-[10px] font-bold transition-colors" title="Ir a Drive"><svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>DRIVE</a>` : ''}
-                                    ${item.trelloUrl ? `<a href="${item.trelloUrl}" target="_blank" class="text-sky-600 hover:text-sky-800 bg-sky-50 hover:bg-sky-100 border border-sky-200 rounded px-1.5 py-0.5 flex items-center shadow-sm text-[10px] font-bold transition-colors" title="Ir a Trello"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 15H7V7h5v10zm5-4h-3V7h3v6z"/></svg>TRELLO</a>` : ''}
+                                <span class="px-2 py-0.5 rounded text-[10px] font-bold ${style.badge} self-start shrink-0">${cat}</span>
+                                
+                                <div class="flex flex-wrap justify-end gap-1.5">
+                                    ${item.drive ? `<a href="${item.drive}" target="_blank" class="text-blue-600 hover:text-blue-800 bg-blue-50 hover:bg-blue-100 rounded px-1.5 py-0.5 flex items-center shadow-sm text-[10px] font-bold transition-colors" title="Ver archivo Drive"><svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg> DRIVE</a>` : ''}
+                                    
+                                    ${item.trelloUrl ? `<a href="${item.trelloUrl}" target="_blank" class="text-sky-600 hover:text-sky-800 bg-sky-50 hover:bg-sky-100 rounded px-1.5 py-0.5 flex items-center shadow-sm text-[10px] font-bold transition-colors" title="Abrir en Trello"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 15H7V7h5v10zm5-4h-3V7h3v6z"/></svg> TRELLO</a>` : ''}
+                                    
+                                    <button onclick="copyLocalPath('${safeWinPath}', this)" class="text-amber-600 hover:text-amber-800 bg-amber-50 hover:bg-amber-100 rounded px-1.5 py-0.5 flex items-center shadow-sm text-[10px] font-bold transition-colors" title="Copiar ruta local al portapapeles"><svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg> LOCAL</button>
                                 </div>
                             </div>
                             <div>
                                 <div class="text-xs font-black text-slate-800 uppercase leading-tight">${itemClient}</div>
-                                <div class="text-[11px] font-bold text-slate-500 leading-tight mt-0.5">${itemProject}</div>
+                                <div class="text-[11px] font-bold text-slate-500 leading-tight mt-0.5">${fullItemProject}</div>
                             </div>
-                            <p class="text-slate-700 leading-relaxed text-xs font-medium border-t border-slate-100 pt-2 mt-1">${hlDesc}</p>
+                            <p class="text-slate-700 leading-relaxed text-xs font-medium border-t border-slate-100/60 pt-2 mt-1">${hlDesc}</p>
                         </div>
                     `;
                 });
             }
 
             document.getElementById('day-panel-content').innerHTML = html;
-            
-            // Mostrar Panel y Backdrop (ahora entra por la derecha y quita el translate-x-full)
             document.getElementById('day-details-panel').classList.remove('translate-x-full');
             document.getElementById('day-panel-backdrop').classList.remove('opacity-0', 'pointer-events-none');
         }
@@ -1041,7 +1464,6 @@
             document.getElementById('day-panel-backdrop').classList.add('opacity-0', 'pointer-events-none');
         }
 
-        // --- FUNCIONES COMPLEMENTARIAS (Búsqueda General) ---
         function itemMatchesQuery(item, query) {
             if (!query) return true;
             const q = query.toLowerCase();
@@ -1099,7 +1521,6 @@
             return (year * 10000) + num;
         }
 
-        // --- RENDER DE LISTAS NORMALES ---
         function renderClientSelectionList() {
             const query = isClientListFiltered ? activeSearchQuery : '';
             renderFilterButton('client-filter-container', query, 'unfilterClients()');
@@ -1317,7 +1738,6 @@
             }
         }
 
-        // --- SISTEMA DE NAVEGACIÓN GENERAL ---
         function openResultsView() { 
             resetScroll('results-view'); 
             searchView.classList.add('-translate-y-full', 'opacity-0'); 
@@ -1344,6 +1764,7 @@
             finalView.classList.add('translate-x-full'); 
             if (typeof chartDetailsView !== 'undefined') chartDetailsView.classList.add('translate-x-full');
             if (typeof yearDashboardView !== 'undefined') yearDashboardView.classList.add('translate-x-full');
+            if (typeof enlacesView !== 'undefined') enlacesView.classList.add('translate-y-full');
             
             closeDayPanel();
             setTimeout(()=>mainInput.focus(),500); 
@@ -1358,6 +1779,75 @@
             resetScroll('project-list-view'); 
             finalView.classList.add('translate-x-full'); 
             closeDayPanel();
+        }
+
+        let excelCache = {};
+
+        window.handleTitleClick = async function(d, m, y, el) {
+            const spinner = el.querySelector('.spinner');
+            if (spinner) spinner.classList.remove('hidden');
+            
+            const link = await getExcelLink(d, m, y);
+            
+            if (spinner) spinner.classList.add('hidden');
+            
+            if (link) {
+                window.open(link, '_blank');
+            } else {
+                alert(`No se encontró el enlace para el día ${String(d).padStart(2, '0')}/${String(m).padStart(2, '0')}/${y} en el archivo Excel correspondiente.`);
+            }
+        };
+
+        async function getExcelLink(d, m, y) {
+            const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+            const monthsLow = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+            const monthsCap = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+            const dateObj = new Date(y, m - 1, d);
+            const dayName = days[dateObj.getDay()];
+            const dPad = String(d).padStart(2, '0');
+            
+            const searchString = `${dayName} ${dPad} de ${monthsLow[m-1]} del ${y}`.toLowerCase();
+            const fileName = `Enlaces_Encabezados_${monthsCap[m-1]}_${y}.xlsx`;
+
+            if (excelCache[fileName]) {
+                return findLinkInWorkbook(excelCache[fileName], searchString);
+            }
+
+            try {
+                const response = await fetch(fileName);
+                if (!response.ok) {
+                    console.warn(`No se pudo encontrar el archivo Excel: ${fileName}`);
+                    return null;
+                }
+                const arrayBuffer = await response.arrayBuffer();
+                const workbook = XLSX.read(arrayBuffer, { type: 'array' });
+                excelCache[fileName] = workbook;
+                return findLinkInWorkbook(workbook, searchString);
+            } catch (error) {
+                console.error("Error cargando Excel:", error);
+                return null;
+            }
+        }
+
+        function findLinkInWorkbook(workbook, searchString) {
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+            
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i];
+                if (!row || row.length < 2) continue;
+                
+                const headerText = String(row[0] || "");
+                const link = String(row[1] || "");
+                const cleanHeaderText = headerText.replace(/\s+/g, ' ').trim().toLowerCase();
+                
+                if (cleanHeaderText.includes(searchString)) {
+                    return link;
+                }
+            }
+            return null;
         }
     </script>
 </body>
