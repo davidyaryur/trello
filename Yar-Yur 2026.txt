@@ -7834,7 +7834,7 @@ Tabla
 	06
 	45
 	PRODUCCIÓN.
-	08
+	09
 	
 
 
@@ -8270,7 +8270,7 @@ https://drive.google.com/drive/folders/1qKkBY-tfkVVbHiBo0Ay3COlYq1ARcPTJ?usp=dri
 📂 CARPETAS:
 1. PRODUCCIÓN: (07) 784/26 - PEPSICO - EXHIBIDORES 360 DORITOS RANCH Entregué la orden de Corte de las Islas de Doritos Ranch
 TRELLO: https://trello.com/c/jZkB7DE4
-DRIVE: FALTA
+DRIVE: LISTO
 https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=drive_link
 
 
@@ -8328,6 +8328,7 @@ https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=dri
 * 1. Envié el visual de SCJ con las últimas modificaciones solicitadas por el cliente
 * José Gabriel me pidió el rendimiento de los botaderos de leche condensada de Nestlé
 * Me puse con la puntera de Coca Cola
+* 2. Terminé de digitalizar la puntera de Coca Cola en SolidWorks
 
 
 📂 CARPETAS:
@@ -8335,6 +8336,14 @@ https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=dri
 TRELLO: https://trello.com/c/1GvmBO3A
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1xyj3uJcmd0r1dqaDS4J-cgCY5J997iew?usp=drive_link
+
+
+2. PRODUCCIÓN: (09) 722/26 - COCA COLA - PUNTERAS ICON Terminé de digitalizar la puntera de Coca Cola en SolidWorks
+TRELLO: https://trello.com/c/HL6xmRBY
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link
+
+
 
 
 🗓️ Sábado 19 de septiembre del 2026

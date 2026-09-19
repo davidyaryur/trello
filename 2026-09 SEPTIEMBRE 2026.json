@@ -366,7 +366,7 @@
         "trello": "jZkB7DE4",
         "descripcion": "Entregué la orden de Corte de las Islas de Doritos Ranch",
         "drive": "https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
       },
       {
         "id": "(08)",
@@ -379,6 +379,18 @@
         "descripcion": "Envié los refuerzos en MDF 12mm de Kaldini",
         "drive": "https://drive.google.com/drive/folders/1h99vwWVLM7g8CFfpJhzdNvnVpFCOcg4T?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(09)",
+        "fecha": "18/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "722/26",
+        "cliente": "COCA COLA",
+        "tituloProyecto": "PUNTERAS ICON",
+        "trello": "HL6xmRBY",
+        "descripcion": "Terminé de digitalizar la puntera de Coca Cola en SolidWorks",
+        "drive": "https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link",
+        "check": "FALTA"
       }
     ]
   }
