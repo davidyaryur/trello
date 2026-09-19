@@ -7823,16 +7823,16 @@ Tabla
 	03
 	42
 	VISUAL.
-	09
+	10
 	43
 	PLANO MECÁNICO.
 	01
 	44
 	MUESTRA.
-	04
+	06
 	45
 	PRODUCCIÓN.
-	07
+	08
 	
 
 
@@ -8285,19 +8285,19 @@ https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=dri
 
 
 📂 CARPETAS:
-1. MUESTRA: () 808/26 - NESTLE DE VENEZUELA - BOTADERO NESCAFÉ Me puse a armar las muestra del botadero de Nescafé
+1. MUESTRA: (05) 808/26 - NESTLE DE VENEZUELA - BOTADERO NESCAFÉ Me puse a armar las muestra del botadero de Nescafé
 TRELLO: https://trello.com/c/YWuT1TTY
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1yeseMLz2VLnibyaFgZgwP-XA0NFNPYUb?usp=drive_link
 
 
-2. PRODUCCIÓN: () 726/26 - OXFORD - PUNTERA KALDINI PARAMO PRADOS DE MARIA Envié los refuerzos en MDF 12mm de Kaldini
+2. PRODUCCIÓN: (08) 726/26 - OXFORD - PUNTERA KALDINI PARAMO PRADOS DE MARIA Envié los refuerzos en MDF 12mm de Kaldini
 TRELLO: https://trello.com/c/gRp8p3Pd
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1h99vwWVLM7g8CFfpJhzdNvnVpFCOcg4T?usp=drive_link
 
 
-3. MUESTRA: () 796/26 - CRUSTISSIMO - EXHIBIDOR DE PISO DESARMABLE Entregué la orden del exhibidor de cartón para Crustissimo desarmable
+3. MUESTRA: (06) 796/26 - CRUSTISSIMO - EXHIBIDOR DE PISO DESARMABLE Entregué la orden del exhibidor de cartón para Crustissimo desarmable
 TRELLO: https://trello.com/c/2GeKDvUt
 DRIVE: FALTA
 https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=drive_link
@@ -8305,20 +8305,26 @@ https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=dri
 
 🗓️ Viernes 18 de septiembre del 2026
 🕒 PENDIENTE:
-* Hacer visual y rendimiento del revestimiento de SCJ
+* Hacer visual del revestimiento de SCJ
 🌄 MAÑANA:
 * Me puse con el visual de SCJ
 * Andrea Istúriz me pidió el rendimiento del calendario de Genven de Grupo Leti sin portalápiz
 
 
 🌅 TARDE:
-* 1. Envié el visual de SCJ
+* 1. Envié el visual de SCJ con las últimas modificaciones solicitadas por el cliente
 * José Gabriel me pidió el rendimiento de los botaderos de leche condensada de Nestlé
 * Me puse con la puntera de Coca Cola
 
 
 📂 CARPETAS:
-1. 🗓️ Sábado 19 de septiembre del 2026
+1. VISUAL: (10) 684/26 - SCJ - INTERVENCIÓN DE ANAQUEL MI NEGOCIO LA FLORIDA Envié el visual de SCJ con las últimas modificaciones solicitadas por el cliente
+TRELLO: https://trello.com/c/1GvmBO3A
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1xyj3uJcmd0r1dqaDS4J-cgCY5J997iew?usp=drive_link
+
+
+🗓️ Sábado 19 de septiembre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
 * 

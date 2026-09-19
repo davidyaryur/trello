@@ -154,6 +154,18 @@
         "descripcion": "Le envié a Lorena la propuesta visual de la Isla de Doritos Ranch",
         "drive": "https://drive.google.com/drive/folders/1qKkBY-tfkVVbHiBo0Ay3COlYq1ARcPTJ?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(10)",
+        "fecha": "18/09/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "684/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "INTERVENCIÓN DE ANAQUEL MI NEGOCIO LA FLORIDA",
+        "trello": "1GvmBO3A",
+        "descripcion": "Envié el visual de SCJ con las últimas modificaciones solicitadas por el cliente",
+        "drive": "https://drive.google.com/drive/folders/1xyj3uJcmd0r1dqaDS4J-cgCY5J997iew?usp=drive_link",
+        "check": "LISTO"
       }
     ]
   },
@@ -228,6 +240,30 @@
         "descripcion": "Entregué la orden de muestra del botadero de cartón de Nescafé",
         "drive": "https://drive.google.com/drive/folders/1yeseMLz2VLnibyaFgZgwP-XA0NFNPYUb?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "17/09/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "808/26",
+        "cliente": "NESTLE DE VENEZUELA",
+        "tituloProyecto": "BOTADERO NESCAFÉ",
+        "trello": "YWuT1TTY",
+        "descripcion": "Me puse a armar las muestra del botadero de Nescafé",
+        "drive": "https://drive.google.com/drive/folders/1yeseMLz2VLnibyaFgZgwP-XA0NFNPYUb?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "17/09/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "796/26",
+        "cliente": "CRUSTISSIMO",
+        "tituloProyecto": "EXHIBIDOR DE PISO DESARMABLE",
+        "trello": "2GeKDvUt",
+        "descripcion": "Entregué la orden del exhibidor de cartón para Crustissimo desarmable",
+        "drive": "https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=drive_link",
+        "check": "FALTA"
       }
     ]
   },
@@ -319,6 +355,18 @@
         "descripcion": "Entregué la orden de Corte de las Islas de Doritos Ranch",
         "drive": "https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=drive_link",
         "check": "FALTA"
+      },
+      {
+        "id": "(08)",
+        "fecha": "17/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "726/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERA KALDINI PARAMO PRADOS DE MARIA",
+        "trello": "gRp8p3Pd",
+        "descripcion": "Envié los refuerzos en MDF 12mm de Kaldini",
+        "drive": "https://drive.google.com/drive/folders/1h99vwWVLM7g8CFfpJhzdNvnVpFCOcg4T?usp=drive_link",
+        "check": "LISTO"
       }
     ]
   }
