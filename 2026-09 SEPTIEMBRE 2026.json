@@ -185,6 +185,18 @@
         "descripcion": "Envié el plano mecánico de la puntera Kaldini a Verónica",
         "drive": "https://drive.google.com/drive/folders/1ZFSfRJ9aV-4FPJQXtlem_rKQYe8RATsV?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "16/09/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "853/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERAS KALDINI CARACAS",
+        "trello": "VxSssIZG",
+        "descripcion": "Le envié a Verónica el plano mecánico de los revestimientos de Kaldini",
+        "drive": "https://drive.google.com/drive/folders/1bAwwwN3i9tGocEtvvUcJfQvQNEGnjAtE?usp=drive_link",
+        "check": "LISTO"
       }
     ]
   },
@@ -263,7 +275,7 @@
         "trello": "2GeKDvUt",
         "descripcion": "Entregué la orden del exhibidor de cartón para Crustissimo desarmable",
         "drive": "https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
       }
     ]
   },

@@ -7677,7 +7677,7 @@ https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=dri
 
 3. PRODUCCIÓN: (25) 030/26 - COLGATE - EXHIBIDOR PLEGABLE DE CARTÓN (CHINO) Le di a Pablo la orden del vinil de Colgate del exhibidor de China
 TRELLO: https://trello.com/c/VlNxGWPp
-DRIVE: FALTA
+DRIVE: LISTO
 https://drive.google.com/drive/folders/1_j4hBCUFQXR6dZhr24uRLZ0-yMutzi_m?usp=drive_link
 
 
@@ -7760,8 +7760,10 @@ https://drive.google.com/drive/folders/1He2bmfpVkteFGBZy4E55RmvEUrZBo23z?usp=dri
 📂 CARPETAS:
 1. MUESTRA: (07) 785/26 - COLGATE - BANDEJAS ANTICOLETO PARA EXH CHINOS Entregué la orden de muestra física de las bandejas anti coleto de Colgate Chino
 TRELLO: https://trello.com/c/lmImJyPy
-DRIVE: FALTA
-https://drive.google.com/drive/folders/1zeaz6EzBzXVMnRwmfsUq2Z3k4q5GSdm4?usp=drive_link
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1tz8Ty8HEaTJJGg6YK6diZi2nh_8S66U4?usp=drive_link
+
+
 
 
 🗓️ SEPTIEMBRE 2026
@@ -7826,7 +7828,7 @@ Tabla
 	10
 	43
 	PLANO MECÁNICO.
-	01
+	02
 	44
 	MUESTRA.
 	06
@@ -8262,6 +8264,7 @@ https://drive.google.com/drive/folders/1qKkBY-tfkVVbHiBo0Ay3COlYq1ARcPTJ?usp=dri
 
 🌅 TARDE:
 * 1. Entregué la orden de Corte de las Islas de Doritos Ranch
+* 2. Le envié a Verónica el plano mecánico de los revestimientos de Kaldini
 
 
 📂 CARPETAS:
@@ -8269,6 +8272,16 @@ https://drive.google.com/drive/folders/1qKkBY-tfkVVbHiBo0Ay3COlYq1ARcPTJ?usp=dri
 TRELLO: https://trello.com/c/jZkB7DE4
 DRIVE: FALTA
 https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=drive_link
+
+
+2. PLANO MECÁNICO: (02) 853/26 - OXFORD - PUNTERAS KALDINI CARACAS Le envié a Verónica el plano mecánico de los revestimientos de Kaldini
+TRELLO: https://trello.com/c/VxSssIZG
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1bAwwwN3i9tGocEtvvUcJfQvQNEGnjAtE?usp=drive_link
+
+
+
+
 
 
 🗓️ Jueves 17 de septiembre del 2026
@@ -8299,7 +8312,7 @@ https://drive.google.com/drive/folders/1h99vwWVLM7g8CFfpJhzdNvnVpFCOcg4T?usp=dri
 
 3. MUESTRA: (06) 796/26 - CRUSTISSIMO - EXHIBIDOR DE PISO DESARMABLE Entregué la orden del exhibidor de cartón para Crustissimo desarmable
 TRELLO: https://trello.com/c/2GeKDvUt
-DRIVE: FALTA
+DRIVE: LISTO
 https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=drive_link
 
 
