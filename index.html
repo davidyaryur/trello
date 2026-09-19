@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
@@ -1781,73 +1780,45 @@
             closeDayPanel();
         }
 
-        let excelCache = {};
+        let enlacesFechasCache = {};
 
         window.handleTitleClick = async function(d, m, y, el) {
             const spinner = el.querySelector('.spinner');
             if (spinner) spinner.classList.remove('hidden');
             
-            const link = await getExcelLink(d, m, y);
+            const link = await getDocLink(d, m, y);
             
             if (spinner) spinner.classList.add('hidden');
             
             if (link) {
                 window.open(link, '_blank');
             } else {
-                alert(`No se encontró el enlace para el día ${String(d).padStart(2, '0')}/${String(m).padStart(2, '0')}/${y} en el archivo Excel correspondiente.`);
+                alert(`No se encontró el enlace para el día ${String(d).padStart(2, '0')}/${String(m).padStart(2, '0')}/${y} en el documento.`);
             }
         };
 
-        async function getExcelLink(d, m, y) {
-            const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
-            const monthsLow = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
-            const monthsCap = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-
-            const dateObj = new Date(y, m - 1, d);
-            const dayName = days[dateObj.getDay()];
+        async function getDocLink(d, m, y) {
             const dPad = String(d).padStart(2, '0');
-            
-            const searchString = `${dayName} ${dPad} de ${monthsLow[m-1]} del ${y}`.toLowerCase();
-            const fileName = `Enlaces_Encabezados_${monthsCap[m-1]}_${y}.xlsx`;
+            const mPad = String(m).padStart(2, '0');
+            const fechaClave = `${dPad}/${mPad}/${y}`;
+            const jsonFile = `enlaces_fechas_${y}.json`;
 
-            if (excelCache[fileName]) {
-                return findLinkInWorkbook(excelCache[fileName], searchString);
-            }
-
-            try {
-                const response = await fetch(fileName);
-                if (!response.ok) {
-                    console.warn(`No se pudo encontrar el archivo Excel: ${fileName}`);
-                    return null;
-                }
-                const arrayBuffer = await response.arrayBuffer();
-                const workbook = XLSX.read(arrayBuffer, { type: 'array' });
-                excelCache[fileName] = workbook;
-                return findLinkInWorkbook(workbook, searchString);
-            } catch (error) {
-                console.error("Error cargando Excel:", error);
-                return null;
-            }
-        }
-
-        function findLinkInWorkbook(workbook, searchString) {
-            const sheetName = workbook.SheetNames[0];
-            const sheet = workbook.Sheets[sheetName];
-            const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
-            
-            for (let i = 1; i < rows.length; i++) {
-                const row = rows[i];
-                if (!row || row.length < 2) continue;
-                
-                const headerText = String(row[0] || "");
-                const link = String(row[1] || "");
-                const cleanHeaderText = headerText.replace(/\s+/g, ' ').trim().toLowerCase();
-                
-                if (cleanHeaderText.includes(searchString)) {
-                    return link;
+            if (!enlacesFechasCache[y]) {
+                try {
+                    const response = await fetch(jsonFile);
+                    if (response.ok) {
+                        enlacesFechasCache[y] = await response.json();
+                    } else {
+                        console.warn(`No se pudo cargar ${jsonFile}: HTTP ${response.status}`);
+                        enlacesFechasCache[y] = {};
+                    }
+                } catch (error) {
+                    console.error(`Error cargando ${jsonFile}:`, error);
+                    enlacesFechasCache[y] = {};
                 }
             }
-            return null;
+
+            return enlacesFechasCache[y] ? (enlacesFechasCache[y][fechaClave] || null) : null;
         }
     </script>
 </body>
