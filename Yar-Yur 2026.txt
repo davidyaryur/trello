@@ -7832,7 +7832,7 @@ Tabla
 	04
 	45
 	PRODUCCIÓN.
-	06
+	07
 	
 
 
@@ -8256,24 +8256,50 @@ https://drive.google.com/drive/folders/1qKkBY-tfkVVbHiBo0Ay3COlYq1ARcPTJ?usp=dri
 🕒 PENDIENTE:
 * Hacer plano mecánico de la puntera de Kaldini
 🌄 MAÑANA:
-* 
+* Me puse a montar la orden de producción de las Islas de Pepsico
+* Realicé el manual de usuario del Sistema de Información Yar-Yur System Nestlé Canal Moderno
+
 
 🌅 TARDE:
-* 
+* 1. Entregué la orden de Corte de las Islas de Doritos Ranch
+
 
 📂 CARPETAS:
-1. 🗓️ Jueves 17 de septiembre del 2026
+1. PRODUCCIÓN: (07) 784/26 - PEPSICO - EXHIBIDORES 360 DORITOS RANCH Entregué la orden de Corte de las Islas de Doritos Ranch
+TRELLO: https://trello.com/c/jZkB7DE4
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=drive_link
+
+
+🗓️ Jueves 17 de septiembre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
-* 
+* Hacer muestra física de 796/26 - CRUSTISSIMO - EXHIBIDOR DE PISO DESARMABLE
+🌄 MAÑANA:
+* 1. Me puse a armar las muestra del botadero de Nescafé
+* Me puse con el exhibidor desarmable en cartón de Crustissimo
+
 
 🌅 TARDE:
-* 
+* 2. Entregué la orden del exhibidor de cartón para Crustissimo desarmable
+
 
 📂 CARPETAS:
-1. 🗓️ Viernes 18 de septiembre del 2026
+1. MUESTRA: () 808/26 - NESTLE DE VENEZUELA - BOTADERO NESCAFE Me puse a armar las muestra del botadero de Nescafé
+TRELLO: https://trello.com/c/YWuT1TTY
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1yeseMLz2VLnibyaFgZgwP-XA0NFNPYUb?usp=drive_link
+
+
+2. MUESTRA: () 796/26 - CRUSTISSIMO - EXHIBIDOR DE PISO DESARMABLE Entregué la orden del exhibidor de cartón para Crustissimo desarmable
+TRELLO: https://trello.com/c/2GeKDvUt
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=drive_link
+
+
+🗓️ Viernes 18 de septiembre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
+* Hacer visual y rendimiento del revestimiento de SCJ
+🌄 MAÑANA:
 * 
 
 🌅 TARDE:

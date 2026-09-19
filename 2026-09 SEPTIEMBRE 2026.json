@@ -1,0 +1,325 @@
+[
+  {
+    "tableId": 41,
+    "mes": "SEPTIEMBRE",
+    "num": 41,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "01/09/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "437/26",
+        "cliente": "GRUPO LETI",
+        "tituloProyecto": "MATERIAL GENVEN",
+        "trello": "HIsdSUIX",
+        "descripcion": "Envié el rendimiento del calendario de Genven",
+        "drive": "https://drive.google.com/drive/folders/1SQyIyvyYY4iReN6EIBQ8n9Pw_IFspmkw?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "03/09/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "779/26",
+        "cliente": "L`ORÈAL",
+        "tituloProyecto": "RISTRAS LANZAMIENTO MIZU",
+        "trello": "hLADW6zf",
+        "descripcion": "Enmary me pidió el rendimiento de las ristras URI como un estimado para las de MIZU Enmary me pidiò ajustar el rendimiento de la ristra de MIZU",
+        "drive": "https://drive.google.com/drive/folders/1MC30dMtAlW50X8nW1EtEGrz0Nk7pzaOY?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "03/09/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "806/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "BASE LA ALAMEDA",
+        "trello": "5wGXldPG",
+        "descripcion": "Envié a Lorena el rendimiento de la base para el mueble NatuChips de la Alameda",
+        "drive": "",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 42,
+    "mes": "SEPTIEMBRE",
+    "num": 42,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "02/09/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "806/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "BASE LA ALAMEDA",
+        "trello": "5wGXldPG",
+        "descripcion": "Envié el visual de la base de NatuChips a Lorena",
+        "drive": "https://drive.google.com/drive/folders/1dCk-rVo44n1uyVUN0BJdZQxwelmjqpFV?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "02/09/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "726/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERA KALDINI PARAMO  PRADOS DE MARIA",
+        "trello": "gRp8p3Pd",
+        "descripcion": "Le envié a Verónica el visual actualizado de la puntera Kaldini",
+        "drive": "https://drive.google.com/drive/folders/1He2bmfpVkteFGBZy4E55RmvEUrZBo23z?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "03/09/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "726/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERA KALDINI PARAMO  PRADOS DE MARIA",
+        "trello": "gRp8p3Pd",
+        "descripcion": "Envié el visual de Kaldini con medidas y la tipografía que quiere el cliente",
+        "drive": "https://drive.google.com/drive/folders/1He2bmfpVkteFGBZy4E55RmvEUrZBo23z?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "04/09/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "806/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "BASE LA ALAMEDA",
+        "trello": "5wGXldPG",
+        "descripcion": "Le envié a Lorena el visual del parachoque de la base de la Alameda para NatuChip",
+        "drive": "https://drive.google.com/drive/folders/1dCk-rVo44n1uyVUN0BJdZQxwelmjqpFV?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "04/09/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "684/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "INTERVENCION DE ANAQUEL MI NEGOCIO LA FLORIDA",
+        "trello": "1GvmBO3A",
+        "descripcion": "Estuve trabajando en el visual del revestimiento de SCJ",
+        "drive": "https://drive.google.com/drive/folders/1xyj3uJcmd0r1dqaDS4J-cgCY5J997iew?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "07/09/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "684/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "INTERVENCION DE ANAQUEL MI NEGOCIO LA FLORIDA",
+        "trello": "1GvmBO3A",
+        "descripcion": "Terminé el visual del revestimiento de SCJ y se lo envié a Enmary",
+        "drive": "https://drive.google.com/drive/folders/1xyj3uJcmd0r1dqaDS4J-cgCY5J997iew?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(07)",
+        "fecha": "14/09/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "783/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERAS DORITOS RANCH",
+        "trello": "8AMmTOwF",
+        "descripcion": "Terminé el visual de Pepsico del mueble Doritos Ranch",
+        "drive": "https://drive.google.com/drive/folders/1ujUtw-zbrdUMMud41vIGiFLxjGvRAf8E?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(08)",
+        "fecha": "15/09/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "783/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERAS DORITOS RANCH",
+        "trello": "8AMmTOwF",
+        "descripcion": "Le envié a Lorena el visual de la segunda propuesta de Doritos Ranch",
+        "drive": "https://drive.google.com/drive/folders/1ujUtw-zbrdUMMud41vIGiFLxjGvRAf8E?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(09)",
+        "fecha": "15/09/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "784/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "EXHIBIDORES 360 DORITOS RANCH",
+        "trello": "jZkB7DE4",
+        "descripcion": "Le envié a Lorena la propuesta visual de la Isla de Doritos Ranch",
+        "drive": "https://drive.google.com/drive/folders/1qKkBY-tfkVVbHiBo0Ay3COlYq1ARcPTJ?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 43,
+    "mes": "SEPTIEMBRE",
+    "num": 43,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "01/09/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "726/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERA KALDINI PARAMO  PRADOS DE MARIA",
+        "trello": "gRp8p3Pd",
+        "descripcion": "Envié el plano mecánico de la puntera Kaldini a Verónica",
+        "drive": "https://drive.google.com/drive/folders/1ZFSfRJ9aV-4FPJQXtlem_rKQYe8RATsV?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 44,
+    "mes": "SEPTIEMBRE",
+    "num": 44,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "02/09/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "785/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "BANDEJAS ANTICOLETO PARA EXH CHINOS",
+        "trello": "lmImJyPy",
+        "descripcion": "Entregué la orden de la segunda muestra física del anticoleto de Colgate de China",
+        "drive": "https://drive.google.com/drive/folders/1tz8Ty8HEaTJJGg6YK6diZi2nh_8S66U4?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "02/09/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "726/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERA KALDINI PARAMO  PRADOS DE MARIA",
+        "trello": "gRp8p3Pd",
+        "descripcion": "Entregué a Pablo la muestra de color de Kaldini",
+        "drive": "https://drive.google.com/drive/folders/1fcEBk2kngogTCDhlpYH-LTJRnSaGqStR?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "03/09/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "784/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "EXHIBIDORES 360 DORITOS RANCH",
+        "trello": "jZkB7DE4",
+        "descripcion": "Entregué la orden de muestra de color de Doritos Ranch",
+        "drive": "https://drive.google.com/drive/folders/10RlGjvmXSxwJrv0cgd6MShH3pRWas51R?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "11/09/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "808/26",
+        "cliente": "NESTLE DE VENEZUELA",
+        "tituloProyecto": "BOTADERO NESCAFÉ",
+        "trello": "YWuT1TTY",
+        "descripcion": "Entregué la orden de muestra del botadero de cartón de Nescafé",
+        "drive": "https://drive.google.com/drive/folders/1yeseMLz2VLnibyaFgZgwP-XA0NFNPYUb?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 45,
+    "mes": "SEPTIEMBRE",
+    "num": 45,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "01/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "764/26",
+        "cliente": "DIMASSI",
+        "tituloProyecto": "EXHIBIDORES 4 Y 5 CARAS KOTEX",
+        "trello": "jtSiDjGR",
+        "descripcion": "Entregué las L de PAI de 2mm para las ventanas de los exhibidores de KOTEX de 5 caras",
+        "drive": "https://drive.google.com/drive/folders/1-aAsRoh3sS8Aj8s9hIDKO7R11npM0NQR?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "08/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "806/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "BASE LA ALAMEDA",
+        "trello": "5wGXldPG",
+        "descripcion": "Entregué la OP de la base para la Alameda de NatuChips",
+        "drive": "https://drive.google.com/drive/folders/1_EPVo7k17CpInei-qOT8Ggj3HBlxoeO8?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "08/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "S/N",
+        "cliente": "DESCONOCIDO",
+        "tituloProyecto": "084/26 - DISTRIBUIDORA INMARKET- EXHIBIDORES DE MESA ESTILO GRAVITY Entregué la orden de producción de los espaldares de Chocolates Milka con disruptivo",
+        "trello": "pgXgDNDD",
+        "descripcion": "",
+        "drive": "https://drive.google.com/drive/folders/1R8IcY5Ntn_kf1KfaqllhjjVWsVsb5LEL?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "09/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "726/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERA KALDINI PÁRAMO  PRADOS DE MARIA",
+        "trello": "gRp8p3Pd",
+        "descripcion": "Entregué la orden de corte del mueble de Kaldini",
+        "drive": "https://drive.google.com/drive/folders/1h99vwWVLM7g8CFfpJhzdNvnVpFCOcg4T?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(05)",
+        "fecha": "11/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "785/26",
+        "cliente": "COLGATE",
+        "tituloProyecto": "BANDEJAS ANTICOLETO PARA EXH CHINOS",
+        "trello": "lmImJyPy",
+        "descripcion": "Monté la orden de producción de las nuevas bandejas de PAI para los anticoletos",
+        "drive": "https://drive.google.com/drive/folders/1zeaz6EzBzXVMnRwmfsUq2Z3k4q5GSdm4?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "11/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "726/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERA KALDINI PÁRAMO PRADOS DE MARIA",
+        "trello": "gRp8p3Pd",
+        "descripcion": "Entregué la orden del vinil y backlight del mueble de Kaldin",
+        "drive": "https://drive.google.com/drive/folders/1h99vwWVLM7g8CFfpJhzdNvnVpFCOcg4T?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(07)",
+        "fecha": "16/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "784/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "EXHIBIDORES 360 DORITOS RANCH",
+        "trello": "jZkB7DE4",
+        "descripcion": "Entregué la orden de Corte de las Islas de Doritos Ranch",
+        "drive": "https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=drive_link",
+        "check": "FALTA"
+      }
+    ]
+  }
+]
