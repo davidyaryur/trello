@@ -7831,10 +7831,10 @@ Tabla
 	02
 	44
 	MUESTRA.
-	06
+	08
 	45
 	PRODUCCIÓN.
-	09
+	10
 	
 
 
@@ -8368,19 +8368,49 @@ https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=dri
 🕒 PENDIENTE:
 * Rendimiento de Genven Calendario sin porta lápices
 🌄 MAÑANA:
-* 
+* 1. Monté la OP de la puntera 009 ICON COCA COLA
+
 
 🌅 TARDE:
-* 
+* El señor Ricardo me pidió un visual de su estructura
+* Verónica me pidió sacar la muestra de color de Kaldini
+* Me llamaron de producción para que les diga cómo va Kaldini para pintura
+* Le debo a Andrea Istúriz el rendimiento del calendario de Genven
+* Me reuní con pablo para ver cómo sacar el mueble de Cartón de Savoy Navidad
+* Tengo pendiente automatizar la puntera de COCA COLA
+* Eider me pidió ayuda con los preciarios para Chinotto
+* 2. Monté la orden de muestra de color de los revestimiento de Kaldini
+* 3. Monté la orden de muestra física del exhibidor de cartón de 7mm de Navidad con Savoy Nestlé
+
 
 📂 CARPETAS:
-1. 🗓️ Martes 22 de septiembre del 2026
+1. PRODUCCIÓN: (10) 722/26 - COCA COLA - PUNTERAS ICON Monté la OP de la puntera 009 ICON COCA COLA
+TRELLO: https://trello.com/c/HL6xmRBY
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link
+
+
+2. MUESTRA: (07) 853/26 - OXFORD - PUNTERAS KALDINI CARACAS Monté la orden de muestra de color de los revestimiento de Kaldini
+TRELLO: https://trello.com/c/VxSssIZG
+DRIVE: LISTO
+https://drive.google.com/drive/folders/11d1YFr3TPlrL-fQmXVqat_195hhlYN7D?usp=drive_link
+
+
+3. MUESTRA: (08) 804/26 - NESTLE - NAVIDAD CON SAVOY Monté la orden de muestra física del exhibidor de cartón de 7mm de Navidad con Savoy Nestlé
+TRELLO: https://trello.com/c/wk9fw4PC
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link
+
+
+🗓️ Martes 22 de septiembre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
+* Oftalmólogo
+🌄 MAÑANA:
 * 
 
 🌅 TARDE:
-* 
+* Andrea me pidió las dimensiones del plano abierto del calendario de Genven para ella calcular el rendimiento
+
 
 📂 CARPETAS:
 1. 🗓️ Miércoles 23 de septiembre del 2026

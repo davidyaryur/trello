@@ -276,6 +276,30 @@
         "descripcion": "Entregué la orden del exhibidor de cartón para Crustissimo desarmable",
         "drive": "https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(07)",
+        "fecha": "21/09/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "853/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERAS KALDINI CARACAS",
+        "trello": "VxSssIZG",
+        "descripcion": "Monté la orden de muestra de color de los revestimiento de Kaldini",
+        "drive": "https://drive.google.com/drive/folders/11d1YFr3TPlrL-fQmXVqat_195hhlYN7D?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(08)",
+        "fecha": "21/09/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "804/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "NAVIDAD CON SAVOY",
+        "trello": "wk9fw4PC",
+        "descripcion": "Monté la orden de muestra física del exhibidor de cartón de 7mm de Navidad con Savoy Nestlé",
+        "drive": "https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link",
+        "check": "LISTO"
       }
     ]
   },
@@ -391,6 +415,18 @@
         "descripcion": "Terminé de digitalizar la puntera de Coca Cola en SolidWorks",
         "drive": "https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link",
         "check": "FALTA"
+      },
+      {
+        "id": "(10)",
+        "fecha": "21/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "722/26",
+        "cliente": "COCA COLA",
+        "tituloProyecto": "PUNTERAS ICON",
+        "trello": "HL6xmRBY",
+        "descripcion": "Monté la OP de la puntera 009 ICON COCA COLA",
+        "drive": "https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link",
+        "check": "LISTO"
       }
     ]
   }
