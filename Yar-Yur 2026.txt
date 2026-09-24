@@ -7831,10 +7831,10 @@ Tabla
 	02
 	44
 	MUESTRA.
-	08
+	10
 	45
 	PRODUCCIÓN.
-	10
+	11
 	
 
 
@@ -8415,23 +8415,59 @@ https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=dri
 📂 CARPETAS:
 1. 🗓️ Miércoles 23 de septiembre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
-* 
+* Sacar nueva muestra física para probar sistema de bandeja desarmable de Crustissimo
+* Automatizar puntera de Coca Cola en SolidWorks
 
+
+🌄 MAÑANA:
+* Al llegar a la oficina encontré los dos muebles de cartón Crustissimo y Nestlé
+* Fui con todas las piezas de cartón para producción y me puse a armar con Jannis
+* Me reuní con Lorena para revisar las 4 rectificaciones de medidas de los muebles Ranch
+* Revisamos el mueble de Crustissimo con Pablo y José Gabriel y hay que sacar segunda muestra
+* Jannis terminó de armar el mueble de cartón de Savoy y hay que sacarle el vinil a ese mueble
+* Enmary me dijo que vamos a intentar que se vean más los flips cayendo en el holograma
+* Enmary me dió el audio que llevan los Flipos en los muebles de Flips
 🌅 TARDE:
-* 
+* 1. Mandar la segunda muestra del exhibidor de Crustissimo
+* 2. Me puse a automatizar la puntera de Coca Cola en SolidWorks
+
 
 📂 CARPETAS:
-1. 🗓️ Jueves 24 de septiembre del 2026
+1. MUESTRA: (09) 796/26 - CRUSTISSIMO - EXHIBIDOR DE PISO DESARMABLE Mandar la segunda muestra del exhibidor de Crustissimo
+TRELLO: https://trello.com/c/2GeKDvUt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=drive_link
+
+
+2. PRODUCCIÓN: (11) 722/26 - COCA COLA - PUNTERAS ICON Me puse a automatizar la puntera de Coca Cola en SolidWorks
+TRELLO: https://trello.com/c/HL6xmRBY
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link
+
+
+🗓️ Jueves 24 de septiembre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
-* 
+* Sacar vinil del exhibidor de cartón de 7mm de Savoy Nestlé
+* Automatizar puntera de Coca Cola en SolidWorks
+* Sacar vinil de los exhibidores 360 de Pepsico
+* Sacar las órdenes de producción de las punteras de Pepsico Doritos Ranch
+* Aumentar el brillo al video de los flips cayendo para ver si se ve mejor detrás del vidrio ahumado
+* Poner el audio de Flipo en el escritorio para cuando lleguen los dispositivo
+🌄 MAÑANA:
+* 1. Monté el vinil del exhibidor de cartón de 7mm Navidad con Savoy
+
 
 🌅 TARDE:
 * 
 
 📂 CARPETAS:
-1. 🗓️ Viernes 25 de septiembre del 2026
+1. MUESTRA: (10) 804/26 - NESTLE - NAVIDAD CON SAVOY Monté el vinil del exhibidor de cartón de 7mm Navidad con Savoy
+TRELLO: https://trello.com/c/wk9fw4PC
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link
+
+
+🗓️ Viernes 25 de septiembre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
 * 
