@@ -300,6 +300,30 @@
         "descripcion": "Monté la orden de muestra física del exhibidor de cartón de 7mm de Navidad con Savoy Nestlé",
         "drive": "https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(09)",
+        "fecha": "23/09/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "796/26",
+        "cliente": "CRUSTISSIMO",
+        "tituloProyecto": "EXHIBIDOR DE PISO DESARMABLE",
+        "trello": "2GeKDvUt",
+        "descripcion": "Mandar la segunda muestra del exhibidor de Crustissimo",
+        "drive": "https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(10)",
+        "fecha": "24/09/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "804/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "NAVIDAD CON SAVOY",
+        "trello": "wk9fw4PC",
+        "descripcion": "Monté el vinil del exhibidor de cartón de 7mm Navidad con Savoy",
+        "drive": "https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link",
+        "check": "LISTO"
       }
     ]
   },
@@ -425,6 +449,18 @@
         "tituloProyecto": "PUNTERAS ICON",
         "trello": "HL6xmRBY",
         "descripcion": "Monté la OP de la puntera 009 ICON COCA COLA",
+        "drive": "https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(11)",
+        "fecha": "23/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "722/26",
+        "cliente": "COCA COLA",
+        "tituloProyecto": "PUNTERAS ICON",
+        "trello": "HL6xmRBY",
+        "descripcion": "Me puse a automatizar la puntera de Coca Cola en SolidWorks",
         "drive": "https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link",
         "check": "LISTO"
       }
