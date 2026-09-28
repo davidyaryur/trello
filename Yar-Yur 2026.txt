@@ -7825,16 +7825,16 @@ Tabla
 	03
 	42
 	VISUAL.
-	10
+	11
 	43
 	PLANO MECÁNICO.
 	02
 	44
 	MUESTRA.
-	10
+	11
 	45
 	PRODUCCIÓN.
-	11
+	12
 	
 
 
@@ -8449,16 +8449,16 @@ https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=dri
 🕒 PENDIENTE:
 * Sacar vinil del exhibidor de cartón de 7mm de Savoy Nestlé
 * Automatizar puntera de Coca Cola en SolidWorks
-* Sacar vinil de los exhibidores 360 de Pepsico
-* Sacar las órdenes de producción de las punteras de Pepsico Doritos Ranch
-* Aumentar el brillo al video de los flips cayendo para ver si se ve mejor detrás del vidrio ahumado
-* Poner el audio de Flipo en el escritorio para cuando lleguen los dispositivo
+
+
 🌄 MAÑANA:
 * 1. Monté el vinil del exhibidor de cartón de 7mm Navidad con Savoy
 
 
 🌅 TARDE:
-* 
+* 2. Mandé la orden de producción del backlight de Casa Moi
+* 3. Entregué la orden de muestra física del botadero de Leche Condensada
+
 
 📂 CARPETAS:
 1. MUESTRA: (10) 804/26 - NESTLE - NAVIDAD CON SAVOY Monté el vinil del exhibidor de cartón de 7mm Navidad con Savoy
@@ -8467,9 +8467,22 @@ DRIVE: LISTO
 https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link
 
 
+2. PRODUCCIÓN: (12) 819/26 - INV MAR MAR - STAND CASA MOI Mandé la orden de producción del backlight de Casa Moi
+TRELLO: https://trello.com/c/VAvV5z1f
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1MB0PZf5Vm3dBAfsCtQWtZJWjRvPdsmuq?usp=drive_link
+
+
+3. MUESTRA: (11) 486/26 - NESTLE - BOTADERO LECHE CONDENSADA Entregué la orden de muestra física del botadero de Leche Condensada
+TRELLO: https://trello.com/c/1USyoDAq
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1yphMmUjimTccTTWIMTxCPItM9XigACE2?usp=drive_link
+
+
 🗓️ Viernes 25 de septiembre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
+* DIA DEL CURSO DE IA
+🌄 MAÑANA:
 * 
 
 🌅 TARDE:
@@ -8496,16 +8509,35 @@ https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=dri
 📂 CARPETAS:
 1. 🗓️ Lunes 28 de septiembre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
+* Dimensiones de los muebles de la feria
+
+
+* Aumentar el brillo al video de los flips cayendo para ver si se ve mejor detrás del vidrio ahumado
+* Poner el audio de Flipo en el escritorio para cuando lleguen los dispositivo
+
+
+* Sacar puntera de COCA COLA Maraplus La Florida
+* Sacar vinil de los exhibidores 360 de Pepsico
+
+
+🌄 MAÑANA:
+* 1. Le envié a Lorena los visuales con dimensiones de los muebles de la Feria
 * 
 
 🌅 TARDE:
 * 
 
 📂 CARPETAS:
-1. 🗓️ Martes 29 de septiembre del 2026
+1. VISUAL: (11) 866/26 - YAR-YUR - STAND EXPO FERIA 2026 Le envié a Lorena los visuales con dimensiones de los muebles de la Feria
+TRELLO: https://trello.com/c/HZFNtHNB
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Xe8A1LLezi_q1Nc75AfkMeT7GhAJdakn?usp=drive_link
+
+
+2. 🗓️ Martes 29 de septiembre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
+* Sacar las órdenes de producción de las punteras de Pepsico Doritos Ranch
+🌄 MAÑANA:
 * 
 
 🌅 TARDE:
