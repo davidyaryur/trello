@@ -39,6 +39,18 @@
         "descripcion": "Envié a Lorena el rendimiento de la base para el mueble NatuChips de la Alameda",
         "drive": "",
         "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "29/09/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "684/26",
+        "cliente": "SCJ",
+        "tituloProyecto": "INTERVENCION DE ANAQUEL",
+        "trello": "1GvmBO3A",
+        "descripcion": "Le envié el rendimiento de la intervención de Anaquel de SCJ a Enmary",
+        "drive": "https://drive.google.com/drive/folders/1H-DjQj6mcw-WlRe1UvcTSZKMAfeBlRgo?usp=drive_link",
+        "check": "FALTA"
       }
     ]
   },
@@ -178,6 +190,18 @@
         "descripcion": "Le envié a Lorena los visuales con dimensiones de los muebles de la Feria",
         "drive": "https://drive.google.com/drive/folders/1Xe8A1LLezi_q1Nc75AfkMeT7GhAJdakn?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(12)",
+        "fecha": "29/09/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "905/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE NUEVO LA ALAMEDA",
+        "trello": "pXWcB0lA",
+        "descripcion": "Le envié a Lorena el visual de NatuChips La Alameda",
+        "drive": "https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link",
+        "check": "FALTA"
       }
     ]
   },
@@ -348,6 +372,18 @@
         "descripcion": "Entregué la orden de muestra física del botadero de Leche Condensada",
         "drive": "https://drive.google.com/drive/folders/1yphMmUjimTccTTWIMTxCPItM9XigACE2?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(12)",
+        "fecha": "29/09/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "437/26",
+        "cliente": "GRUPO LETI",
+        "tituloProyecto": "MATERIAL GENVEN",
+        "trello": "HIsdSUIX",
+        "descripcion": "Entregué la orden de muestra del calendario de Genven",
+        "drive": "https://drive.google.com/drive/folders/1h2ESlS0Dtxb4AsTCHaTVzvG5NkvOQDxX?usp=drive_link",
+        "check": "FALTA"
       }
     ]
   },
@@ -499,6 +535,42 @@
         "descripcion": "Mandé la orden de producción del backlight de Casa Moi",
         "drive": "https://drive.google.com/drive/folders/1MB0PZf5Vm3dBAfsCtQWtZJWjRvPdsmuq?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(13)",
+        "fecha": "28/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "722/26",
+        "cliente": "COCA COLA",
+        "tituloProyecto": "PUNTERAS ICON",
+        "trello": "HL6xmRBY",
+        "descripcion": "Entregué la orden de corte de Coca Cola Maraplus La Florida",
+        "drive": "https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(14)",
+        "fecha": "28/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "784/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "EXHIBIDORES 360 DORITOS RANCH",
+        "trello": "jZkB7DE4",
+        "descripcion": "Entregué la orden de producción del vinil de las islas de Doritos Ranch",
+        "drive": "https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(15)",
+        "fecha": "30/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "783/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERAS DORITOS RANCH",
+        "trello": "8AMmTOwF",
+        "descripcion": "Entregué la orden de producción de la puntera Doritos Ranch 🗓️ OCTUBRE 2026 OCTUBRE 2026 LUN MAR MIÉR JUE VIE SÁB DOM 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 Tabla Trabajo de Diseño Filas 46 RENDIMIENTO. 47 VISUAL. 48 PLANO MECÁNICO. 49 MUESTRA. 50 PRODUCCIÓN.",
+        "drive": "https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=sharing",
+        "check": "FALTA"
       }
     ]
   }
