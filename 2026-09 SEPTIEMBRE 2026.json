@@ -166,6 +166,18 @@
         "descripcion": "Envié el visual de SCJ con las últimas modificaciones solicitadas por el cliente",
         "drive": "https://drive.google.com/drive/folders/1xyj3uJcmd0r1dqaDS4J-cgCY5J997iew?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(11)",
+        "fecha": "28/09/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "866/26",
+        "cliente": "YAR-YUR",
+        "tituloProyecto": "STAND EXPO FERIA 2026",
+        "trello": "HZFNtHNB",
+        "descripcion": "Le envié a Lorena los visuales con dimensiones de los muebles de la Feria",
+        "drive": "https://drive.google.com/drive/folders/1Xe8A1LLezi_q1Nc75AfkMeT7GhAJdakn?usp=drive_link",
+        "check": "LISTO"
       }
     ]
   },
@@ -324,6 +336,18 @@
         "descripcion": "Monté el vinil del exhibidor de cartón de 7mm Navidad con Savoy",
         "drive": "https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(11)",
+        "fecha": "24/09/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "486/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "BOTADERO LECHE CONDENSADA",
+        "trello": "1USyoDAq",
+        "descripcion": "Entregué la orden de muestra física del botadero de Leche Condensada",
+        "drive": "https://drive.google.com/drive/folders/1yphMmUjimTccTTWIMTxCPItM9XigACE2?usp=drive_link",
+        "check": "LISTO"
       }
     ]
   },
@@ -462,6 +486,18 @@
         "trello": "HL6xmRBY",
         "descripcion": "Me puse a automatizar la puntera de Coca Cola en SolidWorks",
         "drive": "https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(12)",
+        "fecha": "24/09/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "819/26",
+        "cliente": "INV MAR MAR",
+        "tituloProyecto": "STAND CASA MOI",
+        "trello": "VAvV5z1f",
+        "descripcion": "Mandé la orden de producción del backlight de Casa Moi",
+        "drive": "https://drive.google.com/drive/folders/1MB0PZf5Vm3dBAfsCtQWtZJWjRvPdsmuq?usp=drive_link",
         "check": "LISTO"
       }
     ]
