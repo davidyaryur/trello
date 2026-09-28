@@ -7822,19 +7822,19 @@ Tabla
 	Filas
 	41
 	RENDIMIENTO.
-	03
+	04
 	42
 	VISUAL.
-	11
+	12
 	43
 	PLANO MECÁNICO.
 	02
 	44
 	MUESTRA.
-	11
+	12
 	45
 	PRODUCCIÓN.
-	12
+	15
 	
 
 
@@ -8522,10 +8522,16 @@ https://drive.google.com/drive/folders/1yphMmUjimTccTTWIMTxCPItM9XigACE2?usp=dri
 
 🌄 MAÑANA:
 * 1. Le envié a Lorena los visuales con dimensiones de los muebles de la Feria
-* 
+* Me puse a programar todos los hologramas de Flips
+
 
 🌅 TARDE:
-* 
+* Coloqué el audio de FLIPO en el escritorio
+* Me puse con la orden de corte de la puntera de Coca Cola Maraplus La Florida
+* 2. Entregué la orden de corte de Coca Cola Maraplus La Florida
+* Me puse con el vinil de las islas de Pepsico Ranch
+* 3. Entregué la orden de producción del vinil de las islas de Doritos Ranch
+
 
 📂 CARPETAS:
 1. VISUAL: (11) 866/26 - YAR-YUR - STAND EXPO FERIA 2026 Le envié a Lorena los visuales con dimensiones de los muebles de la Feria
@@ -8534,26 +8540,70 @@ DRIVE: LISTO
 https://drive.google.com/drive/folders/1Xe8A1LLezi_q1Nc75AfkMeT7GhAJdakn?usp=drive_link
 
 
-2. 🗓️ Martes 29 de septiembre del 2026
+2. PRODUCCIÓN: (13) 722/26 - COCA COLA - PUNTERAS ICON Entregué la orden de corte de Coca Cola Maraplus La Florida
+TRELLO: https://trello.com/c/HL6xmRBY
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link
+
+
+3. PRODUCCIÓN: (14) 784/26 - PEPSICO - EXHIBIDORES 360 DORITOS RANCH Entregué la orden de producción del vinil de las islas de Doritos Ranch
+TRELLO: https://trello.com/c/jZkB7DE4
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=drive_link
+
+
+🗓️ Martes 29 de septiembre del 2026
+🕒 PENDIENTE:
+* 684/26 - SCJ - INTERVENCIÓN DE ANAQUEL - RENDIMIENTO 
+* 437/26 - GRUPO LETI - MATERIAL GENVEN - MUESTRA 
+* 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA- VISUAL 
+🌄 MAÑANA:
+* 1. Le envié el rendimiento de la intervención de Anaquel de SCJ a Enmary
+* 2. Entregué la orden de muestra del calendario de Genven
+* 
+
+🌅 TARDE:
+* 3. Le envié a Lorena el visual de NatuChips La Alameda
+
+
+📂 CARPETAS:
+1. RENDIMIENTO: (04) 684/26 - SCJ - INTERVENCION DE ANAQUEL Le envié el rendimiento de la intervención de Anaquel de SCJ a Enmary
+TRELLO: https://trello.com/c/1GvmBO3A
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1H-DjQj6mcw-WlRe1UvcTSZKMAfeBlRgo?usp=drive_link
+
+
+2. MUESTRA: (12) 437/26 - GRUPO LETI - MATERIAL GENVEN Entregué la orden de muestra del calendario de Genven
+TRELLO: https://trello.com/c/HIsdSUIX
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1h2ESlS0Dtxb4AsTCHaTVzvG5NkvOQDxX?usp=drive_link
+
+
+3. VISUAL: (12) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Le envié a Lorena el visual de NatuChips La Alameda
+TRELLO: https://trello.com/c/pXWcB0lA
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link
+
+
+🗓️ Miércoles 30 de septiembre del 2026
 🕒 PENDIENTE:
 * Sacar las órdenes de producción de las punteras de Pepsico Doritos Ranch
 🌄 MAÑANA:
-* 
+* Me puse con la orden de producción de Doritos Ranch
+
 
 🌅 TARDE:
-* 
+* 1. Entregué la orden de producción de la puntera Doritos Ranch
+
 
 📂 CARPETAS:
-1. 🗓️ Miércoles 30 de septiembre del 2026
-🕒 PENDIENTE:
-* 🌄 MAÑANA:
-* 
+1. PRODUCCIÓN: (15) 783/26 - PEPSICO - PUNTERAS DORITOS RANCH Entregué la orden de producción de la puntera Doritos Ranch
+TRELLO: https://trello.com/c/8AMmTOwF
+DRIVE: FALTA
+https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=sharing
 
-🌅 TARDE:
-* 
 
-📂 CARPETAS:
-1. 
+
 
 🗓️ OCTUBRE 2026
 OCTUBRE 2026
