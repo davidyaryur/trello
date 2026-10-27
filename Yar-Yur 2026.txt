@@ -8690,7 +8690,7 @@ Tabla
 	Filas
 	46
 	RENDIMIENTO.
-	01
+	02
 	47
 	VISUAL.
 	05
@@ -8702,7 +8702,7 @@ Tabla
 	08
 	50
 	PRODUCCIÓN.
-	24
+	25
 	
 
 
@@ -9328,7 +9328,7 @@ https://drive.google.com/drive/folders/1QnI0EMEuL1HYQcK24iJd8MowpfeC6Huw?usp=dri
 
 2. VISUAL: (04) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Me puse con las modificaciones de visual de NatuChips La Alameda
 TRELLO: https://trello.com/c/pXWcB0lA
-DRIVE: FALTA
+DRIVE: LISTO
 https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link
 
 
@@ -9360,21 +9360,27 @@ https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=dri
 🌅 TARDE:
 * Me puse a limpiar fire base de Canal Moderno
 * Realicé el primer borrador de html de panel informativo de Canal Moderno
-* Enmary me llamó para poner el audio de FLIPO en tres dispositivos
+* 1. Enmary me pidió poner el audio de FLIPO en los dispositivos de audio.
 * Aproveché y le puse el audio a 8 dispositivos, uno no funciona.
 * Se terminó de renderizar NatuChips la Alameda
-* 1. Le envié a Lorena el visual de NatuChips La Alameda
-* 2. Le envié a Lorena las dimensiones del visual NatuChips La Alameda
+* 2. Le envié a Lorena el visual de NatuChips La Alameda
+* 3. Le envié a Lorena las dimensiones del visual NatuChips La Alameda
 
 
 📂 CARPETAS:
-1. VISUAL: (05) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Le envié a Lorena el visual de NatuChips La Alameda
+1. PRODUCCIÓN: (24) 669/26 - ALFONZO RIVAS - EXHIBIDORES DE PISO FLIPS Enmary me pidió poner el audio de FLIPO en los dispositivos de audio.
+TRELLO: https://trello.com/c/gj5lPxIc
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1GenO5uWBEgPhxdyR3HoDPbdotvoAyfEi?usp=drive_link
+
+
+2. VISUAL: (05) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Le envié a Lorena el visual de NatuChips La Alameda
 TRELLO: https://trello.com/c/pXWcB0lA
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link
 
 
-2. PLANO MECÁNICO: (01) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Le envié a Lorena las dimensiones del visual NatuChips La Alameda
+3. PLANO MECÁNICO: (01) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Le envié a Lorena las dimensiones del visual NatuChips La Alameda
 TRELLO: https://trello.com/c/pXWcB0lA
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1pz2IbGywKaV_Arjzx6fq-oW9Sv1vUmXI?usp=drive_link
@@ -9382,24 +9388,35 @@ https://drive.google.com/drive/folders/1pz2IbGywKaV_Arjzx6fq-oW9Sv1vUmXI?usp=dri
 
 🗓️ Martes 27 de octubre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
+* Enviar rendimiento de NatuChips Alameda
+🌄 MAÑANA:
 * Me puse a buscar lector de códigos de barra, adaptador USB y Mini UPS para Recetas
 * 1. Enmary me pidió ayuda con unas piezas faltantes de los muebles de Flips
-* 
+* Terminé de limpiar Fire Base y comencé el dashboard de estadísticas de Canal Moderno
+
 
 🌅 TARDE:
-* 
+* 2. Rendimiento del mueble NatuChips Central Madeirense La Alameda con nuevas dimensiones
+
 
 📂 CARPETAS:
-1. PRODUCCIÓN: (24) 245/25 - ALFONZO RIVAS - MUEBLE FLIPS PÁRAMO BARUTA Enmary me pidió ayuda con unas piezas faltantes de los muebles de Flips
+1. PRODUCCIÓN: (25) 245/25 - ALFONZO RIVAS - MUEBLE FLIPS PÁRAMO BARUTA Enmary me pidió ayuda con unas piezas faltantes de los muebles de Flips
 TRELLO: https://trello.com/c/LWc8AL1H
 DRIVE: LISTO
 https://drive.google.com/drive/folders/1VlJAPqEwcnjxxTZtIphlh1SdCJ2OJmXB?usp=drive_link
 
 
+2. RENDIMIENTO: (02) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Rendimiento del mueble NatuChips Central Madeirense La Alameda con nuevas dimensiones
+TRELLO: https://trello.com/c/pXWcB0lA
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1rRwHExtwCOZv-NioFuA0axLbsqtBvxdZ?usp=drive_link
+
+
 🗓️ Miércoles 28 de octubre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
+* Continuar con el panel de estadísticas de Canal Moderno
+* Exhibidor de piso de Cartón de Phasrsanna
+🌄 MAÑANA:
 * 
 
 🌅 TARDE:
@@ -9417,7 +9434,8 @@ https://drive.google.com/drive/folders/1VlJAPqEwcnjxxTZtIphlh1SdCJ2OJmXB?usp=dri
 📂 CARPETAS:
 1. 🗓️ Viernes 30 de octubre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
+* Comprar en Mercado Libre
+🌄 MAÑANA:
 * 
 
 🌅 TARDE:
