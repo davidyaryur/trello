@@ -1,0 +1,505 @@
+[
+  {
+    "tableId": 46,
+    "mes": "OCTUBRE",
+    "num": 46,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "19/10/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "808/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "BOTADERO NESCAFÉ",
+        "trello": "YWuT1TTY",
+        "descripcion": "Calculé el rendimiento del botadero de Nescafé",
+        "drive": "https://drive.google.com/drive/folders/16RaIcXnrjS0Uxh1a3dXNPI8YqqecSaSq?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 47,
+    "mes": "OCTUBRE",
+    "num": 47,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "14/10/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "905/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE NUEVO LA ALAMEDA",
+        "trello": "pXWcB0lA",
+        "descripcion": "Me puse con el visual de NatuChips La Alameda",
+        "drive": "https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "16/10/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "905/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE NUEVO LA ALAMEDA",
+        "trello": "pXWcB0lA",
+        "descripcion": "Terminé el visual de NatuChips La Alameda, lo dejé listo para renderizar el fin de semana",
+        "drive": "https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "19/10/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "905/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE NUEVO LA ALAMEDA",
+        "trello": "pXWcB0lA",
+        "descripcion": "Envié el visual de NatuChips de la Alameda",
+        "drive": "https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "23/10/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "905/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE NUEVO LA ALAMEDA",
+        "trello": "pXWcB0lA",
+        "descripcion": "Me puse con las modificaciones de visual de NatuChips La Alameda",
+        "drive": "https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(05)",
+        "fecha": "26/10/2026",
+        "trabajoDiseno": "VISUAL",
+        "numeroProyecto": "905/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE NUEVO LA ALAMEDA",
+        "trello": "pXWcB0lA",
+        "descripcion": "Le envié a Lorena el visual de NatuChips La Alameda",
+        "drive": "https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 48,
+    "mes": "OCTUBRE",
+    "num": 48,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "26/10/2026",
+        "trabajoDiseno": "PLANO MECÁNICO",
+        "numeroProyecto": "905/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE NUEVO LA ALAMEDA",
+        "trello": "pXWcB0lA",
+        "descripcion": "Le envié a Lorena las dimensiones del visual NatuChips La Alameda",
+        "drive": "https://drive.google.com/drive/folders/1pz2IbGywKaV_Arjzx6fq-oW9Sv1vUmXI?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  },
+  {
+    "tableId": 49,
+    "mes": "OCTUBRE",
+    "num": 49,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "05/10/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "804/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "NAVIDAD CON SAVOY",
+        "trello": "wk9fw4PC",
+        "descripcion": "Muestra física 2 del exhibidor de Navidad con Savoy en Cartón",
+        "drive": "https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "07/10/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "437/26",
+        "cliente": "GRUPO LETI",
+        "tituloProyecto": "MATERIAL GENVEN",
+        "trello": "HIsdSUIX",
+        "descripcion": "Monté la muestra física 2 del calendario de Genven con las modificaciones conversadas",
+        "drive": "https://drive.google.com/drive/folders/1oeMsXW7608D8YkYbEgBkkp9GnqNmkEen?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "07/10/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "804/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "NAVIDAD CON SAVOY",
+        "trello": "wk9fw4PC",
+        "descripcion": "Monté la orden de muestra del vinil sin laminar de las cenefas",
+        "drive": "https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "13/10/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "437/26",
+        "cliente": "GRUPO LETI",
+        "tituloProyecto": "MATERIAL GENVEN",
+        "trello": "HIsdSUIX",
+        "descripcion": "Al llegar a la oficina corregí los cortes del calendario Genven y le avisé a Andrés David",
+        "drive": "https://drive.google.com/drive/folders/1oeMsXW7608D8YkYbEgBkkp9GnqNmkEen?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "13/10/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "804/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "NAVIDAD CON SAVOY",
+        "trello": "wk9fw4PC",
+        "descripcion": "Monté la muestra producción del mueble de cartón Navidad con Savoy",
+        "drive": "https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "21/10/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "949/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PINOS DE NAVIDAD",
+        "trello": "MbMmEhH5",
+        "descripcion": "Continué con la orden de muestra del exhibidor Pino de Navidad de Pepsico",
+        "drive": "https://drive.google.com/drive/folders/1eD_vjs8n3zCrf-jSh5e5P9mOGChhHs-s?usp=drive_link",
+        "check": "FALTA"
+      },
+      {
+        "id": "(07)",
+        "fecha": "22/10/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "796/26",
+        "cliente": "CRUSTISSIMO",
+        "tituloProyecto": "EXHIBIDOR DE PISO DESARMABLE",
+        "trello": "2GeKDvUt",
+        "descripcion": "Mandé la muestra de color de los artes del exhibidor de cartón de Crustissimo",
+        "drive": "https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(08)",
+        "fecha": "22/10/2026",
+        "trabajoDiseno": "MUESTRA",
+        "numeroProyecto": "949/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PINOS DE NAVIDAD",
+        "trello": "MbMmEhH5",
+        "descripcion": "Terminé la orden de muestra física del pino de Navidad de Pepsico",
+        "drive": "https://drive.google.com/drive/folders/1eD_vjs8n3zCrf-jSh5e5P9mOGChhHs-s?usp=drive_link",
+        "check": "FALTA"
+      }
+    ]
+  },
+  {
+    "tableId": 50,
+    "mes": "OCTUBRE",
+    "num": 50,
+    "proyectos": [
+      {
+        "id": "(01)",
+        "fecha": "02/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "783/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERAS DORITOS RANCH",
+        "trello": "8AMmTOwF",
+        "descripcion": "Entregué la orden de producción de la puntera Doritos Ranch",
+        "drive": "https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=sharing",
+        "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "05/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "784/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "EXHIBIDORES 360 DORITOS RANCH",
+        "trello": "jZkB7DE4",
+        "descripcion": "Orden de producción del vinil de las Islas 360 Ranch",
+        "drive": "https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(03)",
+        "fecha": "05/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "783/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERAS DORITOS RANCH",
+        "trello": "8AMmTOwF",
+        "descripcion": "Maraplus Indio Mara",
+        "drive": "https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(04)",
+        "fecha": "05/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "783/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERAS DORITOS RANCH",
+        "trello": "8AMmTOwF",
+        "descripcion": "Más por menos Hiper Barcelona",
+        "drive": "https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(05)",
+        "fecha": "05/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "906/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLES RANCH CAPITAL - CUMANÁ",
+        "trello": "9dDPu3Gi",
+        "descripcion": "Mega Super Market y Más por menos Cumaná",
+        "drive": "https://drive.google.com/drive/folders/1eH8AJ5gm-meu5gdjGfw5fSlSBMJ0yq0Q?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(06)",
+        "fecha": "05/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "906/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLES RANCH CAPITAL - CUMANÁ",
+        "trello": "9dDPu3Gi",
+        "descripcion": "Red Vital la Yaguara",
+        "drive": "https://drive.google.com/drive/folders/1eH8AJ5gm-meu5gdjGfw5fSlSBMJ0yq0Q?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(07)",
+        "fecha": "06/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "906/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLES RANCH CAPITAL - CUMANÁ",
+        "trello": "9dDPu3Gi",
+        "descripcion": "Entregué la orden que faltaba de Locatel La Florida de NatuChips",
+        "drive": "https://drive.google.com/drive/folders/1eH8AJ5gm-meu5gdjGfw5fSlSBMJ0yq0Q?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(08)",
+        "fecha": "06/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "726/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERA KALDINI PÁRAMO PRADOS DE MARIA",
+        "trello": "gRp8p3Pd",
+        "descripcion": "Entregué la orden de repetición del mueble de Kaldini",
+        "drive": "https://drive.google.com/drive/folders/1h99vwWVLM7g8CFfpJhzdNvnVpFCOcg4T?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(09)",
+        "fecha": "06/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "152/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "PDG SAVOY 2.0 RIO LOMAS DEL SOL",
+        "trello": "xaqgGz9A",
+        "descripcion": "Realicé las modificaciones al módulo de la tablet de Savoy lo puse en Varios",
+        "drive": "https://drive.google.com/drive/folders/1k5lmDBlEVO0srQOeakznIbTDnJVanbOy?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(10)",
+        "fecha": "08/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "853/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERAS KALDINI CARACAS",
+        "trello": "VxSssIZG",
+        "descripcion": "Monté la orden de producción del revestimiento de KALDINI Riovida Andrés Bello",
+        "drive": "https://drive.google.com/drive/folders/1Y4jxNd4g8kZ_C6rd1PffoW5balLV_PER?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(11)",
+        "fecha": "08/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "853/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERAS KALDINI CARACAS",
+        "trello": "VxSssIZG",
+        "descripcion": "Monté la orden de producción del revestimiento de KALDINI Riovida El Marquez",
+        "drive": "https://drive.google.com/drive/folders/1Y4jxNd4g8kZ_C6rd1PffoW5balLV_PER?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(12)",
+        "fecha": "08/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "908/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "REVESTIMIENTO KALDINI RIOVIDA LA PAZ",
+        "trello": "iTGgDhBN",
+        "descripcion": "Monté la orden de producción del revestimiento de KALDINI Riovida La Paz",
+        "drive": "https://drive.google.com/drive/folders/1QMlv9SHWntpolRdXfNpS1v2IetSgpaDS?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(13)",
+        "fecha": "09/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "906/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLES RANCH CAPITAL - CUMANÁ",
+        "trello": "9dDPu3Gi",
+        "descripcion": "Montar las órdenes de producción de los Viniles de Yuca La Florida (recordar cinta de Locatel)",
+        "drive": "https://drive.google.com/drive/folders/1eH8AJ5gm-meu5gdjGfw5fSlSBMJ0yq0Q?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(14)",
+        "fecha": "09/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "783/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERAS DORITOS RANCH",
+        "trello": "8AMmTOwF",
+        "descripcion": "Monté la orden de los disruptivos de Pepsico identificados con la A y la V de Azul y Verde DRIVE:",
+        "drive": "",
+        "check": "FALTA"
+      },
+      {
+        "id": "(15)",
+        "fecha": "13/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "906/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLES RANCH CAPITAL - CUMANÁ",
+        "trello": "9dDPu3Gi",
+        "descripcion": "Monté el vinil de los disruptivos de NatuChips Yuca",
+        "drive": "https://drive.google.com/drive/folders/1eH8AJ5gm-meu5gdjGfw5fSlSBMJ0yq0Q?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(16)",
+        "fecha": "13/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "853/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERAS KALDINI CARACAS",
+        "trello": "VxSssIZG",
+        "descripcion": "Terminé el mueble de Kaldini Emporio Miranda",
+        "drive": "https://drive.google.com/drive/folders/1Y4jxNd4g8kZ_C6rd1PffoW5balLV_PER?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(17)",
+        "fecha": "14/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "783/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERAS DORITOS RANCH",
+        "trello": "8AMmTOwF",
+        "descripcion": "Corregí los cortes de los muebles disruptivos de Pepsico Doritos Ranch 783/26",
+        "drive": "https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(18)",
+        "fecha": "14/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "906/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLES RANCH CAPITAL",
+        "trello": "9dDPu3Gi",
+        "descripcion": "Corregí los cortes de los muebles disruptivos de Pepsico Doritos Ranch 906/26",
+        "drive": "https://drive.google.com/drive/folders/1eH8AJ5gm-meu5gdjGfw5fSlSBMJ0yq0Q?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(19)",
+        "fecha": "14/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "804/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "NAVIDAD CON SAVOY",
+        "trello": "wk9fw4PC",
+        "descripcion": "Terminé la orden de producción de los 82 exhibidores de Navidad con Savoy",
+        "drive": "https://drive.google.com/drive/folders/1Y55E-0ArBQtP9aZbdPSIvdVmgEus6x_r?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(20)",
+        "fecha": "20/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "783/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "PUNTERAS DORITOS RANCH",
+        "trello": "8AMmTOwF",
+        "descripcion": "Entregué la orden de producción del parachoque y pintura de Doritos Ranch Disruptivos",
+        "drive": "https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(21)",
+        "fecha": "20/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "853/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "PUNTERAS KALDINI CARACAS",
+        "trello": "VxSssIZG",
+        "descripcion": "Terminé la orden de producción del revestimiento de Kaldini Riovida Bello Monte",
+        "drive": "https://drive.google.com/drive/folders/1Y4jxNd4g8kZ_C6rd1PffoW5balLV_PER?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(22)",
+        "fecha": "20/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "908/26",
+        "cliente": "OXFORD",
+        "tituloProyecto": "REVESTIMIENTO KALDINI RIOVIDA LA PAZ",
+        "trello": "iTGgDhBN",
+        "descripcion": "Monté los parachoques de todos los revestimientos de Kaldini",
+        "drive": "https://drive.google.com/drive/folders/1QMlv9SHWntpolRdXfNpS1v2IetSgpaDS?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(23)",
+        "fecha": "23/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "205/26",
+        "cliente": "NESTLE",
+        "tituloProyecto": "PUNTAS DE GÓNDOLA 2.0",
+        "trello": "lfd0D5DO",
+        "descripcion": "Puse a funcionar el Sistema de Información de Recetas y Nido en Redvital La Yaguara",
+        "drive": "https://drive.google.com/drive/folders/1QnI0EMEuL1HYQcK24iJd8MowpfeC6Huw?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(24)",
+        "fecha": "27/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "245/25",
+        "cliente": "ALFONZO RIVAS",
+        "tituloProyecto": "MUEBLE FLIPS PÁRAMO BARUTA",
+        "trello": "LWc8AL1H",
+        "descripcion": "Enmary me pidió ayuda con unas piezas faltantes de los muebles de Flips",
+        "drive": "https://drive.google.com/drive/folders/1VlJAPqEwcnjxxTZtIphlh1SdCJ2OJmXB?usp=drive_link",
+        "check": "LISTO"
+      }
+    ]
+  }
+]
