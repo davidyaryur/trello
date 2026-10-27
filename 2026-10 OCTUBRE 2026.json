@@ -15,6 +15,18 @@
         "descripcion": "Calculé el rendimiento del botadero de Nescafé",
         "drive": "https://drive.google.com/drive/folders/16RaIcXnrjS0Uxh1a3dXNPI8YqqecSaSq?usp=drive_link",
         "check": "LISTO"
+      },
+      {
+        "id": "(02)",
+        "fecha": "27/10/2026",
+        "trabajoDiseno": "RENDIMIENTO",
+        "numeroProyecto": "905/26",
+        "cliente": "PEPSICO",
+        "tituloProyecto": "MUEBLE NUEVO LA ALAMEDA",
+        "trello": "pXWcB0lA",
+        "descripcion": "Rendimiento del mueble NatuChips Central Madeirense La Alameda con nuevas dimensiones",
+        "drive": "https://drive.google.com/drive/folders/1rRwHExtwCOZv-NioFuA0axLbsqtBvxdZ?usp=drive_link",
+        "check": "FALTA"
       }
     ]
   },
@@ -69,7 +81,7 @@
         "trello": "pXWcB0lA",
         "descripcion": "Me puse con las modificaciones de visual de NatuChips La Alameda",
         "drive": "https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link",
-        "check": "FALTA"
+        "check": "LISTO"
       },
       {
         "id": "(05)",
@@ -490,6 +502,18 @@
       },
       {
         "id": "(24)",
+        "fecha": "26/10/2026",
+        "trabajoDiseno": "PRODUCCIÓN",
+        "numeroProyecto": "669/26",
+        "cliente": "ALFONZO RIVAS",
+        "tituloProyecto": "EXHIBIDORES DE PISO FLIPS",
+        "trello": "gj5lPxIc",
+        "descripcion": "Enmary me pidió poner el audio de FLIPO en los dispositivos de audio.",
+        "drive": "https://drive.google.com/drive/folders/1GenO5uWBEgPhxdyR3HoDPbdotvoAyfEi?usp=drive_link",
+        "check": "LISTO"
+      },
+      {
+        "id": "(25)",
         "fecha": "27/10/2026",
         "trabajoDiseno": "PRODUCCIÓN",
         "numeroProyecto": "245/25",
