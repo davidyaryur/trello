@@ -1,5 +1,4 @@
-﻿🧾 Prompt
-Este documento proporciona un sistema de información organizado para proyectos de Yar-Yur 2026. En cada día, hay una sección llamada "CARPETAS" que contiene elementos cruciales de cada proyecto.
+﻿Este documento proporciona un sistema de información organizado para proyectos de Yar-Yur 2026. En cada día, hay una sección llamada "CARPETAS" que contiene elementos cruciales de cada proyecto.
 Estos elementos de proyecto se identifican mediante palabras clave específicas: RENDIMIENTO, VISUAL, PLANO MECÁNICO, MUESTRA, PRODUCCIÓN, AUTORIZACIÓN
 Cada elemento sigue un formato estructurado:
 * Palabra Clave: Identifica el tipo de proyecto.
@@ -98,7 +97,6 @@ Presenta el código json completo dentro de un bloque de código Markdown (`json
 
 
 
-🗓️ ENERO 2026
 ENERO 2026
 LUN
 	MAR
@@ -1151,7 +1149,6 @@ https://drive.google.com/drive/folders/1Z6jSa_oLiec8nVT2hfwyEwdx-b1kFUFF?usp=dri
 📂 CARPETAS:
 1. 
 
-🗓️ FEBRERO 2026
 
 
 
@@ -2112,7 +2109,6 @@ https://drive.google.com/drive/folders/1hOWdE7X8Ns-Iw-pMGZ5Jic6iy0zag6p2?usp=dri
 📂 CARPETAS:
 1. 
 
-🗓️ MARZO 2026
 MARZO 2026
 LUN
 	MAR
@@ -3224,7 +3220,6 @@ https://drive.google.com/drive/folders/10tkMzEH6E_76hOQHVcee4uo2i4mBF5sD?usp=dri
 📂 CARPETAS:
 1. 
 
-🗓️ ABRIL 2026
 ABRIL 2026
 LUN
 	MAR
@@ -4144,7 +4139,6 @@ https://drive.google.com/drive/folders/15VZ4Wm8jIncgfHSknVHFMU7ibaxXD1Zd?usp=dri
 
 
 FIN DE ABRIL
-🗓️ MAYO 2026
 MAYO 2026
 LUN
 	MAR
@@ -5082,7 +5076,6 @@ https://drive.google.com/drive/folders/1crepRMdvBQBGagFy5jNrl4tHrsKO9mM-?usp=dri
 📂 CARPETAS:
 1. 
 
-🗓️ JUNIO 2026
 JUNIO 2026
 LUN
 	MAR
@@ -6055,7 +6048,6 @@ https://drive.google.com/drive/folders/18_LAOJVml-24VmtNcWkrfOPhKk5K8HcG?usp=dri
 FIN DE JUNIO
 
 
-🗓️ JULIO 2026
 JULIO 2026
 LUN
 	MAR
@@ -6863,7 +6855,6 @@ https://drive.google.com/drive/folders/1fIi5RBq1g-Bvith6Bmndf1aAWcoOcLHu?usp=dri
 FIN DE JULIO
 
 
-🗓️ AGOSTO 2026
 AGOSTO 2026
 LUN
 	MAR
@@ -7766,7 +7757,6 @@ https://drive.google.com/drive/folders/1tz8Ty8HEaTJJGg6YK6diZi2nh_8S66U4?usp=dri
 
 
 
-🗓️ SEPTIEMBRE 2026
 SEPTIEMBRE 2026
 LUN
 	MAR
@@ -7825,16 +7815,16 @@ Tabla
 	04
 	42
 	VISUAL.
-	12
+	14
 	43
 	PLANO MECÁNICO.
-	02
+	03
 	44
 	MUESTRA.
 	12
 	45
 	PRODUCCIÓN.
-	15
+	16
 	
 
 
@@ -8516,10 +8506,6 @@ https://drive.google.com/drive/folders/1yphMmUjimTccTTWIMTxCPItM9XigACE2?usp=dri
 * Poner el audio de Flipo en el escritorio para cuando lleguen los dispositivo
 
 
-* Sacar puntera de COCA COLA Maraplus La Florida
-* Sacar vinil de los exhibidores 360 de Pepsico
-
-
 🌄 MAÑANA:
 * 1. Le envié a Lorena los visuales con dimensiones de los muebles de la Feria
 * Me puse a programar todos los hologramas de Flips
@@ -8529,8 +8515,6 @@ https://drive.google.com/drive/folders/1yphMmUjimTccTTWIMTxCPItM9XigACE2?usp=dri
 * Coloqué el audio de FLIPO en el escritorio
 * Me puse con la orden de corte de la puntera de Coca Cola Maraplus La Florida
 * 2. Entregué la orden de corte de Coca Cola Maraplus La Florida
-* Me puse con el vinil de las islas de Pepsico Ranch
-* 3. Entregué la orden de producción del vinil de las islas de Doritos Ranch
 
 
 📂 CARPETAS:
@@ -8546,66 +8530,112 @@ DRIVE: FALTA
 https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link
 
 
-3. PRODUCCIÓN: (14) 784/26 - PEPSICO - EXHIBIDORES 360 DORITOS RANCH Entregué la orden de producción del vinil de las islas de Doritos Ranch
-TRELLO: https://trello.com/c/jZkB7DE4
-DRIVE: FALTA
-https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=drive_link
 
 
 🗓️ Martes 29 de septiembre del 2026
 🕒 PENDIENTE:
-* 684/26 - SCJ - INTERVENCIÓN DE ANAQUEL - RENDIMIENTO 
+* Sacar puntera de COCA COLA Maraplus La Florida
+* 906/26 - PEPSICO - MUEBLES RANCH CAPITAL - VISUAL
 * 437/26 - GRUPO LETI - MATERIAL GENVEN - MUESTRA 
-* 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA- VISUAL 
 🌄 MAÑANA:
-* 1. Le envié el rendimiento de la intervención de Anaquel de SCJ a Enmary
-* 2. Entregué la orden de muestra del calendario de Genven
-* 
-
+* Le pedí a Ángel el maestro de la puntera de Coca Cola
+* Me llamó Yannis para rotular el mueble de Kaldini
+* Hablé con Pablo para saber cómo hacer el marco de la caja de luz de Kaldini
+* Pablo me sugirió que lo hagamos con Mica el marco de la caja de luz de Kaldini
+* 1. Entregué la orden de producción del marco de la caja de Luz de Kaldini en mica
+* Me puse con el vinil del mueble de Coca Cola Maraplus la Florida
+* 2. Entregué la orden del vinil del mueble de Coca Cola de Maraplus La Florida
+* Me puse con el visual de la puntera Doritos Ranch que me pidiò Lorena con las medidas del Brief
 🌅 TARDE:
-* 3. Le envié a Lorena el visual de NatuChips La Alameda
+
+
+* 3. Le envié a Lorena el visual de la puntera de Doritos Ranch con las medidas del Brief
+* 4. Entregué la orden de muestra del calendario de Genven
+* Verónica me pidió un plano mecánico del exhibidor de cartón de Crustissimo
 
 
 📂 CARPETAS:
-1. RENDIMIENTO: (04) 684/26 - SCJ - INTERVENCION DE ANAQUEL Le envié el rendimiento de la intervención de Anaquel de SCJ a Enmary
-TRELLO: https://trello.com/c/1GvmBO3A
-DRIVE: FALTA
-https://drive.google.com/drive/folders/1H-DjQj6mcw-WlRe1UvcTSZKMAfeBlRgo?usp=drive_link
+1. PRODUCCIÓN: (14) 726/26 - OXFORD - PUNTERA KALDINI PÁRAMO PRADOS DE MARIA Entregué la orden de producción del marco de la caja de Luz de Kaldini en mica
+TRELLO: https://trello.com/c/gRp8p3Pd
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1h99vwWVLM7g8CFfpJhzdNvnVpFCOcg4T?usp=drive_link
 
 
-2. MUESTRA: (12) 437/26 - GRUPO LETI - MATERIAL GENVEN Entregué la orden de muestra del calendario de Genven
+2. PRODUCCIÓN: (15) 722/26 - COCA COLA - PUNTERAS ICON Entregué la orden del vinil del mueble de Coca Cola de Maraplus La Florida
+TRELLO: https://trello.com/c/HL6xmRBY
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ddve74kMYWC3Xq0ZpB5l1mz9zbgA2CcH?usp=drive_link
+
+
+3. VISUAL: (12) 783/26 - PEPSICO - PUNTERAS DORITOS RANCH Le envié a Lorena el visual de la puntera de Doritos Ranch con las medidas del Brief
+TRELLO: https://trello.com/c/8AMmTOwF
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1ujUtw-zbrdUMMud41vIGiFLxjGvRAf8E?usp=drive_link
+
+
+4. MUESTRA: (12) 437/26 - GRUPO LETI - MATERIAL GENVEN Entregué la orden de muestra del calendario de Genven
 TRELLO: https://trello.com/c/HIsdSUIX
-DRIVE: FALTA
-https://drive.google.com/drive/folders/1h2ESlS0Dtxb4AsTCHaTVzvG5NkvOQDxX?usp=drive_link
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1oeMsXW7608D8YkYbEgBkkp9GnqNmkEen?usp=drive_link
 
 
-3. VISUAL: (12) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Le envié a Lorena el visual de NatuChips La Alameda
-TRELLO: https://trello.com/c/pXWcB0lA
-DRIVE: FALTA
-https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link
+
+
+
+
 
 
 🗓️ Miércoles 30 de septiembre del 2026
 🕒 PENDIENTE:
-* Sacar las órdenes de producción de las punteras de Pepsico Doritos Ranch
+* 684/26 - SCJ - INTERVENCIÓN DE ANAQUEL - RENDIMIENTO 
+* 796/26 - CRUSTISSIMO - EXHIBIDOR DE PISO DESARMABLE - PLANO MECÁNICO
+
+
+* 784/26 - PEPSICO - EXHIBIDORES 360 DORITOS RANCH
+
+
+* 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA - VISUAL 
 🌄 MAÑANA:
-* Me puse con la orden de producción de Doritos Ranch
-
-
+* Creé un archivo excel con las dimensiones de las cuatro punteras de Doritos Ranch
+* 1. Le envié el rendimiento de la intervención de Anaquel de SCJ a Enmary
+* Lorena me pidió el visual de la puntera de Yuca de Pepsico
 🌅 TARDE:
-* 1. Entregué la orden de producción de la puntera Doritos Ranch
+* 2. Le envié a Verónica el plano mecánico del exhibidor de cartón de Crustísimo
+* Me puse con el visual de la puntera de Yuca de Pepsico
+* 3. Le envié a Lorena el visual de la puntera de Yuca de Pepsico
+
+
+* Me puse a montar el vinil de las islas de Pepsico Ranch
+* 4. Entregué la orden de producción del vinil de las islas de Doritos Ranch
+
+
 
 
 📂 CARPETAS:
-1. PRODUCCIÓN: (15) 783/26 - PEPSICO - PUNTERAS DORITOS RANCH Entregué la orden de producción de la puntera Doritos Ranch
-TRELLO: https://trello.com/c/8AMmTOwF
-DRIVE: FALTA
-https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=sharing
+1. RENDIMIENTO: (04) 684/26 - SCJ - INTERVENCIÓN DE ANAQUEL Le envié el rendimiento de la intervención de Anaquel de SCJ a Enmary
+TRELLO: https://trello.com/c/1GvmBO3A
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1H-DjQj6mcw-WlRe1UvcTSZKMAfeBlRgo?usp=drive_link
 
 
+2. PLANO MECÁNICO: (03) 796/26 - CRUSTISSIMO - EXHIBIDOR DE PISO DESARMABLE  Le envié a Verónica el plano mecánico del exhibidor de cartón de Crustísimo
+TRELLO: https://trello.com/c/2GeKDvUt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Ah1pTqINxlm7-rYz8j7GZL-0x-Echrgy?usp=drive_link
 
 
-🗓️ OCTUBRE 2026
+3. VISUAL: (13) 906/26 - PEPSICO - MUEBLES RANCH CAPITAL - CUMANÁ Le envié a Lorena el visual de la puntera de Yuca de Pepsico
+TRELLO: https://trello.com/c/9dDPu3Gi
+DRIVE: LISTO
+https://drive.google.com/drive/folders/16uSfSXha9g3nbzjHslyn5bseUk28SuYM?usp=drive_link
+
+
+4. PRODUCCIÓN: (16) 784/26 - PEPSICO - EXHIBIDORES 360 DORITOS RANCH Entregué la orden de producción del vinil de las islas de Doritos Ranch
+TRELLO: https://trello.com/c/jZkB7DE4
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=drive_link
+
+
 OCTUBRE 2026
 LUN
 	MAR
@@ -8660,24 +8690,19 @@ Tabla
 	Filas
 	46
 	RENDIMIENTO.
-	
-
+	01
 	47
 	VISUAL.
-	
-
+	05
 	48
 	PLANO MECÁNICO.
-	
-
+	01
 	49
 	MUESTRA.
-	
-
+	08
 	50
 	PRODUCCIÓN.
-	
-
+	24
 	
 
 
@@ -8712,7 +8737,8 @@ Tabla
 
 🗓️ Jueves 01 de octubre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
+* Oftalmólogo
+🌄 MAÑANA:
 * 
 
 🌅 TARDE:
@@ -8721,14 +8747,22 @@ Tabla
 📂 CARPETAS:
 1. 🗓️ Viernes 02 de octubre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
-* 
+* Sacar las órdenes de producción de las punteras de Pepsico Doritos Ranch
+* Sacar las órdenes de producción de los revestimientos de Kaldini
+🌄 MAÑANA:
+* 1. Entregué la orden de producción de la puntera Doritos Ranch
+
 
 🌅 TARDE:
-* 
+* Parrilla
+
 
 📂 CARPETAS:
-1. 🗓️ Sábado 03 de octubre del 2026
+1. PRODUCCIÓN: (01) 783/26 - PEPSICO - PUNTERAS DORITOS RANCH Entregué la orden de producción de la puntera Doritos Ranch
+TRELLO: https://trello.com/c/8AMmTOwF
+DRIVE: LISTO
+https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=sharing
+🗓️ Sábado 03 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
 * 
@@ -8747,47 +8781,234 @@ Tabla
 1. 🗓️ Lunes 05 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
-* 
+* 1. Muestra física 2 del exhibidor de Navidad con Savoy en Cartón
+
 
 🌅 TARDE:
-* 📂 CARPETAS:
+* 2. Orden de producción del vinil de las Islas 360 Ranch
+* Órdenes de producción de los cortes de las punteras de Pepsico Ranch
+* 3. Maraplus Indio Mara
+* 4. Más por menos Hiper Barcelona
+* 5. Mega Super Market y Más por menos Cumaná
+* 6. Red Vital la Yaguara
+
+
+📂 CARPETAS:
+
+
+1. MUESTRA: (01) 804/26 - NESTLE - NAVIDAD CON SAVOY Muestra física 2 del exhibidor de Navidad con Savoy en Cartón
+TRELLO: https://trello.com/c/wk9fw4PC
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link
+
+
+2. PRODUCCIÓN: (02) 784/26 - PEPSICO - EXHIBIDORES 360 DORITOS RANCH Orden de producción del vinil de las Islas 360 Ranch
+TRELLO: https://trello.com/c/jZkB7DE4
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1qs5bnHM2JAUKmrnX5CNgiDeeRuZk5ftK?usp=drive_link
+
+
+3. PRODUCCIÓN: (03) 783/26 - PEPSICO - PUNTERAS DORITOS RANCH Maraplus Indio Mara
+TRELLO: https://trello.com/c/8AMmTOwF
+DRIVE: LISTO
+https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=drive_link
+
+
+4. PRODUCCIÓN: (04) 783/26 - PEPSICO - PUNTERAS DORITOS RANCH Más por menos Hiper Barcelona
+TRELLO: https://trello.com/c/8AMmTOwF
+DRIVE: LISTO
+https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=drive_link
+
+
+5. PRODUCCIÓN: (05) 906/26 - PEPSICO - MUEBLES RANCH CAPITAL - CUMANÁ Mega Super Market y Más por menos Cumaná
+TRELLO: https://trello.com/c/9dDPu3Gi
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1eH8AJ5gm-meu5gdjGfw5fSlSBMJ0yq0Q?usp=drive_link
+
+
+6. PRODUCCIÓN: (06) 906/26 - PEPSICO - MUEBLES RANCH CAPITAL - CUMANÁ Red Vital la Yaguara
+TRELLO: https://trello.com/c/9dDPu3Gi
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1eH8AJ5gm-meu5gdjGfw5fSlSBMJ0yq0Q?usp=drive_link
+
+
 🗓️ Martes 06 de octubre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
-* 
+* Mismo mueble de Kaldini
+🌄 MAÑANA:
+* 1. Entregué la orden que faltaba de Locatel La Florida de NatuChips
+* Me puse con las órdenes de pintura de las punteras de Doritos Ranch
+* Entregué al señor Ricardo las órdenes de pintura de Pepsico
+* Me puse a montar los disruptivos de las punteras de Pepsico
+* Me puse a montar los artes de las punteras de Pepsico
+
+
+* Me llamó Verónica a decirme que colee las punteras de Pepsico
+* Verónica me explicó que la aprobación de las punteras de Kaldini es antes que Pepsico
+* Verónica me indicó que no puede esperar al jueves para enviar las órdenes
+* El cliente Kaldini llamó a Verónica para pedirle status y le dijo que estamos tardando mucho
+* Le expliqué a Verónica que yo tengo para hacer Pepsico antes de Kaldini
+* Verónica insistió que no, que la aprobación de Kaldini es antes que Pepsico
+* De forma autoritaria me dijo que Pepsico se coleó a Kaldini
+* Negocié con Verónica para enviar hoy la que es repetición
+* Mañana miércoles los revestimientos de Kaldini
+* El Jueves el mueble que es distinto de Kaldini
+
+
+* Entregué la orden de corte de los disruptivos de las punteras de Pepsico
+* 2. Entregué la orden de repetición del mueble de Kaldini
+
 
 🌅 TARDE:
-* 
+* 3. Realicé las modificaciones al módulo de la tablet de Savoy lo puse en Varios
+
+
+* José Gabriel me reclamó que porqué la muestra de cartón de Savoy está laminada mate
+* Le expliqué que Milka me dijo que va laminado mate ayer
+* José Gabriel me preguntó si me mandó esa información por escrito
+* Le dije que fue verbal, entonces me explicó que yo tengo la culpa de que haya salido mal
+* Fui con Milka a decirle que explique qué me dijo que va laminado y ella se retractó
+* Milka dijo que nunca me dijo que va laminado mate, la de cartón va sin laminar
+* Me molesté y no sostuve la puerta del departamento de ventas al cerrarla.
+* Volví a hacer la orden de muestra física del exhibidor de cartón sin laminar
+
+
+* Empecé a hacer la orden de los disruptivos de NatuChips Yuca Locatel La Florida
+
 
 📂 CARPETAS:
-1. 🗓️ Miércoles 07 de octubre del 2026
+1. PRODUCCIÓN: (07) 906/26 - PEPSICO - MUEBLES RANCH CAPITAL - CUMANÁ Entregué la orden que faltaba de Locatel La Florida de NatuChips
+TRELLO: https://trello.com/c/9dDPu3Gi
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1eH8AJ5gm-meu5gdjGfw5fSlSBMJ0yq0Q?usp=drive_link
+
+
+2. PRODUCCIÓN: (08) 726/26 - OXFORD - PUNTERA KALDINI PÁRAMO PRADOS DE MARIA Entregué la orden de repetición del mueble de Kaldini
+TRELLO: https://trello.com/c/gRp8p3Pd
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1h99vwWVLM7g8CFfpJhzdNvnVpFCOcg4T?usp=drive_link
+
+
+3. PRODUCCIÓN: (09) 152/26 - NESTLE - PDG SAVOY 2.0 RIO LOMAS DEL SOL Realicé las modificaciones al módulo de la tablet de Savoy lo puse en Varios
+TRELLO: https://trello.com/c/xaqgGz9A
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1k5lmDBlEVO0srQOeakznIbTDnJVanbOy?usp=drive_link
+
+
+
+
+🗓️ Miércoles 07 de octubre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
-* 
+* Revestimientos de Kaldini
+🌄 MAÑANA:
+* Recibí las piezas del calendario de Genven, me puse a limpiar las piezas
+* Armé la muestra de los calendarios de Genven
+* Pablo me indicó que el color de Genven no es, que le pregunte a Guillermo por el color
+* Volví a montar el vinil de los calendarios de Genven con el color correcto
+* Andrea Istúriz, Pablo y yo revisamos el calendario de Genven y propusimos mejoras de armado
+* 1. Monté la muestra física 2 del calendario de Genven con las modificaciones conversadas
+
 
 🌅 TARDE:
-* 📂 CARPETAS:
-1. 🗓️ Jueves 08 de octubre del 2026
+* Andrés David me entregó las piezas de cartón del exhibidor de Navidad con Savoy
+* Nos dimos cuenta en diseño que las cenefas quedaron al revés
+* 2. Monté la orden de muestra del vinil sin laminar de las cenefas
+* Pablo me entregó los viniles si laminar para el exhibidor de cartón de Navidad con Savoy
+* Dorian me indicó que el mueble lo va a armar Samuel
+* Estuve con Samuel indicando como va armado el exhibidor de cartón
+📂 CARPETAS:
+1. MUESTRA: (02) 437/26 - GRUPO LETI - MATERIAL GENVEN Monté la muestra física 2 del calendario de Genven con las modificaciones conversadas
+TRELLO: https://trello.com/c/HIsdSUIX
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1oeMsXW7608D8YkYbEgBkkp9GnqNmkEen?usp=drive_link
+
+
+2. MUESTRA: (03) 804/26 - NESTLE - NAVIDAD CON SAVOY Monté la orden de muestra del vinil sin laminar de las cenefas
+TRELLO: https://trello.com/c/wk9fw4PC
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link
+
+
+
+
+🗓️ Jueves 08 de octubre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
-* 
+* Mueble de Kaldini
+🌄 MAÑANA:
+* Los viniles de Pepsico los va a montar Carelis
+* Me puse a montar los revestimientos de Kaldini
+
 
 🌅 TARDE:
-* 
+* Seguí montando los tres revestimientos de Kaldini
+* Eider me pidió modificar los cortes de Pepsico para hacerles boca de visita
+* Modifiqué los cortes de Pepsico para incluir las ventanas de acceso en los espaldares
+* 1. Monté la orden de producción del revestimiento de KALDINI Riovida Andrés Bello
+* 2. Monté la orden de producción del revestimiento de KALDINI Riovida El Marquez
+* 3. Monté la orden de producción del revestimiento de KALDINI Riovida La Paz
+
 
 📂 CARPETAS:
-1. 
+1. PRODUCCIÓN: (10) 853/26 - OXFORD - PUNTERAS KALDINI CARACAS Monté la orden de producción del revestimiento de KALDINI Riovida Andrés Bello
+TRELLO: https://trello.com/c/VxSssIZG
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y4jxNd4g8kZ_C6rd1PffoW5balLV_PER?usp=drive_link
+
+
+2. PRODUCCIÓN: (11) 853/26 - OXFORD - PUNTERAS KALDINI CARACAS Monté la orden de producción del revestimiento de KALDINI Riovida El Marquez
+TRELLO: https://trello.com/c/VxSssIZG
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y4jxNd4g8kZ_C6rd1PffoW5balLV_PER?usp=drive_link
+
+
+3. PRODUCCIÓN: (12) 908/26 - OXFORD - REVESTIMIENTO KALDINI RIOVIDA LA PAZ Monté la orden de producción del revestimiento de KALDINI Riovida La Paz
+TRELLO: https://trello.com/c/iTGgDhBN
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1QMlv9SHWntpolRdXfNpS1v2IetSgpaDS?usp=drive_link
+
+
+
+
+
 
 🗓️ Viernes 09 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
-* 
+* 1. Montar las órdenes de producción de los Viniles de Yuca La Florida (recordar cinta de Locatel)
+
 
 🌅 TARDE:
-* 
+* José Gabriel me llamó para preguntarme por qué se está usando tanto vinil en Navidad con Savoy
+* Pablo le explicó que es por los puntos, José Gabriel explicó que no se puede usar tanto vinil
+* Milka sólo cobró cuatro metros de vinil, modificó el rendimiento sin informar a Diseño.
+
+
+* Le pregunté a Pablo como identificar las piezas verdes y azules de los disruptivos de Pepsico
+* Pablo me dijo que le realizara un desbaste con una A y una V para diferenciarlos
+* 2. Monté la orden de los disruptivos de Pepsico identificados con la A y la V de Azul y Verde
+
 
 📂 CARPETAS:
-1. 🗓️ Sábado 10 de octubre del 2026
+1. PRODUCCIÓN: (13) 906/26 - PEPSICO - MUEBLES RANCH CAPITAL - CUMANÁ Montar las órdenes de producción de los Viniles de Yuca La Florida (recordar cinta de Locatel)
+TRELLO: https://trello.com/c/9dDPu3Gi
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1eH8AJ5gm-meu5gdjGfw5fSlSBMJ0yq0Q?usp=drive_link
+
+
+2. PRODUCCIÓN: (14) 783/26 - PEPSICO - PUNTERAS DORITOS RANCH Monté la orden de los disruptivos de Pepsico identificados con la A y la V de Azul y Verde
+TRELLO: https://trello.com/c/8AMmTOwF
+DRIVE:
+
+
+
+
+
+
+
+
+
+
+🗓️ Sábado 10 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
 * 
@@ -8807,7 +9028,8 @@ Tabla
 📂 CARPETAS:
 1. 🗓️ Lunes 12 de octubre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
+* FERIADO
+🌄 MAÑANA:
 * 
 
 🌅 TARDE:
@@ -8817,24 +9039,111 @@ Tabla
 1. 🗓️ Martes 13 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
-* 
+* Andrés David me pidió que corrigiera los corte internos del calendario Genven
+* 1. Al llegar a la oficina corregí los cortes del calendario Genven y le avisé a Andrés David
+* Careils se ofreció a ayudarme con el vinil de los muebles de Kaldini
+* Le di a Carelis en Varios los archivos para que ella monte el vinil de Kaldini
+* 2. Monté el vinil de los disruptivos de NatuChips Yuca
+* Monté el parachoques del mueble NatuChips Yuca Locatel La Florida
+* Me puse a armar el calendario de Genven
+
 
 🌅 TARDE:
-* 
-
+* Dorian me pidió poner el audio de Flips
+* Seguí con el mueble de Kaldini
+* 3. Terminé el mueble de Kaldini Emporio Miranda
+* Carelis montó el vinil del mueble de Kaldini
+* 4. Monté la muestra producción del mueble de cartón Navidad con Savoy
+* Me puse a montar la orden de producción de los muebles de cartón Navidad con Savoy
 📂 CARPETAS:
-1. 🗓️ Miércoles 14 de octubre del 2026
+1. MUESTRA: (04) 437/26 - GRUPO LETI - MATERIAL GENVEN Al llegar a la oficina corregí los cortes del calendario Genven y le avisé a Andrés David
+TRELLO: https://trello.com/c/HIsdSUIX
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1oeMsXW7608D8YkYbEgBkkp9GnqNmkEen?usp=drive_link
+
+
+2. PRODUCCIÓN: (15) 906/26 - PEPSICO - MUEBLES RANCH CAPITAL - CUMANÁ Monté el vinil de los disruptivos de NatuChips Yuca
+TRELLO: https://trello.com/c/9dDPu3Gi
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1eH8AJ5gm-meu5gdjGfw5fSlSBMJ0yq0Q?usp=drive_link
+
+
+3. PRODUCCIÓN: (16) 853/26 - OXFORD - PUNTERAS KALDINI CARACAS Terminé el mueble de Kaldini Emporio Miranda
+TRELLO: https://trello.com/c/VxSssIZG
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y4jxNd4g8kZ_C6rd1PffoW5balLV_PER?usp=drive_link
+
+
+4. MUESTRA: (05) 804/26 - NESTLE - NAVIDAD CON SAVOY Monté la muestra producción del mueble de cartón Navidad con Savoy
+TRELLO: https://trello.com/c/wk9fw4PC
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1LUMbb8z2yTShgxWKHn8qPc90iKbNfsM7?usp=drive_link
+
+
+
+
+
+
+🗓️ Miércoles 14 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
-* 
+* Le di a Carelis los archivos para montar el vinil de las punteras disruptivas de Pepsico
+* Carelis se dio cuenta que habían unos errores en los cortes del mueble disruptivo
+* 1. Corregí los cortes de los muebles disruptivos de Pepsico Doritos Ranch 783/26
+* 2. Corregí los cortes de los muebles disruptivos de Pepsico Doritos Ranch 906/26
+* Jhon me llamó para que le explique como va el mueble Red Vital La Yaguara
+* Nos dimos cuenta que las piezas disruptivas están cortadas pero no preparadas ni pintadas
+* Llevé las piezas disruptivas a Joel para que las clave, luego preparen y pinten
+* Le dije a Dorian que cuando vayan a instalar en el Red Vital de La Yaguara yo voy con ellos
+* Me puse a montar la orden de producción de 82 exhibidores de cartón 7mm Navidad con Savoy
+* 3. Terminé la orden de producción de los 82 exhibidores de Navidad con Savoy
+* Tengo la orden en la oficina para cuando esté lista la muestra producción
+
 
 🌅 TARDE:
-* 
+* Branyesca me llamó para ver el color de la luz azul para Doritos Ranch
+* Vimos en producción el techo de las punteras de Coca Cola
+* El compadre ayudó para arreglar el error de armado de la puntera Coca Cola
+* 4. Me puse con el visual de NatuChips La Alameda
+
 
 📂 CARPETAS:
-1. 🗓️ Jueves 15 de octubre del 2026
+1. PRODUCCIÓN: (17) 783/26 - PEPSICO - PUNTERAS DORITOS RANCH Corregí los cortes de los muebles disruptivos de Pepsico Doritos Ranch 783/26
+TRELLO: https://trello.com/c/8AMmTOwF
+DRIVE: LISTO
+https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=drive_link
+
+
+2. PRODUCCIÓN: (18) 906/26 - PEPSICO - MUEBLES RANCH CAPITAL Corregí los cortes de los muebles disruptivos de Pepsico Doritos Ranch 906/26
+TRELLO: https://trello.com/c/9dDPu3Gi
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1eH8AJ5gm-meu5gdjGfw5fSlSBMJ0yq0Q?usp=drive_link
+
+
+3. PRODUCCIÓN: (19) 804/26 - NESTLE - NAVIDAD CON SAVOY Terminé la orden de producción de los 82 exhibidores de Navidad con Savoy
+TRELLO: https://trello.com/c/wk9fw4PC
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y55E-0ArBQtP9aZbdPSIvdVmgEus6x_r?usp=drive_link
+
+
+4. VISUAL: (01) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Me puse con el visual de NatuChips La Alameda
+TRELLO: https://trello.com/c/pXWcB0lA
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+🗓️ Jueves 15 de octubre del 2026
 🕒 PENDIENTE:
-* 🌄 MAÑANA:
+* GRADUACIÓN
+🌄 MAÑANA:
 * 
 
 🌅 TARDE:
@@ -8844,13 +9153,19 @@ Tabla
 1. 🗓️ Viernes 16 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
-* 
+* Continué con el visual de NatuChips La Alameda
+
 
 🌅 TARDE:
-* 
+* 1. Terminé el visual de NatuChips La Alameda, lo dejé listo para renderizar el fin de semana
+
 
 📂 CARPETAS:
-1. 🗓️ Sábado 17 de octubre del 2026
+1. VISUAL: (02) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Terminé el visual de NatuChips La Alameda, lo dejé listo para renderizar el fin de semana
+TRELLO: https://trello.com/c/pXWcB0lA
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link
+🗓️ Sábado 17 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
 * 
@@ -8871,49 +9186,153 @@ Tabla
 1. 🗓️ Lunes 19 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
-* 
+* 1. Envié el visual de NatuChips de la Alameda
+* Reunión de Trello
+* Lorena me pidió confirmar las medidas del mueble de NatuChips La Alameda
+
 
 🌅 TARDE:
-* 
+* Me llamaron de producción para indicar como va armado el mueble disruptivo de Ranch
+* Identifiqué los disruptivos del mueble Doritos Ranch con Carelis
+* Me llamaron de producción para indicar como va armado el mueble Locatel La Florida
+* Reunión con José Gabriel Status de Diseño
+* José Gabriel me indicó que envíe un correo solicitando los transformadores para las antenas
+* Milka pidió el rendimiento actualizado del botadero de Nescafé
+* Verónica mandó correo que está aprobado un revestimiento más de Kaldini
+* 2. Calculé el rendimiento del botadero de Nescafé
+
 
 📂 CARPETAS:
-1. 🗓️ Martes 20 de octubre del 2026
+1. VISUAL: (03) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Envié el visual de NatuChips de la Alameda
+TRELLO: https://trello.com/c/pXWcB0lA
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link
+
+
+2. RENDIMIENTO: (01) 808/26 - NESTLE - BOTADERO NESCAFÉ Calculé el rendimiento del botadero de Nescafé
+TRELLO: https://trello.com/c/YWuT1TTY
+DRIVE: LISTO
+https://drive.google.com/drive/folders/16RaIcXnrjS0Uxh1a3dXNPI8YqqecSaSq?usp=drive_link
+
+
+🗓️ Martes 20 de octubre del 2026
+🕒 PENDIENTE:
+* Pendiente transformadores de las antenas Nestlé 2.0
+* Pendiente revestimiento de Kaldini
+🌄 MAÑANA:
+* Me llamó el señor Ricardo para preguntar cómo va pintado el mueble Doritos Ranch
+* 1. Entregué la orden de producción del parachoque y pintura de Doritos Ranch Disruptivos
+* Me puse con Carelis a identificar las punteras de Doritos Ranch
+* Me puse con el rendimiento del mueble NatuChips La Alameda
+
+
+🌅 TARDE:
+* Hacer el revestimiento de Kaldini
+* 2. Terminé la orden de producción del revestimiento de Kaldini Riovida Bello Monte
+* 3. Monté los parachoques de todos los revestimientos de Kaldini
+
+
+📂 CARPETAS:
+1. PRODUCCIÓN: (20) 783/26 - PEPSICO - PUNTERAS DORITOS RANCH Entregué la orden de producción del parachoque y pintura de Doritos Ranch Disruptivos
+TRELLO: https://trello.com/c/8AMmTOwF
+DRIVE: LISTO
+https://drive.google.com/drive/folders/14A-0A7s-sKiU0v8Mn7co4-aS3V_nMZY6?usp=drive_link
+
+
+2. PRODUCCIÓN: (21) 853/26 - OXFORD - PUNTERAS KALDINI CARACAS Terminé la orden de producción del revestimiento de Kaldini Riovida Bello Monte
+TRELLO: https://trello.com/c/VxSssIZG
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1Y4jxNd4g8kZ_C6rd1PffoW5balLV_PER?usp=drive_link
+
+
+3. PRODUCCIÓN: (22) 908/26 - OXFORD - REVESTIMIENTO KALDINI RIOVIDA LA PAZ Monté los parachoques de todos los revestimientos de Kaldini
+TRELLO: https://trello.com/c/iTGgDhBN
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1QMlv9SHWntpolRdXfNpS1v2IetSgpaDS?usp=drive_link
+
+
+
+
+
+
+🗓️ Miércoles 21 de octubre del 2026
+🕒 PENDIENTE:
+* Pendiente ir a la Yaguara para poner a funcionar Nestlé 2.0
+
+
+* Hacer seguimiento de exhibidor de cartón de Navidad
+* Hacer seguimiento de los exhibidores 360 Ranch
+* Hacer seguimiento de los muebles Doritos Ranch
+* Pendiente poner los audios de Flips
+
+
+* Exhibidor Pino de Navidad en cartón
+🌄 MAÑANA:
+* Hacer la muestra física del exhibidor de cartón de Pino de Navidad de Pepsico
+
+
+🌅 TARDE:
+* 1. Continué con la orden de muestra del exhibidor Pino de Navidad de Pepsico
+
+
+📂 CARPETAS:
+1. MUESTRA: (06) 949/26 - PEPSICO - PINOS DE NAVIDAD Continué con la orden de muestra del exhibidor Pino de Navidad de Pepsico
+TRELLO: https://trello.com/c/MbMmEhH5
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1eD_vjs8n3zCrf-jSh5e5P9mOGChhHs-s?usp=drive_link
+
+
+🗓️ Jueves 22 de octubre del 2026
+🕒 PENDIENTE:
+* Nuevo visual de NatuChips La Alameda
+🌄 MAÑANA:
+* Verónica mandó los artes del exhibidor de cartón de Crustissimo
+* 1. Mandé la muestra de color de los artes del exhibidor de cartón de Crustissimo
+* Continué con la muestra física del exhibidor de árbol de Navidad de Pepsico
+
+
+🌅 TARDE:
+* 2. Terminé la orden de muestra física del pino de Navidad de Pepsico
+
+
+📂 CARPETAS:
+1. MUESTRA: (07) 796/26 - CRUSTISSIMO - EXHIBIDOR DE PISO DESARMABLE Mandé la muestra de color de los artes del exhibidor de cartón de Crustissimo
+TRELLO: https://trello.com/c/2GeKDvUt
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1EZ3ojiytKafe4mqlFQWWlF7oVC39TZHR?usp=drive_link
+
+
+2. MUESTRA: (08) 949/26 - PEPSICO - PINOS DE NAVIDAD Terminé la orden de muestra física del pino de Navidad de Pepsico
+TRELLO: https://trello.com/c/MbMmEhH5
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1eD_vjs8n3zCrf-jSh5e5P9mOGChhHs-s?usp=drive_link
+
+
+🗓️ Viernes 23 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
-* 
+* Fui a Red Vital La Yaguara
+* 1. Puse a funcionar el Sistema de Información de Recetas y Nido en Redvital La Yaguara
+
 
 🌅 TARDE:
-* 
+* 2. Me puse con las modificaciones de visual de NatuChips La Alameda
+
 
 📂 CARPETAS:
-1. 🗓️ Miércoles 21 de octubre del 2026
-🕒 PENDIENTE:
-* 🌄 MAÑANA:
-* 
+1. PRODUCCIÓN: (23) 205/26 - NESTLE - PUNTAS DE GÓNDOLA 2.0 Puse a funcionar el Sistema de Información de Recetas y Nido en Redvital La Yaguara
+TRELLO: https://trello.com/c/lfd0D5DO
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1QnI0EMEuL1HYQcK24iJd8MowpfeC6Huw?usp=drive_link
 
-🌅 TARDE:
-* 
 
-📂 CARPETAS:
-1. 🗓️ Jueves 22 de octubre del 2026
-🕒 PENDIENTE:
-* 🌄 MAÑANA:
-* 
+2. VISUAL: (04) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Me puse con las modificaciones de visual de NatuChips La Alameda
+TRELLO: https://trello.com/c/pXWcB0lA
+DRIVE: FALTA
+https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link
 
-🌅 TARDE:
-* 
 
-📂 CARPETAS:
-1. 🗓️ Viernes 23 de octubre del 2026
-🕒 PENDIENTE:
-* 🌄 MAÑANA:
-* 
-
-🌅 TARDE:
-* 
-
-📂 CARPETAS:
-1. 🗓️ Sábado 24 de octubre del 2026
+🗓️ Sábado 24 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
 * 
@@ -8934,22 +9353,51 @@ Tabla
 1. 🗓️ Lunes 26 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
-* 
+* Continué con las modificaciones del visual de NatuChips La Alameda
+* Puse a renderizar el visual de NatuChips La Alameda
+
 
 🌅 TARDE:
-* 
+* Me puse a limpiar fire base de Canal Moderno
+* Realicé el primer borrador de html de panel informativo de Canal Moderno
+* Enmary me llamó para poner el audio de FLIPO en tres dispositivos
+* Aproveché y le puse el audio a 8 dispositivos, uno no funciona.
+* Se terminó de renderizar NatuChips la Alameda
+* 1. Le envié a Lorena el visual de NatuChips La Alameda
+* 2. Le envié a Lorena las dimensiones del visual NatuChips La Alameda
+
 
 📂 CARPETAS:
-1. 🗓️ Martes 27 de octubre del 2026
+1. VISUAL: (05) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Le envié a Lorena el visual de NatuChips La Alameda
+TRELLO: https://trello.com/c/pXWcB0lA
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1hX5jOVjVk7AVtQtHXy6-XtJNJPgL-Xa7?usp=drive_link
+
+
+2. PLANO MECÁNICO: (01) 905/26 - PEPSICO - MUEBLE NUEVO LA ALAMEDA Le envié a Lorena las dimensiones del visual NatuChips La Alameda
+TRELLO: https://trello.com/c/pXWcB0lA
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1pz2IbGywKaV_Arjzx6fq-oW9Sv1vUmXI?usp=drive_link
+
+
+🗓️ Martes 27 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
+* Me puse a buscar lector de códigos de barra, adaptador USB y Mini UPS para Recetas
+* 1. Enmary me pidió ayuda con unas piezas faltantes de los muebles de Flips
 * 
 
 🌅 TARDE:
 * 
 
 📂 CARPETAS:
-1. 🗓️ Miércoles 28 de octubre del 2026
+1. PRODUCCIÓN: (24) 245/25 - ALFONZO RIVAS - MUEBLE FLIPS PÁRAMO BARUTA Enmary me pidió ayuda con unas piezas faltantes de los muebles de Flips
+TRELLO: https://trello.com/c/LWc8AL1H
+DRIVE: LISTO
+https://drive.google.com/drive/folders/1VlJAPqEwcnjxxTZtIphlh1SdCJ2OJmXB?usp=drive_link
+
+
+🗓️ Miércoles 28 de octubre del 2026
 🕒 PENDIENTE:
 * 🌄 MAÑANA:
 * 
@@ -8987,7 +9435,6 @@ Tabla
 📂 CARPETAS:
 1. 
 
-🗓️ NOVIEMBRE 2026
 NOVIEMBRE 2026
 LUN
 	MAR
@@ -9383,7 +9830,6 @@ Tabla
 📂 CARPETAS:
 1. 
 
-🗓️ DICIEMBRE 2026
 DICIEMBRE 2026
 LUN
 	MAR
